@@ -109,6 +109,10 @@ Fold by region level (1-7) instead of actual nesting level.
 
 ### JSON File Formatting and Validation
 
+I haven't had much luck with formatters in the past tbh, but I have been using this foramtter for a while now without issue. I will revisit the formatter configurator at some point to re create the underlying functionality of it as it is not in the best condition currently. At that time, I will make the json/jsonc formatter configurable as it is not in its current state. As I'm assuming not many people will enjoy the current settings that it was coded with as it turns multi line objects into single line. For some reason I seem to be one of a few who opt for this configuration. IF you are one of those few, enjoy! 
+
+This is now available to be configured as a default formatter for the json and jsonc file type with vscode.
+
 Format JSON/JSONC files and toggle error checking.
 
 **Available Commands:**
