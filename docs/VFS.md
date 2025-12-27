@@ -167,6 +167,15 @@ Execute commands in Windows PowerShell as if typed directly.
 
 **Advanced Usage**: WSL integration, environment variables, complex workflows
 
+> [!TIP] `pnpm run dev` | `npm run dev` | other dev server commands
+>
+> One of the nice features I was able to implement into the new terminal engine is that it automatically senses wether you are executing a dev server command or not, and react accordingly
+> If you are, it scans currently open terminals for the dev server command you are trying to run, for example `pnpm run dev`, it grabs the port number out of your package .json and assign that terminal to that port number and dev server command
+> IF there currently is a dev sever already running the command you are trying to execute, it will progmatically send `ctrl + c` to kill the process and execute the new dev server command
+> This makes it slightly easier for you when creating items where you want to start a dev server, previously I had create a chain and execute kill all terminals, followed by the dev server command
+> This not only creates more freedom in what you can execute when, but simplifies the items you need to create in order to get the extension to do what you want
+> IF you are in a mono repo type project, or in a project where you need to run more than one dev server, any dev server command that you execute that does not currently have a window open, it will create a new terminal window to execute the command 
+
 ##### `debianCMD`
 Run commands in Windows Debian WSL terminal environment. Execute programs with pre-programmed flags.
 
