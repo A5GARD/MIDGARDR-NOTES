@@ -21,7 +21,7 @@ This guide explains how to configure custom workspace layouts using the DevStack
 >
 > These features make onboarding new developers incredibly efficient—you can have their entire workspace configured instantly. Whether you're setting up different configurations for new hires or helping your current team optimize their development environment, this system has you covered.
 
- 
+
 > [!NOTE] 
 > **New Configuration Parameters:**
 >
@@ -168,24 +168,9 @@ This guide explains how to configure custom workspace layouts using the DevStack
 > 
 > - **extensions** → Control which extensions are active based on workspace context or configuration. Instead of being limited to 10-20 active extensions, you can now install 50+ extensions and swap between different sets with a single click. Switch from coding to debugging mode with completely different active extensions, dramatically expanding your available toolset.
 >
->    <details closed><summary>extensions config</summary>
+> NOTE! Unfortuantly, for the time being anyways, this feature is not active and need to wait on a email reply from microsoft. While I have found a solution to the problems faced during coding this feature. I won't post or activate till I see what takes place with that email chain. As the solution involved escaping vscodes sandbox / instance and gains command execution on the host itself. If they deem this a security threat enough to warrant in sending their team a breakdown to fix, than this feature will not be moving forward sadly. BUT, who knows due to the nature of the software, they may not view this as a security issue enough for them to bother looking at it and move on, in which case I will finish off and activate this feature.
 >
-> Mark another WIN for microsoft, SCHWINGG... Who cares if one extension wants to progmatically disable / enable other extensions? If your that concerned in regards to your own extensions, code in a list you don't want to have modified by any other extension. YET, you let me disable ALL extensions with one command? But not indiviudally, no... because that would be malicious... The fuck are you guys smoking over there in those offices.
->
-> I'm not even trying to do anything malicious, INFACT this would help... literally every single vscode user... with saying that, I'm having to resort to... methods that the average dev wouldn't try. 
->
-> We'll see how the tests goooo... but this will not be a feature you will be able to include in the your default layout, which is fine because from a use case perspective, you wouldn't need ( 95% of use cases anyways ) this functionality unless you were already in your workspace and switching from say front end dev layout to debugging or whatever.
->
-> Whenver you activate a new layout with this param, instead of resorting to vscode comamnds or settings.json files. It will instead run a power shell command calling a new vscode instance with the flags on enable and disabling extensions, because that I KNOW can be done, and then grabbing the current workspace root path, and using that as the folder path param to open vscode within an workspace, and ofcourse before it does any of that it first checks which vscode version you are running code vs code-insiders so the commmand will be something of the sort of `code-insiders --ext-enable ext1 ext2 --ext-disable ext3 ext4 /folder/to/workspace`, and I accidently trigger opening the wrong workspace... all the time progmatically since I have several workspaces set as item configs... so I know there won't be some sort of conflict, so lets yeet and find out
->
-> ... sigh. I'm running out of ideas and bugging ai's to help generate new ones, claude though... seems to think using the command auto enables all extensions except the ones you list in the command itself... I'll believe that when I see it. But a progress report, as of now no matter how I create the terminal, in all manners of trying to houdini my ass out of the vscode instance, nothing yet has worked, the closest I have gotten was executing the command via node, which got hung up on the very last second and was a tease because thats when it should have opened, but it did close the window... just not the instance as the node shell was attached to it and keeping it open. The next attempt I'm going to try write a ps1 script in the windows tmp folder, and executing it, then closing the vscode instance, meanwhile there is a small delay on the ps1 script... I have no idea what the result will be, but who knows maybe it will work, I have developed weirder solutions than this in the past. If it weren't for the huge upside in benefits, I wouldn't be working this hard to get this working.
->
-> As of now, this will be my last attempt till I revisit this in the future due to going past 4 hours on this one single thing. So unless there is an update below, this feature will not be active.
->
-> ... pffftttt, as fucking if... the last attempt worked, my confidence being so low in the probability of it working that I just threw the extension object in my default config... creating a loop of restarts so I'm just waiting for it to build as I edited another item... should have stated that this was my last attempt for the night hours ago. but I'm still moving on to fixing other things, and come back to this tomorrow, I'll be sure to leave this here, both for you to laugh at my misery and in hopes... maybe a microsoft employee will come by and read this and they can read about my latest houdini trick, escaping vscode from within. proving that no matter how they try to stop people, there is always going to be a way. when I put my self through 4 or 5 courses at offsec, one thing that became a glaring reality, and instilled the fear in me, if someone with just the right skill and drive / persistance, in the end... nothing stops them. the only good thing about that scenario, finding someone with that combo in tech, is soooo hard as they are very few and far between... so why bother putting these blocks up   ***SMOKE BOMB***
->
-> I will leave you with atleast one thing, as I was trying to escape vscode I was also working on the editor and terminal plexing, which has been just as much of a nightmare to get right... that too, the last attempt before moving onto something else, worked. Even though there are a couple of things to tighten in the engine, visualy anyways the layout is complete. So I'll leave a video here showing a workspace open and creating a 2x2 terminal group and a 3x2 editor group, toggling zen mode and then re-toggling all the items it disables leaving you off with layout I will probably never change from aside from the 2x2 and such that's just to show what its capable of, I apologize in advance for the weird screen sizing, but heres the [video](https://youtu.be/QGgaICeirqU)
->      </details>
+> It sucks because, not only did I spend a lot of time on something that at first glance looked really simple but also because this feature would be a great benefit, to literally every single vscode user since every user faces performance issues due to extensions.
 > 
 >    <details closed><summary>extensions config</summary>
 >
@@ -400,7 +385,41 @@ I've structured each section to mirror either VS Code's native configuration pat
 >
 > At some point I will come back to go over all of them, redoing any that warrant the need to. But I'm currently going into the 7th hour since I started working, and the only thing I have done so far is this doc and there are other things that I NEED to do. Everything has a description as promised, and what is my half ass attempt at providing a settings.json resource and cheating all the descriptions through ai. As an end result, is a resource that you cannot find anywhere else in terms of depth and just how broad of a spectrum in different areas that the settings control. Not to mention going over settings, that no one else even mentions. I just remembered I still have the theme section, and because of the processes I use with my theme builder, I cannot have the ai provide this section. So I will finish that before moving onto other matters. 
 
-<details closed><summary  style="font-size: 1.2em;">2x2" Layout</summary>
+<details closed><summary  style="font-size: 1.2em;">editorGrid - plex - 3 cols</summary>
+
+```json
+{
+          "editorGrid": {
+            "version": "plex",
+          "columns": 3,
+          "rows": 1,
+          "groups": [
+             { "slot": [ 0, 0 ], "active": ".vscode/ntrsync/10516_DevStack_todo.md", "pinned": true },
+             { "slot": [ 1, 0 ], "active": "README.dev.md", "pinned": true },
+             { "slot": [ 2, 0 ], "active": "package.dev.jsonc", "pinned": true, "fold": [ 1, 2 ]  }
+         ],
+         "files": [
+            { "path": "src/helpers/master.ts", "slot": [ 1, 0 ], "pinned": true, "fold": [ 1, 2, 3 ] },
+            { "path": "src/helpers/menus.ts", "slot": [ 1, 0 ], "pinned": true, "fold": [ 1, 2 ]  },
+            { "path": "src/extension/navigatorView.ts", "slot": [ 1, 0 ], "pinned": true , "fold": [ 1, 2 ] },
+            { "path": "src/helpers/modular-commands.ts", "slot": [ 1, 0 ], "pinned": true, "fold": [ 1, 2 ]  },
+            { "path": "src/context.ts", "slot": [ 1, 0 ], "pinned": true, "fold": [ 1, 2 ]  },
+            { "path": "src/extension.ts", "slot": [ 2, 0 ], "pinned": true , "fold": [ 1, 2 ] },
+            { "path": "package.dev.jsonc", "slot": [ 2, 0 ], "pinned": true, "fold": [ 1, 2 ]  },
+            { "path": "F:/DevStack/docs/LAYOUT.md", "slot": 2, "pinned": true },
+            { "path": "F:/DevStack/docs/VFS2.md", "slot": 2, "pinned": true },
+            { "path": "F:/DevStack/docs/VFS2.md", "slot": 2, "pinned": true },
+            { "path": "C:/User/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/global-navigator-config.json", "slot": 2, "pinned": true },
+            { "path": "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/project-configs/project-1744496862041-y866zpqtd9.json", "slot": [ 2, 0 ], "pinned": true }
+          ]
+          },
+          }
+```
+
+</details>
+
+
+<details closed><summary  style="font-size: 1.2em;">terminalGrid - plex - 2x2 Layout</summary>
 
 ```json
 {
@@ -418,7 +437,7 @@ I've structured each section to mirror either VS Code's native configuration pat
 ```
 </details>
 
-<details closed style="font-size: 1.2em;"><summary>The "T-Bone" Layout</summary>
+<details closed style="font-size: 1.2em;"><summary>terminalGrid - plex - The "T-Bone" Layout</summary>
 
 ```json
 {
@@ -435,6 +454,101 @@ I've structured each section to mirror either VS Code's native configuration pat
 
 </details>
 
+<details closed><summary  style="font-size: 1.2em;">editorGrid - classic - 3 cols</summary>
+
+```json
+{
+     "editorGrid": {
+            "orientation": 0,
+              "version": "classic",
+            "groups": [
+              { "size": 0.2 },
+              { "size": 0.45 },
+              { "size": 0.45 }
+            ],
+            "files": [
+              { "path": ".vscode/ntrsync/10516_DevStack_todo.md", "group": 1, "pinned": true },
+              {
+                  "group": 2,
+                  "pinned": true,
+                "path": [
+                  "src/extension.ts",
+                  "src/helpers/master.ts",
+                  "src/helpers/menus.ts",
+                  "src/helpers/context.ts",
+                  "src/extension/navigatorView.ts",
+                  "src/helpers/itemsActionsMenu.ts",
+                  "src/helpers/modular-commands.ts"
+                ]
+              },
+              {
+                "group": 3,
+                "pinned": true,
+                "path": [
+                  "README.dev.md",
+                  "package.dev.jsonc",
+                  "F:/DevStack/docs/LAYOUT.md",
+                  "F:/DevStack/docs/VFS2.md",
+                  "F:/DevStack/docs/VFS.md",
+                  "src/helpers/search.ts",
+                  "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/project-configs/project-1744496862041-y866zpqtd9.json",
+                  "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/global-navigator-config.json"
+                ]
+              }
+            ]
+          }
+}
+```
+
+
+</details>
+
+<details closed><summary  style="font-size: 1.2em;">terminalGrid - classic - 2 cols 2 rows</summary>
+
+```json
+{
+"terminalGrid": {
+  "orientation": 0, // Vertical main splits (Columns)
+   "version": "classic",
+  "groups": [
+    { "id": "col-1", "size": 0.5 },
+    { "id": "col-2", "size": 0.5 }
+  ],
+  "terminals": [
+    {
+      "name": "Top-Left (API)",
+      "group": 1, 
+      "cmd": "npm run start:api",
+      "location": "editor",
+      "priority": 1 // Engine renders this first in group
+    },
+    {
+      "name": "Bottom-Left (DB)",
+      "group": 1,
+      "cmd": "docker logs -f db",
+      "location": "editor",
+      "split": "horizontal" // Forces the 2x2 look in col-1
+    },
+    {
+      "name": "Top-Right (UI)",
+      "group": 2,
+      "cmd": "npm run start:ui",
+      "location": "editor",
+      "priority": 1
+    },
+    {
+      "name": "Bottom-Right (Tests)",
+      "group": 2,
+      "cmd": "npm run test:watch",
+      "location": "editor",
+      "split": "horizontal" // Forces the 2x2 look in col-2
+    }
+  ]
+}
+}
+``` 
+
+</details>
 
 <details closed><summary style="font-size: 1.2em;">4x4 Terminal Grid Contained Within A Single Editor Group</summary>
 
@@ -1054,6 +1168,10 @@ I've structured each section to mirror either VS Code's native configuration pat
 ![Search Feature](https://raw.githubusercontent.com/8an3/dev-notes/main/layout/endResult.png)
 
 </details>
+
+### Showcasing different layouts
+- 2x2 plex terminal group, 3x2 plex editor group, zen mode + all bars re-activated - [video](https://youtu.be/QGgaICeirqU)
+- 3x1 classic editor group, zen mode + all bars re-activated - [video](https://youtu.be/QGgaICeirqU)
 
 
 ## settings.json key:value pairs
@@ -2122,11 +2240,32 @@ const generateVSCodeTheme = (twCss, gitDecorations = true, scmDiffDecorations = 
 
 <br /><br />
 
+## Tips
+
 > [!TIP] Additional Resources
 > - [VS Code Settings Reference](https://code.visualstudio.com/docs/getstarted/settings)
 > - [VS Code API Documentation](https://code.visualstudio.com/api)
 > - [Workspace Configuration](https://code.visualstudio.com/docs/editor/workspaces)
 
+> [!TIP]
+> Due to the nature of this feature, coupled with the fact it gets pretty deep in how far it goes and pretty nerdy. If you reading this now, whether you like it or not, your obviously more of a power user than the average. These will just be random bits of information that I use to help in all manner of things, and will be given in no real order. Whenever they come to mind, I'll come back and continue to add them as there is a lot of them, I can never just sit there and remember them all.
+>
+> - shortcut - `Add cursors to line ends`: `ctrl + g`
+>   - this was created out of frustration and necessity, this is EXTREMELY useful when editing... honestly, more than one line. With this shortcut, I can within seconds modify json objs or files, 10 of thousands of lines long. I also have some wizardy for when the data you need to modify, is just as much in total lines, BUT because of the format you can't use this trick, I have it somewhere so when I find it I'll be sure to add it. What it does, using regex you search for a sepcfic string that will get your cursor on each line of the 10,000 lines allowing you to move with the arrow keys in order to move to where you need to edit.
+> 
+> - `"editor.lineNumbers": "relative",`
+>   - Changing line numbers to relative, I didn't even know this could be done, till I was manually checking every single value for the layout engine. I wish I had this sooner. Honestly, static line numbers are so useless in comparison, ie say your creating a select and you have to manually transfer over the data from another list, counting or calculating the math on how many lines there are, to ensure your data pastes over the way you want to... I'm so happy I never have to do that again. But that event, while it only takes a min, or two, or three depending on how fast I'm going and whether or not I make a mistake. Over the course of a year, it adds up to a lot of time wasted. I seriously never used the line numbers as a refrence at all, in comparison to now. Not only getting that same value that I had to calculate before, to taking a second because you just look at the number. It also offers a VERY quick sanity check, in so many differnt forms. Copying over dating? Check the number when you copy it, when you paste make sure its the same number, you have an ai prompt droning away making lists for you, before now I had to manually check every fucking line, but now... when I grab the data, make a mental note on total lines, once I get the ai's result, paste it in to the file, even today it happened over a dozen times, I HAD to go back and be tell the ai "listen here fucker stop deleting line items", and then the next prompt had the correct amount of lines. The amount of times, because I did not catch it right away, to THEN have to back and check line by line to see what I'm missing, you get the point.
+> 
+> - the new search editor, be sure to check that tout and use, because it has a killer ux... omg... I pretty much carbon copied vscodes search editor in terms of looks but... each result will disaply ( my config anyways ) 4 of the previous lines and 9 of the lines following the result. With this feature you will be able to click ON THE SEARCH RESULT and remotely edit that file, for when you search something and instead of using find and replace all and you only need to edit that one item. This will save so much time. This pretty much removes the worst part of vscodes search in the explorer pane, coupled with some features vscode does not have.
+> 
+> - shortcut - `middle mouse button / scroll wheel` -> `enter`
+> - shortcut - `left click scroll wheel` -> `scroll up`
+> - shortcut - `right click scroll wheel` -> `scroll down`
+>   - I made this change today, and I fucking love it and I can't beleive I didn't think of this before. But mouse buttons, vscode doesn't let you do anything with them. I noticed a conflict with one command in the project so I was going to start changing the naming convention from `ocrmnavigator.gitadd` -> `ocrmnavigator.git.add`, but doing this over and over and over again using the find and replace. It's a fucking pain because while copy paste is on one side of the keyboard, you need to hit enter as it is just the way you should do that process instead of dragging the mouse over to confirm, but that causes you to flail your arm around for whatever amount of time. Today just thought of it out of no where and tried it, as middle mouse click does nothing really, programming it as `enter` this was the fastest find all and replacing I have ever done. As it was copy, paste, click on replace all, immediately without moving any body part clicking middle mouse click as I start to move it back to the next value I need to copy. After some use, swapping from application to application was a bit of a pain, but I didn't have any profiles set up, and luckily enough the software I have hot swaps through all my profiles automatically based on your focused app. 
+>   - The other weird thing I did, and I'll admit I love it so much more then the regular scrolling with the wheel,  the wheel actuator JUST broke on my mouse, but even when I replace it I won't go back to scrolling like that again. programming the left and right movements of the scroll wheel itself, if you have a regular office mouse, you won't be able to do this. If you want to try it, I would highly recommend it, as you are no longer actively hammering the wheel forward or backwards. Now it's just a passive event of click and hold. It is so much better it kinda blows my mind, that I have not seen a single person do that for scrolling in its place
+> 
+
 ---
 
 [🡄 Return](https://github.com/8an3/DevStack)
+
