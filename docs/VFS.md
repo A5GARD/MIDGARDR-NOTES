@@ -4,6 +4,7 @@
 
 - [Item Types](#item-types)
   - [file](#file)
+  - [md](#md)
   - [fileAtLine](#fileAtLine)
   - [folder](#folder)
   - [url](#url)
@@ -11,6 +12,7 @@
   - [chain](#chain)
   - [concurrent](#concurrent)
   - [cmdChain](#cmdChain)
+  - [conditionalChain](#conditionalChain)
   - [powershellCommand](#powershellCommand)
   - [debianCMD](#debianCMD)
   - [snippet](#snippet)
@@ -21,6 +23,7 @@
   - [layout](#layout)
   - [tasks](#tasks)
   - [npmScripts](#npmScripts)
+  - [label](#label)
 - [Project Agnostic Configuration](#project-agnostic-configuration)
 - [The ".env" Context Swapper (envProfile)](#the-env-context-swapper-envprofile)
 - [DevStack Quick Pick](#devstack-quick-pick)
@@ -57,6 +60,9 @@ Quick access to frequently-used files with customizable labels and icons.
 >   - docs will now open in the editor group of your choice, if you configure the extensions settings `ocrmnavigator.vfs.targetEditorGroup`, if you want to take advantage of the layout engine OR if you usually use more that one editor group you can ie, setting this value to 3 will now open all of your docs in the third editor group. ( I'm still playing around with hijacking the doc opening event, I may be able to get this done, I may not. Currently I'm testing a new approach in which I'm ACTUALLY hijacking the open doc event which would be a lot better than the first approach that has already been tested and confirmed to work the issue is, it does not actually hijack the event, instead it reacts to the open file event, then once the file is open it THEN checks to see which editor group is open and if it isn't in the correct editor group it closes the file in question to open in the correct group. Personally, I thought I would absolutely hate the fact that it opens, closes and reopens, but after testing it is so fast that I'm 100% fine with it. So at the very least the second option is available. Currently testing is unavailable due to working on the layout engine and the new way editor and terminal groups that I'm still working on. Anyways this update is good because it future proofs, IF I have to go with the second option )
 >   - focuses the editor
 > 2. the second update is to the file path value saved in your item config, for some reason, I don't know why, but apparently I had the tendency to use full paths instead of relative. Made a new config for a new workspace and non of my files were opening, and then looking at the code, was like shiitt, lol, so sorry if you ran into this problem but its fixed now and just so no ones configs break, you can supply either the full path or relative 
+
+##### `md`
+works the same as file does
 
 ##### `fileAtLine`
 Open files at specific line numbers for immediate context.
@@ -200,6 +206,514 @@ Chain multiple VS Code or DevStack commands without building several config obje
 > The Devstack commands list IS dynmaically generated at the extensions build time to ensure that the list included is always up to date without my intervention
 > The auto generated list does include, both vscode commands and commands avilable from this extension along with any other commands that are available to you within your OWN vscode instance. If you wanted to include commands from an extension you currently have installed, you may do so but be warned that whenever you go to use that `cmdChain` item it will only work if that extension is installed. Meaning if you configure that item at home, and then go to use it at work where you do not have that extension installed, it will not work.
 
+
+##### `conditionalChain`
+This has yet to be tested as the idea came to me while working in another project.
+
+**Conditional Chain Guide**
+
+1. Overview
+
+The `conditionalChain` item type allows you to create intelligent automation workflows that execute different chains based on conditions. Unlike regular chains that always execute the same sequence, conditional chains can adapt based on success/failure states, configuration values, environment variables, file existence, and more.
+
+2. Basic Structure
+
+```json
+{
+  "label": "My Conditional Workflow",
+  "path": "task1, task2, task3",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "conditionType",
+      "executeChain": "chainToExecute"
+    }
+  ]
+}
+```
+
+- **`path`**: The main chain of items to execute (comma-separated labels)
+- **`args`**: Array of conditions that determine what happens next
+- **`executeChain`**: The chain(s) to execute if the condition is met (can reference any item label in your config)
+
+3. Condition Types
+  - 1. **onSuccess** - Execute if main chain succeeds
+
+```json
+{
+  "label": "Build and Deploy",
+  "path": "lint, build, test",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "onSuccess",
+      "executeChain": "deploy, notify-success"
+    }
+  ]
+}
+```
+
+  - 2. **onFailure** - Execute if main chain fails
+
+```json
+{
+  "label": "Build with Rollback",
+  "path": "build, test, deploy",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "onFailure",
+      "executeChain": "rollback, notify-failure, cleanup"
+    }
+  ]
+}
+```
+
+  - 3. **always** - Always execute (useful for cleanup)
+
+```json
+{
+  "label": "Test with Cleanup",
+  "path": "setup, run-tests",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "always",
+      "executeChain": "cleanup, generate-report"
+    }
+  ]
+}
+```
+
+  - 4. **itemSuccess** - Check if specific item succeeded
+
+```json
+{
+  "label": "Partial Deploy",
+  "path": "build-frontend, build-backend, run-tests",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "itemSuccess",
+      "itemLabel": "build-frontend",
+      "executeChain": "deploy-frontend"
+    },
+    {
+      "type": "itemSuccess",
+      "itemLabel": "build-backend",
+      "executeChain": "deploy-backend"
+    }
+  ]
+}
+```
+
+**Note:** `itemLabel` can reference ANY item that was executed - including items from the main chain OR items executed by previous conditions!
+
+  - 5. **itemFailure** - Check if specific item failed
+
+```json
+{
+  "label": "Test with Debugging",
+  "path": "unit-tests, integration-tests",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "itemFailure",
+      "itemLabel": "integration-tests",
+      "executeChain": "collect-logs, open-debugger"
+    }
+  ]
+}
+```
+
+  - 6. **configValue** - Check VS Code configuration
+
+```json
+{
+  "label": "Environment-Based Deploy",
+  "path": "build, test",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "configValue",
+      "configKey": "ocrmnavigator.environment",
+      "operator": "equals",
+      "value": "production",
+      "executeChain": "deploy-prod"
+    },
+    {
+      "type": "configValue",
+      "configKey": "ocrmnavigator.environment",
+      "operator": "equals",
+      "value": "staging",
+      "executeChain": "deploy-staging"
+    }
+  ]
+}
+```
+
+**Available Operators:**
+- `equals` or `==` - Loose equality
+- `strictEquals` or `===` - Strict equality
+- `notEquals` or `!=` - Not equal
+- `strictNotEquals` or `!==` - Strictly not equal
+- `greaterThan` or `>` - Greater than
+- `greaterThanOrEqual` or `>=` - Greater than or equal
+- `lessThan` or `<` - Less than
+- `lessThanOrEqual` or `<=` - Less than or equal
+- `contains` - String contains substring
+- `notContains` - String does not contain substring
+- `startsWith` - String starts with
+- `endsWith` - String ends with
+- `matches` - Regex match
+
+  - 7. **envVariable** - Check environment variable
+
+```json
+{
+  "label": "CI/CD Pipeline",
+  "path": "build, test",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "envVariable",
+      "envKey": "CI",
+      "operator": "equals",
+      "value": "true",
+      "executeChain": "ci-deploy"
+    },
+    {
+      "type": "envVariable",
+      "envKey": "NODE_ENV",
+      "operator": "equals",
+      "value": "development",
+      "executeChain": "start-dev-server"
+    }
+  ]
+}
+```
+
+  - 8. **fileExists** - Check if file exists
+
+```json
+{
+  "label": "Smart Install",
+  "path": "check-dependencies",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "fileNotExists",
+      "filePath": "node_modules",
+      "executeChain": "npm-install"
+    },
+    {
+      "type": "fileExists",
+      "filePath": "package-lock.json",
+      "executeChain": "npm-ci"
+    }
+  ]
+}
+```
+
+**Note:** Paths can be absolute or relative to workspace root.
+
+  - 9. **combined** - Multiple conditions with AND/OR logic
+
+```json
+{
+  "label": "Advanced Deploy",
+  "path": "build, test",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "combined",
+      "logic": "AND",
+      "conditions": [
+        {
+          "type": "onSuccess"
+        },
+        {
+          "type": "envVariable",
+          "envKey": "CI",
+          "operator": "equals",
+          "value": "true"
+        },
+        {
+          "type": "configValue",
+          "configKey": "ocrmnavigator.autoDeploy",
+          "operator": "equals",
+          "value": true
+        }
+      ],
+      "executeChain": "deploy-production"
+    }
+  ]
+}
+```
+
+**Logic options:**
+- `AND` - All conditions must be true
+- `OR` - At least one condition must be true
+
+  - 10. **custom** - Custom JavaScript evaluation
+
+```json
+{
+  "label": "Custom Logic",
+  "path": "task1, task2, task3",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "custom",
+      "expression": "results.filter(r => r.success).length >= 2",
+      "executeChain": "partial-success-handler"
+    }
+  ]
+}
+```
+
+**Available variables in custom expressions:**
+- `results` - Array of all executed items with `{ label, success, result?, error? }`
+- `success` - Boolean indicating if the main chain succeeded
+
+3. Advanced Examples
+
+  - Example 1: Complete CI/CD Pipeline
+
+```json
+{
+  "label": "Full CI/CD",
+  "path": "lint, build, unit-tests, integration-tests",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "onSuccess",
+      "executeChain": "deploy-staging"
+    },
+    {
+      "type": "itemSuccess",
+      "itemLabel": "deploy-staging",
+      "executeChain": "smoke-tests"
+    },
+    {
+      "type": "itemSuccess",
+      "itemLabel": "smoke-tests",
+      "executeChain": "deploy-production, notify-slack"
+    },
+    {
+      "type": "onFailure",
+      "executeChain": "rollback, alert-team"
+    },
+    {
+      "type": "always",
+      "executeChain": "cleanup, generate-report"
+    }
+  ]
+}
+```
+
+  - Example 2: Smart Testing Strategy
+
+```json
+{
+  "label": "Smart Test Runner",
+  "path": "quick-tests",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "itemFailure",
+      "itemLabel": "quick-tests",
+      "executeChain": "full-test-suite"
+    },
+    {
+      "type": "combined",
+      "logic": "AND",
+      "conditions": [
+        {
+          "type": "itemSuccess",
+          "itemLabel": "quick-tests"
+        },
+        {
+          "type": "envVariable",
+          "envKey": "CI",
+          "operator": "equals",
+          "value": "true"
+        }
+      ],
+      "executeChain": "visual-regression-tests, performance-tests"
+    }
+  ]
+}
+```
+
+  - Example 3: Environment-Aware Workflow
+
+```json
+{
+  "label": "Context-Aware Build",
+  "path": "prebuild, build",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "fileNotExists",
+      "filePath": ".env",
+      "executeChain": "copy-env-template"
+    },
+    {
+      "type": "configValue",
+      "configKey": "ocrmnavigator.buildMode",
+      "operator": "equals",
+      "value": "production",
+      "executeChain": "optimize-assets, minify"
+    },
+    {
+      "type": "configValue",
+      "configKey": "ocrmnavigator.buildMode",
+      "operator": "equals",
+      "value": "development",
+      "executeChain": "enable-source-maps, start-watch-mode"
+    }
+  ]
+}
+```
+
+  - Example 4: Cascading Conditions
+
+```json
+{
+  "label": "Multi-Stage Pipeline",
+  "path": "stage1",
+  "type": "conditionalChain",
+  "args": [
+    {
+      "type": "onSuccess",
+      "executeChain": "stage2"
+    },
+    {
+      "type": "itemSuccess",
+      "itemLabel": "stage2",
+      "executeChain": "stage3"
+    },
+    {
+      "type": "itemSuccess",
+      "itemLabel": "stage3",
+      "executeChain": "final-deploy"
+    }
+  ]
+}
+```
+
+4. Tips & Best Practices
+
+  - 1. **Order Matters**: Conditions are evaluated in order. Later conditions can check the success of items executed by earlier conditions.
+
+  - 2. **Always Use Cleanup**: Add an `"always"` condition for cleanup tasks that should run regardless of success/failure.
+
+  - 3. **Combine with Regular Chains**: Your `executeChain` can reference any item - including other conditional chains for complex nested logic.
+
+  - 4. **Test Incrementally**: Start with simple conditions and build up to complex workflows.
+
+  - 5. **Use Descriptive Labels**: Make item labels clear so conditions are easy to understand.
+
+  - 6. **Leverage itemSuccess/itemFailure**: These are powerful for partial success scenarios where you want different actions based on which specific steps succeeded.
+
+5. Common Patterns
+
+  - Pattern: Deploy Only on Success
+```json
+{
+  "type": "onSuccess",
+  "executeChain": "deploy"
+}
+```
+
+  - Pattern: Rollback on Failure
+```json
+{
+  "type": "onFailure",
+  "executeChain": "rollback"
+}
+```
+
+  - Pattern: Environment-Based Routing
+```json
+{
+  "type": "configValue",
+  "configKey": "ocrmnavigator.env",
+  "operator": "equals",
+  "value": "prod",
+  "executeChain": "prod-workflow"
+}
+```
+
+  - Pattern: Conditional Install
+```json
+{
+  "type": "fileNotExists",
+  "filePath": "node_modules",
+  "executeChain": "npm-install"
+}
+```
+
+  - Pattern: Multi-Condition Gate
+```json
+{
+  "type": "combined",
+  "logic": "AND",
+  "conditions": [
+    { "type": "onSuccess" },
+    { "type": "envVariable", "envKey": "CI", "operator": "equals", "value": "true" }
+  ],
+  "executeChain": "deploy"
+}
+```
+
+6. Troubleshooting
+
+**Problem**: Condition not triggering
+- **Solution**: Check that the `itemLabel` matches exactly (case-sensitive)
+- **Solution**: Verify the condition type is spelled correctly
+- **Solution**: Check that referenced items exist in your config
+
+**Problem**: Custom expression failing
+- **Solution**: Test your expression syntax - remember you have access to `results` and `success` variables
+- **Solution**: Check the browser/extension console for evaluation errors
+
+**Problem**: File path not found
+- **Solution**: Use absolute paths or paths relative to workspace root
+- **Solution**: Check for typos in file paths
+
+7. Reference Item in Config
+
+All the items referenced in `executeChain` must exist somewhere in your VFS configuration:
+
+```json
+{
+  "items": [
+    {
+      "label": "My Workflow",
+      "path": "build, test",
+      "type": "conditionalChain",
+      "args": [...]
+    },
+    {
+      "label": "build",
+      "path": "npm run build",
+      "type": "powershellCommand"
+    },
+    {
+      "label": "test",
+      "path": "npm test",
+      "type": "powershellCommand"
+    },
+    {
+      "label": "deploy",
+      "path": "npm run deploy",
+      "type": "powershellCommand"
+    }
+  ]
+}
+```
 
 #### Terminal Commands
 
@@ -359,7 +873,6 @@ headers:
 
 [Layout Configuration Guide](./LAYOUT.md)
 
-##### `label`
 
 #### Auto-Generated Items
 
@@ -497,8 +1010,24 @@ Automatically generated from `package.json` when workspace initializes.
 > 
 > Going forward, the extension will embrace a more modular architecture. Previously, functionality was built either entirely in config files or as monolithic standalone functions. The modular approach demonstrated above provides better reliability, maintainability, and reusability.
 
+##### `label`
+a file item type to add a visual `title` or `seperator` in other words
 
-
+```json
+        {
+          "label": "★ ━━━━ ☆ ━━━━           PROJECT              ━━━━ ☆ ━━━━ ★",
+          "type": "label",
+          "icon": "chrome-minimize"
+        },
+        {
+          "label": "★ ━━━━ ☆ ━━━━ ★ ━━━━ ☆ ━━━━ ★ ━━━━ ☆ ━━━━ ★ ━━━━ ☆",
+          "type": "label",
+          "icon": "chrome-minimize"
+        },
+```
+The label portion can be stylized in any form you would like, when creating my own I hastily put together the above examples. The new monaco editor will have virtually all special characters that are available to us so you can use that to create a design any way you like with the available toolset.
+This item type can also have its icon customized as well. 
+In closing, just a quick warning when designing your label item types. Personally, I wanted to create all of my labels to be the same length. The above two examples, obviously do not share the same distance in length. In actuality, when vscode renders these two labels they end up, in fact, the same length. I do not know why vscodes file system / file tree renders it so much more differently but it is what it is. So if your looking at scratching your head as you look at your rendered design, your not alone
 
 ### Project Agnostic Configuration
  
@@ -674,7 +1203,7 @@ Powerful search functionality to find and execute any command you've created. Pr
 
 
 
-# Search Editor
+### Search Editor
 
 A powerful, VSCode-native search and replace interface with advanced filtering, real-time results, and inline editing capabilities.
 
