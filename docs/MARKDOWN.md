@@ -2,12 +2,10 @@
 
 ## Table of Contents
 
-1. [Markdown Tools](#markdown-tools)
-2. [Table of Contents](#table-of-contents)
-   1. [MD Viewer/Renderer](#md-viewerrenderer)
-   2. [MD Viewer/Renderer In VS Code](#md-viewerrenderer-in-vs-code)
-   3. [Catalyst Editor](#catalyst-editor)
-   4. [Convert MD File To Safe Inline String](#convert-md-file-to-safe-inline-string)
+- [MD Viewer/Renderer](#md-viewerrenderer)
+- [MD Viewer/Renderer In VS Code](#md-viewerrenderer-in-vs-code)
+- [Catalyst Editor](#catalyst-editor)
+- [Convert MD File To Safe Inline String](#convert-md-file-to-safe-inline-string)
 
 ### MD Viewer/Renderer
 

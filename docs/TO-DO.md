@@ -43,6 +43,7 @@ A comprehensive VS Code extension for managing notes, todos, reminders, and post
    - [Creating](#creating)
    - [Editing](#editing)
    - [Deleting](#deleting)
+   - [Code Highlighting](#code-highlighting)
 
 10. [Troubleshooting & Advanced Commands](#troubleshooting--advanced-commands)
 
@@ -547,6 +548,23 @@ Click `+` in the sections title pane
 
 ![Explorer pane](https://raw.githubusercontent.com/8an3/dev-notes/main/todo/github-functions.jpg)
 
+
+
+### Code Highlighting
+
+On any line item use the following format
+
+```markdown
+- [ ] terminal engine - currently if there is a dev server, nothing will execute... need to check and see if the current terminal window is busy... if it is create a new terminal instance 
+- [ ] HL:src\helpers\master.ts:330-371
+```
+
+```markdown
+- [ ] terminal engine - currently if there is a dev server, nothing will execute... need to check and see if the current terminal window is busy... if it is create a new terminal instance HL:src\helpers\master.ts:330-371
+```
+
+- IF a line item is completed, the code will NOT be highlighted
+- IF a line item is un-completed, the code will be highlighted
 
 
 # To Do, Notes and Reminders PWA Web App

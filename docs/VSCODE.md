@@ -2,32 +2,38 @@
 
 ## Table of Contents
 
-- [VSCode Extension Configuration Testing Suite](#vscode-extension-configuration-testing-suite)
-- [Performance Switch](#performance-switch)
-- [Custom VSIX Packager](#custom-vsix-packager)
-- [Region Folding](#region-folding)
-- [JSON File Formatting and Validation](#json-file-formatting-and-validation)
-- [Encoder/Decoder](#encoderdecoder)
-- [File Formatting Configurator](#file-formatting-configurator)
-- [Formatter](#formatter)
-- [Inline Imports](#inline-imports)
-- [Batch Rename](#batch-rename)
-- [Dependency "Deep Link" (packageSearch)](#dependency-deep-link-packagesearch)
-- [File Line Jumper](#file-line-jumper)
-- [File Search Jumper](#file-search-jumper)
-- [File Nesting](#file-nesting)
-- [Remove Trailing Commas](#remove-trailing-commas)
-- [Remove All Comments](#remove-all-comments)
-- [Remove console.log](#remove-consolelog)
-- [Remove Unused Imports](#remove-unused-imports)
-- [Zombie Process Killer (portReaper)](#zombie-process-killer-portreaper)
-- [Auto Zombie Process Killer](#auto-zombie-process-killer)
-- [Snapshot Engine](#snapshot-engine)
-- [The ".env" Context Swapper (envProfile)](#the-env-context-swapper-envprofile)
-- [Intelligent JSON Schema Support](#intelligent-json-schema-support)
-- [VSCode Commands reference](#vscode-commands-reference)
-- [VSCode Commands reference V2 Dynamic](#vscode-commands-reference-v2-dynamic)
-- [Auto Fold Regions At File Open](#auto-fold-regions-at-file-open)
+1. [VS Code](#vs-code)
+2. [Table of Contents](#table-of-contents)
+   1. [VSCode Extension Configuration Testing Suite](#vscode-extension-configuration-testing-suite)
+   2. [Performance Switch](#performance-switch)
+   3. [Custom VSIX Packager](#custom-vsix-packager)
+   4. [Region Folding](#region-folding)
+   5. [JSON File Formatting and Validation](#json-file-formatting-and-validation)
+   6. [Encoder/Decoder](#encoderdecoder)
+   7. [File Formatting Configurator](#file-formatting-configurator)
+   8. [Formatter](#formatter)
+   9. [Inline Imports](#inline-imports)
+   10. [Batch Rename](#batch-rename)
+   11. [Dependency "Deep Link" (packageSearch)](#dependency-deep-link-packagesearch)
+   12. [File Line Jumper](#file-line-jumper)
+   13. [File Search Jumper](#file-search-jumper)
+   14. [File Nesting](#file-nesting)
+   15. [Remove Trailing Commas](#remove-trailing-commas)
+   16. [Remove All Comments](#remove-all-comments)
+   17. [Remove console.log](#remove-consolelog)
+   18. [Remove Unused Imports](#remove-unused-imports)
+   19. [Zombie Process Killer (portReaper)](#zombie-process-killer-portreaper)
+   20. [Auto Zombie Process Killer](#auto-zombie-process-killer)
+   21. [Snapshot Engine](#snapshot-engine)
+   22. [The ".env" Context Swapper (envProfile)](#the-env-context-swapper-envprofile)
+   23. [Intelligent JSON Schema Support](#intelligent-json-schema-support)
+       1. [✨ Key Features](#-key-features)
+       2. [🛠 How it Works](#-how-it-works)
+       3. [Commands](#commands)
+   24. [VSCode Commands reference](#vscode-commands-reference)
+   25. [VSCode Commands reference V2 Dynamic](#vscode-commands-reference-v2-dynamic)
+   26. [Auto Fold Regions At File Open](#auto-fold-regions-at-file-open)
+   27. [Open file in specific editor group](#open-file-in-specific-editor-group)
 
 ### VSCode Extension Configuration Testing Suite
 
@@ -183,16 +189,25 @@ Convert multi-line imports to single-line format.
 
 ### Batch Rename
 
-Mass file renaming tool with advanced pattern matching.
+Usage:
+- in your file tree highlight all the files you want to rename
+- right click on any file that is currently highlight and select `Rename Batch`
+- this opens a text file with all the names of the selected files
+- each line is associated with that file it is referencing and whatever value is on that line when saved, overwrites the file name 
 
-**Access:** Highlight files → Right-click → Batch Rename
 
-**Features:**
-- Edit multiple filenames via generated .txt file
-- Pattern matching support
-- Regex support
-- Undo functionality
-- Bulk operations
+> [!IMPORTANT]
+> Due to the size of this extension, this is a feature that fell through the cracks. 
+> I remember when first creating this feature, I had issues creating it in terms of making it function exactly the way I wanted it to. As I was converting each function to the new naming convention, and when I got to renaming this one, I noticed that it was completely empty. 
+> My bad, ever since I decided to create the functionality I needed rather then trying to hunt down a new extension for it, I haven't opened that tab in a very long time or else I would have noticed that the extension I thought I used to use for it is infact still active. 
+>
+> With saying, this time around it has been created and functions exactly the way I want it to. Again I apologize but I hope you can understand where I'm coming from with making that mistake. 
+> 
+> Since this extension is well over the 100 mark in terms of extensions worth of functionality, even though the readme only states 100+. If I had to guess... I know its currently sitting at atleast 125 as that was the number I counted the last time but that was a while ago, 135+ maybe even 145+, I know that number is just rediculous, but I know for a fact that even at 145 its a conservatinumber and lower then the actual number. Due to a lot of features I have coded in, typically get features found from 2, 3 sometimes even 4 extensions and consolidating it down into one feature. 
+> Because of that I will never know the true number of where it's currently at. 
+> This is due to, whenever I feel that a feature is lacking in something or just needs something I wish it had but can't put my finger on it. I will go through the marketplace, search for extensions relevant to what I want, and research each one, and making notes of anything I want to include into this extension. 
+> That alone contributes the most when it comes to feature parity when comparing a feature found here to another extension in its entirety. Snippets being an area for a good example, while there are 15+ extensions devoted to snippets, with the majority of them being terrible, all of them atleast have one good idea that they implemented.
+
 
 ### Dependency "Deep Link" (packageSearch)
 

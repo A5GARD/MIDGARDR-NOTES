@@ -1,11 +1,11 @@
 
 #### todo
-- [x] need to update snippet editor
-- [x] add editor highlighting to todo
 - [ ] finish layout engine
+- [ ] the layout engine with 3 cols... when its finished, all three columns are focused at the same time. meaning you have to click each cols editors in order to drop the "focused" state in each. we need to progmatically drop focus and refocus the 2nd col
+- [ ] rename batch fell through the cracks as it seems we are still running off of the other extension
+- [ ] remove format on paste in monaco editor
+- [ ] in the catalyst editor we need to make sure if you are currently in a stylized note or important or warning, that the editor automatically put `>` whenever you press enter to continue the note
 - [ ] finish off renaming functions -> `ocrmnavigator.addCategory` -> `ocrmnavigator.master.addCategory`
-- [x] need to add quickpick engine
-- [x] need to add item type to add currenty worksapces devstack setting as a file item
 - [ ] finish of search editor
 - [ ] needs to add some kind of notice in regard to the new funcitnos and its formatr
 - [ ] ### Need to implement function on / off switches for:
@@ -16,6 +16,10 @@
 - [x] focusMode: A specialized toggle.Utility: Toggles Zen Mode, hides the Sidebar, and hides the Activity Bar all in one click to help with deep work
 - [x] fix add item via web 
 - [x] to do list: code highlighting
+- [x] need to add item type to add currenty worksapces devstack setting as a file item
+- [x] need to add quickpick engine
+- [x] add editor highlighting to todo
+- [x] need to update snippet editor
 
 - [ ] ★ ━━━━ ☆ ━━━━     README.md     ━━━━ ☆ ━━━━ ★
   - [x] terminal engine... currently if there is currently a daev serverv nothing will run... we need to check and see if the current terminal window is busy... if it is creater a new window HL:src\helpers\master.ts:330-371

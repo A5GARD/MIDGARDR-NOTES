@@ -110,7 +110,7 @@ To include Pro7 Archiver in custom command sequences:
 {
   "label": "Your Label",
   "type": "command",
-  "path": "ocrmnavigator.pro7Archiver",
+  "path": "ocrmnavigator.pro7.acrhive",
   "hidden": true
 }
 ```

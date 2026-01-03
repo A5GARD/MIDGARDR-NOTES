@@ -29,6 +29,8 @@
 - [Reveal In Explorer](#reveal-in-explorer)
 - [Copy Path](#copy-path)
 - [Search](#search)
+- [Search Editor](#search-editor)
+
 
 #### Item Types
 
@@ -672,48 +674,108 @@ Powerful search functionality to find and execute any command you've created. Pr
 
 
 
-### Search Editor
+# Search Editor
 
-It is modeled after vscodes search editor, exactly, so it will feel and operate in the same fashion. As for added features:
-- Opens a search editor with template for search params
-- Executes search showing 5 lines before/after each match
-- Full find/replace functionality (replace single or replace all)
-- there will be four inputs using codelense to create them within an text editor, exactly the way vscode created
-  - for exmaple, you search for xyz, 50 results pop up
-  - but you don't want to change all 50 results, just one
-  - instead of navigating to that file, which would be double clicking the search result, to navigate to that line OR searching in THAT file for the line you need to get to 
-  - you will be able to make the changes from the search editor itself, making changes remotely and it will edit the relevant file in question
-- Changes are tracked automatically
-- When you save (Ctrl+S), all your edits get applied back to the original files
-- Double-click navigation to jump to the actual file
-- File type filters
-- toggable fuse.js search capabilties, disaplyed as a button inside the first input along with regex, case match and amtch whole word
-- toggles based in the first input for:
-  - Regex (already there conceptually)
-  - Case sensitive
-  - Match whole word
-  - Fuzzy search
-- toggles based in the files to include input for:
-  - search in open editors only
-- toggles based in the files to exclude input for:
-  - use exclude settings and ignore files
+A powerful, VSCode-native search and replace interface with advanced filtering, real-time results, and inline editing capabilities.
+
+## Features
+
+### 🔍 Advanced Search Options
+- **Regex Support**: Toggle regex pattern matching with the `.*` button
+- **Case Sensitivity**: Control case-sensitive matching with the `Aa` button
+- **Whole Word Match**: Match complete words only with the `Ab` button
+- **Fuzzy Search**: Enable approximate matching with the `≈` button
+
+### 🎯 Search Scopes
+Click the scope button to cycle through:
+- 📁 **Workspace**: Search entire workspace
+- 📄 **Open Files**: Search only currently open editors
+- 📝 **Current File**: Search active file only
+- 🔀 **Git Changes**: Search only modified files in git
+
+### 📂 File Filtering
+- **Include Patterns**: Narrow search to specific file types
+  - Examples: `**/*.ts`, `src/**/*`, `**/*.{js,jsx}`
+- **Exclude Patterns**: Filter out unwanted files
+  - Examples: `node_modules/**`, `**/*.test.ts`, `dist/**`
+- **Use Settings**: Toggle to use your VSCode exclude settings (⚙️)
+- **Save Patterns**: Save up to 10 frequently used patterns with 💾
+
+### ⚡ Real-Time Results
+- Results stream in as they're found (no waiting for completion)
+- Live result counter shows matches across files
+- Animated loading indicator during search
+
+### ✏️ Inline Editing
+- **Edit on Hover**: Click any result line to edit it inline
+- **Individual Replace**: Replace button appears on hover for each match
+- **Batch Replace**: Replace all matches at once
+- **Save All**: `Ctrl+Shift+S` saves all open editors after changes
+
+### ⌨️ Keyboard Shortcuts
+- `Enter` in search box: Start search
+- `Alt+J`: Navigate to previous result
+- `Alt+L`: Navigate to next result
+- `Alt+K`: Replace current result
+- `Ctrl+Shift+S`: Save all changes
+- `Ctrl+Click` on result: Multi-select results
+
+### 📊 Search History
+- Access previous searches via the **History** button
+- Shows timestamp and result count for each search
+- Click any history item to restore that search
+- Clear history when needed
+
+## Usage
+
+### Basic Search
+1. Type your search query in the search input
+2. Results appear automatically as you type (300ms debounce)
+3. Click any result to jump to that location in the file
+
+### Search and Replace
+1. Click the `›` chevron next to the search input to reveal replace field
+2. Enter replacement text
+3. Click **Replace All** or use inline replace buttons
+
+### File Filtering
+1. Click 📂 button to enable include patterns
+2. Enter glob pattern (e.g., `**/*.ts` for TypeScript files only)
+3. Click 💾 to save frequently used patterns
+4. Click 🚫 button to enable exclude patterns
+5. Use same glob syntax to exclude files/folders
+
+### Pattern Examples
+```
+Include patterns:
+  **/*.ts              - All TypeScript files
+  src/**/*             - All files in src directory
+  **/*.{js,jsx,ts,tsx} - All JS/TS files
+  components/**/*.tsx  - TSX files in components
+
+Exclude patterns:
+  node_modules/**      - Exclude node_modules
+  **/*.test.ts         - Exclude test files
+  dist/**              - Exclude build output
+  **/*.min.js          - Exclude minified files
+```
+
+## Performance
+
+- **File Discovery**: Uses ripgrep via VS Code's `findFiles()` API
+- **Text Search**: Attempts to use internal ripgrep API, falls back to optimized manual search
+- **Streaming Results**: Results displayed in batches (every 10 files or 50 results)
+- **Binary Detection**: Automatically skips binary files
+- **Debounced Input**: 300ms delay prevents excessive searches while typing
 
 
+## Future Enhancements
 
-
-
-
-
----
-
-[🡄 Return](https://github.com/8an3/DevStack)
-
-
-
-
-
-
-
-
-
+- [ ] Search within selection
+- [ ] Multi-root workspace support
+- [ ] Export results to file
+- [ ] Regular expression builder/tester
+- [ ] Search result folding by file
+- [ ] Syntax highlighting in results
+- [ ] Replace preview before applying
 

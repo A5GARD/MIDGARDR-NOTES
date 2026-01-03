@@ -1,5 +1,13 @@
 # Layout Configuration Guide
 
+As it currently stands, the redesign is 100% in a useable state as I have the 2 workspaces that I'm currently in host configs and to make the testing process even harder for my instance, in terms to working on this extension, instead of using the dev server for testing, I have just been doing hard instance restarts or completely closing and reopening vscode with zero issues but there are 2 things needed to be fixed / completed. In the grand scheme of things aren't that big of a deal. 
+
+The first being the extension object in which, it is currently and entirely inactive. I have yet to receive word from microsoft in regards to this issue, but I'm not surprised due to the holiday season. At this point I seriouisly have no hope for this feature due to what I believe is a serious enough security threat to warrant ms to have their security team look into and fix, BUT who knows due to the nature of the software they may not deem it a threat at all, although I give that a 1% chance in happening, lol 1% may still happen. As I have deleted the explanation of how it works so as to not teach anyone else how to emulate it, but quickly after many attempts at getting it to work I finally was able to get it to a point where vscode closes and then re-opens with disabling the extensions the user specifies. Microsoft... does not want extensions doing this, DESPITE the fact that they do currently have a command in which an extension can disable ALL extensions at once. With saying that, in terms of inidvidual control of disabling extensions, ms has blocked virtually all avenues to do so. The workaround I found, escapes vscodes instance / sandbox and executes the command to open a new vscode instance... on the host itself, with zero ties to the vscodes instance. That is where the 1% of hope comes from, as you shouldn't be able to escape the sandbox to run any command in any shape or form on the host, adding fuel to the fire also having zero ties to the vscode instance. Meaning that an attacker could place a script to automatically run at any time of their choosing, whether or not your vscode instance is open and can still run AFTER you close the instance. 
+
+Ater some considerable thought on this, whether or not microsoft deems it a threat I will not be coding this into the extension. As I have put myself through several offsec courses, I don't think the positives out weigh the negatives in order to include this and expose that door. Trust me when I say this, it pains me to not include this in the feature set of the extension.
+
+The second are the on close objects for `git` and `onClose`. Currently these items are just running on initial load but I will continue to work on these to get them working they are a pretty valuable feature to have. 
+
 #### The Workspace Layout Engine, a sophisticated orchestrator that allows you to define and switch between entire development environments with a single click. It doesn't just change a theme; it reconfigures the entire VS Code UI, opens your project files in specific grid positions, and prepares your terminal environment.
 
 Designed for developers who switch contexts frequently—moving from heavy feature development to a focused debugging session or a minimal writing environment. It automates the tedious process of rearranging your editor every time you start a task.
@@ -37,10 +45,10 @@ This guide explains how to configure custom workspace layouts using the DevStack
 >            "ocrmnavigator.insertIcon": "alt+i",
 >            "ocrmnavigator.catalystUIQuickPick": "alt+u",
 >            "ocrmnavigator.contextSnippets": "alt+s",
->            "ocrmnavigator.insertR3g10n": "alt+r",
->            "ocrmnavigator.insertEndR3g10n": "alt+e",
->            "ocrmnavigator.wrapWithR3g10n": "alt+w",
->            "ocrmnavigator.openUi": "alt+q",
+>            "ocrmnavigator.region.insert": "alt+r",
+>            "ocrmnavigator.endregion.insert": "alt+e",
+>            "ocrmnavigator.region.wrap": "alt+w",
+>            "ocrmnavigator.devstack.site": "alt+q",
 >            "clipboardManager.showHistory": "alt+h",
 >            "bookmarks.show": "alt+b",
 >            "ocrmnavigator.showGithubMenu": "alt+g",
@@ -127,6 +135,7 @@ This guide explains how to configure custom workspace layouts using the DevStack
 >         "editorGrid": {
 >           "columns": 2,
 >           "rows": 2,
+>           "version": "plex",
 >           "groups": [
 >             { "slot": [ 0, 0 ], "active": "src/main.ts" }, // Top Left
 >             { "slot": [ 1, 0 ], "active": "src/types.ts" }, // Top Right
@@ -146,9 +155,63 @@ This guide explains how to configure custom workspace layouts using the DevStack
 > 
 >      </details>
 >
-> - **git** → Parameters: `branch`, `onload`, `onclose`
+> During long term testing of the above grid system, personally I did not use the `plex` aspect of the layout system. There is a caveat to using the plex system, in that the feature that controls which col your files open cannot be used due to how each `square`, `column`, or `row` is made but I know people will want to use this style. Instead of being totally greedy and selfish and just reverting back to the old system, allowing me to gain a feautre I wanted back. Most of all, since it is already coded and working I decided to go with both variants and adding the value `version` that takes either `plex` | `classic`.
+>
+> The same also effects terminal grid, in which there will be 2 versions avialable as each grid system is made virtually identical to one another.
+>
+>     <details closed><summary>Classic Editor Grid</summary>
+>
+>     ```json
+>          "editorGrid": {
+>                "orientation": 0,
+>                "version": "classic",
+>                "editorFocus": "last",
+>                "groups": [
+>                  { "size": 0.2 },                  
+>                  { "size": 0.45 },
+>                  { "size": 0.45 }
+>                ],
+>                "files": [
+>                  { "path": ".vscode/ntrsync/10516_DevStack_todo.md", "group": 1, "pinned": true },
+>                  {
+>                    "group": 2,
+>                    "pinned": true,
+>                    "foldLevel": [1,2],
+>                    "path": [
+>                      "src/extension.ts",
+>                      "src/helpers/master.ts",
+>                      "src/helpers/menus.ts",
+>                      "src/helpers/context.ts",
+>                      "src/helpers/search.ts",
+>                      "src/extension/navigatorView.ts",
+>                      "src/helpers/itemsActionsMenu.ts",
+>                      "src/helpers/modular-commands.ts"
+>                    ]
+>                  },
+>                  {
+>                    "group": 3,
+>                    "pinned": true,
+>                       "foldLevel": [1,2],
+>                    "path": [
+>                      "README.dev.md",
+>                      "package.dev.jsonc",
+>                      "F:/DevStack/docs/LAYOUT.md",
+>                      "F:/DevStack/docs/VFS2.md",
+>                      "F:/DevStack/docs/VFS.md",
+>                      "src/helpers/search.ts",
+>                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/project-configs/project-1744496862041-y866zpqtd9.json",
+>                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/global-navigator-config.json"
+>                    ]
+>                  }
+>                ]
+>              },
+>     ```
 > 
->    <details closed><summary>terminalGrid config</summary>
+>      </details>
+> 
+> - **terminalGrid** → Now the engine sports 3 different version for executing commands in terminals. The first two are listed below in the examples. The third and final version is is using the items path value, just like a powershell command, vscode command or debian command. Along with declaring `"version": "classic",` immediatly following the path value. This variant is for people who only want to run one single command and do not wish to create a speacialized terminal for it. This makes it so each variant has there own specfic flags for the function to scan and become aware of which you would like to use
+> 
+>    <details closed><summary>Terminal grid config plex 2x2 layout</summary>
 >
 >     ```json
 >       "terminalGrid": {
@@ -164,6 +227,61 @@ This guide explains how to configure custom workspace layouts using the DevStack
 >         },
 >     ```
 > 
+>      </details>
+>
+> 
+>    <details closed><summary>Terminal grid config classic 2x1 layout</summary>
+>
+>     ```json
+>            "terminalGrid": {
+>                 "orientation": 0,
+>                 "version": "classic",
+>                 "terminals": [
+>                   {
+>                     "name": "Top-Left (API)",
+>                     "group": 1,
+>                     "cmd": "echo 'right'",
+>                     "location": "editor",
+>                     "priority": 1
+>                   },
+>                   {
+>                     "name": "Top-Right (UI)",
+>                     "group": 2,
+>                     "cmd": "echo 'right'",
+>                     "location": "editor",
+>                     "priority": 1
+>                   }
+>                 ]
+>               },
+>     ```
+> 
+>      </details>
+> 
+> - **git** → Parameters: `branch`, `onload`, `onclose`
+>
+>
+>    <details closed><summary>terminalGrid config</summary>
+>
+>     ```json
+>       "git": {
+>                     "branch": "dev",
+>                     "onLoad": [
+>                       {
+>                         "label": "pnpm i & ini / push prisma & ini .env & run scaffolding",
+>                         "path": "echo 'git on load'",
+>                         "type": "powershellCommand"
+>                       }
+>                     ],
+>                     "onClose": [
+>                       {
+>                         "label": "pnpm i & ini / push prisma & ini .env & run scaffolding",
+>                         "path": "echo 'git on close'",
+>                         "type": "powershellCommand"
+>                       }
+>                     ]
+>                   },
+>
+>         ```
 >      </details>
 > 
 > - **extensions** → Control which extensions are active based on workspace context or configuration. Instead of being limited to 10-20 active extensions, you can now install 50+ extensions and swap between different sets with a single click. Switch from coding to debugging mode with completely different active extensions, dramatically expanding your available toolset.
@@ -603,10 +721,10 @@ I've structured each section to mirror either VS Code's native configuration pat
         "ocrmnavigator.insertIcon": "alt+i",
         "ocrmnavigator.catalystUIQuickPick": "alt+u",
         "ocrmnavigator.contextSnippets": "alt+s",
-        "ocrmnavigator.insertR3g10n": "alt+r",
-        "ocrmnavigator.insertEndR3g10n": "alt+e",
-        "ocrmnavigator.wrapWithR3g10n": "alt+w",
-        "ocrmnavigator.openUi": "alt+q",
+        "ocrmnavigator.region.insert": "alt+r",
+        "ocrmnavigator.endregion.insert": "alt+e",
+        "ocrmnavigator.region.wrap": "alt+w",
+        "ocrmnavigator.devstack.site": "alt+q",
         "clipboardManager.showHistory": "alt+h",
         "bookmarks.show": "alt+b",
         "ocrmnavigator.showGithubMenu": "alt+g",
@@ -1013,7 +1131,7 @@ I've structured each section to mirror either VS Code's native configuration pat
         "ocrmnavigator.commands": true,
         "ocrmnavigator.vscodecmdref": true,
         "ocrmnavigator.markdownViewer": true,
-        "ocrmnavigator.snippets": true,
+        "ocrmnavigator.devstack.site.snippets": true,
         "ocrmnavigator.snippetsInEditor": true,
         "ocrmnavigator.editorContextSnippets": true,
         "ocrmnavigator.formatters": true,
@@ -1038,7 +1156,7 @@ I've structured each section to mirror either VS Code's native configuration pat
         "ocrmnavigator.bookmarks": true,
         "ocrmnavigator.searchBar": true,
         "ocrmnavigator.clipBoardHistory": true,
-        "ocrmnavigator.colorWheel": true,
+        "ocrmnavigator.devstack.site.colorWheel": true,
         "ocrmnavigator.lucideIcons": true,
         "ocrmnavigator.share": true,
         "ocrmnavigator.url": true,
@@ -1049,13 +1167,13 @@ I've structured each section to mirror either VS Code's native configuration pat
         "ocrmnavigator.viewers": true,
         "ocrmnavigator.uiDashboard": true,
         "ocrmnavigator.devStackFunctions": true,
-        "ocrmnavigator.openLeftOffNote": true,
+        "ocrmnavigator.leftOffNote.open": true,
         "ocrmnavigator.renderMd": true,
         "ocrmnavigator.createFolderSmartIndex": true,
         "ocrmnavigator.tailwindConverter": true,
         "ocrmnavigator.convertToAgnostic": true,
-        "ocrmnavigator.concurrent": true,
-        "ocrmnavigator.autoSequencer": true
+        "ocrmnavigator.vfs.concurrent.execute": true,
+        "ocrmnavigator.vfs.chain.execute": true
       },
       "workbench.colorCustomizations": {
         "background": "#020817",
@@ -1624,7 +1742,7 @@ This section is devoted to key:value pairs that do not have enough in quantity t
         "ocrmnavigator.commands": true,
         "ocrmnavigator.vscodecmdref": true,
         "ocrmnavigator.markdownViewer": true,
-        "ocrmnavigator.snippets": true,
+        "ocrmnavigator.devstack.site.snippets": true,
         "ocrmnavigator.snippetsInEditor": true,
         "ocrmnavigator.editorContextSnippets": true,
         "ocrmnavigator.formatters": true,
@@ -1649,7 +1767,7 @@ This section is devoted to key:value pairs that do not have enough in quantity t
         "ocrmnavigator.bookmarks": true,
         "ocrmnavigator.searchBar": true,
         "ocrmnavigator.clipBoardHistory": true,
-        "ocrmnavigator.colorWheel": true,
+        "ocrmnavigator.devstack.site.colorWheel": true,
         "ocrmnavigator.lucideIcons": true,
         "ocrmnavigator.share": true,
         "ocrmnavigator.url": true,
@@ -1660,13 +1778,13 @@ This section is devoted to key:value pairs that do not have enough in quantity t
         "ocrmnavigator.viewers": true,
         "ocrmnavigator.uiDashboard": true,
         "ocrmnavigator.devStackFunctions": true,
-        "ocrmnavigator.openLeftOffNote": true,
+        "ocrmnavigator.leftOffNote.open": true,
         "ocrmnavigator.renderMd": true,
         "ocrmnavigator.createFolderSmartIndex": true,
         "ocrmnavigator.tailwindConverter": true,
         "ocrmnavigator.convertToAgnostic": true,
-        "ocrmnavigator.concurrent": true,
-        "ocrmnavigator.autoSequencer": true
+        "ocrmnavigator.vfs.concurrent.execute": true,
+        "ocrmnavigator.vfs.chain.execute": true
 }
 ```
 
@@ -2242,7 +2360,14 @@ const generateVSCodeTheme = (twCss, gitDecorations = true, scmDiffDecorations = 
 
 ## Tips
 
-> [!TIP] Additional Resources
+> [!TIP] 
+> The following settings cannot be active while using the layout engine. While it doesn't actually hurt anything the behaviours will be modified by these settings, ie the first setting will automatically close any and all files not yet pinned essentially undoing any file opening events done by the engine.
+> - `workbench.editor.enablePreview` - will auto close files
+> - `workbench.editor.limit.enabled` - will auto close files
+
+
+> [!TIP] 
+> Additional Resources
 > - [VS Code Settings Reference](https://code.visualstudio.com/docs/getstarted/settings)
 > - [VS Code API Documentation](https://code.visualstudio.com/api)
 > - [Workspace Configuration](https://code.visualstudio.com/docs/editor/workspaces)

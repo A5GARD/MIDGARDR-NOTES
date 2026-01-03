@@ -18,7 +18,7 @@ To save on time, and due to the crazy amount of updates this extension receives,
 
 <!-- #endregion ✓✓ in readme and tested -->
 
-<!-- #region ✓ in readme -->
+<!-- #region The ".env" Context Swapper (envProfile) -->
 
 <details closed><summary  style="font-size: 1.2em;">The ".env" Context Swapper (envProfile)</summary>
 
@@ -48,8 +48,8 @@ To save on time, and due to the crazy amount of updates this extension receives,
 </details>
 
 <!-- #endregion ✓ in readme -->
-<!-- #region ✓ in readme -->
-<details closed><summary  style="font-size: 1.2em;">✓ VSCode commands has been rebuilt</summary>
+<!-- #region VSCode commands has been rebuilt -->
+<details closed><summary  style="font-size: 1.2em;">VSCode commands has been rebuilt</summary>
 
 - with the addition of referencing EVERY SINGLE VSCODE cmd at your disposal for the item creating process, I might as well recreate this and have it perform better
 - list will now comprise of over 1550+ vscode commands, ONTOP of ALL of devstacks commands
@@ -79,7 +79,8 @@ To save on time, and due to the crazy amount of updates this extension receives,
 #### snapshot engine
 
 #### persistant bookmarks
-<!-- #region ✓ in readme -->
+
+<!-- #region Search Editor -->
 <details closed><summary  style="font-size: 1.2em;">Search Editor</summary>
 It is modeled after vscodes search editor, exactly, so it will feel and operate in the same fashion. As for added features:
 - Opens a search editor with template for search params
@@ -108,8 +109,10 @@ It is modeled after vscodes search editor, exactly, so it will feel and operate 
 </details>
 
 <!-- #endregion ✓ in readme -->
+
 #### VSCode Extension Configuration Testing Suite
-<!-- #region ✓ in readme -->
+
+<!-- #region DevStack Commands -->
 <details closed><summary  style="font-size: 1.2em;">DevStack Commands</summary>
 suprisingly I had the first collision take place just recently, due to adding notes and to do into the extension. Obviously hosting it own functions where I didn't need to worry about that, but when brought over it created an issue for the already in place github features, which prompted a change in how devstack commands will be made moving forward. The change offers enough of a benefit in warranting the change made through the extension. Not just for you, but also myself, in where each command will instantly tell us where the command originated from and allows for a far more simpler naming convention for example:
 - `ext.gitHubPushCommand` → `ext.git.push`
@@ -141,6 +144,7 @@ Just to name a few, these are some of the git commands available in which all, a
 - ocrmnavigator.git.databasepushtorepo
 - ocrmnavigator.git.dbSeed
 - ocrmnavigator.git.dbGen
+- ocrmnavigator.git.showFullToken
 - ocrmnavigator.git.dbStudio
 - ocrmnavigator.project.clean
 - ocrmnavigator.project.DukeNUKEM
@@ -150,13 +154,12 @@ Just to name a few, these are some of the git commands available in which all, a
 - ocrmnavigator.vscode.RTS
 - ocrmnavigator.vscode.RWINDOW
 - ocrmnavigator.vscode.DEVTOOLS
-- ocrmnavigator.git.showFullToken
 
 Only downside is, if you have already built config items consisting of commands from devstack, then you will 100% have to update them. This was a necessary change, and I would rather do this now rather than when there is another 1500 commands available. Sooner or later this would have had to be taken care of, but atleast with this new format it makes everything even more simple. I just wish I could change the first part, the only reason I am not is because it would truly break every current users... everything. Settings that they already have in place, configs, and so on. And creating the housework of recreating and reconfiguring everything that they already in have place.
 </details>
 
 <!-- #endregion ✓ in readme -->
-<!-- #region ✓ in readme -->
+<!-- #region Monaco update two - catalyst editor -->
 <details closed><summary  style="font-size: 1.2em;">Monaco update two - catalyst editor</summary>
 
 the added updates continues to push it farther and farther away from its original idea of just a markdown editor
@@ -172,7 +175,7 @@ the added updates continues to push it farther and farther away from its origina
 </details>
 
 <!-- #endregion ✓ in readme -->
-<!-- #region ✓ in readme -->
+<!-- #region Snippets -->
 <details closed><summary  style="font-size: 1.2em;">Snippets</summary>
 
 I really need to atleast add something to this doc whenever I do something, I just dont have the time. 
@@ -202,12 +205,26 @@ in short, a lot of updates because I know I'm missing a couple. Making this in t
 </details>
 
 <!-- #endregion ✓ in readme -->
-<!-- #region ✓ in readme -->
+<!-- #region On File Open -->
  
+ <details closed><summary  style="font-size: 1.2em;">On File Open</summary>
+ Accidently coded a... pretty massive mistake that, when I realized what it was actually doing, I fell in love with it so much that I want to continue using it. It is def not something every user would enjoy using though or in some cases could even use. Because of that, I will fix it obviously BUT will offer choices to users rather then forcing the user to take the feature and deal with it and even providing an off option
+
+The new setting will be called `ocrmnavigator.vfs.onFileOpen`
+- `forceCenterFocus`
+  - instead of just the below action of opening a file in a certain column, it actually takes it a step farther in which it not only opens new files in the set column but for example in my case my workspace has 3-4 columns every single workspace, the first being the smallest, and the proceeding cols split the remaining space equally. number 2 being the one I actively code the majority of my time, with this setting no matter what file you click on it just re opens that same file in the set col. So if I click on an already open file in column 3, instead of just scrolling through it, it leaves the original file in col 3 to continue viewing, but then opens that same file in col 2 to keep actively using solely that column for coding while the other columns now are just for viewing purposes
+  - that is too obnoxious and agressive of a ux behaviour to offer as a default, lol, but after using it for an hour, after I realized what was actually happening since I made a mistake, so far I actually really like it. Now I know my usecase is niche as hell as most users typically only have one monitor, and if they have two monitors in order to obtain more real estate. They always have one window they code mostly in... usually. But I have a super ultra wide, while I will not ever go back to a multi monitor setup, I know not many people have this type of monitor. But if you do, I suggest atleast trying it, or even if your the type of person who codes on one of your 2 monitors for the majority of the time.
+- `openInSetCol`
+  - opens new files only, in the set column
+- `off`
+  - for the people that don't want any part of this, this will just return null in the function and do absolutely nothing
+
+</details>
+
+<!-- #endregion ✓ in readme -->
 
 #### 
 
-#### 
 
 
 ####
@@ -222,6 +239,7 @@ in short, a lot of updates because I know I'm missing a couple. Making this in t
 | Intelligent JSON Schema Support               | ✗       | ✗     |
 | VSCode Extension Configuration Testing Suite  | ✓ ish   | ✗     |
 | VSCode commands has been rebuilt              | ✓       | ✓     |
+| G4 & .vsix: Complete Build Process            | ✗       | ✓     |
 | Concurrent and VFS base code   | ✓                      | ✓     |
 | File Link Jumper               | ✓                      | ✓     |
 | monaco editer updates          | ✓                      | ✗     |
@@ -236,6 +254,12 @@ in short, a lot of updates because I know I'm missing a couple. Making this in t
 | Search Editor                  | ✓ ish                  | ✗     |
 | DevStack Commands              | ✗                      | ✗     |
 | Snippets                       | ✗                      | ✗     |
+| MD PRE-PROCESSOR               | ✗                      | ✓     |
+| Regex Utilities                | ✗                      | ✗     |
+| Regex Cheatsheet               | ✗                      | ✓     |
+| Development Tools              | ✗                      | ✓     |
+| Settings Management            | ✗                      | ✓     |
+| On File Open                   | ✗                      | ✓     |
 
 
 <!-- #### To do, Notes, Reminders
