@@ -1,73 +1,190 @@
-# 🖱️ Editor Context Menu Registry
-
-> **File:** `EDITOR_CONTEXT.md`
-> **Scope:** Surgical tools available directly within the active text editor buffer.
-
-| Feature / Sub-Menu | Capability | UX / Implementation Details |
-| --- | --- | --- |
-| **Open Github Repo At File** | [ADD DESCRIPTION] | Instant deep-link to current line/file on GitHub. |
-| **Open Github Repo in Browser** | [ADD DESCRIPTION] | Opens the root repository for the current project. |
-| **Open Left Off Note** | [ADD DESCRIPTION] | Recall the specific session note for this workspace. |
-| **Scan File Imports** | [ADD DESCRIPTION] | Mapping and validating all active imports in the buffer. |
-| --- | --- | --- |
-| 💎 **CATALYST-UI** | **Sub-Menu Core** | **One-click full-stack UI orchestration.** |
-| ∟ Components Viewer | [ADD DESCRIPTION] | Visual gallery for library components. |
-| ∟ Install Catalyst-UI | **Full Setup** | From blank project to working: Installs Tailwind, PostCSS, and Catalyst. Configures theme presets (2500+ comps) and 45+ fonts in one click. |
-| ∟ Install (Exclude Configs) | **Surgical Setup** | Install library components into an existing environment without overwriting configs. |
-| ∟ 23 Component Categories | **2500+ Components** | Inserts at cursor. Hover cards include 2 usage examples, props, and values. Eliminates the need for external docs. |
-| --- | --- | --- |
-| 🛠️ **DEVSTACK** | **Sub-Menu Core** | **Advanced Editor Controls & Logic.** |
-| ∟ Render MD | [ADD DESCRIPTION] | standard Markdown rendering. |
-| ∟ Render MD In VSCode | [ADD DESCRIPTION] | Native preview within the editor pane. |
-| ∟ Context Snippets | [ADD DESCRIPTION] | Trigger snippets based on current file scope. |
-| ∟ Import Snippets | [ADD DESCRIPTION] | Bulk import snippet libraries. |
-| ∟ Create Custom .vsix | [ADD DESCRIPTION] | Archive and package current dev state. |
-| ∟ Performance Switch | **Granular Toggle** | Disable/Enable per file or globally to optimize editor overhead. |
-| ∟ Add File to DevStack | [ADD DESCRIPTION] | Register current file to the VFS logic. |
-| ∟ Add Bookmark | [ADD DESCRIPTION] | Enterprise bookmarking at the line level. |
-| ∟ Config Search | [ADD DESCRIPTION] | Direct search through DevStack configuration items. |
-| --- | --- | --- |
-| ✨ **FORMATTERS** | **Sub-Menu** | *Features found within this sub-menu: [ADD DESCRIPTION]* |
-| 🐙 **GITHUB FUNCTIONS** | **Sub-Menu** | *Features found within this sub-menu: [ADD DESCRIPTION]* |
-| ⬢ **PRISMA** | **Sub-Menu** | *Features found within this sub-menu: [ADD DESCRIPTION]* |
-| 💿 **REMIX** | **Sub-Menu** | *Features found within this sub-menu: [ADD DESCRIPTION]* |
-| ❄️ **SHADCN** | **Sub-Menu** | *Features found within this sub-menu: [ADD DESCRIPTION]* |
-
 
 ```text
-EDITOR_CONTEXT_MENU/
-├── 📄 Open Github Repo At file ............ [ADD DESCRIPTION]
-├── 📄 Open Github Repo in Browser ......... [ADD DESCRIPTION]
-├── 📄 Open Left Off Note .................. [ADD DESCRIPTION]
-├── 📄 Scan File Imports ................... [ADD DESaCRIPTION]
+DEVSTACK_SYSTEM_ROOT/
+├── 🧠 INTELLISENSE_SCHEMA_ENGINE/ ........... Proprietary Language Server & JSON Mapping
 │
-├── 📂 CATALYST-UI/
-│   ├── 📄 Components viewer ............... [ADD DESCRIPTION]
-│   ├── 📄 Install Catalyst-ui ............. 1-Click: Tailwind + PostCSS + 2500 Comps
-│   ├── 📄 Install (Excl. Configs) ......... Install components without touching setup
-│   └── 📂 23_CATEGORIES_OF_COMPONENTS/
-│       └── 📄 2500+_Components ............ Hover cards: 2 usage examples + props + values
+├── ⚙️ TERMINAL_AND_MULTI_KERNEL_NGIN/
+│   ├── 📂 VFS_CORE/
+│   │   ├── 📄 Virtual Filing System ......... Core VFS Engine
+│   │   ├── 📄 Item Types .................... VFS item types
+│   │   ├── 📄 Files & Navigation ............ File management and navigation
+│   │   ├── 📄 Commands & Automation ......... Command execution and automation workflows
+│   │   ├── 📄 Terminal Commands ............. Terminal command integration
+│   │   ├── 📄 Utilities ..................... Utility functions and helpers
+│   │   └── 📄 Auto-Generated Items .......... Automatically generated VFS items
+│   ├── 📂 CONFIGURATION_AND_EXCEPTIONS/
+│   │   ├── 📄 Complete Example .............. Production configuration walkthrough
+│   │   ├── 📄 Usage ......................... Usage guidelines and examples
+│   │   ├── 📄 DevStack Quick Pick ........... Command quick pick guide
+│   │   ├── 📄 Getting Started w/ Chains ..... Chain automation guide
+│   │   ├── 📄 Extension Configuration ....... Extension settings overview
+│   │   ├── 📄 Configuration Settings ........ Detailed configuration options
+│   │   ├── 📄 Core Settings ................. Core extension settings
+│   │   ├── 📄 GitHub Integration ............ GitHub integration settings
+│   │   ├── 📄 Feature Toggles ............... Feature flags and toggles
+│   │   ├── 📄 Example Configuration ......... Configuration examples
+│   │   ├── 📄 Copy Path ..................... Path copying utilities
+│   │   ├── 📄 Reveal In Explorer ............ File explorer integration
+│   │   ├── 📄 Project Agnostic Setup ........ Framework-agnostic configuration
+│   │   ├── 📄 Search ........................ Search functionality for config items
+│   │   └── 📄 Remote Resource Mgmt .......... Profiles for configs: save/download/edit
 │
-├── 📂 DEVSTACK/
-│   ├── 📄 Render MD ....................... [ADD DESCRIPTION]
-│   ├── 📄 Render MD In VSCode ............. [ADD DESCRIPTION]
-│   ├── 📄 Context Snippets ................ [ADD DESCRIPTION]
-│   ├── 📄 Import Snippets ................. [ADD DESCRIPTION]
-│   ├── 📄 Create Custom vsix archive ...... [ADD DESCRIPTION]
-│   ├── 📂 PERFORMANCE_SWITCH/
-│   │   ├── 📄 Disable For Current File .... Kill overhead for active buffer
-│   │   ├── 📄 Enable Everything ........... Global system activation
-│   │   ├── 📄 Enable For Current File ..... Surgical activation
-│   │   └── 📄 Disable everything .......... Full system dormancy
-│   ├── 📄 Add File To DevStack ............ [ADD DESCRIPTION]
-│   ├── 📄 Add Bookmark .................... [ADD DESCRIPTION]
-│   └── 📄 DevStack Config Search .......... Search items within devstacks config
+├── 📝 AUTHORING_SUITE/
+│   ├── 📂 MARKDOWN_TOOLS/
+│   │   ├── 📄 MD Viewer/Renderer ............ Standard Markdown viewing
+│   │   ├── 📄 MD Viewer In VS Code .......... Native VS Code integration
+│   │   ├── 📄 Convert MD to Safe String ..... Markdown to safe inline string
+│   │   ├── 📄 Markdown Cheat Sheet .......... Markdown reference
+│   │   └── 📄 Markdown Pre-Processor ........ Markdown preprocessing
+│   ├── 📂 SNIPPETS_AND_SNAPSHOTS/
+│   │   ├── 📄 Code Snapshot ................. Snapshot selection to beautiful terminal window
+│   │   ├── 📄 Workspace Context ............. Context-aware code snippets
+│   │   └── 📄 Best-In-Class Editor .......... Create snippets/VFS items in seconds
+│   └── 📂 CATALYST_EDITOR/ .................. Monaco-level Markdown Editor
+│       ├── 📄 MD Features ................... 150-200+ click-to-clipboard MD features
+│       ├── 📄 Special Chars ................. HTML and MD style format character list
+│       ├── 📂 PRE_MADE_ASSETS/
+│       │   ├── 📄 File Trees ................ Automated folder visualization
+│       │   ├── 📄 Progress Bars ............. Markdown progress indicators
+│       │   ├── 📄 ASCII Tables .............. Pre-formatted tables
+│       │   ├── 📄 Spinners .................. 17+ different loading spinners
+│       │   ├── 📄 Terminal Dashboards ....... Terminal-style UI layouts
+│       │   ├── 📄 Code Block Previews ....... Code styling previews
+│       │   ├── 📄 Terminal Menus ............ Visual terminal menu blocks
+│       │   ├── 📄 Terminal Logs ............. Logs with hierarchy visualization
+│       │   ├── 📄 Git Branch Viz ............ Branch style visualization
+│       │   ├── 📄 Status Indicators ......... Terminal status boxes
+│       │   ├── 📄 Notification Boxes ........ Terminal notification styling
+│       │   ├── 📄 Output Separators ......... Command output dividers
+│       │   ├── 📄 Nested Data ............... Nested data structure visualization
+│       │   ├── 📄 Activity Timeline ......... Sequential activity logs
+│       │   ├── 📄 Box Drawing ............... Character-based box drawing
+│       │   └── 📄 Badges and Logos .......... Pre-made badges and icons
+│       ├── 📄 Readme Generator .............. Feature-rich readme builder
+│       ├── 📄 Remote Access ................. Connect remotely to open workspace MD files
+│       └── 📄 Local Settings ................ Locally saved editor settings
 │
-├── 📂 FORMATTERS/ ......................... [ADD DESCRIPTION]
-├── 📂 GITHUB_FUNCTIONS/ ................... [ADD DESCRIPTION]
-├── 📂 PRISMA/ ............................. [ADD DESCRIPTION]
-├── 📂 REMIX/ .............................. [ADD DESCRIPTION]
-└── 📂 SHADCN/ ............................. [ADD DESCRIPTION]
+├── 🎨 CATALYST_UI_AND_ICONS/
+│   ├── 📂 CATALYST_UI_LIBRARY/
+│   │   ├── 📄 Catalyst UI ................... Component library core
+│   │   ├── 📄 Editor Context Insert ......... Context menu component insertion
+│   │   ├── 📄 Quick Pick Insert ............. Quick pick component insertion
+│   │   └── 📄 Automated Installation ........ Install library through extension
+│   └── 📂 ICONS_LIBRARY/
+│       ├── 📄 Icons NPM Package ............. Package integration
+│       └── 📄 Icons Quick Pick .............. Icon selection tool
+│
+├── 🧪 FRAMEWORK_UTILITIES/
+│   ├── 📂 REMIX_RUN_MASTER/
+│   │   ├── 📂 PROJECT_PROJECT_UTILS/
+│   │   │   ├── 📄 npx create-remixv2 ........ Scaffolding engine
+│   │   │   ├── 📄 V1 -> V2 Conversion ........ Routing migration
+│   │   │   ├── 📄 Monorepo Conversion ........ Single app to monorepo
+│   │   │   ├── 📄 Create Single App ......... React Router setup
+│   │   │   ├── 📄 Platform Conversion ....... Convert to Platform X
+│   │   │   ├── 📄 Create Monorepo ........... Monorepo scaffolding
+│   │   │   ├── 📄 Build & Deploy ............ Automation workflow
+│   │   │   └── 📄 RR Folder Routing ......... React Router routing logic
+│   │   ├── 📂 AUTH_UTILITIES/
+│   │   │   ├── 📄 Install Auth .............. Authentication setup
+│   │   │   └── 📄 Install OTP ............... One-time password setup
+│   │   └── 📂 ROUTE_UTILITIES/
+│   │       ├── 📄 Automatic Action .......... Remix action generator
+│   │       ├── 📄 Context Utils ............. Components/Functions
+│   │       ├── 📄 Browser Integration ....... Open route file in browser
+│   │       ├── 📄 Route File Creator ........ Create route files
+│   │       ├── 📄 Test Generator ............ Tests for routes/actions
+│   │       ├── 📄 Code Insertion ............ Remix Run insert code
+│   │       ├── 📄 Error Boundary ............ Error boundary generator
+│   │       ├── 📄 Meta Function ............. Meta function utility
+│   │       ├── 📄 Links Function ............ Links function utility
+│   │       ├── 📄 Preview Route ............. Preview route URL
+│   │       └── 📄 Action Object ............. Create action object
+│   ├── 📂 PRISMA_ARCHITECT/
+│   │   ├── 📄 Best Practice Guide ....... Prisma best practices
+│   │   ├── 📄 Include Object ............ Create include object
+│   │   ├── 📄 Schema Navigation ......... Click to schema object
+│   │   ├── 📄 CRUD Resolver Gen ......... Resolvers / REST endpoints
+│   │   ├── 📄 Auto Create Schema ........ Automatic schema generation
+│   │   └── 📄 Visualizer ................ Schema relations visualization
+│   └── 📂 SHADCN_UI/
+│       ├── 📄 Add Components ............ Component addition
+│       ├── 📄 Install w/ Config ......... Component install with configuration
+│       └── 📄 Insert Components ......... Component insertion
+│
+├── 🔧 SURGICAL_TOOLS_AND_FORMATTERS/
+│   ├── 📂 THE_JANITOR/
+│   │   ├── 📄 Trailing Commas ........... Remove trailing commas
+│   │   ├── 📄 Comment Killer ............ Remove all comments
+│   │   ├── 📄 Console.log Killer ........ Remove all console.log
+│   │   ├── 📄 Unused Imports ............ Remove unused imports
+│   │   ├── 📄 Inline Imports ............ Inline imports utility
+│   │   └── 📄 JSON Validator ............ Formatting and validation
+│   ├── 📂 ENCODER_DECODER_LAB/
+│   │   ├── 📄 PNG to Base64
+│   │   ├── 📄 JPG to Base64
+│   │   ├── 📄 WEBP to Base64
+│   │   ├── 📄 PDF to Base64
+│   │   ├── 📄 Base64 to PNG
+│   │   ├── 📄 Base64 to JPG
+│   │   ├── 📄 Base64 to WEBP
+│   │   ├── 📄 Base64 to PDF
+│   │   ├── 📄 CSV to JSON
+│   │   ├── 📄 PNG to SVG
+│   │   ├── 📄 JPG to SVG
+│   │   ├── 📄 WEBP to SVG
+│   │   └── 📄 MP4 to MP3
+│   ├── 📂 TAILWIND_CONVERTER/
+│   │   └── 📄 Color/Version ............. v3 <-> v4, oklch, hsl, #
+│   ├── 📂 FILE_MANAGEMENT/
+│   │   ├── 📂 NAVIGATION/
+│   │   │   ├── 📄 File Search Jumper .... Navigation search
+│   │   │   ├── 📄 File Line Jumper ...... Quick line navigation
+│   │   │   └── 📄 packageSearch ......... Dependency deep link
+│   │   ├── 📂 UTILITIES/
+│   │   │   ├── 📄 Batch Rename .......... Bulk renaming
+│   │   │   ├── 📄 File Nesting .......... Nesting configuration
+│   │   │   ├── 📄 Region Folding ........ Manual/Auto region folding
+│   │   │   └── 📄 VSIX Packager ......... Custom extension packaging
+│   │   └── 📂 REGEX/
+│   │       ├── 📄 Regex Utilities ....... Regex tools
+│   │       └── 📄 Regex Cheatsheet ...... Reference guide
+│   └── 📂 PORT_AND_PROCESS/
+│       ├── 📄 portReaper ................ Zombie process killer
+│       └── 📄 Auto Reaper ............... Automatic cleanup
+│
+├── 🌐 DEVSTACK_WEB_UI/ ...................... External Tools Portfolio
+│   ├── 📄 VSCode Cmd Reference .......... Built-in command library
+│   ├── 📄 Markdown Cheat Sheet .......... Web-based reference
+│   ├── 📄 Color Wheel .................. Visual color picker
+│   ├── 📄 React/Tailwind Sandbox ........ Development playground
+│   ├── 📄 Theme Builder ................. settings.json & tailwind.css generator
+│   ├── 📄 Color Converter .............. Multi-format conversion
+│   ├── 📄 Typography Tester ............. Font testing suite
+│   ├── 📄 Layout Generator .............. UI layout tools
+│   ├── 📄 X Tester ...................... Cross-testing utilities
+│   ├── 📄 Components Reel ............... Component showcase
+│   └── 📄 Code Carousel ................. Code display tool
+│
+└── 📂 SYSTEM_AND_WORKSPACE/
+    ├── 📂 VSCODE_STYLING/
+    │   ├── 📄 Blacked Out ............... Theme variant
+    │   ├── 📄 Blued Out ................. Theme variant
+    │   ├── 📄 Window Differentiator ..... Styling differentiation
+    │   └── 📄 Theme Reset ............... Reset window styling
+    ├── 📂 CONFIG_MANAGEMENT/
+    │   ├── 📄 Share/Export Config ....... Bulk sharing/export
+    │   ├── 📄 View Config Example ....... Configuration examples
+    │   ├── 📄 Global Import Config ...... Missing imports utility
+    │   ├── 📄 Default Apps .............. App configurations
+    │   ├── 📄 Export Index Gen .......... Named/Export index creator
+    │   └── 📄 JSON Config Editor ........ Edit .json configs directly
+    ├── 📂 WORKSPACE_CONTEXT/
+    │   ├── 📄 Left Off Note ............. Session note tracking
+    │   ├── 📄 Snapshot Engine ........... Code snapshot system
+    │   └── 📄 Layout Engine ............. Advanced marketplace layout engine
+    └── 📂 AUTOMATION_EVENTS/
+        ├── 📄 Auto Fold Regions ......... Settings-based folding
+        └── 📄 Forced Editor Groups ...... Specific group opening
 ```
-
 
