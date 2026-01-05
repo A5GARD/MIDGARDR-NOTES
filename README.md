@@ -1,6 +1,6 @@
 # TAILWIND_NGIN
 
-<pre>
+<pre style="max-width: 800px; white-space: pre-wrap; overflow-wrap: break-word;">
 / DEVSTACK_SYSTEM_ROOT/
 ├── 📂 TABLE_OF_CONTENTS/
 └── 📍 TAILWIND_NGIN/
