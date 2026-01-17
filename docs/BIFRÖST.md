@@ -4,94 +4,162 @@
 
 
 <pre style="max-width: 800px; white-space: pre-wrap; overflow-wrap: break-word;">
-/ DEVSTACK_SYSTEM_ROOT/
-└── ⚙️ [TERMINAL_AND_MULTI_KERNEL_NGIN](https://github.com/8an3/dev-notes/blob/main/docs/VFS.md)/
-    ├── 📂 VFS_CORE/
-    │   ├── 📂 <a href="#item-types">Item Types </a>
-    │   │   ├── 📄<a href="#file">file</a>
-    │   │   ├── 📄<a href="#md">md</a>
-    │   │   ├── 📄<a href="#fileAtLine">fileAtLine</a>
-    │   │   ├── 📄<a href="#folder">folder</a>
-    │   │   ├── 📄<a href="#url">url</a>
-    │   │   ├── 📄<a href="#command">command</a>
-    │   │   ├── 📄<a href="#chain">chain</a>
-    │   │   ├── 📄<a href="#concurrent">concurrent</a>
-    │   │   ├── 📄<a href="#cmdChain">cmdChain</a>
-    │   │   ├── 📄<a href="#conditionalChain">conditionalChain</a>
-    │   │   ├── 📄<a href="#powershellCommand">powershellCommand</a>
-    │   │   ├── 📄<a href="#debianCMD">debianCMD</a>
-    │   │   ├── 📄<a href="#snippet">snippet</a>
-    │   │   ├── 📄<a href="#copyValue">copyValue</a>
-    │   │   ├── 📄<a href="#settingsToggle">settingsToggle</a>
-    │   │   ├── 📄<a href="#search">search</a>
-    │   │   ├── 📄<a href="#apiCall">apiCall</a>
-    │   │   ├── 📄<a href="#layout">layout</a>
-    │   │   ├── 📄<a href="#tasks">tasks</a>
-    │   │   ├── 📄<a href="#npmScripts">npmScripts</a>
-    │   │   └── 📄<a href="#label">label</a>
-    │   ├── 📄<a href="#virtual-filing-system">Virtual Filing System</a> .......... Core VFS Engine
-    │   ├── 📄<a href="#files-navigation">Files & Navigation</a> ............. File management and navigation
-    │   ├── 📄<a href="#commands-automation">Commands & Automation</a> .......... Command execution and automation workflows
-    │   ├── 📄<a href="#terminal-commands">Terminal Commands</a> .............. Terminal command integration
-    │   ├── 📄<a href="#utilities">Utilities</a> ...................... Utility functions and helpers
-    │   ├── 📄<a href="#project-agnostic-configuration">Project Agnostic Setup</a> ......... Framework-agnostic configuration
-    │   ├── 📄<a href="#remote-resource-mgmt">Remote Resource Mgmt</a> ........... Profiles for configs: save/download/edit
-    │   └── 📄<a href="#auto-generated-items">Auto-Generated Items</a> ........... Automatically generated VFS items
-    └── 📂 CONFIGURATION_AND_EXCEPTIONS/
-        ├── 📄<a href="#complete-example">Complete Example</a> ............... Production configuration walkthrough
-        ├── 📄<a href="#usage">Usage</a> .......................... Usage guidelines and examples
-        ├── 📄<a href="#getting-started-w-chains">Getting Started w/ Chains</a> ...... Chain automation guide
-        ├── 📄<a href="#extension-configuration">Extension Configuration</a> ........ Extension settings overview
-        ├── 📄<a href="#configuration-settings">Configuration Settings</a> ......... Detailed configuration options
-        ├── 📄<a href="#core-settings">Core Settings</a> .................. Core extension settings
-        ├── 📄<a href="#feature-toggles">Feature Toggles</a> ................ Feature flags and toggles
-        ├── 📄<a href="#example-configuration">Example Configuration</a> .......... Configuration examples
-        ├── 📄<a href="#copy-path">Copy Path</a> ...................... Path copying utilities
-        ├── 📄<a href="#reveal-in-explorer">Reveal In Explorer</a> ............. File explorer integration
-        ├── 📄<a href="#search">Search</a> ......................... Search functionality for config items
-        ├── 📄<a href="#remote-resource-mgmt-config">Remote Resource Mgmt</a> ........... Profiles for configs: save/download/edit
-        └── 📄<a href="#architecture-notes">Architecture Notes</a> ........... Breaking down the inner workings of the extension
-              ├── 📄<a href="#environment-variable-integration">Environment Variable Integration</a> ........... using .env vars
-              ├── 📄<a href="#modular-function-building">Modular Function Building</a> ........... 
-              ├── 📄<a href="#the-philosophy-of-automation">The Philosophy of Automation</a> ........... 
-              ├── 📄<a href="#the-autorun-system">The Autorun System</a> ........... 
-              ├── 📄<a href="#dynamic-package-manager-detection">Dynamic Package Manager Detection</a> ........... 
-              ├── 📄<a href="#intelligent-terminal-command-engine">Intelligent Terminal & Command Engine</a> ........... 
-              ├── 📄<a href="#concurrent-and-chain">Concurrent And Chain</a> ........... 
-              ├── 📄<a href="#autonomous-maintenance">Autonomous Maintenance</a> ........... 
-              ├── 📄<a href="#naming-conventions">Naming Conventions</a> ........... 
-              ├── 📄<a href="#settings-migration">Settings & Migration</a> ........... 
-              ├── 📄<a href="#pro7">pro7</a> ........... 
-              ├── 📄<a href="#local-encryption">Local Encryption</a> ........... 
-              ├── 📄<a href="#context">Context</a> ........... 
-              ├── 📄<a href="#vsix-archiver">VSIX Archiver</a> ........... 
-              └── 📄<a href="#publishing-to-marketplace">Publishing To Marketplace</a> ...........
+/DEVSTACK_SYSTEM_ROOT/
+├── 📂 TABLE_OF_CONTENTS/
+│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/OVERVIEW.md">OVERVIEW</a> 
+│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/USAGE.md">GETTING STARTED & USAGE</a> 
+│   ├── <a href="#license">LICENSE</a> 
+│   └── <a href="#acknowledgments">ACKNOWLEDGMENTS</a>
+│  
+├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📂%20BIFRÖST%20/%20-0284c7?style=plastic" valign="middle"></a> .......................... Terminal and Multi Kernel Ngin
+│   ├── 📂 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md">Item Types</a> ..................... VFS item types
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L55">`file`</a> ..................... Providing shortcuts to any file in any location 
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L77">`md`</a> ....................... Same as above, but for md
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L80">`fileAtLine`</a> ............... Instead opens the file at a specific line number
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L89">`folder`</a> ................... To house virtual file items within for organization
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L108">`url`</a> ...................... When executed, opens that url in your default browser
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L117">`command`</a> .................. Executes vscode command
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L145">`chain`</a> .................... Executes any item type in a sequential firing order
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L160">`concurrent`</a> ............... Executes all commands, at once
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L203">`cmmdChain`</a> ................ A chain of commands consisting of only vscode commands
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L223">`conditionalChain`</a> ......... Depending on your checks, can execute or not in any form 
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L733">`powershellCommand`</a> ........ Executes powershell commands
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L751">`debianCMD`</a> ................ Executes baash commands in WSL's Debian enviroment
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L769">`snippet`</a> .................. Copy snippet body to clipboard
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L776">`copyValue`</a> ................ Copy value to clipboard
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L787">`settingsToggle`</a> ........... Toggle workspace or global settings.json key:value pair
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L809">`search`</a> ................... Searches, executed whenever you need with a click 
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L821">`apiCall`</a> .................. Trigger Pre-made HTTP API requests at any time 
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L892">`tasks`</a> .................... Auto generates within the explorer for easy access
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L895">`npmScripts`</a> ............... Same as above but with your packages scripts
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L1029">`label`</a> .................... Visual divider used to break up an area
+│   │   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L1029"><img src="https://img.shields.io/badge/♦%20Dependency%20Manager-ca8a04?style=plastic" valign="middle"></a> ......... Install/uninstall/update multiple npm packages in one click 
+│   │   │    ├── with predefined sets (ie "React setup" installs react, react-dom, types in one go 
+│   │   │    └── vs typing each npm install command)
+│   │   └── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L885">`layout`</a> ................... Taking complete control, of vscode and its interface
+│   │        ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/LAYOUT.md"><img src="https://img.shields.io/badge/📄%20ATLAS%20/%20-0284c7?style=plastic" valign="middle"></a> : WS Layout Ngin</a> . Total environment restoration in one click. Instantly reset 
+│   │        │   ├── theme, UI visibility, terminals, tabs, view focus and more
+│   │        └── <a href="#in-development"><img src="https://img.shields.io/badge/♠%20ATLAS%20V2%20/-86198f?style=plastic" valign="middle"></a> Global, Profile and Workspace context intelligent 
+│   │            ├── Stale / garbage data cleaner - VSCode leaves data behind, even after 
+│   │            │   └── uninstalling extensions from years ago that you didn't even know was there 
+│   │            ├── 4 level of user access, varying in levels of complexity starting with:
+│   │            │   ├── Level 1: Muggles ( Basic UI configuration, and UI style manipulation
+│   │            │   │    └── of 18,000 configurations through only 3 choices. Font, preset and theme )
+│   │            │   ├── Level 2: Casual nerds 
+│   │            │   ├── Level 3: Power users
+│   │            │   ├── Level 4: SAURON MODE, if you crave a level of manipulation so great that you 
+│   │            │   │    ├── just can't satisfy that itch till EVERYTHING is modified exposing, 
+│   │            │   │    └── literally, as much as I can get away
+│   │            │   ├── So complicated, microsoft doesnt even attempt trying anymore. Making 
+│   │            │   ├── it so new or experienced, you will not only find it easy
+│   │            │   ├── to use but will find continous use as your skill grows.
+│   │            │   ├── Levels 1-3 will ONLY feature configurations that can be set
+│   │            │   ├── with a toggle or a dropdown menu. So you don't even have 
+│   │            │   ├── to look up any documentation. For  the ones who like
+│   │            │   ├── a bit spicier of a experience, sauron mode will host every
+│   │            │   ├── single value that is avialable to manipulate no 
+│   │            │   ├── matter how that value gets set. If you think the Ngin
+│   │            │   ├── is crazy in terms of the level of configurations 
+│   │            │   └── just wait and see what V2 will have.
+│   │            ├── Ignore all toasts / notifications / recommendations  
+│   │            ├── Custom icons usable through the vscode ui??? Maybe.... 
+│   │            └── Workspace context extension toggle ( Another dream has
+│   │                 └── come back from the grave, did NOT see this one coming ) 
+│   │     
+│   ├── 📄 <a href="https://github.com/8an3/DevStack">Virtual Filing System</a> .......... Core VFS Engine 
+│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L53">Files & Navigation</a> ............. File management and navigation
+│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L115">Commands & Automation</a> .......... Command execution and automation workflows
+│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L731">Terminal Commands</a> .............. Terminal command integration
+│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L767">Utilities</a> ...................... Utility functions and helpers
+│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L">Project Agnostic Setup</a> ......... Framework-agnostic configuration 
+│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📄%20Move%20VFS%20Item%20-0284c7?style=plastic" valign="middle"></a> .................. Move items with ease with the VSCode ui 
+│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♦%20Copy%20workspace%20folder-ca8a04?style=plastic" valign="middle"></a> ............. Provides a list of folders contained within other configs, 
+│   │    └──  once clicked pastes it into the current configs file
+│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L890">Auto-Generated Items</a> ........... Automatically generated VFS items
+│   │
+│   ├── 📂 CONFIGURATION_AND_MORE/
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L1057">Complete Example</a> ............ Production configuration walkthrough
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3434">Usage & Previews</a> ............ Examples and previews
+│   │   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3434"><img src="https://img.shields.io/badge/♠%20Extended%20Usage%20Preview-86198f?style=plastic" valign="middle"></a> ........ Recorded coding session proving zerp performance losses
+│   │   │    └── despite having 100+ extensions worth of functions.
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L940">Getting Started w/ Chains</a> ... Chain automation guide
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG_EXAMPLES.md">Config Items Examples</a> ....... Production configuration walkthrough
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2954">Extension Configuration</a> ..... Extension settings overview
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3781">Configuration Settings</a> ...... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3785">Core Settings</a> ............... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3798">Code Snapshot Settings</a> ...... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3820">GitHub Integration</a> .......... Single click multi function operations
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3840">Build & Automation Settings</a> . The lack of non-automation
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3860">UI & Interface Settings</a> ..... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3873">Feature Toggles</a> ............. Feature flags and toggles 
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2932">Copy Path</a> ................... Path copying utilities
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2919">Reveal In Explorer</a> .......... File explorer integration
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2942">Search</a> ...................... Search functionality for config items
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">JSON Config Editor</a> .......... Edit .json configs directly
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">Share/Export Config</a> ......... Bulk sharing/export
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">View Config Example</a> ......... Configuration examples
+│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">Default Apps</a> ................ App configurations
+│   │   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♠%20Remote%20Resource%20Mgmt-86198f?style=plastic" valign="middle"></a> ........ Profiles for configs: save/download/edit </span>
+│   │   └── 📄<a href="#architecture-notes">Architecture Notes</a> ........... Breaking down the inner workings of the extension
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#environment-variable-integration">Env Var Integration</a> ..... using .env vars
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#modular-function-building">Modular Func. Building</a> .. Exposing more functions to use
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#the-philosophy-of-automation">Automation Principles</a> ... How it came to be 150+ extensions
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#the-autorun-system">The Autorun System</a> ...... Help with build processes
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#dynamic-package-manager-detection">Dynamic Package Manager</a> . Scan for your package mgr at execution time
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#intelligent-terminal-command-engine">Terminal & Command Ngin</a> . The breakdown
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#concurrent-and-chain">Concurrent And Chain</a> .... What can be acheived
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#autonomous-maintenance">Autonomous Maintenance</a> .. Removing the dev from the equation
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#naming-conventions">Naming Conventions</a> ...... So as to not have to include docs, for every single thing
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#settings-migration">Settings & Migration</a> .... 
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#pro7">pro7</a> .................... Password protected that can be pushed 
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#local-encryption">Local Encryption</a> ........ 
+│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#context">Context</a> ................. 
+│   │        └── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#vsix-archiver">VSIX Archiver</a> ........... Custom less restrictive archiving tool
+│   │  
+│   ├── 📂 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CUSTOM_FUNCTIONS.md">CUSTOM_FUNCTION_BREAKDOWNS</a>/
+│   │   ├── 📄 Order 1 through # ........... Step by step breakdown on executing order #
+│   │   └── 📄  ............................
+│   │
+│   └── 📂 STATUSBAR_AND_CONTEXT_MENU_SYSTEM/
+│       ├── 📂 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">STATUS_BAR_DASHBOARDS</a> ....... What you have access to
+│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Clipboard History Pro</a> .... Simply, the windows version vscode
+│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Bookmarks</a> ................ Bookmark anything, anywhere
+│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Icons</a> .................... React icons, inserts at cursor / copies to clipboard
+│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Snapshot Ngin</a> ............ Instant snapshot
+│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">UI</a> ....................... Copies to clipboard one of 2500+ components
+│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">BE</a> ....................... Bleeding edge features
+│       │   └── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">DevStack</a> ................. Main quickpick encompassing a great many of topics
+│       ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/EXPLORER_CONTEXT.md">EXPLORER_CONTEXT_MENU</a> ........ Accessing features bound to file type
+│       └── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/EDITOR_CONTEXT.md">EDITOR_CONTEXT_MENU</a> .......... A treasure trove of functions
+│
 </pre>
 
 Before getting into item types, I wanted to get into another topic real quick, that the features found within this extension may feel like a ton of features quickly jammed into one, which couldn't be farther from the truth. 
 
 To help with this I started giving features names of norse and greek gods in order to add a bit of separation from eachother, since Loki AI not only was a great fit for that feature but it made it stand out from the others. Nothing was rushed in terms of adding / creating features. Most of them, should be their own extension take snippets for example, which hosts a feature parity that surpasses paid and enterprise products, yet it gets lost among the other features. Which sucks, because someone wanting a great snippet editor... may never see it. Below is a list of the names used and why they were used:
-- ATLAS - Titan who holds up the celestial spheres perfect for layout/UI manipulation suggests "supporting/structure"
-- BIFRÖST (Current: Terminal & Multi-Kernel Ngin) Rainbow bridge connecting realms (different terminals/OSs) Perfect for cross-environment terminal system implies connection/communication
-- ODIN (search editor) He sacrificed for knowledge/wisdom the all-seeing/all-knowing aspect fits search functionality
-- VALHALLA - Hall of the slain (where data "lives") dramatic but fitting for data storage as Odin gathers warriors here (data points) database related features currently sqlite3 only
-- RÚNAR - Norse for "runes" - magical symbols, snippets are modern magical runes
-- THOR (Current: Tailwind Plugin Ngin) for powerful styling/UI utilities suggests "power/impact"
-- YGGDRASIL (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
-- VÖLUNDR (Master smith/craftsman (Wayland the Smith)) for cleanup/refactoring/automation tools suggests "craftsmanship/maintenance"
-- HUGINN & MUNINN (Remix/Prisma utilities) Odin's ravens: Thought and Memory for framework utilities
-- TYR (Current: Port & Process/Errors) God of law, justice, heroic glory for debugging/error handling suggests "order/resolution"
-- FREYR (Current: VS Code Styling/Theming) For theming/beautification tools suggests "abundance/beauty"
-- SKÁLD (Current: Catalyst Editor) Norse poets/storytellers for documentation/markdown/editing tools suggests "crafting stories/narratives"
-- MÍMIR - DevArchive
-- RATATOSKR - File Tree Builder/Visualization tool
-- LOKI - AI
-- HEPHAESTUS - UI
-- VIÐARR - Automation events
-- NEMESIS - Create Incoming Tunnel
-- HERACLES - Batch Rename
-- HERMES - API Secret Grabber
-- HEIMDALLR - Intellisense Schema Ngin
+- 𐌀 ATLAS - Titan who holds up the celestial spheres perfect for layout/UI manipulation suggests "supporting/structure"
+- ᛒ BIFRÖST (Current: Terminal & Multi-Kernel Ngin) Rainbow bridge connecting realms (different terminals/OSs) Perfect for cross-environment terminal system implies connection/communication
+- ᚨ ODIN (search editor) He sacrificed for knowledge/wisdom the all-seeing/all-knowing aspect fits search functionality
+- ᚹ VALHALLA - Hall of the slain (where data "lives") dramatic but fitting for data storage as Odin gathers warriors here (data points) database related features currently sqlite3 only
+- ᚱ RÚNAR - Norse for "runes" - magical symbols, snippets are modern magical runes
+- ᚦ THOR (Current: Tailwind Plugin Ngin) for powerful styling/UI utilities suggests "power/impact"
+- ᛇ YGGDRASIL (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
+- ᚹ VÖLUNDR (Master smith/craftsman (Wayland the Smith)) for cleanup/refactoring/automation tools suggests "craftsmanship/maintenance"
+- ᚺ HUGINN & ᛗ MUNINN (Remix/Prisma utilities) Odin's ravens: Thought and Memory for framework utilities
+- ᛏ TYR (Current: Port & Process/Errors) God of law, justice, heroic glory for debugging/error handling suggests "order/resolution"
+- ᛜ FREYR (Current: VS Code Styling/Theming) For theming/beautification tools suggests "abundance/beauty"
+- ᛊ SKÁLD (Current: Catalyst Editor) Norse poets/storytellers for documentation/markdown/editing tools suggests "crafting stories/narratives"
+- ᛗ MÍMIR - DevArchive
+- ᚱ RATATOSKR - File Tree Builder/Visualization tool
+- ᛚ LOKI - AI
+- 𐌇 HEPHAESTUS - UI
+- ᚹ VIÐARR - Automation events
+- 𐌍 NEMESIS - Create Incoming Tunnel
+- 𐌇 HERACLES - Batch Rename
+- ☿ HERMES - API Secret Grabber
+- ᚺ HEIMDALLR - Intellisense Schema Ngin
+- ᛊ SAGA - Goddess who sits beside Odin and tells him stories Associated with history and remembering Perfect for notes that tell the "story" of your work Simple, memorable name
+
 
 ## Item Types
 
@@ -107,17 +175,6 @@ Quick access to frequently-used files with customizable labels and icons.
 ```json
 { "label": "prisma.schema", "path": "prisma/prisma.schema", "type": "file" }
 ```
-
-> [!NOTE]
-> UPDATE TO `FILE` AND `MD`
->
-> This update includes something I didn't know ould be done before now, as well as a fix to pathing.
->
-> 1. any time you open a doc through the `file`, and `md` item types they will now:
->   - Will not open in preview mode ( if you don't know what this means, there are a couple of different file opening events that can happen based on several factors, settings.json values being one of the, where and how you open the files and so on. As a default settings vscode opens all files through the explorer pane IN preview mmode, so if you ever experieneced opening a file, and then opening another before editing the first file, only to have that first file close when you opened the second. That's the garbage preview mode by setting any file you open in a `temp` state, or however you want to call it, and if you don't take it out of that `temp` state by making a file change ie edit any line in the doc, it closes whenever you open another file, its fucking stupid imo and NOW whenever you open a file through vfs in place of the explorer pane, you will not experience said garbage )
->   - docs will now open in the editor group of your choice, if you configure the extensions settings `ocrmnavigator.vfs.targetEditorGroup`, if you want to take advantage of the layout engine OR if you usually use more that one editor group you can ie, setting this value to 3 will now open all of your docs in the third editor group. ( I'm still playing around with hijacking the doc opening event, I may be able to get this done, I may not. Currently I'm testing a new approach in which I'm ACTUALLY hijacking the open doc event which would be a lot better than the first approach that has already been tested and confirmed to work the issue is, it does not actually hijack the event, instead it reacts to the open file event, then once the file is open it THEN checks to see which editor group is open and if it isn't in the correct editor group it closes the file in question to open in the correct group. Personally, I thought I would absolutely hate the fact that it opens, closes and reopens, but after testing it is so fast that I'm 100% fine with it. So at the very least the second option is available. Currently testing is unavailable due to working on the layout engine and the new way editor and terminal groups that I'm still working on. Anyways this update is good because it future proofs, IF I have to go with the second option )
->   - focuses the editor
-> 2. the second update is to the file path value saved in your item config, for some reason, I don't know why, but apparently I had the tendency to use full paths instead of relative. Made a new config for a new workspace and non of my files were opening, and then looking at the code, was like shiitt, lol, so sorry if you ran into this problem but its fixed now and just so no ones configs break, you can supply either the full path or relative 
 
 #### `md`
 works the same as file does
@@ -187,7 +244,8 @@ Execute any VS Code command with a single click. Access 550+ built-in VS Code co
 }
 ```
 
-#### `chain` - Sequential Execution
+#### `chain` 
+##### Sequential Execution
 Execute commands one after another in your specified order. When creating items through the interface, the concurrent/sequential creation process enters a for loop allowing you to add as many custom or listed commands as needed.
 
 ```json
@@ -201,6 +259,137 @@ Execute commands one after another in your specified order. When creating items 
 **Advanced Usage**: Mixed sequential/concurrent flows, conditional execution
 
 **Preview**: [Video](https://youtu.be/ySp83VqxQ8s) | [Image](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
+
+##### Unique Example #2
+
+This one wont be as unique, but will demonstrate... just how far and how much can be automated through the terminal engine. Save on space, I won't include EVERY single item... as with this one there... is a lot to it.
+
+- End result, have 4 of my personal projects, do whatever it is each needs to do in order to update, copy, paste, compile, push, delete, and a great many of other things
+    - projects effects:
+      1. devstack
+      2. icons
+      3. ui
+      4. devstack command line
+      5. css 
+- Build Projs Nuke ( in my config, whenever I have a command that encompases all within the given context, using nuke for a shortened naming convention and typically having the explanation in the tooltip )
+   - at this point, not only making it easier to build this command but also to allow me to trigger each command on its own each of the following projects does have an item associated with it allowing me to execute one whenever needed instead of all of them. Each of the main items are chain or concurrent item types
+   1. devstack
+      - each of the commands in this chain goes as follows:
+      1. trigger auto run folder
+      2. copy over ui libraries inventory objects
+      3. copy over icon libraries inventory 
+      4. create both ui and icon quickpick and editor context menus to ensure both lists are updated
+      5. convert package.dev.json
+      6. compile
+      7. delete pro7 archive ( the only reason I take this step instead of relying on .vscodeignore, is because I have already talked to their security team because I had inadvertently included a password protected archive among the items that were pushed when creating the .vsix )
+      8. create custom .vsix archive
+      9. push new archive
+      10. install new archive
+      11. create new pro7 archive
+      12. push to clean local repo
+      13. bump minor
+      14. push tags
+**if it weren't for the autorun feature, this list would be a lot longer, but having it lets you dump... in whatever number you may need, scripts that run execution.**
+  2. icons
+     1. takes whatever svgs that are currently in the svg folder, create the react components needed to use them within a project
+     2. compiles 
+     3. scans the newly created items from the src folder, and with their filenames creating an unorded list between two markers set within the readme.md file after it deleting the entire section first
+     4. pushes to github
+     5. updates minor
+     6. pushes tags
+     7. push to npm ( this command I actually lost for a while, due to the fact of not knowing exactly how the new required commands / pat system worked with npm since they do not want you to progmatically update your libraries anymore, it seems. Adding pain to injury, I hope this has changed, but I must have read the docs day one of the new requirement... as there were virtually none on their site, aside from a banner notifying users of said new requirement. I do have to manually adjust this command... once every 90 days I think but atleast its only doing something manually once in that time instead of every single time with a newly created pat because, to my knowledge and hopefully I'm proved wrong in this regard, creating said pat manually on their site. Which is bulshit imo as far as secuirty is concerned. This is such a low point of entry for attackers, it is FAR easier to go after the user instead, once you have control of their accounts, the attacker... once every 90 days... can still go in and create their own token. )
+
+Anyways... you get the point of taking chores that are required of us that take in some cases quite a while, but instead it runs itself with a click at which time I play a round of aram in lol as this command does effect a lot of projects. For you though, if you didn't want to create a nuke sized command like mine, but would still love to benefit from the same automation for any individual project you may have, executing one of the orders 1 through 11 will net the end result you are looking for. <a href="https://github.com/8an3/dev-notes/blob/main/docs/CUSTOM_FUNCTIONS.md">Custom functions</a> does a break down on them that will work in a great many variety of project structures and architectures, OR you can also build it out yourself with devstack since each function is built in a modular fashion and each of them are exposed to you to use.
+
+#### Getting Started with Chains
+
+> [!TIP] 
+> The `chain` type is the most powerful feature in DevStack. It allows you to combine multiple commands into a single workflow, dramatically reducing the steps required for common development tasks.
+>
+> Example 1: Git Workflow with Version Bump
+> This chain automates the complete process of committing, pushing, and incrementing your package version:
+> ```text
+> type: chain
+> path: gitAdd, gitCom, gitPush, bumpVers, gitPush, gitPushTags
+> ```
+> **Required Component Commands:**
+> ```text
+> type: powershellCommand
+> hidden: true
+> path: git add *
+> 
+> type: powershellCommand
+> hidden: true
+> path: git commit -m "pushing local data"
+> 
+> type: powershellCommand
+> hidden: true
+> path: git push
+> 
+> type: powershellCommand
+> hidden: true
+> path: pnpm version patch
+> 
+> type: powershellCommand
+> hidden: true
+> path: git push
+> 
+> type: powershellCommand
+> hidden: true
+> path: git push --tags
+> ```
+> Previously, this was run as a single inline command, which had edge cases that caused failures. Breaking it into modular components solved those reliability issues completely.
+>
+> Example 2: Using Extension Commands
+> You can achieve the same result using the extension's built-in commands:
+> ```text
+> type: cmdChain
+> path: ocrmnavigator.gitAdd, ocrmnavigator.gitCom, ocrmnavigator.gitPush, 
+>       ocrmnavigator.bumpPatchVersion, ocrmnavigator.gitPush, 
+>       ocrmnavigator.gitPushTags
+> ```
+>
+> 
+> The extension automatically detects your package manager (npm, pnpm, yarn) and adjusts commands accordingly.
+> 
+>  Example 3: VS Code Extension Development Workflow
+> 
+> This comprehensive chain handles the entire build-and-reload process for VS Code extension development:
+> 
+> ```text
+> type: cmdChain
+> path: ocrmnavigator.saveAll, ocrmnavigator.killAll, 
+>       ocrmnavigator.formatPackageJson, ocrmnavigator.md.convertReadme, 
+>       ocrmnavigator.compileWithPackager, ocrmnavigator.installNow, 
+>       ocrmnavigator.reloadWindow
+> ```
+> 
+> **breakdoown:**
+> 1. Saves all open editors
+> 2. Terminates all terminal instances
+> 3. Formats package.json files (supports dual package.json setup for automation)
+> 4. Converts readme files for pre-processing
+> 5. Compiles the extension using either:
+>    - **vsce**: Creates local package and publishes to marketplace
+>    - **Custom archiver**: Faster compilation with fewer restrictions (supports SVGs in readme, which vsce blocks)
+> 6. Installs the extension locally
+> 7. Reloads the current VS Code window
+> 
+>  Real-World Impact
+> 
+> The automation possibilities are extensive. For example, my icon library workflow is fully automated—I simply drop an SVG file into a folder, click one button in the DevStack explorer, and walk away. The entire process runs automatically:
+> 
+> - Icon creation and optimization
+> - README updates
+> - Project compilation and building
+> - Git commit and push to GitHub
+> - Version bump
+> - NPM publication
+> 
+> Since my projects are interconnected, I've even created a single button that executes this workflow across all three projects simultaneously.
+> 
+> Going forward, the extension will embrace a more modular architecture. Previously, functionality was built either entirely in config files or as monolithic standalone functions. The modular approach demonstrated above provides better reliability, maintainability, and reusability.
+
 
 #### `concurrent` - Parallel Execution
 Run multiple commands simultaneously for maximum speed. Can run alongside sequential commands.
@@ -809,6 +998,7 @@ Run commands in Windows Debian WSL terminal environment. Execute programs with p
 **Note**: The ability to set arguments for powershell and bash commands is in development.
 
 
+
 ### Utilities
 
 #### `snippet`
@@ -926,11 +1116,140 @@ headers:
 # - Close without saving to cancel
 ```
 
+##### Unique Example #1
+
+As time goes on I will be sure to come back to include more unique examples as this was the first in which I had created in ways... that were never intended when I first built this item type.
+
+```json
+        {
+          "label": "VSIX: Send to microsoft to update listing",
+          "path": "https://marketplace.visualstudio.com/skyler/extensions/ocrmnav",
+          "type": "apiCall",
+          "icon": "json",
+          "args": [
+            { "method": "POST" },
+            { "headers": { "Content-Type": "application/json;api-version=7.1-preview.1", "Authorization": "Bearer ${MS_PAT}", "Accept": "application/json;api-version=7.1-preview.1" } },
+            {
+              "body": {
+                "version": "1.0.1",
+                "assetTypes": [
+                  "Microsoft.VisualStudio.Services.VSIXPackage"
+                ],
+                "files": [
+                  { "assetType": "Microsoft.VisualStudio.Services.VSIXPackage", "source": "${MS_VSIX}" }
+                ],
+                "flags": "1"
+              }
+            }
+          ]
+        },
+```
+
+At the time, and at the mercy of the stupidity that is AI, I was trying figure out the http url for the rest api to update extension packages. I hate microsofts docs so I opted to obtain the information from an ai engine. It usually doesn't get it as wrong as it did this time as around, since a rest api doesn't even exist. BUT without taking this stupid journey I probably would have never used an api call this way... so atleast something cool came about it still.
+
+As you have probably noticed thre are a couple of weird things, the first being that ${MS_PAT} is contained in double quotes. So as to not expose your enviroment secrets till the very last second, the terminal engine itself is responsible for grabbing the secret, placing it into the command, or http request in this case, just before execution. This method works on every single command type.
+
+The second, more weirdly placed item, is the source of the vsix. As having to create a new item, for each and every single extension version would just be dumb, I knew at the time that it would be sent as base64 encoded string. Creating a new value in my .env file, placing the encoded string there allows me to swap it at will. This was about the time I decided to open the docs or else I would have taken it a step further, which you can do yourself if you find the need for it.
+
+Taking it further by:
+- creating a script grabbing the latest .vsix by date
+- creating a bas64 encoded string off of it
+- replacing the old string in the .env file 
+- trigger the api call
+
+And this is something you an actually do all on your own through a chain command, and completely automate the entire process of whatever use case your project needs. taking a rather mundane task that needs to be repeated, to a single click.
+
+```md
+# API Call Configuration
+
+# Required fields
+label: vsix rest api
+path: https://marketplace.visualstudio.com/skyler/extensions/ocrmnav
+type: apiCall
+
+# Optional fields
+icon: cloud
+tooltipText: Description of this API call
+
+# HTTP Configuration (optional)
+args:
+  - method: POST
+  # For POST/PUT/PATCH requests with body:
+  # - method: POST
+- body:
+       - version: 1.0.1
+      - assetTypes: ["Microsoft.VisualStudio.Services.VSIXPackage"]
+      - files:  [{ "assetType": "Microsoft.VisualStudio.Services.VSIXPackage", "source": ${MS_VSIX}$ }]
+      - flags: 1
+
+# Headers (optional)
+headers:
+  - Content-Type: application/json;api-version=7.1-preview.1
+  - Authorization: Bearer ${MS_PAT}
+  - Accept: application/json;api-version=7.1-preview.1
+  # - Authorization: Bearer YOUR_TOKEN
+
+# Instructions:
+# - Fill in the required 'path' field with your API endpoint
+# - Uncomment and modify optional sections as needed
+# - Save this file to create the API call item
+# - Close without saving to cancel
+```
 
 #### `layout`
 
-[Layout Configuration Guide](./LAYOUT.md)
+[Layout Configuration Guide](./ATLAS.md)
 
+#### `menu`
+
+While working in a project, where its honestly kind of a pain to get around, not to mention it has 20-30 script files. I wanted to be able to click one item, and have it display all the options with a description, but I hate quick picks and hopefully I don't have to resort to that, since using the terminal I've already had to come up with weird solutions in order to get it working. 
+
+When this item type is clicked it opens a terminal editor, opening at the menu screen. Moving up and down, moves your selected line or cursor, if you will. 
+Beautifully, the terminal ngin is already in place and can be leveraged nicely in this use case, making it so that this item type remains persistent till you cancel it.
+When ever you select a menu item, it fires it off to the ngin to take care, which... if you are triggering scripts like I am, it executes that script in a seperate terminal. Obviously I'll have to make changes in my own scripts to take advantage of this. But whenever you go to create them, if it needs paths or other values, I'll be coding mine in a way so that whenever it executes it prompts the user for whatever values are needed instead of constantly adjusting script files. 
+
+You CAN place a menu type item... inside another menu type item, creating a nested menu structure with no restrictions in place. 
+
+I may or may not be doing this myself but I will atleast try it. Since an item's path can either be the full path or relative, say you have 10 projects of scripts ( or whatever you want to place here ) that you want to place in the menu, the root level menu could be project names, while the second level features that projects scripts to run. Granting access to scripts to trigger no matter what workspace you are currently working in, as long as the main item is placed within a global folder ofcourse in the config.
+
+There is no creator for this yet, so this will have to be created manually for the time being.
+
+```json
+        {
+          "label": "BIFRÖST Menu",
+          "path": "",
+          "type": "menu",
+          "icon": "menu",
+          "args": [
+            { "label": "Auto blocks", "path": "node ./F:/playground/scripts/auto-blocks.js", "type": "powershellCommand" },
+            { "label": "backup-devstack-core-files", "path": "node ./F:/playground/scripts/backup-devstack-core-files.js", "type": "powershellCommand" },
+          ]
+        },
+```
+
+Nested Menus
+```json
+        {
+          "label": "BIFRÖST Menu",
+          "path": "",
+          "type": "menu",
+          "icon": "menu",
+          "args": [
+            { "label": "Auto blocks", "path": "node ./F:/playground/scripts/auto-blocks.js", "type": "powershellCommand" },
+            { "label": "backup-devstack-core-files", "path": "node ./F:/playground/scripts/backup-devstack-core-files.js", "type": "powershellCommand" },
+            {
+              "label": "BIFRÖST Menu",
+              "path": "",
+              "type": "menu",
+              "icon": "menu",
+              "args": [
+                { "label": "Auto blocks", "path": "node ./F:/playground/scripts/auto-blocks.js", "type": "powershellCommand" },
+                { "label": "backup-devstack-core-files", "path": "node ./F:/playground/scripts/backup-devstack-core-files.js", "type": "powershellCommand" },
+              ]
+            },
+          ]
+        },
+```
 
 ### Auto-Generated Items
 
@@ -982,94 +1301,6 @@ Automatically generated from `package.json` when workspace initializes.
 >
 > Development work involves countless time-consuming repetitive tasks. Unlike some industries where these inefficiencies are unavoidable, software development offers a unique advantage—we can program solutions to our own problems. This extension aims to eliminate those time sinks and help you focus on what matters: building great software.
 
-#### Getting Started with Chains
-
-> [!TIP] 
-> The `chain` type is the most powerful feature in DevStack. It allows you to combine multiple commands into a single workflow, dramatically reducing the steps required for common development tasks.
->
-> Example 1: Git Workflow with Version Bump
-> This chain automates the complete process of committing, pushing, and incrementing your package version:
-> ```text
-> type: chain
-> path: gitAdd, gitCom, gitPush, bumpVers, gitPush, gitPushTags
-> ```
-> **Required Component Commands:**
-> ```text
-> type: powershellCommand
-> hidden: true
-> path: git add *
-> 
-> type: powershellCommand
-> hidden: true
-> path: git commit -m "pushing local data"
-> 
-> type: powershellCommand
-> hidden: true
-> path: git push
-> 
-> type: powershellCommand
-> hidden: true
-> path: pnpm version patch
-> 
-> type: powershellCommand
-> hidden: true
-> path: git push
-> 
-> type: powershellCommand
-> hidden: true
-> path: git push --tags
-> ```
-> Previously, this was run as a single inline command, which had edge cases that caused failures. Breaking it into modular components solved those reliability issues completely.
->
-> Example 2: Using Extension Commands
-> You can achieve the same result using the extension's built-in commands:
-> ```text
-> type: cmdChain
-> path: ocrmnavigator.gitAdd, ocrmnavigator.gitCom, ocrmnavigator.gitPush, 
->       ocrmnavigator.bumpPatchVersion, ocrmnavigator.gitPush, 
->       ocrmnavigator.gitPushTags
-> ```
->
-> 
-> The extension automatically detects your package manager (npm, pnpm, yarn) and adjusts commands accordingly.
-> 
->  Example 3: VS Code Extension Development Workflow
-> 
-> This comprehensive chain handles the entire build-and-reload process for VS Code extension development:
-> 
-> ```text
-> type: cmdChain
-> path: ocrmnavigator.saveAll, ocrmnavigator.killAll, 
->       ocrmnavigator.formatPackageJson, ocrmnavigator.md.convertReadme, 
->       ocrmnavigator.compileWithPackager, ocrmnavigator.installNow, 
->       ocrmnavigator.reloadWindow
-> ```
-> 
-> **breakdoown:**
-> 1. Saves all open editors
-> 2. Terminates all terminal instances
-> 3. Formats package.json files (supports dual package.json setup for automation)
-> 4. Converts readme files for pre-processing
-> 5. Compiles the extension using either:
->    - **vsce**: Creates local package and publishes to marketplace
->    - **Custom archiver**: Faster compilation with fewer restrictions (supports SVGs in readme, which vsce blocks)
-> 6. Installs the extension locally
-> 7. Reloads the current VS Code window
-> 
->  Real-World Impact
-> 
-> The automation possibilities are extensive. For example, my icon library workflow is fully automated—I simply drop an SVG file into a folder, click one button in the DevStack explorer, and walk away. The entire process runs automatically:
-> 
-> - Icon creation and optimization
-> - README updates
-> - Project compilation and building
-> - Git commit and push to GitHub
-> - Version bump
-> - NPM publication
-> 
-> Since my projects are interconnected, I've even created a single button that executes this workflow across all three projects simultaneously.
-> 
-> Going forward, the extension will embrace a more modular architecture. Previously, functionality was built either entirely in config files or as monolithic standalone functions. The modular approach demonstrated above provides better reliability, maintainability, and reusability.
 
 #### `label`
 a file item type to add a visual `title` or `seperator` in other words
@@ -4091,3 +4322,69 @@ All settings are prefixed with `ocrmnavigator.` and can be configured in your VS
 - `other` (string, default: `null`) - Other configuration options
 
 
+
+
+
+
+## Complete Archaic Greek Alphabet Reference
+
+- 𐌀 (Alpha) - A
+- 𐌁 (Beta) - B
+- 𐌂 (Gamma) - G
+- 𐌃 (Delta) - D
+- 𐌄 (Epsilon) - E
+- 𐌅 (Digamma/Wau) - W/V
+- 𐌆 (Zeta) - Z
+- 𐌇 (Eta) - H/Ē
+- 𐌈 (Theta) - Th
+- 𐌉 (Iota) - I
+- 𐌊 (Kappa) - K
+- 𐌋 (Lambda) - L
+- 𐌌 (Mu) - M
+- 𐌍 (Nu) - N
+- 𐌎 (Xi) - X
+- 𐌏 (Omicron) - O
+- 𐌐 (Pi) - P
+- 𐌑 (San/Tsade) - Ts
+- 𐌒 (Qoppa) - Q
+- 𐌓 (Rho) - R
+- 𐌔 (Sigma) - S
+- 𐌕 (Tau) - T
+- 𐌖 (Upsilon) - U/Y
+- 𐌗 (Phi) - Ph
+- 𐌘 (Chi) - Ch/Kh
+- 𐌙 (Psi) - Ps
+- 𐌚 (Omega) - Ō
+
+First Ættr (Freyr's Ættr)
+
+- ᚠ (Fehu) - Cattle, wealth, prosperity
+- ᚢ (Uruz) - Aurochs, strength, vitality
+- ᚦ (Thurisaz) - Thorn, giant, Thor's hammer, force
+- ᚨ (Ansuz) - God, Odin, wisdom, communication
+- ᚱ (Raidho) - Ride, journey, wheel, movement
+- ᚲ (Kenaz) - Torch, knowledge, craft, transformation
+- ᚷ (Gebo) - Gift, exchange, partnership
+- ᚹ (Wunjo) - Joy, glory, perfection
+
+Second Ættr (Heimdall's Ættr)
+
+- ᚺ (Hagalaz) - Hail, disruption, transformation
+- ᚾ (Nauthiz) - Need, necessity, constraint
+- ᛁ (Isa) - Ice, stillness, stasis
+- ᛃ (Jera) - Year, harvest, cycles, reward
+- ᛇ (Eihwaz) - Yew tree, Yggdrasil, endurance
+- ᛈ (Perthro) - Dice cup, mystery, fate, secrets
+- ᛉ (Algiz) - Elk, protection, defense
+- ᛊ (Sowilo) - Sun, success, wholeness, victory
+
+Third Ættr (Tyr's Ættr)
+
+- ᛏ (Tiwaz/Tyr) - Tyr, justice, honor, victory
+- ᛒ (Berkano) - Birch, birth, growth, new beginnings
+- ᛖ (Ehwaz) - Horse, partnership, movement, trust
+- ᛗ (Mannaz) - Man, humanity, mind, memory
+- ᛚ (Laguz) - Water, lake, flow, chaos, intuition
+- ᛜ (Ingwaz) - Ing/Freyr, fertility, abundance, potential
+- ᛞ (Dagaz) - Day, dawn, awakening, breakthrough
+- ᛟ (Othala) - Inheritance, homeland, heritage, ancestral property
