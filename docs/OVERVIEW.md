@@ -734,73 +734,8 @@ That's DevStack.
 
  
 
-> [!NOTE]
-> 
-> I've been told repeatedly that I'm not "selling" this extension enough. I've resisted because I believe genuine improvement comes from within—I can't force anyone to care about their tools. As a former sales coach, I no longer feel compelled to convince people. Honestly? I don't mind if you skip this extension entirely.
-> 
-> But since I keep hearing it, here's my pitch.
-> 
-> ## Why This Extension Exists
-> 
-> Yes, there are other extensions that offer:
-> - Shortcut buttons for VS Code commands
-> - To-do lists, notes, and reminders
-> - Sequential (and occasionally concurrent) task execution
-> - Snippet editing and viewing
-> - API request triggers
-> - Quick access to settings files
-> - AI capabilities
-> - Regex builders and reference sheets
-> - Icon library access
-> - Component library examples
-> 
-> This extension does all of that and more—it replaces the functionality of **over 125 extensions**. Some days, after 5-6 hours of work, I realize I've done nothing but write documentation.
-> 
-> ## So Why Build This?
-> 
-> If similar extensions exist, why invest this much effort?
-> 
-> **The honest answer: most extensions out there are poorly executed.** Whether it's clunky UX, unstable code, or constant crashes, I got fed up. I started building a tool for myself, and a few things went perfectly right from the start—no performance degradation regardless of how many features I added. That's when my mindset shifted from "let me check > the marketplace" to "let me just build it myself."
-> 
-> I refused to create something painful to use because **I'm the primary user**. If I wanted horrible tools, I'd keep installing them from the marketplace. My motivation for programming came from software in my previous career that wasted **74 working days per year**. I'm determined to create something better.
-> 
-> ### Examples of Better Execution
-> 
-> - **Sync issues?** One competing extension brags about having a troubleshooter for sync problems. This extension uses GitHub as a single source of truth for to-do data—you have access everywhere, no troubleshooter needed.
-> 
-> - **Ruthless efficiency.** Every process is streamlined. If I can save even one second, I refactor the code. Those "small" 5-minute tasks? They add up to massive time waste annually—often 1,500+ repetitions per year—but get overlooked because people only prioritize the "big" time wasters.
-> 
-> - **Unprecedented scope.** No one else is crazy enough to replace 100+ extensions. I started with one idea and one function. After being disappointed by 15-20 alternatives, I thought, "If I can do that better, I'll try the next one." I did that 100 times over.
-> 
-> Before this extension, I could barely run 10-12 extensions simultaneously without VS Code crawling. Now? I routinely have 3+ workspaces open (the extension, an icon library, current projects), League of Legends running, multiple browsers with 30-70 tabs, and numerous other applications—all without performance issues.
-> 
-> ## What Makes This Different
-> 
-> When comparing features, I had AI generate tables because I didn't have time. The results highlighted something important: this extension offers feature parity with **paid extensions and marketplace leaders**, all **free** and in **one place**.
-> 
-> Several features are genuinely **first-in-class**:
-> 
-> - **Workspace context awareness:** The few extensions attempting this have limitations and issues. This one works flawlessly across unlimited workspaces, each with its own configuration. Switching between 3+ open workspaces without conflicts has dramatically increased my productivity.
-> 
-> - **Workspace layout engine:** Configure how each workspace opens—physical layout, default files, editor group sizing, startup commands, everything. After 10 years of VS Code's existence, how does nothing else offer this level of control?
-> 
-> - **Organized command palette:** The first extension offering a categorically organized, searchable list of VS Code commands. Two versions available: one scans your instance for all available commands (including from other extensions), another manually curated list with 2,000+ commands and descriptions. How has neither Microsoft nor any other > developer done this properly?
-> 
-> ### Standout Features
-> 
-> **To-do, notes, reminders, post-its:** GitHub as single source of truth, best-in-marketplace UX (I tested every option), plus a PWA website for offline access anywhere. Features I wish every to-do app had.
-> 
-> **VFS (Virtual File System):** Unmatched freedom for shortcuts—create 1,000+ organized however you want. Other extensions focus on one area; this covers 15+. The core is designed for infinite scalability without additional coding.
-> 
-> **Terminals:** Unparalleled freedom across all instance types. Execute any command, any way you need. Unlike limited shells in other extensions, this executes commands as if you typed them directly—including command chaining and directory navigation.
-> 
-> **Snippets:** VS Code's native snippet system is garbage beyond the initial intellisense insertion. This extension uses a Monaco editor (with 55+ customizable settings) instead of a basic textarea. Features include: language-specific syntax highlighting, Fuse.js-powered fuzzy search, clipboard copying, tooltip previews, workspace-specific snippets, > and upcoming remote access to sync snippets across devices and accounts. Share standardized configs with colleagues or new hires. Nothing else comes close.
-> 
-> ## The Bottom Line
-> 
-> I no longer spend hours weekly searching for VS Code alternatives—I can't imagine using a fresh install anymore. I use this extension so constantly that I'm considering moving the file explorer to the secondary sidebar to give it prime real estate.
-> 
-> Will it be the prettiest version of every feature? No. But it will be better in every other way that matters.
+
+
 
 ---
 

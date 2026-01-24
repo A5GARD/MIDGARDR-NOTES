@@ -1,5 +1,22 @@
 # RÚNAR
 
+> [!IMPORTANT]
+> Despite just recieving the largest update since it was created, I have decided in moving ahead with having github as the source of truth for snippets. 
+> 
+> Each snippet will be contained within its own file, and will allow for users to organize snippets using a folder structure. 
+> 
+> Not only does this move the storage and complete control to the user but also grants access to all the  benefits that github offers in terms of its platform. 
+> 
+> There will be no loss in features with this move, and because a part of the extension already does exactly this with 0 errors for... I can't remember the last time I had an error. 
+> All the while I absolutely hammer that part of the extension, so much so that I have hit my weekly limits or monthly I can't remember. 
+> 
+> I haven't decided yet if I will use the workspace .vscode folder to store the local repo or just store it where snippets are currently being stored globally. 
+> 
+> This descision also extends to devarchive as it fits that philosophy extremely well, whenever I get the chance to start that idea. Currently the idea around that is snippets meets github, but more user friendly, where you can store any and all data aside from images and videos. That would be accessible via vscode, github, web, mobile etc. 
+>
+> Despite my feelings for github, it fits the need that devarchive has in terms of the whole idea behind it. Personally, I'd rather just code my own version of github and not have to deal with it again... but it then falls back to, the owner ultimately being the caretaker of data and if the owner goes, so does your data. While I have no intention on such an event and the service will be created in such a way that if I were to HAVE to pass it along and its responsibilities that it wouldn't be a chore in any sense, other than making sure the credit card that pays for hosting doesn't expire. That way, atleast it can continue living on instead of just... dying like so many resources right now, and I beleive that we are just on the cusp of witnessing a lot more of that.
+
+
 ## SNIPPETS
 
 ```markdown

@@ -1,5 +1,20 @@
 #### todo
 - [ ] starting v2 fuck
+- [ ] Option B: Extension-Based Snippets (The "Pro" Way)
+Since you mentioned building a VS Code Extension in your philosophy, you can use the vscode.TextEditorEdit API. This allows you to literally teleport code to the top of the file while dropping code at the cursor.
+
+Here is a simplified logic for your extension:
+
+JavaScript
+
+// Inside your extension command
+editor.edit(editBuilder => {
+    // 1. Insert the import at the very top (0, 0)
+    editBuilder.insert(new vscode.Position(0, 0), "import { Input } from '#catalyst/Input';\n");
+
+    // 2. Insert the usage at the current cursor position
+    editBuilder.insert(editor.selection.active, "<Input $0 />");
+});
 - [x] make sure termiunal grixd is getting assigned to the correct col
 - [x] remove format on paste in monaco editor
 - [x] finish off renaming functions -> `ocrmnavigator.addCategory` -> `ocrmnavigator.master.addCategory`

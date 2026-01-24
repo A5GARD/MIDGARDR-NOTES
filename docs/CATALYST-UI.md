@@ -2,7 +2,11 @@
 
 # Editor Context Insert
 
+Inserts selected component at cursor via the editor context menu. Menu options will be based upon current subscription status.
+
 # Quick Pick Insert
+
+Copies the selected component into your clipboard via the quick pick menu located in the status bar. Menu options will be based upon current subscription status.
 
 # Automated Installation
 
@@ -325,6 +329,8 @@ MIT License - See LICENSE file for details
 
 # Smart Prop Autocomplete
 
+Pressing ctrl & spacebar while your cursor is inside the quotations of any props value will bring up an intellisense dropdown with the available prop values that can be assigned.
+
 # Signature Help
 
 # Hover Documentation
@@ -384,6 +390,10 @@ Whenever you start to code a component `<`, pressing ctrl & spacebar will bring 
 > The other big plus I never saw coming, in terms of helping users ( despite still seeing devs still struggle with everything it solves ). Loki AI, as its now called, not only solves virtually every single issue you come across as a dev, and thats not an exageration, but have also cracked the limitation on being limited by an AI engines data training set. While The first point is already out and written about, the latter I'm still testing but the how to should be out soon. The weidest part about that is, getting these results uses methods that are already out there... just used differently.
 >
 > Knowing that all the goals have been completed... is satisfying. Especially given the fact that, this kinda sucked. Not so much from a coding perspective, but due to its size and with items to do such as providing hover card documentation for every single component... that sucks, but where ever I can and as much as I can I try to find ways to code it so that it takes care of itself. There have been so many days, where I thought I was going to be able to move on to something else only to find out after coming on... that no... there are things to be done with the ui library. Even now, there is still a massive update/change to severel large items that are held up in being pushed due to a couple of smaller other items, I just hope they don't need changes when I can finally test them in a prod enviroment.
+>
+> After typing this out, it had given me an idea by asking myself "Can we take it further?", it seems as though we can. Creating a new npm library called 'forge' it now acts as a cetralized CLI that grants access to all the libraries in one place along with, depending on the selected option, creating one command that install / updates the relevant libraries and packages. Creating a new remix run project, which will get replaced with a new creator soon, once the new project has been created it then installs icon and the ui library including installing, configuring all of tailwinds requirements and all the other smaller configuration goodies that come along with installing the library as well. I forgot to mention it even checks to see whether you have the vscode extension currently installed and at what version, prompting you to either update or installing it just like the other libraries. 
+>
+> Other than the create-remix2 replacement, I corrently do not see any other avenue in which it can be improved upon in terms of ux/dx. 
 
 # Tool Suite
 The library hosts a number of tools for devs to use, the following list is up to date, at the time of writing and will feature more tools as time goes on.

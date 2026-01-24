@@ -1,5 +1,55 @@
 # ATLAS
 
+> [!NOTE]
+> The new layout system is already underway, starting with focusing on the UI and how each level feels along with adjusting which level should control what exactly. No idea how I'll go about the back end of things yet, but we'll get there and figure it out. 
+>
+> Want to say this here in case you don't make it to the end, IF you haven't tried it yet... try this layout engine. I now have a config or more for every workspace... and it has been such a better experience than I first thought this feature would have as far as overall impact to the user experience within vscode. Even though an update is coming, who knows when it will done enough to use which is why I'm still suggesting, try this out seriously if I had to choose 5 features for someone to try out with this extension... this would be number 1 or number 2.
+>
+> As stated earlier, but incase you missed it, moving away from the config again and into a webview where there will be 4 tabs presented to you. Defaulting to the lowest level of manipulating the layout and ui:
+> Casual:
+>   - Layout name
+>   - Theme dropdown that will provide a selection or pre configured themes
+>   - file inputs so as to set a file for a 2 col editor group
+>   - checkbox to set the layout to deafult
+>   - finishing off with a save
+> 
+> Intermediate:
+>   - continuing from above
+>   - toggles for both sidebars and panel
+>   - a single file upload in place of the double used previously
+>   - a side by side transfer list as you can now set as many files as you would like within the 2 column editor group
+>   - its not coded in yet, but this level will have some access to control colors across the ui but in a limited sense, such as zoned bg colors, foreground, borders, primary color and so on and the levels of access opening up further in level 3, meanwhile level 4 will be able to customize every single available option with a color picker / color wheel picker / value input, ontop of theme preset dropdown
+>
+> A part of me thinks that the current settings... is not enough, but I know there will be people out there that the casual configuration will be more than enough for them and be happy with it since they either just want a nice looking theme with a file or two open or just want to finally be able to switch themes with a dropdown instead of the way windows wants you to do it. To boot, there will be like... over 20 themes maybe even more, maybe I'll go nuts one night and just do a ton of them up.
+>
+> Power User:
+>   - continuing from above and adding to it...
+>   - activity bar, status bar
+>   - radio group for zen mode and full screen mode
+>   - IF I can... because I haven't looked into it too deep and haven't looked at the available values since first looking into it but this level will be able to control every single faucet of the UI, through the use of toggles, radio groups and dropdowns
+>   - editor groups again moving up a stage where not only can you select as many as you want but you can now select the configuration type that the editor groups will start in when you open vscode
+>
+> Up till now everything is done through some sort of user interface control. Now i'm going to try to continue this trend going into Sauron. The first 3 groups, will be easy to get going... but Sauron will be a pain. As I already know, from seeing it first hand, that the values provided... are even less user friendly then what your used to see within vscode... by a large margin. Sooo... I will try to keep it as a user interface and will only resort to the config again as an absolute last resort. With saying that, if I were have to go down that path it would probably be a mix between ui and config, where as the config would control the values... I just cant decipher at the time. Not to mention... theres no docs for this... and already probing the ai engines, they too have virtually 0 data to go off of since its not in their training data and no one even brings forth questions in regards to the files that will be getting modified.
+>
+> Sauron:
+> Again will have the ability to manipulate every single value I can get my hands on, no matter how small or how big of a difference it makes in the grand scheme of things.
+>
+> In case you didn't read the notes below, some things that I did come across but still have to dive into further to see if they are viable paths to edit. A while back I tried adding a feature to the extension where it blocks... ALL toast notifications. Using insiders, they're plentiful and annoying and to make matters worse there seems to be a ton of devs that love recommending things that also pop up and ya... hit a dead end with it before, but it seems like this could be something that might get done.
+> Don't read into this too much, but I did see some icons values... who knows, maybe even add custom icons to vscode?! That would be nice. And not just in the file tree.
+> Even after finding that security threat in vscode and before even talking to microsoft I had decided NOT to move forward with it because of that... after all that, they never even responded, figures. Despite that I still don't want to use the workaround that I had found, primarily due to, exposing how its done and even though microsoft doesn't care I'd rather just keep that under wraps instead of advertising it to everyone. With saving that, I did see some values that might actually get the end result that I was going for... so, atleast the idea isn't completely dead yet, because weirdly this one feature excites me most currently. I don't know why, maybe it's because I had to deal with performance issues a lot, I was running a lot although I wasn't running a lot in vscode itself which was the main culprit but still.
+> I don't know how but, I do really want some sort of stale data / garbage collector since going through those values... I saw A LOT of old data, that hasn't been used in years just sitting there. I'll try to calculate just how much storage that's actually taking up, because if it isn't enough to warrant going through the trouble, then theres no point.
+> OH, almost forgot, once sauron is up and working I will be working on setting up the profile contexts up next in regards to layouts, and probably even for the rest of the extension. 
+
+> [!NOTE]
+> Levels 1, 2 and 3 will be getting more options to configure. Currently I have only coded in my own settings into Saurons tab, and it is astromically funny just how big of a difference there is between them. But after seeing it come together in the ui, it's going to be easy enough to know that no one should have any issue having the config they want as each part has descriptions and what not. 
+>
+> One thing I never knew till, 3 minutes ago, while I already knew extensions settings for the most part really only work in the global settings file and not the workspace counterpart. But there are a ton of vscode settings that will only work in the global file. Which is annoying but ah well. I'm also adding a 5th tab to control this extensions settings more easily as well, as there was a website to go to but thats been dropped now so I figured it makes sense to include it since there are so many settings to configure, and the current list is really far behind in terms of an update since I don't really update that list much.
+>
+> The new atlas layout system will come out in 2 versions one after another. The first will virtually how it is now but in ui form. Since there are a lot of moving parts I want to make sure the ui works before even moving on to the more complex settings that will be available in level 4, which means if you don't plan on using that level, you will be able to work with the new system rather quickly. With the new system being so simple the only documentation there will be is just an overview of each of the levels, and that's it really. as it's pretty self explanatory. At which point I will start working on the last tab, which might be over and done with quickly or... it will take some time with trying to figure out what everything does. A lot of that extra time will depend on new systems being introduced to handle the new features.
+>
+> I'm also changing sauron up a little... as it will now feature 2 tabs, the first containing ALL available settings currently available to you AT the time of configuration. This way I never have to come back to and change this layout system no matter the version that vscode is currently at. The second will contain the values only accessible via the .vscdb files. To say there will be a lot of items to configure is an understatement as the first tab alone will have 700+ items if I remember correctly, in addition to the god only knows amount waiting to be set up. Unfortuantly since vscode doesn't expose whats kept in the .vscdb file in any form, anywhere, it won't be as easy to create that section.
+
+
 ## Layout Configuration Guide
 
 As it currently stands, the redesign is 100% in a useable state as I have the 2 workspaces that I'm currently in host configs and to make the testing process even harder for my instance, in terms to working on this extension, instead of using the dev server for testing, I have just been doing hard instance restarts or completely closing and reopening vscode with zero issues but there are 2 things needed to be fixed / completed. In the grand scheme of things aren't that big of a deal. 
@@ -710,7 +760,6 @@ I've structured each section to mirror either VS Code's native configuration pat
 
 ```json
  {
-  "$schema": "./schemas/layout-config-schema.json", //  this is not required, its not currently work correctly right now due to the frequent changes I have been making, but this will work in the future
   "label": "DevStack Default", // required
   "path": "", // if you do not need a terminal group with several terminals, but wish to execute one command when the layout loads, you may place your powershell command here ie, pnpm run dev
   "type": "layout", // required, do not change
@@ -4700,95 +4749,3 @@ const generateVSCodeTheme = (twCss, gitDecorations = true, scmDiffDecorations = 
 
 
 # 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

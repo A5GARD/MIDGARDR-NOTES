@@ -12,6 +12,7 @@
 - [ ] an option when creating config items, to create a file type item that will direct you to that workspaces config file. Allowing you to enter each workspace, and create an item based off of that workspaces config file
 - [ ] need to create blog like we did changelog
 - [ ] test new motions category
+- [ ] need to go through coss origin and compare x to his variants
   - [ ] ★ ━━━━ X ━━━━ ★
     - [ ] need to compare against coss i think ists called
   - [ ] ★ ━━━━ UTILS ━━━━ ★
@@ -34,6 +35,8 @@
     - [ ] button-group
     - [ ] alert
     - [ ] tracker
+    - [ ] multi-select
+    - [ ] list-box
   - [ ] ★ ━━━━ BG ━━━━ ★
     - [ ] gistorted glasses 
     - [ ] texture overlay
@@ -52,6 +55,7 @@
     - [ ] profile dropdwn
     - [ ] morphic navabr
     - [ ] morph-surface
+    - [ ] motion-separator
   - [ ] ★ ━━━━ MEDIA ━━━━ ★
     - [ ] color pallete card
     - [ ] InfiniteSlider
@@ -61,6 +65,7 @@
     - [ ] useTailwindConverter
     - [ ] use-validate-credit-card
     - [ ] use-keyboard-shortcut
+    - [ ] use-lucide-drawer-animation
   - [ ] ★ ━━━━ FORMS ━━━━ ★
     - [ ] fancy-area
   - [ ] ★ ━━━━ CORE ━━━━ ★

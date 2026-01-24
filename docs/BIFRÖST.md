@@ -2298,7 +2298,6 @@ I've played around with a TON of different label styles, landing on this being t
       "global": false,
       "items": [
         {
-          "$schema": "./schemas/layout-config-schema.json",
           "label": "DevStack Default",
           "path": "",
           "type": "layout",
@@ -2790,7 +2789,6 @@ I've played around with a TON of different label styles, landing on this being t
           ]
         },
         {
-          "$schema": "./schemas/layout-config-schema.json",
           "label": "Test Extensions",
           "path": "",
           "type": "layout",
