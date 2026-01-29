@@ -17,7 +17,7 @@ Add ShadCN UI components to your project with one click - components and librari
 - Required library installations
 - No configuration changes
 
-![Project Menu](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/project.jpg)
+![Project Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/project.jpg)
 
 
 ---
@@ -35,7 +35,7 @@ Complete ShadCN UI installation with full configuration setup
 - Installs all components
 - Complete setup ready to use
 
-![Project Menu](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/project.jpg)
+![Project Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/project.jpg)
 
 
 ---
@@ -115,7 +115,7 @@ Add individual ShadCN UI components directly into your project at cursor positio
 **Complete Installation:**
 - Install ShadCN w/ All Components
 
-![ShadCN Components](https://raw.githubusercontent.com/8an3/dev-notes/main/shadcn/shadcn.jpg)
+![ShadCN Components](https://raw.githubusercontent.com/8an3/midgardr-notes/main/shadcn/shadcn.jpg)
 
 
 

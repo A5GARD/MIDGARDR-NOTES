@@ -43,7 +43,7 @@ npx create-remixv2
 - Quick project initialization
 - Industry-standard configurations
 
-![Create Remix](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/npx-create-remix.jpg?raw=true)
+![Create Remix](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/npx-create-remix.jpg?raw=true)
 
 
 ---
@@ -60,7 +60,7 @@ Automatically generate Remix actions by scanning for Form components
 - Pre-configured boilerplate code
 - Saves development time
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
 
 
 ---
@@ -77,7 +77,7 @@ Insert Remix-specific components and functions directly from the context menu
 - Utility functions
 - Quick insertion at cursor
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
 
 
 ---
@@ -94,7 +94,7 @@ Convert Remix v2 routing convention to v1 automatically
 - Conversion warnings
 - Automatic backup creation
 
-![Project Menu](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/project.jpg)
+![Project Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/project.jpg)
 
 
 ---
@@ -113,7 +113,7 @@ Convert a single Remix application into a monorepo structure
 - Configures workspace settings
 - Sets up proper dependencies
 
-![Master Apps](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/master-apps.jpg)
+![Master Apps](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/master-apps.jpg)
 
 
 ---
@@ -131,7 +131,7 @@ Open route files directly in your browser for instant preview
 - Splat route handling
 - No configuration required
 
-![Editor Context](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/editor-context.jpg)
+![Editor Context](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/editor-context.jpg)
 
 ---
 
@@ -147,7 +147,7 @@ Quickly create route files with pre-configured templates
 - Action stub generation
 - Loader stub generation
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
 
 
 ---
@@ -164,7 +164,7 @@ One-click authentication setup for Remix applications
 - Automatic dependency installation
 - Pre-configured authentication flow
 
-![Project Menu](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/project.jpg)
+![Project Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/project.jpg)
 
 
 ---
@@ -181,7 +181,7 @@ Implement One-Time Password authentication in Remix with complete auth routes
 - Rate limiting configuration
 - Pre-built templates
 
-![Project Menu](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/project.jpg)
+![Project Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/project.jpg)
 
 
 ---
@@ -198,7 +198,7 @@ Auto-generate comprehensive test files for routes and actions
 - Action testing setup
 - Ready-to-run test suites
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
 
 
 ---
@@ -217,7 +217,7 @@ Comprehensive collection of Remix framework code snippets and utilities
 - Test generation
 - Complete development toolkit
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
 
 
 ---
@@ -234,7 +234,7 @@ Create a pre-configured React Router application reminiscent of a Remix stack
 - Ready-to-use routing setup
 - Best practices implementation
 
-![Master Apps](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/master-apps.jpg)
+![Master Apps](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/master-apps.jpg)
 
 
 ---
@@ -251,7 +251,7 @@ Convert your Remix application to other platforms and frameworks
 - Configuration migration
 - Dependency management
 
-![Master Apps](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/master-apps.jpg)
+![Master Apps](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/master-apps.jpg)
 
 
 ---
@@ -268,8 +268,8 @@ Insert error boundary components at cursor position
 - Custom error UI templates
 - Production-ready code
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
-![Error Boundary](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/error.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
+![Error Boundary](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/error.jpg)
 
 ---
 
@@ -285,8 +285,8 @@ Insert meta function with proper configuration at cursor
 - Twitter Card configuration
 - Dynamic meta generation
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
-![Meta Function](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/meta.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
+![Meta Function](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/meta.jpg)
 
 
 ---
@@ -303,8 +303,8 @@ Insert links function for resource management at cursor
 - Font optimization
 - Resource prefetching
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
-![Links Function](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/links.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
+![Links Function](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/links.jpg)
 
 
 ---
@@ -323,7 +323,7 @@ Create a fully configured monorepo "stack" with automatic setup and first build
 - Automatic first build
 - All configurations set up
 
-![Master Apps](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/master-apps.jpg)
+![Master Apps](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/master-apps.jpg)
 
 
 ---
@@ -340,7 +340,7 @@ Customize the build process of your monorepo project with Turborepo-like functio
 - Task orchestration
 - Parallel execution support
 
-![Master Apps](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/master-apps.jpg)
+![Master Apps](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/master-apps.jpg)
 
 
 ---
@@ -357,7 +357,7 @@ Configure React Router to use folder-based routing convention
 - Nested routing support
 - File-system routing
 
-![Project Menu](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/project.jpg)
+![Project Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/project.jpg)
 
 ---
 
@@ -373,7 +373,7 @@ Preview the current file's URL without opening the browser
 - Route pattern display
 - Parameter visualization
 
-![Remix Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/functions.jpg)
+![Remix Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/functions.jpg)
 
 
 ---
@@ -390,7 +390,7 @@ Generate Prisma action objects for database operations
 - Type-safe database queries
 - Error handling included
 
-![Action Object](https://raw.githubusercontent.com/8an3/dev-notes/main/remix/action.jpg)
+![Action Object](https://raw.githubusercontent.com/8an3/midgardr-notes/main/remix/action.jpg)
 
 
 

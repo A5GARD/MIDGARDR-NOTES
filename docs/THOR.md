@@ -143,7 +143,7 @@ const SELECTED_THEME = 'blue' // 40+ pre-built themes
 > Till I find a solution that still works, without this warning, we will have to live with this displaying in our terminals.
 
 
-![Z](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/tailwind-config-preset-warning.png)
+![Z](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/tailwind-config-preset-warning.png)
 
 
 #### Sans-Serif Fonts (Modern & Professional)
@@ -257,7 +257,25 @@ Add powerful utility classes through custom plugins. All plugins can be added as
 #### Available Plugins:
 
 ## Tailwind V4 Plug-in
+Currently still alpha testing 
 It's just plug and play, and drop a v4 configured component into your project.
+
+> [!IMPORTANT]
+> Some changes were made, simply I misread part of the docs and instead of adding to, I was replacing v3 features. That is now fixed, all v3 features have been preserved. In order to preseve those features, prefixes have been implemented for v4 features that would otherwise create a collision. Kinda sucks, but the main goal was to ADD v4 features and not replace v3. 
+>
+> **Prefixes used to avoid v3 conflicts:**
+> 
+> 1. **`bg-v4-`** - color-mix backgrounds (e.g., `bg-v4-red-500`)
+> 2. **`text-v4-`** - color-mix text colors (e.g., `text-v4-blue-600`)
+> 3. **`border-v4-`** - color-mix border colors (e.g., `border-v4-gray-300`)
+> 4. **`outline-v4-`** - color-mix outline colors (e.g., `outline-v4-purple-500`)
+> 5. **`.container-v4`** - v4 container with container-type (v3 `.container` stays unchanged)
+> 6. **`mb-v4-`** - margin-block logical property (v3 `mb-` is margin-bottom)
+> 7. **`pb-v4-`** - padding-block logical property (v3 `pb-` is padding-bottom)
+> 8. **`inset-b-v4-`** - inset-block logical property (v3 `inset-b-` conflicts)
+>
+> Also a hard learned lesson, no matter what amount of plugins or lack there of, that you have currently in your config... the v4 plugin must be declared FIRST amongst the plugins.
+
 
 Key Features This Plugin Adds:
 1. Full V4 Spacing Scale - 0.25rem increments (0.25rem to 25rem)

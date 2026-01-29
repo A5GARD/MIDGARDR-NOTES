@@ -3,7 +3,7 @@
 ```markdown
 / DEVSTACK_SYSTEM_ROOT/
 └── 📝 AUTHORING_SUITE /
-    └── 📂 [MARKDOWN_TOOLS](https://github.com/8an3/dev-notes/blob/main/docs/MARKDOWN.md)/
+    └── 📂 [MARKDOWN_TOOLS](https://github.com/8an3/midgardr-notes/blob/main/docs/MARKDOWN.md)/
         ├── 📄 [MD Viewer/Renderer](#md-viewerrenderer) ............. Standard Markdown viewing
         ├── 📄 [MD Viewer/Renderer In VS Code](#md-viewerrenderer-in-vs-code) ........... Native VS Code integration
         ├── 📄 [Convert MD File To Safe Inline String](#convert-md-file-to-safe-inline-string) ...... Markdown to safe inline string
@@ -24,7 +24,7 @@ Render markdown files directly in your browser with proper formatting and stylin
 - Theme customization
 - Professional rendering
 
-![MD Viewer](https://raw.githubusercontent.com/8an3/dev-notes/main/md/md-render-vscode.jpg?raw=true)
+![MD Viewer](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-render-vscode.jpg?raw=true)
 
 
 ### MD Viewer/Renderer In VS Code
@@ -40,7 +40,7 @@ Side-by-side markdown preview within VS Code for seamless editing workflow
 - Multiple split view configurations
 - Native VS Code integration
 
-![MD Viewer VS Code](https://raw.githubusercontent.com/8an3/dev-notes/main/md/md-render-vscode.jpg?raw=true)
+![MD Viewer VS Code](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-render-vscode.jpg?raw=true)
 
 
 ### Catalyst Editor
@@ -122,16 +122,16 @@ A powerful multi-language editor built on Microsoft's Monaco Editor, originally 
 
 **Resources:**
 - [Video Demo](https://youtu.be/nU5OB_oCrL0)
-- [MD Reference](https://raw.githubusercontent.com/8an3/dev-notes/main/md/md-reference.jpg?raw=true)
-- [MD Guide](https://raw.githubusercontent.com/8an3/dev-notes/main/md/mdGuide.JPG?raw=true)
-- [Outline Example](https://raw.githubusercontent.com/8an3/dev-notes/main/md/md-outline.jpg?raw=true)
-- [Sidebar Overview](https://raw.githubusercontent.com/8an3/dev-notes/main/md/md-sidebar.jpg?raw=true)
-- [Full README Guide](https://raw.githubusercontent.com/8an3/dev-notes/main/md/mdGuide.jpg?raw=true)
+- [MD Reference](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-reference.jpg?raw=true)
+- [MD Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/mdGuide.JPG?raw=true)
+- [Outline Example](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-outline.jpg?raw=true)
+- [Sidebar Overview](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-sidebar.jpg?raw=true)
+- [Full README Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/mdGuide.jpg?raw=true)
 
 **README Templates:**
-- [Awesome Template](https://raw.githubusercontent.com/8an3/dev-notes/main/md/awesome-readme-template.md?raw=true)
-- [Fresh Template](https://raw.githubusercontent.com/8an3/dev-notes/main/md/fresh-template.md?raw=true)
-- [Markdownify Template](https://raw.githubusercontent.com/8an3/dev-notes/main/md/markdownify.md?raw=true)
+- [Awesome Template](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/awesome-readme-template.md?raw=true)
+- [Fresh Template](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/fresh-template.md?raw=true)
+- [Markdownify Template](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/markdownify.md?raw=true)
 
 </details>
 
@@ -171,7 +171,7 @@ Complete GitHub-flavored Markdown reference guide with examples.
 - List formats
 - Link and image embedding
 
-![Markdown Guide](https://raw.githubusercontent.com/8an3/dev-notes/main/reference/markdownguide.JPG?raw=true)
+![Markdown Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/main/reference/markdownguide.JPG?raw=true)
 
 ---
 

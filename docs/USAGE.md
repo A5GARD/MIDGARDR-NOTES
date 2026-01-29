@@ -29,7 +29,7 @@
    - **Tip:** Copy command values while browsing - they'll be inserted automatically at this step
 5. Select which folder to place the item in
 
-[Step-by-step Visual Breakdown](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/add-item.md?raw=true)
+[Step-by-step Visual Breakdown](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/add-item.md?raw=true)
 
 ##### Adding Files As Items
 
@@ -39,7 +39,7 @@
 - Same as adding regular items
 - No value entry needed (file location becomes the value automatically)
 
-[Step-by-step Visual Breakdown](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/add-file.md?raw=true)
+[Step-by-step Visual Breakdown](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/add-file.md?raw=true)
 
 ##### Editing/Deleting Items
 
@@ -53,7 +53,7 @@
 - **Delete** - Remove item
 - **Toggle Hidden** - Switch visibility (false ↔ true)
 
-[Context Menu Screenshot](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/edit-file.jpg?raw=true)
+[Context Menu Screenshot](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/edit-file.jpg?raw=true)
 
 ##### Editing/Deleting Folders
 
@@ -67,7 +67,7 @@
 - **Collapse Folder by Default** - Set default collapsed state
 - **Toggle Hidden** - Switch visibility (false ↔ true)
 
-[Context Menu Screenshot](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/folder-context.jpg?raw=true)
+[Context Menu Screenshot](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/folder-context.jpg?raw=true)
 
 ##### Executing/Triggering Items
 

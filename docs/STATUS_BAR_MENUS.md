@@ -48,7 +48,7 @@ Right-click line → DevStack → Add Bookmark
 
 Later, click the $(bookmark) Bookmarks icon in the Status Bar to see your history and jump back instantly.
 
-![Bookmarks](https://raw.githubusercontent.com/8an3/dev-notes/main/bookmarks/bookmark.jpg?raw=true)
+![Bookmarks](https://raw.githubusercontent.com/8an3/midgardr-notes/main/bookmarks/bookmark.jpg?raw=true)
 
 ---
 

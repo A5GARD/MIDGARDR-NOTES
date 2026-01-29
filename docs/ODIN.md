@@ -178,7 +178,7 @@ Create clickable file links with specific line numbers.
 - Quick navigation to exact code locations
 
 [Video Demo](https://youtu.be/xR1osGkuNCA)
-![File Line Jumper](https://raw.githubusercontent.com/8an3/dev-notes/main/ui/vfs/file-linking.jpg?raw=true)
+![File Line Jumper](https://raw.githubusercontent.com/8an3/midgardr-notes/main/ui/vfs/file-linking.jpg?raw=true)
 
 ## File Search Jumper
 
@@ -197,4 +197,4 @@ Create search-based file links that navigate to the first instance of a search t
 - Quick code exploration
 
 [Video Demo](https://youtu.be/Otd3jWfSf4M)
-![File Search Jumper](https://raw.githubusercontent.com/8an3/dev-notes/main/ui/vfs/file-searching.jpg?raw=true)
+![File Search Jumper](https://raw.githubusercontent.com/8an3/midgardr-notes/main/ui/vfs/file-searching.jpg?raw=true)

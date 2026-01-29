@@ -19,7 +19,7 @@
 > 2. Highlight the object name
 > 3. Right-click and select your desired function
 >
-> **Why?** Most functions insert code at cursor position. Triggering them inside an action/loader function would [split your code in half](https://raw.githubusercontent.com/8an3/dev-notes/main/prisma/blown-action.jpg), potentially pushing the entire function out of view.
+> **Why?** Most functions insert code at cursor position. Triggering them inside an action/loader function would [split your code in half](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/blown-action.jpg), potentially pushing the entire function out of view.
 >
 > **Bonus:** This workflow even works with "Click to Schema Object" - type the object name anywhere in your workspace, trigger the function, and navigate directly to that object in your schema file.
 
@@ -41,7 +41,7 @@ Generate Prisma include objects that automatically include all relations for you
 - Prevents code disruption
 - Works with complex nested relations
 
-![Include Object](https://raw.githubusercontent.com/8an3/dev-notes/main/prisma/include-object.jpg)
+![Include Object](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/include-object.jpg)
 
 ### Click to Schema Object
 
@@ -55,7 +55,7 @@ Navigate directly to any Prisma model definition in your schema file.
 - Highlight any model name and jump to its schema
 - No need to manually search through schema.prisma
 
-![Open Schema Object](https://raw.githubusercontent.com/8an3/dev-notes/main/prisma/open-object.jpg)
+![Open Schema Object](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/open-object.jpg)
 
 ### Generate CRUD Resolvers / REST End Points
 
@@ -79,10 +79,10 @@ Automatically generate complete CRUD operations and REST endpoints for your Pris
 - Complete type definitions
 - Error handling
 
-![CRUD Generation](https://raw.githubusercontent.com/8an3/dev-notes/main/prisma/crud.jpg)
-![Select Type](https://raw.githubusercontent.com/8an3/dev-notes/main/prisma/select-type.jpg)
-![Wrappers](https://raw.githubusercontent.com/8an3/dev-notes/main/prisma/wrappers.jpg)
-![REST Endpoints](https://raw.githubusercontent.com/8an3/dev-notes/main/prisma/rest.jpg)
+![CRUD Generation](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/crud.jpg)
+![Select Type](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/select-type.jpg)
+![Wrappers](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/wrappers.jpg)
+![REST Endpoints](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/rest.jpg)
 
 ### Auto Create Schema
 

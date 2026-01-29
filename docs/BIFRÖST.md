@@ -6,38 +6,38 @@
 <pre style="max-width: 800px; white-space: pre-wrap; overflow-wrap: break-word;">
 /DEVSTACK_SYSTEM_ROOT/
 ├── 📂 TABLE_OF_CONTENTS/
-│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/OVERVIEW.md">OVERVIEW</a> 
-│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/USAGE.md">GETTING STARTED & USAGE</a> 
+│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/OVERVIEW.md">OVERVIEW</a> 
+│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/USAGE.md">GETTING STARTED & USAGE</a> 
 │   ├── <a href="#license">LICENSE</a> 
 │   └── <a href="#acknowledgments">ACKNOWLEDGMENTS</a>
 │  
-├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📂%20BIFRÖST%20/%20-0284c7?style=plastic" valign="middle"></a> .......................... Terminal and Multi Kernel Ngin
-│   ├── 📂 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md">Item Types</a> ..................... VFS item types
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L55">`file`</a> ..................... Providing shortcuts to any file in any location 
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L77">`md`</a> ....................... Same as above, but for md
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L80">`fileAtLine`</a> ............... Instead opens the file at a specific line number
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L89">`folder`</a> ................... To house virtual file items within for organization
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L108">`url`</a> ...................... When executed, opens that url in your default browser
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L117">`command`</a> .................. Executes vscode command
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L145">`chain`</a> .................... Executes any item type in a sequential firing order
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L160">`concurrent`</a> ............... Executes all commands, at once
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L203">`cmmdChain`</a> ................ A chain of commands consisting of only vscode commands
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L223">`conditionalChain`</a> ......... Depending on your checks, can execute or not in any form 
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L733">`powershellCommand`</a> ........ Executes powershell commands
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L751">`debianCMD`</a> ................ Executes baash commands in WSL's Debian enviroment
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L769">`snippet`</a> .................. Copy snippet body to clipboard
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L776">`copyValue`</a> ................ Copy value to clipboard
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L787">`settingsToggle`</a> ........... Toggle workspace or global settings.json key:value pair
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L809">`search`</a> ................... Searches, executed whenever you need with a click 
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L821">`apiCall`</a> .................. Trigger Pre-made HTTP API requests at any time 
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L892">`tasks`</a> .................... Auto generates within the explorer for easy access
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L895">`npmScripts`</a> ............... Same as above but with your packages scripts
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L1029">`label`</a> .................... Visual divider used to break up an area
-│   │   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L1029"><img src="https://img.shields.io/badge/♦%20Dependency%20Manager-ca8a04?style=plastic" valign="middle"></a> ......... Install/uninstall/update multiple npm packages in one click 
+├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📂%20BIFRÖST%20/%20-0284c7?style=plastic" valign="middle"></a> .......................... Terminal and Multi Kernel Ngin
+│   ├── 📂 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md">Item Types</a> ..................... VFS item types
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L55">`file`</a> ..................... Providing shortcuts to any file in any location 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L77">`md`</a> ....................... Same as above, but for md
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L80">`fileAtLine`</a> ............... Instead opens the file at a specific line number
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L89">`folder`</a> ................... To house virtual file items within for organization
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L108">`url`</a> ...................... When executed, opens that url in your default browser
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L117">`command`</a> .................. Executes vscode command
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L145">`chain`</a> .................... Executes any item type in a sequential firing order
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L160">`concurrent`</a> ............... Executes all commands, at once
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L203">`cmmdChain`</a> ................ A chain of commands consisting of only vscode commands
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L223">`conditionalChain`</a> ......... Depending on your checks, can execute or not in any form 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L733">`powershellCommand`</a> ........ Executes powershell commands
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L751">`debianCMD`</a> ................ Executes baash commands in WSL's Debian enviroment
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L769">`snippet`</a> .................. Copy snippet body to clipboard
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L776">`copyValue`</a> ................ Copy value to clipboard
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L787">`settingsToggle`</a> ........... Toggle workspace or global settings.json key:value pair
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L809">`search`</a> ................... Searches, executed whenever you need with a click 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L821">`apiCall`</a> .................. Trigger Pre-made HTTP API requests at any time 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L892">`tasks`</a> .................... Auto generates within the explorer for easy access
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L895">`npmScripts`</a> ............... Same as above but with your packages scripts
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L1029">`label`</a> .................... Visual divider used to break up an area
+│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L1029"><img src="https://img.shields.io/badge/♦%20Dependency%20Manager-ca8a04?style=plastic" valign="middle"></a> ......... Install/uninstall/update multiple npm packages in one click 
 │   │   │    ├── with predefined sets (ie "React setup" installs react, react-dom, types in one go 
 │   │   │    └── vs typing each npm install command)
-│   │   └── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L885">`layout`</a> ................... Taking complete control, of vscode and its interface
-│   │        ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/LAYOUT.md"><img src="https://img.shields.io/badge/📄%20ATLAS%20/%20-0284c7?style=plastic" valign="middle"></a> : WS Layout Ngin</a> . Total environment restoration in one click. Instantly reset 
+│   │   └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L885">`layout`</a> ................... Taking complete control, of vscode and its interface
+│   │        ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LAYOUT.md"><img src="https://img.shields.io/badge/📄%20ATLAS%20/%20-0284c7?style=plastic" valign="middle"></a> : WS Layout Ngin</a> . Total environment restoration in one click. Instantly reset 
 │   │        │   ├── theme, UI visibility, terminals, tabs, view focus and more
 │   │        └── <a href="#in-development"><img src="https://img.shields.io/badge/♠%20ATLAS%20V2%20/-86198f?style=plastic" valign="middle"></a> Global, Profile and Workspace context intelligent 
 │   │            ├── Stale / garbage data cleaner - VSCode leaves data behind, even after 
@@ -67,83 +67,91 @@
 │   │                 └── come back from the grave, did NOT see this one coming ) 
 │   │     
 │   ├── 📄 <a href="https://github.com/8an3/DevStack">Virtual Filing System</a> .......... Core VFS Engine 
-│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L53">Files & Navigation</a> ............. File management and navigation
-│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L115">Commands & Automation</a> .......... Command execution and automation workflows
-│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L731">Terminal Commands</a> .............. Terminal command integration
-│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L767">Utilities</a> ...................... Utility functions and helpers
-│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L">Project Agnostic Setup</a> ......... Framework-agnostic configuration 
-│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📄%20Move%20VFS%20Item%20-0284c7?style=plastic" valign="middle"></a> .................. Move items with ease with the VSCode ui 
-│   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♦%20Copy%20workspace%20folder-ca8a04?style=plastic" valign="middle"></a> ............. Provides a list of folders contained within other configs, 
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L53">Files & Navigation</a> ............. File management and navigation
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L115">Commands & Automation</a> .......... Command execution and automation workflows
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L731">Terminal Commands</a> .............. Terminal command integration
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L767">Utilities</a> ...................... Utility functions and helpers
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L">Project Agnostic Setup</a> ......... Framework-agnostic configuration 
+│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📄%20Move%20VFS%20Item%20-0284c7?style=plastic" valign="middle"></a> .................. Move items with ease with the VSCode ui 
+│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♦%20Copy%20workspace%20folder-ca8a04?style=plastic" valign="middle"></a> ............. Provides a list of folders contained within other configs, 
 │   │    └──  once clicked pastes it into the current configs file
-│   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L890">Auto-Generated Items</a> ........... Automatically generated VFS items
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L890">Auto-Generated Items</a> ........... Automatically generated VFS items
 │   │
 │   ├── 📂 CONFIGURATION_AND_MORE/
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L1057">Complete Example</a> ............ Production configuration walkthrough
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3434">Usage & Previews</a> ............ Examples and previews
-│   │   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3434"><img src="https://img.shields.io/badge/♠%20Extended%20Usage%20Preview-86198f?style=plastic" valign="middle"></a> ........ Recorded coding session proving zerp performance losses
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L1057">Complete Example</a> ............ Production configuration walkthrough
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3434">Usage & Previews</a> ............ Examples and previews
+│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3434"><img src="https://img.shields.io/badge/♠%20Extended%20Usage%20Preview-86198f?style=plastic" valign="middle"></a> ........ Recorded coding session proving zerp performance losses
 │   │   │    └── despite having 100+ extensions worth of functions.
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L940">Getting Started w/ Chains</a> ... Chain automation guide
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG_EXAMPLES.md">Config Items Examples</a> ....... Production configuration walkthrough
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2954">Extension Configuration</a> ..... Extension settings overview
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3781">Configuration Settings</a> ...... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3785">Core Settings</a> ............... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3798">Code Snapshot Settings</a> ...... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3820">GitHub Integration</a> .......... Single click multi function operations
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3840">Build & Automation Settings</a> . The lack of non-automation
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3860">UI & Interface Settings</a> ..... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L3873">Feature Toggles</a> ............. Feature flags and toggles 
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2932">Copy Path</a> ................... Path copying utilities
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2919">Reveal In Explorer</a> .......... File explorer integration
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L2942">Search</a> ...................... Search functionality for config items
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">JSON Config Editor</a> .......... Edit .json configs directly
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">Share/Export Config</a> ......... Bulk sharing/export
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">View Config Example</a> ......... Configuration examples
-│   │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CONFIG.md#L">Default Apps</a> ................ App configurations
-│   │   ├── <a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♠%20Remote%20Resource%20Mgmt-86198f?style=plastic" valign="middle"></a> ........ Profiles for configs: save/download/edit </span>
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L940">Getting Started w/ Chains</a> ... Chain automation guide
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG_EXAMPLES.md">Config Items Examples</a> ....... Production configuration walkthrough
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2954">Extension Configuration</a> ..... Extension settings overview
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3781">Configuration Settings</a> ...... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3785">Core Settings</a> ............... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3798">Code Snapshot Settings</a> ...... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3820">GitHub Integration</a> .......... Single click multi function operations
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3840">Build & Automation Settings</a> . The lack of non-automation
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3860">UI & Interface Settings</a> ..... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3873">Feature Toggles</a> ............. Feature flags and toggles 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2932">Copy Path</a> ................... Path copying utilities
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2919">Reveal In Explorer</a> .......... File explorer integration
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2942">Search</a> ...................... Search functionality for config items
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">JSON Config Editor</a> .......... Edit .json configs directly
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">Share/Export Config</a> ......... Bulk sharing/export
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">View Config Example</a> ......... Configuration examples
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">Default Apps</a> ................ App configurations
+│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♠%20Remote%20Resource%20Mgmt-86198f?style=plastic" valign="middle"></a> ........ Profiles for configs: save/download/edit </span>
 │   │   └── 📄<a href="#architecture-notes">Architecture Notes</a> ........... Breaking down the inner workings of the extension
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#environment-variable-integration">Env Var Integration</a> ..... using .env vars
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#modular-function-building">Modular Func. Building</a> .. Exposing more functions to use
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#the-philosophy-of-automation">Automation Principles</a> ... How it came to be 150+ extensions
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#the-autorun-system">The Autorun System</a> ...... Help with build processes
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#dynamic-package-manager-detection">Dynamic Package Manager</a> . Scan for your package mgr at execution time
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#intelligent-terminal-command-engine">Terminal & Command Ngin</a> . The breakdown
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#concurrent-and-chain">Concurrent And Chain</a> .... What can be acheived
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#autonomous-maintenance">Autonomous Maintenance</a> .. Removing the dev from the equation
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#naming-conventions">Naming Conventions</a> ...... So as to not have to include docs, for every single thing
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#settings-migration">Settings & Migration</a> .... 
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#pro7">pro7</a> .................... Password protected that can be pushed 
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#local-encryption">Local Encryption</a> ........ 
-│   │        ├── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#context">Context</a> ................. 
-│   │        └── 📄<a href="https://github.com/8an3/dev-notes/blob/main/docs/BIFRÖST.md#vsix-archiver">VSIX Archiver</a> ........... Custom less restrictive archiving tool
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#environment-variable-integration">Env Var Integration</a> ..... using .env vars
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#modular-function-building">Modular Func. Building</a> .. Exposing more functions to use
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#the-philosophy-of-automation">Automation Principles</a> ... How it came to be 150+ extensions
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#the-autorun-system">The Autorun System</a> ...... Help with build processes
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#dynamic-package-manager-detection">Dynamic Package Manager</a> . Scan for your package mgr at execution time
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#intelligent-terminal-command-engine">Terminal & Command Ngin</a> . The breakdown
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#concurrent-and-chain">Concurrent And Chain</a> .... What can be acheived
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#autonomous-maintenance">Autonomous Maintenance</a> .. Removing the dev from the equation
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#naming-conventions">Naming Conventions</a> ...... So as to not have to include docs, for every single thing
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#settings-migration">Settings & Migration</a> .... 
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#pro7">pro7</a> .................... Password protected that can be pushed 
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#local-encryption">Local Encryption</a> ........ 
+│   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#context">Context</a> ................. 
+│   │        └── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#vsix-archiver">VSIX Archiver</a> ........... Custom less restrictive archiving tool
 │   │  
-│   ├── 📂 <a href="https://github.com/8an3/dev-notes/blob/main/docs/CUSTOM_FUNCTIONS.md">CUSTOM_FUNCTION_BREAKDOWNS</a>/
+│   ├── 📂 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CUSTOM_FUNCTIONS.md">CUSTOM_FUNCTION_BREAKDOWNS</a>/
 │   │   ├── 📄 Order 1 through # ........... Step by step breakdown on executing order #
 │   │   └── 📄  ............................
 │   │
 │   └── 📂 STATUSBAR_AND_CONTEXT_MENU_SYSTEM/
-│       ├── 📂 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">STATUS_BAR_DASHBOARDS</a> ....... What you have access to
-│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Clipboard History Pro</a> .... Simply, the windows version vscode
-│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Bookmarks</a> ................ Bookmark anything, anywhere
-│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Icons</a> .................... React icons, inserts at cursor / copies to clipboard
-│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">Snapshot Ngin</a> ............ Instant snapshot
-│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">UI</a> ....................... Copies to clipboard one of 2500+ components
-│       │   ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">BE</a> ....................... Bleeding edge features
-│       │   └── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/STATUS_BAR_MENUS.md">DevStack</a> ................. Main quickpick encompassing a great many of topics
-│       ├── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/EXPLORER_CONTEXT.md">EXPLORER_CONTEXT_MENU</a> ........ Accessing features bound to file type
-│       └── 📄 <a href="https://github.com/8an3/dev-notes/blob/main/docs/EDITOR_CONTEXT.md">EDITOR_CONTEXT_MENU</a> .......... A treasure trove of functions
+│       ├── 📂 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">STATUS_BAR_DASHBOARDS</a> ....... What you have access to
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Clipboard History Pro</a> .... Simply, the windows version vscode
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Bookmarks</a> ................ Bookmark anything, anywhere
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Icons</a> .................... React icons, inserts at cursor / copies to clipboard
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Snapshot Ngin</a> ............ Instant snapshot
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">UI</a> ....................... Copies to clipboard one of 2500+ components
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">BE</a> ....................... Bleeding edge features
+│       │   └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">DevStack</a> ................. Main quickpick encompassing a great many of topics
+│       ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/EXPLORER_CONTEXT.md">EXPLORER_CONTEXT_MENU</a> ........ Accessing features bound to file type
+│       └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/EDITOR_CONTEXT.md">EDITOR_CONTEXT_MENU</a> .......... A treasure trove of functions
 │
 </pre>
 
 Before getting into item types, I wanted to get into another topic real quick, that the features found within this extension may feel like a ton of features quickly jammed into one, which couldn't be farther from the truth. 
 
 To help with this I started giving features names of norse and greek gods in order to add a bit of separation from eachother, since Loki AI not only was a great fit for that feature but it made it stand out from the others. Nothing was rushed in terms of adding / creating features. Most of them, should be their own extension take snippets for example, which hosts a feature parity that surpasses paid and enterprise products, yet it gets lost among the other features. Which sucks, because someone wanting a great snippet editor... may never see it. Below is a list of the names used and why they were used:
+- A5GARD - npm org
+- BIFRÖST - Template installer/creator
+- BIFRÖST-PLUGIN - Plugin installer/creator
+- ᛇ YGGDRASIL - Central CLI hub (connects all tools)
+- ÍVALDI - formerly know as Catalyst UI this is the components ui library i HATE THIS NAME i want this to be a main name since the library is so big
+  - @catalystsoftware/ui is a npm libarry that will now get cahnged
+- @catalystsoftware/css-plus-plus - a custom tailwind css buiild
+- ᛒ BALDR - @catalystsoftware/icons
 - 𐌀 ATLAS - Titan who holds up the celestial spheres perfect for layout/UI manipulation suggests "supporting/structure"
 - ᛒ BIFRÖST (Current: Terminal & Multi-Kernel Ngin) Rainbow bridge connecting realms (different terminals/OSs) Perfect for cross-environment terminal system implies connection/communication
 - ᚨ ODIN (search editor) He sacrificed for knowledge/wisdom the all-seeing/all-knowing aspect fits search functionality
 - ᚹ VALHALLA - Hall of the slain (where data "lives") dramatic but fitting for data storage as Odin gathers warriors here (data points) database related features currently sqlite3 only
 - ᚱ RÚNAR - Norse for "runes" - magical symbols, snippets are modern magical runes
 - ᚦ THOR (Current: Tailwind Plugin Ngin) for powerful styling/UI utilities suggests "power/impact"
-- ᛇ YGGDRASIL (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
+- no name (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
 - ᚹ VÖLUNDR (Master smith/craftsman (Wayland the Smith)) for cleanup/refactoring/automation tools suggests "craftsmanship/maintenance"
 - ᚺ HUGINN & ᛗ MUNINN (Remix/Prisma utilities) Odin's ravens: Thought and Memory for framework utilities
 - ᛏ TYR (Current: Port & Process/Errors) God of law, justice, heroic glory for debugging/error handling suggests "order/resolution"
@@ -163,8 +171,158 @@ To help with this I started giving features names of norse and greek gods in ord
 - ᚷ GINNUNGAGAP- The primordial void where all potential exists Perfect: modules exist here before being "born" into projects - Rune: Gebo ᚷ gift/exchange
 - ᚢ URÐR for Snapshot Engine "That which has become" (one of the three Norns) She represents the PAST Norns control fate/destiny - snapshots control your project's fate Rollback = returning to the past Urðr governs
 - ᚹ VEÐRFÖLNIR for VSCInfo - Eagle atop Yggdrasil, sees EVERYTHING  oversight/monitoring from above viewing system continuously
-- HEPHAESTUS Catalyst UI
-- ᛒ BALDR - icons
+<!-- 
+
+contained within the extension
+- 𐌀 ATLAS - layout ngin
+- ᛒ BIFRÖST - Terminal & Multi-Kernel Ngin
+- ᚨ ODIN - search editor 
+- ᚹ VALHALLA - data storage 
+- ᚱ RÚNAR - snippets
+- no name (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
+- ᚹ VÖLUNDR - 
+- ᚺ HUGINN & ᛗ MUNINN - Remix/Prisma utilities
+- ᛏ TYR - Port & Process/Errors
+- ᛜ FREYR - VS Code Styling/Theming
+- ᛊ SKÁLD - Catalyst Editor
+- ᚱ RATATOSKR - File Tree Builder/Visualization tool
+- ᚹ VIÐARR - Automation events
+- 𐌍 NEMESIS - Create Incoming Tunnel
+- 𐌇 HERACLES - Batch Rename
+- ☿ HERMES - API Secret Grabber
+- ᚺ HEIMDALLR - react preformance fucntions
+- ᚺ HÖFUÐ	- Intellisense Schema Ngin	
+- ᛊ SAGA - to dos notes and reminders
+- ᚷ GINNUNGAGAP - 
+- ᚢ URÐR - Snapshot Engine 
+- ᚹ VEÐRFÖLNIR - VSCInfo 
+
+outside the extension 
+CONSUMER 
+- SLEIPNIR - Automotive Dealer CRM
+- ᚹ VALHALLA - Realtor CRM
+- FREYR - Restaurant POS
+- TYR - Store POS
+- FORSETI - Lawyer CRM
+
+DEV
+- ÁSGARÐR - npm org
+- ᛚ LOKI - AI
+- ᛒ BIFRÖST - Template installer/creator
+- ᛒ BIFRÖST-PLUGIN - Plugin installer/creator
+- ᛇ YGGDRASIL - Central CLI hub (connects all tools)
+- MIÐGARÐR - formerly know as Catalyst UI & @catalystsoftware/ui is a npm libarry that will now get cahnged
+- ᚦ THOR - CSS/tailwind
+  - @catalystsoftware/css-plus-plus - a custom tailwind css buiild
+- ᛒ BALDR - @catalystsoftware/icons
+- ᛗ MÍMIR - DevArchive?
+- ᚨ ODIN - IDE Editor
+- GULLVEIG - Auto Finance Calculator
+- ᛊ SKÁLD - Catalyst Editor & Rich Text Editor
+- ᚱ RÚNAR - Snippets
+- ☿ HERMES - Messenger 
+- ᛊ SAGA - Appointment Scheduler
+- ᚢ URÐR - Event Calendar
+
+
+- ᚹ VÖLUNDR - 
+- ᚺ HUGINN & ᛗ MUNINN - 
+- ᚱ RATATOSKR - 
+- ᚹ VIÐARR - 
+- 𐌍 NEMESIS - 
+- 𐌇 HERACLES - 
+- ᚺ HEIMDALLR - 
+- ᚺ HÖFUÐ	- 
+- ᚷ GINNUNGAGAP - 
+- ᚹ VEÐRFÖLNIR - 
+
+AVAILABLE NORSE/MYTHOLOGICAL NAMES:
+Major Gods/Figures:
+
+SLEIPNIR (Odin's 8-legged horse)
+FENRIR (The great wolf)
+GERI & FREKI (Odin's wolves)
+GUNGNIR (Odin's spear)
+DRAUPNIR (Odin's ring)
+MJÖLNIR (Thor's hammer)
+SIF (Thor's wife, harvest goddess)
+IDUNN (Youth goddess, keeper of apples)
+BRAGI (Poetry god)
+FORSETI (Justice god)
+NJORD (Sea god)
+ULLR (Archery/skiing god)
+HODER (Blind god)
+VALI (Avenger)
+MAGNI (Thor's son - strength)
+MODI (Thor's son - courage)
+NANNA (Baldr's wife)
+EIR (Healing goddess)
+GEFION (Giver goddess)
+VAR (Goddess of oaths)
+VOR (Goddess of wisdom)
+SYN (Guardian goddess)
+HLIN (Protection goddess)
+SNOTRA (Wisdom goddess)
+GERSEMI (Freyja's daughter - precious)
+HNOSS (Freyja's daughter - treasure)
+
+Giants/Creatures:
+
+HRUNGNIR (Stone giant)
+JÖRMUNGANDR (World serpent)
+NIDHOGG (Dragon gnawing roots)
+RATATOSK (Already used)
+HRAESVELGR (Eagle creating wind)
+SKOLL (Wolf chasing sun)
+HATI (Wolf chasing moon)
+SURTR (Fire giant)
+YMIR (Primordial giant)
+THRYM (Frost giant king)
+THIAZI (Storm giant)
+GRENDEL (Monster)
+FAFNIR (Dragon)
+AUDUMBLA (Primordial cow)
+
+Valkyries:
+
+BRUNHILDE
+SIGRUN
+SVAFA
+KARA
+SKULD
+GÖNDUL
+HILDR
+GEIRSKÖGUL
+RANDGRID
+RADGRID
+REGINLEIF
+
+Dwarves:
+
+ANDVARI
+BROKK
+EITRI
+DVALIN
+ALFRIGG
+BERLING
+GRERR
+SINDRI
+DURIN
+
+Other:
+
+HEL (Death/underworld)
+SIGYN (Loki's wife)
+MODGUD (Bridge guardian)
+HVERGELMIR (Source of rivers)
+MUSPELHEIM (Fire realm)
+NIFLHEIM (Ice realm)
+ALFHEIM (Light elf realm)
+SVARTALFHEIM (Dark elf realm)
+JOTUNHEIM (Giant realm)
+MIDGARD (Human realm)
+ASGARD (God realm)
+-->
 
 ## Item Types
 
@@ -263,7 +421,7 @@ Execute commands one after another in your specified order. When creating items 
 
 **Advanced Usage**: Mixed sequential/concurrent flows, conditional execution
 
-**Preview**: [Video](https://youtu.be/ySp83VqxQ8s) | [Image](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
+**Preview**: [Video](https://youtu.be/ySp83VqxQ8s) | [Image](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
 
 ##### Unique Example #2
 
@@ -304,7 +462,7 @@ This one wont be as unique, but will demonstrate... just how far and how much ca
      6. pushes tags
      7. push to npm ( this command I actually lost for a while, due to the fact of not knowing exactly how the new required commands / pat system worked with npm since they do not want you to progmatically update your libraries anymore, it seems. Adding pain to injury, I hope this has changed, but I must have read the docs day one of the new requirement... as there were virtually none on their site, aside from a banner notifying users of said new requirement. I do have to manually adjust this command... once every 90 days I think but atleast its only doing something manually once in that time instead of every single time with a newly created pat because, to my knowledge and hopefully I'm proved wrong in this regard, creating said pat manually on their site. Which is bulshit imo as far as secuirty is concerned. This is such a low point of entry for attackers, it is FAR easier to go after the user instead, once you have control of their accounts, the attacker... once every 90 days... can still go in and create their own token. )
 
-Anyways... you get the point of taking chores that are required of us that take in some cases quite a while, but instead it runs itself with a click at which time I play a round of aram in lol as this command does effect a lot of projects. For you though, if you didn't want to create a nuke sized command like mine, but would still love to benefit from the same automation for any individual project you may have, executing one of the orders 1 through 11 will net the end result you are looking for. <a href="https://github.com/8an3/dev-notes/blob/main/docs/CUSTOM_FUNCTIONS.md">Custom functions</a> does a break down on them that will work in a great many variety of project structures and architectures, OR you can also build it out yourself with devstack since each function is built in a modular fashion and each of them are exposed to you to use.
+Anyways... you get the point of taking chores that are required of us that take in some cases quite a while, but instead it runs itself with a click at which time I play a round of aram in lol as this command does effect a lot of projects. For you though, if you didn't want to create a nuke sized command like mine, but would still love to benefit from the same automation for any individual project you may have, executing one of the orders 1 through 11 will net the end result you are looking for. <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CUSTOM_FUNCTIONS.md">Custom functions</a> does a break down on them that will work in a great many variety of project structures and architectures, OR you can also build it out yourself with devstack since each function is built in a modular fashion and each of them are exposed to you to use.
 
 #### Getting Started with Chains
 
@@ -966,6 +1124,19 @@ All the items referenced in `executeChain` must exist somewhere in your VFS conf
   ]
 }
 ```
+
+
+#### `conditional`
+currently planned to be created 
+
+conditions:
+always | firstOpen | dailyFirst | custom
+if succesful
+if unsuccesful
+Run command at specific time
+Recurring executions (every hour, daily)
+Cron-like syntax
+Background execution option
 
 ### Terminal Commands
 
@@ -1659,7 +1830,7 @@ I've played around with a TON of different label styles, landing on this being t
             { "label": "DevStack", "path": "code-insiders -n f:/DevStack", "type": "powershellCommand", "icon": "symbol-event" },
             { "label": "icons", "path": "code-insiders -n f:/icons", "type": "powershellCommand", "icon": "symbol-event" },
             { "label": "Catalyst Editor", "path": "code-insiders -n f:/code-editor", "type": "powershellCommand", "icon": "project" },
-            { "label": "dev notes", "path": "code-insiders -n f:/dev-notes", "type": "powershellCommand", "icon": "project" },
+            { "label": "dev notes", "path": "code-insiders -n f:/midgardr-notes", "type": "powershellCommand", "icon": "project" },
             {
               "label": "TO DO, NOTES, AND THINGS",
               "expanded": false,
@@ -3296,7 +3467,7 @@ I've played around with a TON of different label styles, landing on this being t
 </details>
 
 ## Resources
-- [Visual Guide](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
+- [Visual Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
 - [Video Tutorial](https://youtu.be/NtnVq8CNJ7A)
 
 
@@ -3311,7 +3482,7 @@ Open file locations directly in Windows Explorer or macOS Finder from:
 - Editor context menu
 - Extensions pane
 
-![Reveal in Explorer](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/reveal-in-explorer.jpg?raw=true)
+![Reveal in Explorer](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/reveal-in-explorer.jpg?raw=true)
   
 
 ## Copy Path
@@ -3329,7 +3500,7 @@ Copy full or relative file paths to clipboard. Works with multiple path formats 
 
 Powerful search functionality to find and execute any command you've created. Preview commands before execution to ensure you're running the right one.
 
-![Search Feature](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/search.jpg)
+![Search Feature](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/search.jpg)
 
 [Video Demo](https://youtu.be/pRVv7UaY4qM)
 
@@ -3820,8 +3991,8 @@ Set item type in config object or click the plus icon in the title pane.
 
 #### Previews
 
-- **Navigation View**: [Image](https://raw.githubusercontent.com/8an3/dev-notes/main/ui/nav-view.jpg?raw=true)
-- **Sequential Execution**: [Video](https://youtu.be/ySp83VqxQ8s) | [Image](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
+- **Navigation View**: [Image](https://raw.githubusercontent.com/8an3/midgardr-notes/main/ui/nav-view.jpg?raw=true)
+- **Sequential Execution**: [Video](https://youtu.be/ySp83VqxQ8s) | [Image](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
 
 
 

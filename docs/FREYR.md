@@ -24,7 +24,7 @@ Create custom themes for both VSCode and Tailwind with live preview and multiple
 - Real-time color customization
 - Complete theme control
 
-![Theme Builder](https://raw.githubusercontent.com/8an3/dev-notes/main/config/theme.jpg)
+![Theme Builder](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/theme.jpg)
 
 ---
 
@@ -40,7 +40,7 @@ Ultra-dark theme preset for VSCode with deep black backgrounds and optimized con
 - Optimized for reduced eye strain
 - Perfect for dark environment coding
 
-![Settings](https://raw.githubusercontent.com/8an3/dev-notes/main/config/settings.jpg)
+![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 ---
 
@@ -56,7 +56,7 @@ Dark blue theme preset combining deep blacks with subtle blue accents.
 - Blue-tinted dark interface
 - Alternative to pure black themes
 
-![Settings](https://raw.githubusercontent.com/8an3/dev-notes/main/config/settings.jpg)
+![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 ---
 
@@ -73,7 +73,7 @@ Color-code multiple VSCode windows to easily distinguish between different proje
 - Perfect for managing multiple projects
 - Quick visual identification
 
-![Settings](https://raw.githubusercontent.com/8an3/dev-notes/main/config/settings.jpg)
+![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 ---
 
@@ -88,7 +88,7 @@ Restore default VSCode window colors and remove custom window differentiation.
 - Restores default VSCode appearance
 - Resets all window color assignments
 
-![Settings](https://raw.githubusercontent.com/8an3/dev-notes/main/config/settings.jpg)
+![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 
 ---

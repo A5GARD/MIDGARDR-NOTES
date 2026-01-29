@@ -25,8 +25,8 @@ Comprehensive GitHub repository management and functionality accessible from mul
 
 See DevStack Quick Pick documentation for full feature outline.
 
-![GitHub Functions](https://raw.githubusercontent.com/8an3/dev-notes/main/github/github-pic.jpg?raw=true)
-![GitHub Context Menu](https://raw.githubusercontent.com/8an3/dev-notes/main/github/contextr.jpg?raw=true)
+![GitHub Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/github/github-pic.jpg?raw=true)
+![GitHub Context Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/github/contextr.jpg?raw=true)
 
 
 ### Open Repo in Browser

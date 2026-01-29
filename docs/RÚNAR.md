@@ -22,7 +22,7 @@
 ```markdown
 / DEVSTACK_SYSTEM_ROOT/
 └── 📝 AUTHORING_SUITE /
-    └── 📂 [SNIPPETS_AND_SNAPSHOTS](https://github.com/8an3/dev-notes/blob/main/docs/SNIPPETS.md)/
+    └── 📂 [SNIPPETS_AND_SNAPSHOTS](https://github.com/8an3/midgardr-notes/blob/main/docs/SNIPPETS.md)/
         ├── 📄 Code Snapshot .................. Snapshot selection to beautiful terminal window
         ├── 📄 Workspace Context .............. Context-aware code snippets
         ├── 📄 [Context Snippets](#context-snippets) ............... Editor context snippets that insert at cursor
@@ -69,7 +69,7 @@ Workspace context snippet system built with Monaco editor for creating, editing,
 > Alongside a `share` button, instead of downloading all of your data, it will only download what you wish to share via the checkboxes. The downloaded zip will only contain what you selected, if you just wish to share your config, you can. If you would just like to share your snippets with a friend, you can. Or maybe you need to share the to do items with a colleague.
 
 
-![Snippet Editor](https://raw.githubusercontent.com/8an3/dev-notes/main/snippets/snippet-monaco.jpg?raw=true)
+![Snippet Editor](https://raw.githubusercontent.com/8an3/midgardr-notes/main/snippets/snippet-monaco.jpg?raw=true)
 
 ### DevStack Snippets vs (Marketplace Leader)
 
@@ -178,7 +178,7 @@ Features:
 
 Context Snippets transforms the snippet workflow from "hoping you remember the right prefix" to "always having instant access to exactly what you need." No navigation, no searching through files, no interruption to your coding flow.
 
-![Context Snippets](https://raw.githubusercontent.com/8an3/dev-notes/main/snippets/context-snippets.jpg?raw=true)
+![Context Snippets](https://raw.githubusercontent.com/8an3/midgardr-notes/main/snippets/context-snippets.jpg?raw=true)
 
 
 ---

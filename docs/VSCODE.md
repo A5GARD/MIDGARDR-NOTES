@@ -65,8 +65,8 @@ Toggle performance modes for working with large files or resource-intensive oper
 - Quick toggle between enabled and disabled states
 - Fastest way to switch performance modes
 
-![Performance Switch](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/performance.jpg)
-![Performance Options](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/performance2.jpg)
+![Performance Switch](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/performance.jpg)
+![Performance Options](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/performance2.jpg)
 
 ### Custom VSIX Packager
 
@@ -80,7 +80,7 @@ Alternative VSIX packaging solution as an alternative to vsce.
 - Structure visualization
 - More resilient build process
 
-![VSIX Packager](https://raw.githubusercontent.com/8an3/dev-notes/main/vfs/performance2.jpg)
+![VSIX Packager](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/performance2.jpg)
 
 ### Region Folding
 
@@ -166,7 +166,7 @@ Multi-format file formatter supporting 33+ file types.
 - Set as default formatter per file type
 - Configure via "Format Document with..." → Configure → Select desired formatter
 
-![Formatters](https://raw.githubusercontent.com/8an3/dev-notes/main/config/formatters.jpg)
+![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
 
 ### Inline Imports
 
@@ -231,7 +231,7 @@ Remove trailing commas from JSON and JavaScript objects.
 - Ensures code compatibility
 - One-click cleanup
 
-![Formatters](https://raw.githubusercontent.com/8an3/dev-notes/main/config/formatters.jpg)
+![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
 
 ### Remove All Comments
 
@@ -245,7 +245,7 @@ Strip all comments from the current file.
 - Clean code output
 - Preserves code functionality
 
-![Formatters](https://raw.githubusercontent.com/8an3/dev-notes/main/config/formatters.jpg)
+![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
 
 ### Remove console.log
 
@@ -263,7 +263,7 @@ Remove console.log statements from files, folders, or entire workspace.
 - **Access:** Command Palette → Select remove console.log from workspace
 - Removes all console.log statements from entire workspace
 
-![Formatters](https://raw.githubusercontent.com/8an3/dev-notes/main/config/formatters.jpg)
+![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
 
 ### Remove Unused Imports
 
@@ -277,7 +277,7 @@ Detect and remove import statements that are not used in the file.
 - Improved code readability
 - Reduces bundle size
 
-![Formatters](https://raw.githubusercontent.com/8an3/dev-notes/main/config/formatters.jpg)
+![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
 
 ### Zombie Process Killer (portReaper)
 

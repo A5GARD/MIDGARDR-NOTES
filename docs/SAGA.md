@@ -304,7 +304,7 @@ Honestly, I'm still baffled by how those initial users even discovered the exten
 
 ## Features
 
-![Explorer pane](https://raw.githubusercontent.com/8an3/dev-notes/main/todo/main.jpg)
+![Explorer pane](https://raw.githubusercontent.com/8an3/midgardr-notes/main/todo/main.jpg)
 
 ### 📝 Note Management
 - **Multiple Note Types**: Support for regular notes, todos (checklists), and reminders
@@ -376,7 +376,7 @@ Honestly, I'm still baffled by how those initial users even discovered the exten
 
 1. Click on the `DevStack` button found on the left hand side of the status bar to pull up the quickpick
 
-![Explorer pane](https://raw.githubusercontent.com/8an3/dev-notes/main/todo/status-bar.jpg)
+![Explorer pane](https://raw.githubusercontent.com/8an3/midgardr-notes/main/todo/status-bar.jpg)
 
 > [!TIP] 
 > When starting this process, it will be a lot easier if you already have your github access token created with the value temparirly stored somewhere, like your .env file. ( the process to start follows these two tip sections )
@@ -434,7 +434,7 @@ Honestly, I'm still baffled by how those initial users even discovered the exten
   - set the repo name, everything
   - when finished it creates a folder in your .vscode workspace folder to store everything so it does NOT clutter up your workspaces root file system
 
-![Explorer pane](https://raw.githubusercontent.com/8an3/dev-notes/main/todo/qp.jpg)
+![Explorer pane](https://raw.githubusercontent.com/8an3/midgardr-notes/main/todo/qp.jpg)
 
 2. OR if you would like, you may configure each item on its own, setting repo, access token branch, owner, and so forth
 
@@ -472,7 +472,7 @@ Click `+` in the sections title pane
 - items, depending on its type, will also automatically set their own labels based on events, such a `coming up` or `missed` for reminders
 - you may also set the priority of any item by right clicking the item, and selecting the desired option
 
-![Explorer pane](https://raw.githubusercontent.com/8an3/dev-notes/main/todo/context.jpg)
+![Explorer pane](https://raw.githubusercontent.com/8an3/midgardr-notes/main/todo/context.jpg)
 
 ### Deleting
 
@@ -548,7 +548,7 @@ Click `+` in the sections title pane
 >
 > `devstack` quickpick menu → `To do / Notes` → `Settings` → `customCmd`
 
-![Explorer pane](https://raw.githubusercontent.com/8an3/dev-notes/main/todo/github-functions.jpg)
+![Explorer pane](https://raw.githubusercontent.com/8an3/midgardr-notes/main/todo/github-functions.jpg)
 
 
 

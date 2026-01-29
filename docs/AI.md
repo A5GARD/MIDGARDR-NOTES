@@ -337,12 +337,12 @@ AI prompt system with built-in pre-prompt architecture. Easily create and design
 
 ## Examples
 
-- [Pre-Prompt V6](https://github.com/8an3/dev-notes/blob/main/docs/Pre-Prompt-V6.md)
-- [Reusable Components - Pre-Prompt](https://github.com/8an3/dev-notes/blob/main/docs/Reusable-Components-Pre-Prompt.md)
-- [Demo test](https://github.com/8an3/dev-notes/blob/main/docs/Demo-test.md)
-- [Default Pre-Prompt](https://github.com/8an3/dev-notes/blob/main/docs/Default-Pre-Prompt.md)
-- [Extension feature example pre-prompt](https://github.com/8an3/dev-notes/blob/main/docs/Extension-feature-example-pre-prompt.md)
-- [VSCode Extension Pre-Prompt](https://github.com/8an3/dev-notes/blob/main/docs/VSCode-Extension-Pre-Prompt.md)
+- [Pre-Prompt V6](https://github.com/8an3/midgardr-notes/blob/main/docs/Pre-Prompt-V6.md)
+- [Reusable Components - Pre-Prompt](https://github.com/8an3/midgardr-notes/blob/main/docs/Reusable-Components-Pre-Prompt.md)
+- [Demo test](https://github.com/8an3/midgardr-notes/blob/main/docs/Demo-test.md)
+- [Default Pre-Prompt](https://github.com/8an3/midgardr-notes/blob/main/docs/Default-Pre-Prompt.md)
+- [Extension feature example pre-prompt](https://github.com/8an3/midgardr-notes/blob/main/docs/Extension-feature-example-pre-prompt.md)
+- [VSCode Extension Pre-Prompt](https://github.com/8an3/midgardr-notes/blob/main/docs/VSCode-Extension-Pre-Prompt.md)
 
 ---
 

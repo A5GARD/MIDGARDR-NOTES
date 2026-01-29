@@ -24,8 +24,8 @@ Export your complete DevStack configuration to share with team members or backup
 
 **⚠️ Important:** Review exported files for sensitive data (API keys, tokens, paths) before sharing.
 
-![Share Config](https://raw.githubusercontent.com/8an3/dev-notes/main/config/share-config.jpg)
-![Settings](https://raw.githubusercontent.com/8an3/dev-notes/main/config/settings.jpg)
+![Share Config](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/share-config.jpg)
+![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 ---
 
@@ -42,8 +42,8 @@ Browse example configuration files to understand DevStack's setup and structure.
 - Common patterns
 - Setup templates
 
-![View Config](https://raw.githubusercontent.com/8an3/dev-notes/main/config/view-config.jpg)
-![Settings](https://raw.githubusercontent.com/8an3/dev-notes/main/config/settings.jpg)
+![View Config](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/view-config.jpg)
+![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 ---
 
@@ -60,7 +60,7 @@ Automatically detect and add missing import statements based on your global conf
 - Works with custom module mappings
 - Supports multiple import styles
 
-![Add Missing Imports](https://raw.githubusercontent.com/8an3/dev-notes/main/config/add-missing.jpg)
+![Add Missing Imports](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/add-missing.jpg)
 
 ---
 
@@ -168,7 +168,7 @@ import * as Components from './index';
 
 **Real-World Impact:** Converted 1550+ individual imports to single registry import using find-and-replace in seconds.
 
-![Registry](https://raw.githubusercontent.com/8an3/dev-notes/main/config/registry.jpg)
+![Registry](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/registry.jpg)
 
 ---
 
@@ -185,7 +185,7 @@ Quick access to edit your DevStack configuration file directly in the editor.
 - Auto-completion support
 - Instant access
 
-![Edit Config](https://raw.githubusercontent.com/8an3/dev-notes/main/config/edit-config.jpg)
+![Edit Config](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/edit-config.jpg)
 
 ---
 
@@ -202,7 +202,7 @@ Export your current configuration to a file in your workspace root directory.
 - Easy to version control
 - Shareable format
 
-![Export Config](https://raw.githubusercontent.com/8an3/dev-notes/main/config/export-config.jpg)
+![Export Config](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/export-config.jpg)
 
 ---
 
@@ -219,7 +219,7 @@ Import a previously exported configuration or load a modified config file.
 - Validate on import
 - Safe replacement
 
-![Import Config](https://raw.githubusercontent.com/8an3/dev-notes/main/config/import-config.jpg)
+![Import Config](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/import-config.jpg)
 
 ---
 
@@ -236,7 +236,7 @@ Install standard ESLint and Prettier configuration files to your project.
 - Standard rule sets
 - Ready to customize
 
-![ESLint](https://raw.githubusercontent.com/8an3/dev-notes/main/config/eslint.jpg)
+![ESLint](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/eslint.jpg)
 
 ---
 

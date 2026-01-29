@@ -21,7 +21,7 @@ Project-specific note system to track where you left off in your work.
 - Never lose track of your progress
 - Automatic workspace association
 
-![Left Off Note](https://raw.githubusercontent.com/8an3/dev-notes/main/config/left-off.jpg)
+![Left Off Note](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/left-off.jpg)
 
 ---
 
@@ -38,7 +38,7 @@ Convert Tailwind CSS classes between v3 and v4 with ease.
 - Copy converted output
 - Migration assistance
 
-![Tailwind Converter](https://raw.githubusercontent.com/8an3/dev-notes/main/tools/tailwind-converter.jpg)
+![Tailwind Converter](https://raw.githubusercontent.com/8an3/midgardr-notes/main/tools/tailwind-converter.jpg)
 
 ---
 
@@ -80,7 +80,7 @@ Comprehensive reference guide with 360+ commonly used VSCode commands.
 - Quick copy functionality
 - Organized by command type
 
-![VSCode Commands Reference](https://raw.githubusercontent.com/8an3/dev-notes/main/reference/vscode-cmds-reference.jpg?raw=true)
+![VSCode Commands Reference](https://raw.githubusercontent.com/8an3/midgardr-notes/main/reference/vscode-cmds-reference.jpg?raw=true)
 
 ---
 
@@ -98,7 +98,7 @@ Advanced color picker with multiple format outputs, inspired by ShadCN design.
 - Real-time preview
 - Color palette generation
 
-![Color Wheel](https://raw.githubusercontent.com/8an3/dev-notes/main/shadcn/color-wheel.jpg?raw=true)
+![Color Wheel](https://raw.githubusercontent.com/8an3/midgardr-notes/main/shadcn/color-wheel.jpg?raw=true)
 
 ---
 

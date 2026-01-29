@@ -1,4 +1,4 @@
-# HEPHAESTUS: Formerly known as CATALYST UI LIBRARY
+# MIÐGARÐR: Formerly known as CATALYST UI LIBRARY
 
 # Editor Context Insert
 
@@ -482,7 +482,7 @@ I have used this so much more than I ever thought I would and because of this it
 
 
 
-# HEPHAESTUS UI
+# MIÐGARÐR UI
 
 Overview
 
@@ -506,8 +506,8 @@ A comprehensive UI component library with 1808+ components spanning free and pre
 
 **Development Environment:**
 - **Sandbox** - Live React/Tailwind development environment with accessible libraries inventory
-  - ![Live Playground 1](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/tools/live-playground1.png?raw=true)
-  - ![Live Playground 2](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/tools/live-playground.png?raw=true)
+  - ![Live Playground 1](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/tools/live-playground1.png?raw=true)
+  - ![Live Playground 2](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/tools/live-playground.png?raw=true)
 
 **Utility Tools:**
 - Color Wheel
@@ -531,7 +531,7 @@ Access the entire 1808+ component library directly from the editor context menu,
 
 **Access:** Right-click → Catalyst UI → Select component
 
-![Context Menu](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/ui/context-menu.png?raw=true)
+![Context Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/ui/context-menu.png?raw=true)
 
 
 ### Insert Component via Quick Pick
@@ -541,7 +541,7 @@ Quick pick menu with search capabilities featuring a nested list of all availabl
 
 **Access:** Click UI button on status bar → Select component
 
-![Quick Pick](https://raw.githubusercontent.com/8an3/dev-notes/blob/main/ui/quickpick.jpg)
+![Quick Pick](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/ui/quickpick.jpg)
 
 
 ### Installing Catalyst-UI Components
