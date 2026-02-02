@@ -1,4 +1,4 @@
-# ATLAS
+# BROKKR
 
 > [!NOTE]
 > The new layout system is already underway, starting with focusing on the UI and how each level feels along with adjusting which level should control what exactly. No idea how I'll go about the back end of things yet, but we'll get there and figure it out. 
@@ -15,6 +15,23 @@
 > Levels 1, 2 and 3 will be getting more options to configure. Currently I have only coded in my own settings into Saurons tab, and it is astromically funny just how big of a difference there is between them. But after seeing it come together in the ui, it's going to be easy enough to know that no one should have any issue having the config they want as each part has descriptions and what not. 
 >
 > The new atlas layout system will come out in 2 versions, one after another. The first will be virtually how it is now but in ui form. Since there are a lot of moving parts I want to make sure the ui works before even moving on to the more complex settings that will be available in level 4, which means if you don't plan on using that level, you will be able to work with the new system rather quickly. With the new system being so simple the only documentation there will be is just an overview of each of the levels, and that's it really. as it's pretty self explanatory. At which point I will start working on the last tab, which might be over and done with quickly or... it will take some time with trying to figure out what everything does. A lot of that extra time will depend on new the systems being introduced to handle the new features, if any.
+
+> [!UPDATE]
+> finally took the time and went through every ui toggle and setting and grabbed all the necessary values with the exception of two values that I'm shocked I couldn't find... but I'll try blindly setting them to see if I can't find them since the files I'm now searching through do not have intellisense. 
+>
+> This means in addition to offering every setting available to certain levels, every level will atleast be getting a basic ui configuration manipulation section and I'm leaning towards offering the advance to all levels. Simply because the ui is so simple and makes for a really easy time of it.
+>
+> Ontop of that I think I beleive I have though of the perfect solution, when it comes to reliably tracking the state of the ui now that I've gained access to more values.
+> 
+> - It would be best if you started both of your settings files with a blank state, aside from the settings that are too advanced, obscure or any extensions specific settings, but be absolutely sure that no ui setting is currently in your workspace settings.json file. If you don't know what I mean by this, your in the clear and dont worry about it because whenever changes are made to the ui through the user interface, they are saved to the global file only.
+> - thus making the next part more reliable, on start up it will not only take in any settings that are relevant that you may have set through this extensions settings, but also scan your current global settings file for each of the required values, IF there is no value among these sources a default will be used. The same default that would be used as if both your settings files were empty.
+> - at which point using the already in place global context system in the extension, these values will be added so that they can be viewed, compared against and changed when needed as there will be more than one function with the ability to change them
+> - whenever a layout is triggered, these values will be updated so as to know exactly what state everything is in when used else where but the global settings file will be used as a source of truth in certain circumstances to ensure the most up to date information is available prior to executing some functions. As the function sweeps through the list of functions that control every thing it will first check what the current state is, compare it against what you want and either skip it or trigger the function in order to get the desired end result
+> - the new viewer, will also view and edit these values even going so far as re creating the custom layout menu that vscode has implemented into the system
+>
+> The only values I beleive I'm currently missing are primary and secondary sidebar boolean values, along with panel. I can toggle them, I just don't know what state they are in prior to toggling them so if your current ui is not what is expected of your configuration, then it does behalf with the opposite end result. Atleast these three ui items are... very easy to toggle back into view if that does happen.
+>
+> So currently, please try to use the viewer in order to make changes to the ui as your coding. The customize layout system is literlly exactly the same as vscodes. Because we can only track certain states ourselves without relying on vscode, this will be vital for a reliable state.
 
 
 ## Layout Configuration Guide
@@ -64,47 +81,164 @@ The sidebar contains the following:
 - Theme, as you can now edit every single color value via a color picker or input to paste in your value
 - Auto run - you may place as many config items as you wish here, selectable via a drop down that scans your current config and populating the options with them
 - Auto close - same as above but runs when you go to close the workspace, you may also override the execution of these commands by double clicking the windows close button
-- Git - has a value to place the desired branch you would like whenever you trigger that layout, as well as on open and on close values to place git related commands
+- Git 
+  - has a value to place the desired branch you would like whenever you trigger that layout
+  - onLoad - open and onClose values to place git related commands will work exactly autorun and onClose respectively
 - Configuration settings - I have no hardcoded a single setting, opting out for the lazy mans version by dynamically generating this list via your vscode instance and populating the list with all the commands available to you at the time of creating or editing that current config
 - .vscdb settings - this is where the `hidden` or whatever you want to call them, settings will be that we cannot modify anywhere else but here
 - Editor grid - same as last group
 - Terminal Grid - same as last group
 - and this isn't all the items just yet, below you will find documentation on how to use the remaining items.
 
-#### Icons
-This feature won't be available till the first round of the feature has been completed, so if you can't save a layout or if `vsicons-custom-icons` doesn't exist don't bother trying to use this.
-This will only be available to the Sauron level due to the fact that, you will HAVE to be navigating and placing items in the global user folder. So if your not comfortable enough to use the UI at this level, just come back to this later when you are.
+#### Themes
 
-The main portion of code isn't even done yet, and I'm doing thngs like this already, anyways... You now have access to not only place your own custom icons to be used within the virtual file system in place of the current vscode icons that are avilable. I will also be setting up a number of icons to be used as well, specficially just colored variants of the defaults to help seperate items from one another, rather than one giant long white blob.
+Not entirely related but the backend of this feature will be implemented into the layout, thought to mention it so you can use it now on its own
 
-##### Naming Convention
-To use this feature name your icon with a unique and relevant name for example, I would highly suggest naming your icon something along the lines of:
-- `colored-settings-item-type-skyler.svg`
+Several themes... well, probably more than that tbh, will be registed for use to quickly switch from theme to theme. To use one its own, go into the thor quick pick ( located in the devstack quick pick menu ), and there will be a list available to choose from. 
 
-being very specific about what it is, if you can add `blue-` or whatever color it may be at the beginning increasing the odds of securing a unique name instead of experiencing a naming collision. Then I followed it up with my name, to add an even higher probability of success. 
+Once the new system is available to use every level will have access to a dropdown menu containing these same theme options and will insert the required values into your layout item so you can very easily have a different theme accross a dozen layouts.
 
-I'm assuming since you are in this level, you won't naming it something like `icon.svg`... please don't do that. If you do, don't bother complaining to me about it, lol. 
+#### BROKKR Viewer
 
-##### Folder Path For Storing Your Icon
-Take your cool svg and place it in this folder:
-- `C:\Users\<your_user>\AppData\Roaming\<Code Folder>\User\vsicons-custom-icons\`
+Snapshot ngin may be changing a little bit and I don't know if this we become snapshot ngin, part of it or something else entirely but, even though a new ui is coming I still want be able to do what I want from this feature.
+Basically, a quick pick that pulls up the current layout and provides quick details with ability to change certain things on the fly. Despite it being as great as it is, still in its original form, there were defiently times I wish I could just quickly add, edit or remove something, followed with either closing vscode because something came up or I wanted to reload vscode with that one file opening back up when the default layout initialized once vscode started up again. 
 
-`Code Folder` being:
-- `Code` if you have the standard vscode edition
-- `Code - Insiders` if you have the bleeding edge edition
+The quick pick will be present in the status bar and once opened the following options will be presented to you:
+- default toggle, whenever clicked it toggles to the opposite value after confirming your selection
+- catergoized list of files by group using a label to declare the group on the first line, clicking on any line item will ask you if you would like to remove that item ( meanwhile the editors context menu will get a new submnu, while 'add file' will be the only item in there currently I'm sure there will more added down the road. Whenever adding a file this way it just quickly adds the file to the first files group. )
+- categorized list of terminals, same features as the previous
+  - the only difference being that the first line of each group will be a 'add terminal command' option
+- a read only menu for keybindings, opens a new quick pick stating your current keybindings with a back button to return to the previous menu
+- a categorized list of autorun commands, will work exactly the same as terminal commands except when selecting the add option, where it will just provide a list of all your current configs items to choose from and
+- a categorized list of on close, same as autorun
+- an option to open a new menu for the git object, the new menu will contain the following menu items
+  - branch, selecting this option will provide a input to insert a new value
+  - onOpen, same as autorun
+  - onClose, same as onClose
 
-##### Using Your New Custom Icon
-Once you have placed the icon into the folder, you may now call on it whenever you create a new item, edit an item through the UI, or when editing your config manually. Using the same name I used earlier I would reference it by:
-- `colored-settings-item-type-skyler`
+This quick view/edit menu wont touch the objects performance, workspace or workbench.colorCustomizations... but I would love to re-create vscodes customize layout menu and work the same way, but as it changes the values to work in the same way it saves that value to the correct line within your config.
+        
+- global config - `const globalConfigPath = path.join(ctx.storagePath, 'global-navigator-config.json');`
+- project id - `const projectId = await getOrCreateProjectId(ctx.workspaceRoot);`
+- workspace config - `const workspaceConfigPath = path.join(projectConfigsDir, `${projectId}.json`);`
 
-After placing the icon into the folder, you will have to restart your instance in order for vscode to register the new icon.
+- example config item that features the layout type 
+```json
+        {
+          "label": "DevStack Default",
+          "path": "",
+          "type": "layout",
+          "icon": "layout-baldr",
+          "args": [
+            {
+              "default": true,
+              "editorGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "editorFocus": "last",
+                "groups": [
+                  { "size": 0.5 },
+                  { "size": 0.5 }
+                ],
+                "files": [
+                  {
+                    "group": 1,
+                    "pinned": true,
+                    "foldLevel": [1,2],
+                    "path": [
+                      "src/context.ts",
+                      "src/helpers/search.ts",
+                      "src/helpers/atlas.ts"
+                    ]
+                  },
+                  {
+                    "group": 2,
+                    "pinned": true,
+                       "foldLevel": [1,2],
+                    "path": [
+                      "README.md",
+                      "package.dev.jsonc",
+                      "src/helpers/menus.ts",
+                      "src/extension.ts",
+                      "src/helpers/itemsActionsMenu.ts",
+                      "src/helpers/master.ts",
+                      "src/extension/navigatorView.ts",
+                      "F:/DevStack/docs/BROKKR.md",
+                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/project-configs/project-1744496862041-y866zpqtd9.json",
+                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/global-navigator-config.json"
+                    ]
+                  }
+                ],
+                "floatingWindow" :[
 
-##### Provided Custom Icons
-As mentioned earlier I will also be placing custom icons in addition to the above feature which will be discoverable via the vscode icons quick pick, I'll place them at the top of the list.
-
-> [!NOTE]
-> I think I touched on the notion of getting the use of custom icons in other places, other than just the extensions file tree... as of right now there doesn't seem to be a way in which I can expose other avenues to everyone. Doesn't mean it can't be done, if it can be done... I just haven't found out how yet.
-
+                ]
+              },
+              "terminalGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "terminals": [  ]
+              },
+              "keybindings": {
+                "ocrmnavigator.menu.devstack": "alt+d",
+                "ocrmnavigator.odin.open": "alt+s",
+                "ocrmnavigator.icons.menu": "alt+i",
+                "ocrmnavigator.menu.catalystUi": "alt+u",
+                "ocrmnavigator.menu.snippets": "alt+f",
+                "ocrmnavigator.region.insert": "alt+r",
+                "ocrmnavigator.endregion.insert": "alt+e",
+                "ocrmnavigator.region.wrap": "alt+w",
+                "ocrmnavigator.devstack.site.colorWheel": "alt+q",
+                "ocrmnavigator.clipboardMgr.history.show": "alt+h",
+                "ocrmnavigator.bookmarks.show": "alt+b",
+                "ocrmnavigator.menu.github": "alt+g",
+                "ocrmnavigator.project.pkg.open": "alt+p",
+                "ocrmnavigator.project.readme.open": "alt+m"
+              },
+              "autorun": [
+                   { "label": "BALDR - executing outside icons project", "path": "saveall, pnpmrungenerateBaldr, pnpmrunbuildBaldr, patchAndPublishToNPMBaldr, npmPublishWithTokenBaldr", "type": "chain" }
+              ],
+              "onClose": [
+                   { "label": "BALDR - executing outside icons project", "path": "saveall, pnpmrungenerateBaldr, pnpmrunbuildBaldr, patchAndPublishToNPMBaldr, npmPublishWithTokenBaldr", "type": "chain" }
+              ],
+              "git": {
+                 "branch": "dev",
+                "onLoad": [
+                  {
+                    "label": "pnpm i & ini / push prisma & ini .env & run scaffolding",
+                    "path": "echo 'git on load'",
+                    "type": "powershellCommand"
+                  }
+                ],
+                "onClose": [
+                  {
+                    "label": "pnpm i & ini / push prisma & ini .env & run scaffolding",
+                    "path": "echo 'git on close'",
+                    "type": "powershellCommand"
+                  }
+                ]
+               },
+              "customizeLayout": {
+                "menubar.navigationControls": true,
+                "menubar.share": true,
+                "menubar.layoutControls": true,
+                "menubar.customizeLayout": true,
+                "secondarySidebar.view": "skyler.ocrmnav",
+                "secondarySidebar.position": "right",
+                "primarySidebar.display": true,
+                "workbench.activityBar.visible": true,
+                "secondarySidebar.display": true,
+                "panel.display": false,
+                "panel.alignment": "center",
+                "panel.view": "output",
+                "modes.centeredLayout": false,
+                "modes.fullScreen": false,
+                "modes.zenMode": false
+              },
+              "performance": {},
+            }
+          ]
+        }
+```
 
 #### Ignore All Notifications / Toasts ( WIP )
 #### Workspace Extensions Context ( WIP )
@@ -2419,3 +2553,4 @@ As mentioned earlier I will also be placing custom icons in addition to the abov
 
 
 # 
+

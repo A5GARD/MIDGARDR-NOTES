@@ -1,8 +1,9 @@
 # BIFRÖST
 
+
 ## Terminal and Multi Kernel Ngin
 
-
+- [About the Project](#star2-about-the-project)
 <pre style="max-width: 800px; white-space: pre-wrap; overflow-wrap: break-word;">
 /DEVSTACK_SYSTEM_ROOT/
 ├── 📂 TABLE_OF_CONTENTS/
@@ -13,30 +14,30 @@
 │  
 ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📂%20BIFRÖST%20/%20-0284c7?style=plastic" valign="middle"></a> .......................... Terminal and Multi Kernel Ngin
 │   ├── 📂 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md">Item Types</a> ..................... VFS item types
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L55">`file`</a> ..................... Providing shortcuts to any file in any location 
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L77">`md`</a> ....................... Same as above, but for md
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L80">`fileAtLine`</a> ............... Instead opens the file at a specific line number
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L89">`folder`</a> ................... To house virtual file items within for organization
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L108">`url`</a> ...................... When executed, opens that url in your default browser
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L117">`command`</a> .................. Executes vscode command
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L145">`chain`</a> .................... Executes any item type in a sequential firing order
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L160">`concurrent`</a> ............... Executes all commands, at once
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L203">`cmmdChain`</a> ................ A chain of commands consisting of only vscode commands
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L223">`conditionalChain`</a> ......... Depending on your checks, can execute or not in any form 
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L733">`powershellCommand`</a> ........ Executes powershell commands
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L751">`debianCMD`</a> ................ Executes baash commands in WSL's Debian enviroment
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L769">`snippet`</a> .................. Copy snippet body to clipboard
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L776">`copyValue`</a> ................ Copy value to clipboard
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L787">`settingsToggle`</a> ........... Toggle workspace or global settings.json key:value pair
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L809">`search`</a> ................... Searches, executed whenever you need with a click 
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L821">`apiCall`</a> .................. Trigger Pre-made HTTP API requests at any time 
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L892">`tasks`</a> .................... Auto generates within the explorer for easy access
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L895">`npmScripts`</a> ............... Same as above but with your packages scripts
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L1029">`label`</a> .................... Visual divider used to break up an area
-│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L1029"><img src="https://img.shields.io/badge/♦%20Dependency%20Manager-ca8a04?style=plastic" valign="middle"></a> ......... Install/uninstall/update multiple npm packages in one click 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#file">`file`</a> ..................... Providing shortcuts to any file in any location 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#md">`md`</a> ....................... Same as above, but for md
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#fileatline">`fileAtLine`</a> ............... Instead opens the file at a specific line number
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#folder">`folder`</a> ................... To house virtual file items within for organization
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#url">`url`</a> ...................... When executed, opens that url in your default browser
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#command">`command`</a> .................. Executes vscode command
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#chain">`chain`</a> .................... Executes any item type in a sequential firing order
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#concurrent">`concurrent`</a> ............... Executes all commands, at once
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#cmmdchain">`cmmdChain`</a> ................ A chain of commands consisting of only vscode commands
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#conditionalchain">`conditionalChain`</a> ......... Depending on your checks, can execute or not in any form 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#powershellcommand">`powershellCommand`</a> ........ Executes powershell commands
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#debiancmd">`debianCMD`</a> ................ Executes baash commands in WSL's Debian enviroment
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#snippet">`snippet`</a> .................. Copy snippet body to clipboard
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#copyvalue">`copyValue`</a> ................ Copy value to clipboard
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#settingstoggle">`settingsToggle`</a> ........... Toggle workspace or global settings.json key:value pair
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#search">`search`</a> ................... Searches, executed whenever you need with a click 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#apicall">`apiCall`</a> .................. Trigger Pre-made HTTP API requests at any time 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#tasks">`tasks`</a> .................... Auto generates within the explorer for easy access
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#npmscripts">`npmScripts`</a> ............... Same as above but with your packages scripts
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#label">`label`</a> .................... Visual divider used to break up an area
+│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#dependency-manager"><img src="https://img.shields.io/badge/♦%20Dependency%20Manager-ca8a04?style=plastic" valign="middle"></a> ......... Install/uninstall/update multiple npm packages in one click 
 │   │   │    ├── with predefined sets (ie "React setup" installs react, react-dom, types in one go 
 │   │   │    └── vs typing each npm install command)
-│   │   └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L885">`layout`</a> ................... Taking complete control, of vscode and its interface
+│   │   └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#layout">`layout`</a> ................... Taking complete control, of vscode and its interface
 │   │        ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LAYOUT.md"><img src="https://img.shields.io/badge/📄%20ATLAS%20/%20-0284c7?style=plastic" valign="middle"></a> : WS Layout Ngin</a> . Total environment restoration in one click. Instantly reset 
 │   │        │   ├── theme, UI visibility, terminals, tabs, view focus and more
 │   │        └── <a href="#in-development"><img src="https://img.shields.io/badge/♠%20ATLAS%20V2%20/-86198f?style=plastic" valign="middle"></a> Global, Profile and Workspace context intelligent 
@@ -67,39 +68,39 @@
 │   │                 └── come back from the grave, did NOT see this one coming ) 
 │   │     
 │   ├── 📄 <a href="https://github.com/8an3/DevStack">Virtual Filing System</a> .......... Core VFS Engine 
-│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L53">Files & Navigation</a> ............. File management and navigation
-│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L115">Commands & Automation</a> .......... Command execution and automation workflows
-│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L731">Terminal Commands</a> .............. Terminal command integration
-│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L767">Utilities</a> ...................... Utility functions and helpers
-│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L">Project Agnostic Setup</a> ......... Framework-agnostic configuration 
-│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📄%20Move%20VFS%20Item%20-0284c7?style=plastic" valign="middle"></a> .................. Move items with ease with the VSCode ui 
-│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♦%20Copy%20workspace%20folder-ca8a04?style=plastic" valign="middle"></a> ............. Provides a list of folders contained within other configs, 
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#files-and-navigation">Files & Navigation</a> ............. File management and navigation
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#commands-and-automation">Commands & Automation</a> .......... Command execution and automation workflows
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#terminal-commands">Terminal Commands</a> .............. Terminal command integration
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#utilities">Utilities</a> ...................... Utility functions and helpers
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#project-agnostic-setup">Project Agnostic Setup</a> ......... Framework-agnostic configuration 
+│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#move-vfs-item"><img src="https://img.shields.io/badge/📄%20Move%20VFS%20Item%20-0284c7?style=plastic" valign="middle"></a> .................. Move items with ease with the VSCode ui 
+│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#copy-workspace-folder"><img src="https://img.shields.io/badge/♦%20Copy%20workspace%20folder-ca8a04?style=plastic" valign="middle"></a> ............. Provides a list of folders contained within other configs, 
 │   │    └──  once clicked pastes it into the current configs file
-│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L890">Auto-Generated Items</a> ........... Automatically generated VFS items
+│   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#auto-generated-items">Auto-Generated Items</a> ........... Automatically generated VFS items
 │   │
 │   ├── 📂 CONFIGURATION_AND_MORE/
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L1057">Complete Example</a> ............ Production configuration walkthrough
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3434">Usage & Previews</a> ............ Examples and previews
-│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3434"><img src="https://img.shields.io/badge/♠%20Extended%20Usage%20Preview-86198f?style=plastic" valign="middle"></a> ........ Recorded coding session proving zerp performance losses
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#complete-example">Complete Example</a> ............ Production configuration walkthrough
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#usage-and-previews">Usage & Previews</a> ............ Examples and previews
+│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#extended-usage-preview"><img src="https://img.shields.io/badge/♠%20Extended%20Usage%20Preview-86198f?style=plastic" valign="middle"></a> ........ Recorded coding session proving zerp performance losses
 │   │   │    └── despite having 100+ extensions worth of functions.
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L940">Getting Started w/ Chains</a> ... Chain automation guide
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#getting-started-with-chains">Getting Started w/ Chains</a> ... Chain automation guide
 │   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG_EXAMPLES.md">Config Items Examples</a> ....... Production configuration walkthrough
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2954">Extension Configuration</a> ..... Extension settings overview
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3781">Configuration Settings</a> ...... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3785">Core Settings</a> ............... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3798">Code Snapshot Settings</a> ...... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3820">GitHub Integration</a> .......... Single click multi function operations
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3840">Build & Automation Settings</a> . The lack of non-automation
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3860">UI & Interface Settings</a> ..... Core extension settings
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L3873">Feature Toggles</a> ............. Feature flags and toggles 
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2932">Copy Path</a> ................... Path copying utilities
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2919">Reveal In Explorer</a> .......... File explorer integration
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L2942">Search</a> ...................... Search functionality for config items
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">JSON Config Editor</a> .......... Edit .json configs directly
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">Share/Export Config</a> ......... Bulk sharing/export
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">View Config Example</a> ......... Configuration examples
-│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#L">Default Apps</a> ................ App configurations
-│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#L"><img src="https://img.shields.io/badge/♠%20Remote%20Resource%20Mgmt-86198f?style=plastic" valign="middle"></a> ........ Profiles for configs: save/download/edit </span>
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#extension-configuration">Extension Configuration</a> ..... Extension settings overview
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#configuration-settings">Configuration Settings</a> ...... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#core-settings">Core Settings</a> ............... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#code-snapshot-settings">Code Snapshot Settings</a> ...... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#github-integration">GitHub Integration</a> .......... Single click multi function operations
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#build-and-automation-settings">Build & Automation Settings</a> . The lack of non-automation
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#ui-and-interface-settings">UI & Interface Settings</a> ..... Core extension settings
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#feature-toggles">Feature Toggles</a> ............. Feature flags and toggles 
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#copy-path">Copy Path</a> ................... Path copying utilities
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#reveal-in-explorer">Reveal In Explorer</a> .......... File explorer integration
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#search">Search</a> ...................... Search functionality for config items
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#json-config-editor">JSON Config Editor</a> .......... Edit .json configs directly
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#share-export-config">Share/Export Config</a> ......... Bulk sharing/export
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#view-config-example">View Config Example</a> ......... Configuration examples
+│   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CONFIG.md#default-apps">Default Apps</a> ................ App configurations
+│   │   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#remote-resource-management"><img src="https://img.shields.io/badge/♠%20Remote%20Resource%20Mgmt-86198f?style=plastic" valign="middle"></a> ........ Profiles for configs: save/download/edit </span>
 │   │   └── 📄<a href="#architecture-notes">Architecture Notes</a> ........... Breaking down the inner workings of the extension
 │   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#environment-variable-integration">Env Var Integration</a> ..... using .env vars
 │   │        ├── 📄<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#modular-function-building">Modular Func. Building</a> .. Exposing more functions to use
@@ -122,207 +123,18 @@
 │   │
 │   └── 📂 STATUSBAR_AND_CONTEXT_MENU_SYSTEM/
 │       ├── 📂 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">STATUS_BAR_DASHBOARDS</a> ....... What you have access to
-│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Clipboard History Pro</a> .... Simply, the windows version vscode
-│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Bookmarks</a> ................ Bookmark anything, anywhere
-│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Icons</a> .................... React icons, inserts at cursor / copies to clipboard
-│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">Snapshot Ngin</a> ............ Instant snapshot
-│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">UI</a> ....................... Copies to clipboard one of 2500+ components
-│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">BE</a> ....................... Bleeding edge features
-│       │   └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md">DevStack</a> ................. Main quickpick encompassing a great many of topics
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md#clipboard-history-pro">Clipboard History Pro</a> .... Simply, the windows version vscode
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md#bookmarks">Bookmarks</a> ................ Bookmark anything, anywhere
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md#icons">Icons</a> .................... React icons, inserts at cursor / copies to clipboard
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md#snapshot-ngin">Snapshot Ngin</a> ............ Instant snapshot
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md#ui">UI</a> ....................... Copies to clipboard one of 2500+ components
+│       │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md#be">BE</a> ....................... Bleeding edge features
+│       │   └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/STATUS_BAR_MENUS.md#devstack">DevStack</a> ................. Main quickpick encompassing a great many of topics
 │       ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/EXPLORER_CONTEXT.md">EXPLORER_CONTEXT_MENU</a> ........ Accessing features bound to file type
 │       └── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/EDITOR_CONTEXT.md">EDITOR_CONTEXT_MENU</a> .......... A treasure trove of functions
-│
 </pre>
 
-Before getting into item types, I wanted to get into another topic real quick, that the features found within this extension may feel like a ton of features quickly jammed into one, which couldn't be farther from the truth. 
 
-To help with this I started giving features names of norse and greek gods in order to add a bit of separation from eachother, since Loki AI not only was a great fit for that feature but it made it stand out from the others. Nothing was rushed in terms of adding / creating features. Most of them, should be their own extension take snippets for example, which hosts a feature parity that surpasses paid and enterprise products, yet it gets lost among the other features. Which sucks, because someone wanting a great snippet editor... may never see it. Below is a list of the names used and why they were used:
-- A5GARD - npm org
-- BIFRÖST - Template installer/creator
-- BIFRÖST-PLUGIN - Plugin installer/creator
-- ᛇ YGGDRASIL - Central CLI hub (connects all tools)
-- ÍVALDI - formerly know as Catalyst UI this is the components ui library i HATE THIS NAME i want this to be a main name since the library is so big
-  - @catalystsoftware/ui is a npm libarry that will now get cahnged
-- @catalystsoftware/css-plus-plus - a custom tailwind css buiild
-- ᛒ BALDR - @catalystsoftware/icons
-- 𐌀 ATLAS - Titan who holds up the celestial spheres perfect for layout/UI manipulation suggests "supporting/structure"
-- ᛒ BIFRÖST (Current: Terminal & Multi-Kernel Ngin) Rainbow bridge connecting realms (different terminals/OSs) Perfect for cross-environment terminal system implies connection/communication
-- ᚨ ODIN (search editor) He sacrificed for knowledge/wisdom the all-seeing/all-knowing aspect fits search functionality
-- ᚹ VALHALLA - Hall of the slain (where data "lives") dramatic but fitting for data storage as Odin gathers warriors here (data points) database related features currently sqlite3 only
-- ᚱ RÚNAR - Norse for "runes" - magical symbols, snippets are modern magical runes
-- ᚦ THOR (Current: Tailwind Plugin Ngin) for powerful styling/UI utilities suggests "power/impact"
-- no name (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
-- ᚹ VÖLUNDR (Master smith/craftsman (Wayland the Smith)) for cleanup/refactoring/automation tools suggests "craftsmanship/maintenance"
-- ᚺ HUGINN & ᛗ MUNINN (Remix/Prisma utilities) Odin's ravens: Thought and Memory for framework utilities
-- ᛏ TYR (Current: Port & Process/Errors) God of law, justice, heroic glory for debugging/error handling suggests "order/resolution"
-- ᛜ FREYR (Current: VS Code Styling/Theming) For theming/beautification tools suggests "abundance/beauty"
-- ᛊ SKÁLD (Current: Catalyst Editor) Norse poets/storytellers for documentation/markdown/editing tools suggests "crafting stories/narratives"
-- ᛗ MÍMIR - DevArchive
-- ᚱ RATATOSKR - File Tree Builder/Visualization tool
-- ᛚ LOKI - AI
-- ᛁ ÍVALDI (The Master Forger) The Sons of Ívaldi were the dwarves who crafted the greatest treasures of the gods (Odin’s spear, Sif’s golden hair, Freyr’s ship). A UI library is essentially a collection of "master-crafted treasures" that other developers use to build their world. The Vibe: Industrial, precise, and foundational. 
-- ᚹ VIÐARR - Automation events
-- 𐌍 NEMESIS - Create Incoming Tunnel
-- 𐌇 HERACLES - Batch Rename
-- ☿ HERMES - API Secret Grabber
-- ᚺ HEIMDALLR - The Gatekeeper who controls who enters the bridge and when.
-- ᚺ HÖFUÐ	Intellisense Schema Ngin	Heimdallr's sword; represents the sharp, precise "edge" of your code intelligence.
-- ᛊ SAGA - Goddess who sits beside Odin and tells him stories Associated with history and remembering Perfect for notes that tell the "story" of your work Simple, memorable name
-- ᚷ GINNUNGAGAP- The primordial void where all potential exists Perfect: modules exist here before being "born" into projects - Rune: Gebo ᚷ gift/exchange
-- ᚢ URÐR for Snapshot Engine "That which has become" (one of the three Norns) She represents the PAST Norns control fate/destiny - snapshots control your project's fate Rollback = returning to the past Urðr governs
-- ᚹ VEÐRFÖLNIR for VSCInfo - Eagle atop Yggdrasil, sees EVERYTHING  oversight/monitoring from above viewing system continuously
-<!-- 
-
-contained within the extension
-- 𐌀 ATLAS - layout ngin
-- ᛒ BIFRÖST - Terminal & Multi-Kernel Ngin
-- ᚨ ODIN - search editor 
-- ᚹ VALHALLA - data storage 
-- ᚱ RÚNAR - snippets
-- no name (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
-- ᚹ VÖLUNDR - 
-- ᚺ HUGINN & ᛗ MUNINN - Remix/Prisma utilities
-- ᛏ TYR - Port & Process/Errors
-- ᛜ FREYR - VS Code Styling/Theming
-- ᛊ SKÁLD - Catalyst Editor
-- ᚱ RATATOSKR - File Tree Builder/Visualization tool
-- ᚹ VIÐARR - Automation events
-- 𐌍 NEMESIS - Create Incoming Tunnel
-- 𐌇 HERACLES - Batch Rename
-- ☿ HERMES - API Secret Grabber
-- ᚺ HEIMDALLR - react preformance fucntions
-- ᚺ HÖFUÐ	- Intellisense Schema Ngin	
-- ᛊ SAGA - to dos notes and reminders
-- ᚷ GINNUNGAGAP - 
-- ᚢ URÐR - Snapshot Engine 
-- ᚹ VEÐRFÖLNIR - VSCInfo 
-
-outside the extension 
-CONSUMER 
-- SLEIPNIR - Automotive Dealer CRM
-- ᚹ VALHALLA - Realtor CRM
-- FREYR - Restaurant POS
-- TYR - Store POS
-- FORSETI - Lawyer CRM
-
-DEV
-- ÁSGARÐR - npm org
-- ᛚ LOKI - AI
-- ᛒ BIFRÖST - Template installer/creator
-- ᛒ BIFRÖST-PLUGIN - Plugin installer/creator
-- ᛇ YGGDRASIL - Central CLI hub (connects all tools)
-- MIÐGARÐR - formerly know as Catalyst UI & @catalystsoftware/ui is a npm libarry that will now get cahnged
-- ᚦ THOR - CSS/tailwind
-  - @catalystsoftware/css-plus-plus - a custom tailwind css buiild
-- ᛒ BALDR - @catalystsoftware/icons
-- ᛗ MÍMIR - DevArchive?
-- ᚨ ODIN - IDE Editor
-- GULLVEIG - Auto Finance Calculator
-- ᛊ SKÁLD - Catalyst Editor & Rich Text Editor
-- ᚱ RÚNAR - Snippets
-- ☿ HERMES - Messenger 
-- ᛊ SAGA - Appointment Scheduler
-- ᚢ URÐR - Event Calendar
-
-
-- ᚹ VÖLUNDR - 
-- ᚺ HUGINN & ᛗ MUNINN - 
-- ᚱ RATATOSKR - 
-- ᚹ VIÐARR - 
-- 𐌍 NEMESIS - 
-- 𐌇 HERACLES - 
-- ᚺ HEIMDALLR - 
-- ᚺ HÖFUÐ	- 
-- ᚷ GINNUNGAGAP - 
-- ᚹ VEÐRFÖLNIR - 
-
-AVAILABLE NORSE/MYTHOLOGICAL NAMES:
-Major Gods/Figures:
-
-SLEIPNIR (Odin's 8-legged horse)
-FENRIR (The great wolf)
-GERI & FREKI (Odin's wolves)
-GUNGNIR (Odin's spear)
-DRAUPNIR (Odin's ring)
-MJÖLNIR (Thor's hammer)
-SIF (Thor's wife, harvest goddess)
-IDUNN (Youth goddess, keeper of apples)
-BRAGI (Poetry god)
-FORSETI (Justice god)
-NJORD (Sea god)
-ULLR (Archery/skiing god)
-HODER (Blind god)
-VALI (Avenger)
-MAGNI (Thor's son - strength)
-MODI (Thor's son - courage)
-NANNA (Baldr's wife)
-EIR (Healing goddess)
-GEFION (Giver goddess)
-VAR (Goddess of oaths)
-VOR (Goddess of wisdom)
-SYN (Guardian goddess)
-HLIN (Protection goddess)
-SNOTRA (Wisdom goddess)
-GERSEMI (Freyja's daughter - precious)
-HNOSS (Freyja's daughter - treasure)
-
-Giants/Creatures:
-
-HRUNGNIR (Stone giant)
-JÖRMUNGANDR (World serpent)
-NIDHOGG (Dragon gnawing roots)
-RATATOSK (Already used)
-HRAESVELGR (Eagle creating wind)
-SKOLL (Wolf chasing sun)
-HATI (Wolf chasing moon)
-SURTR (Fire giant)
-YMIR (Primordial giant)
-THRYM (Frost giant king)
-THIAZI (Storm giant)
-GRENDEL (Monster)
-FAFNIR (Dragon)
-AUDUMBLA (Primordial cow)
-
-Valkyries:
-
-BRUNHILDE
-SIGRUN
-SVAFA
-KARA
-SKULD
-GÖNDUL
-HILDR
-GEIRSKÖGUL
-RANDGRID
-RADGRID
-REGINLEIF
-
-Dwarves:
-
-ANDVARI
-BROKK
-EITRI
-DVALIN
-ALFRIGG
-BERLING
-GRERR
-SINDRI
-DURIN
-
-Other:
-
-HEL (Death/underworld)
-SIGYN (Loki's wife)
-MODGUD (Bridge guardian)
-HVERGELMIR (Source of rivers)
-MUSPELHEIM (Fire realm)
-NIFLHEIM (Ice realm)
-ALFHEIM (Light elf realm)
-SVARTALFHEIM (Dark elf realm)
-JOTUNHEIM (Giant realm)
-MIDGARD (Human realm)
-ASGARD (God realm)
--->
 
 ## Item Types
 
@@ -1158,6 +970,14 @@ Execute commands in Windows PowerShell as if typed directly.
 > This not only creates more freedom in what you can execute when, but simplifies the items you need to create in order to get the extension to do what you want
 > IF you are in a mono repo type project, or in a project where you need to run more than one dev server, any dev server command that you execute that does not currently have a window open, it will create a new terminal window to execute the command 
 
+> [!TIP]
+> We'll explain this one with a use case, your in one workspace, but you want to execute commands in another project / workspace that you do not currently have open. Previously there was really no way to cleanly do this automatically through the terminal ngin since it was changed to continously re-use the same terminal instance as you code, instead of creating a new instance each and every single command you execute.
+> Placing `xPath` and its value, the projects folder you would like to run the desired command, within the args array will allow you to do just that.
+> - cd's into the other project
+> - executes command
+> - cd's back into your workspace folder so as not to interrupt the terminal ngins flow of command execution
+> `{ "label": "pnpmrungenerateBaldr", "path": "pnpm run generate", "args": [{ "xPath": "F:/baldr" }], "type": "powershellCommand", "icon": "versions", "hidden": true }`
+
 #### `debianCMD`
 Run commands in Windows Debian WSL terminal environment. Execute programs with pre-programmed flags.
 
@@ -1374,7 +1194,7 @@ headers:
 
 #### `layout`
 
-[Layout Configuration Guide](./ATLAS.md)
+[Layout Configuration Guide](./BROKKR.md)
 
 #### `menu`
 
@@ -2541,7 +2361,7 @@ I've played around with a TON of different label styles, landing on this being t
               "keybindings": {
                 "ocrmnavigator.menu.devstack": "alt+d",
                 "ocrmnavigator.odin.open": "alt+s",
-                "ocrmnavigator.menu.icons": "alt+i",
+                "ocrmnavigator.icons.menu": "alt+i",
                 "ocrmnavigator.menu.catalystUi": "alt+u",
                 "ocrmnavigator.menu.snippets": "alt+f",
                 "ocrmnavigator.region.insert": "alt+r",
@@ -4141,6 +3961,9 @@ When you trigger a command, the engine performs a real-time status check:
 - Busy Terminal: If a process is already running, the engine queues your next command. It will fire automatically as soon as the current task finishes.
 - User Flow: This allows you to click multiple menu items in succession and return to your code, knowing the engine will handle the execution sequence in the background.
 
+> [!UPDATE] 
+> The 'The Smart Queue System' feature used with powershell commands, bash commands executed through the terminal ngin will now also benefit from this feature.
+
 ### Self-Managing Dev Servers
 The engine treats Dev Servers (persistent processes) differently than one-off scripts:
 - Port Protection: If you trigger a dev server that is already running in an active terminal, the engine programmatically sends Ctrl+C to kill the old process before spawning the new one on the same port.
@@ -4500,35 +4323,12 @@ All settings are prefixed with `ocrmnavigator.` and can be configured in your VS
 
 
 
-## Complete Archaic Greek Alphabet Reference
 
-- 𐌀 (Alpha) - A
-- 𐌁 (Beta) - B
-- 𐌂 (Gamma) - G
-- 𐌃 (Delta) - D
-- 𐌄 (Epsilon) - E
-- 𐌅 (Digamma/Wau) - W/V
-- 𐌆 (Zeta) - Z
-- 𐌇 (Eta) - H/Ē
-- 𐌈 (Theta) - Th
-- 𐌉 (Iota) - I
-- 𐌊 (Kappa) - K
-- 𐌋 (Lambda) - L
-- 𐌌 (Mu) - M
-- 𐌍 (Nu) - N
-- 𐌎 (Xi) - X
-- 𐌏 (Omicron) - O
-- 𐌐 (Pi) - P
-- 𐌑 (San/Tsade) - Ts
-- 𐌒 (Qoppa) - Q
-- 𐌓 (Rho) - R
-- 𐌔 (Sigma) - S
-- 𐌕 (Tau) - T
-- 𐌖 (Upsilon) - U/Y
-- 𐌗 (Phi) - Ph
-- 𐌘 (Chi) - Ch/Kh
-- 𐌙 (Psi) - Ps
-- 𐌚 (Omega) - Ō
+
+
+
+
+<!-- 
 
 First Ættr (Freyr's Ættr)
 
@@ -4562,3 +4362,202 @@ Third Ættr (Tyr's Ættr)
 - ᛜ (Ingwaz) - Ing/Freyr, fertility, abundance, potential
 - ᛞ (Dagaz) - Day, dawn, awakening, breakthrough
 - ᛟ (Othala) - Inheritance, homeland, heritage, ancestral property
+
+
+- Contained within the extension:
+  - ᛒ BROKKR - layout ngin The dwarf craftsman who forged Mjölnir and other legendary items
+  - ᛒ BIFRÖST - Terminal & Multi-Kernel Ngin
+  - ᚨ ODIN - search editor 
+  - ᚹ VALHALLA - data storage 
+  - ᚱ RÚNAR - snippets
+  - no name (Current: File Navigation System) World tree connecting all realms perfect for file/system navigation suggests "connecting everything"
+  - ᚹ VÖLUNDR - 
+  - ᚺ HUGINN & ᛗ MUNINN - Remix/Prisma utilities
+  - ᛏ TYR - Port & Process/Errors
+  - ᛜ FREYR - VS Code Styling/Theming
+  - ᛊ SKÁLD - Catalyst Editor
+  - ᚱ RATATOSKR - File Tree Builder/Visualization tool
+  - ᚹ VIÐARR - Automation events
+  - 𐌍 NEMESIS - Create Incoming Tunnel
+  - 𐌇 HERACLES - Batch Rename
+  - ☿ HERMÓÐR - API Secret Grabber
+  - ᚺ HEIMDALLR - react preformance fucntions
+  - ᚺ HÖFUÐ	- Intellisense Schema Ngin	
+  - ᛊ SAGA - to dos notes and reminders
+  - ᚷ GINNUNGAGAP - 
+  - ᚢ URÐR - Snapshot Engine 
+  - ᚹ VEÐRFÖLNIR - VSCInfo 
+
+
+- App / projects created outside of the project
+  - consumer apps
+    - ᚹ VALHALLA - Realtor CRM 
+    - SLEIPNIR - Automotive Dealer CRM
+    - FREYR - Restaurant POS
+    - TYR - Store POS
+    - FORSETI - Lawyer CRM
+
+  - dev apps
+    - a5gard - npm org / A5GARD github org
+    - ᛚ LOKI - AI
+    - ᛒ BIFRÖST - Template installer/creator
+    - ᛒ BIFRÖST-PLUGIN - Plugin installer/creator
+    - ᛇ YGGDRASIL - Central CLI hub (connects all tools)
+    - ᛗ MIÐGARÐR - formerly know as Catalyst UI & @catalystsoftware/ui is a npm libarry that will now get cahnged
+    - ᚦ THOR - CSS/tailwind
+    - ᛒ BALDR - @catalystsoftware/icons
+    - ᛗ MÍMIR - DevArchive?
+    - ᚨ ODIN - IDE Editor
+    - GULLVEIG - Auto Finance Calculator
+    - ᛊ SKÁLD - Catalyst Editor & Rich Text Editor
+    - ᚱ RÚNAR - Snippets
+    - ☿ HERMÓÐR - Messenger 
+    - ᛊ SAGA - Appointment Scheduler
+    - ᚢ URÐR - Event Calendar
+    - GRÍÐR - table, wrapper for tanstacks table
+
+    AVAILABLE NAMES
+    - ᚹ VÖLUNDR (Master smith/craftsman (Wayland the Smith)) for cleanup/refactoring/automation tools suggests "craftsmanship/maintenance"
+    - ᚺ HUGINN
+    - ᛗ MUNINN (Remix/Prisma utilities) Odin's ravens: Thought and Memory for framework utilities
+    - ᛏ TYR (Current: Port & Process/Errors) God of law, justice, heroic glory for debugging/error handling suggests "order/resolution"
+    - ᛜ FREYR (Current: VS Code Styling/Theming) For theming/beautification tools suggests "abundance/beauty"
+    - ᛊ SKÁLD (Current: Catalyst Editor) Norse poets/storytellers for documentation/markdown/editing tools suggests "crafting stories/narratives"
+    - ᛗ MÍMIR - DevArchive
+    - ᚱ RATATOSKR - File Tree Builder/Visualization tool
+    - ᛚ LOKI - AI
+    - ᛁ ÍVALDI (The Master Forger) The Sons of Ívaldi were the dwarves who crafted the greatest treasures of the gods (Odin’s spear, Sif’s golden hair, Freyr’s ship). A UI library is essentially a collection of "master-crafted treasures" that other developers use to build their world. The Vibe: Industrial, precise, and foundational. 
+    - ᚹ VIÐARR - Automation events
+    - 𐌍 NEMESIS - Create Incoming Tunnel
+    - 𐌇 HERACLES - Batch Rename
+    - ☿ HERMÓÐR - API Secret Grabber
+    - ᚺ HEIMDALLR - The Gatekeeper who controls who enters the bridge and when.
+    - ᚺ HÖFUÐ	Intellisense Schema Ngin	Heimdallr's sword; represents the sharp, precise "edge" of your code intelligence.
+    - ᛊ SAGA - Goddess who sits beside Odin and tells him stories Associated with history and remembering Perfect for notes that tell the "story" of your work Simple, memorable name
+    - ᚷ GINNUNGAGAP- The primordial void where all potential exists Perfect: modules exist here before being "born" into projects - Rune: Gebo ᚷ gift/exchange
+    - ᚢ URÐR for Snapshot Engine "That which has become" (one of the three Norns) She represents the PAST Norns control fate/destiny - snapshots control your project's fate Rollback = returning to the past Urðr governs
+    - ᚹ VEÐRFÖLNIR for VSCInfo - Eagle atop Yggdrasil, sees EVERYTHING  oversight/monitoring from above viewing system continuously
+
+DEV
+
+AVAILABLE NORSE/MYTHOLOGICAL NAMES:
+Major Gods/Figures:
+
+SLEIPNIR (Odin's 8-legged horse)
+FENRIR (The great wolf)
+GERI & FREKI (Odin's wolves)
+GUNGNIR (Odin's spear)
+DRAUPNIR (Odin's ring)
+MJÖLNIR (Thor's hammer)
+SIF (Thor's wife, harvest goddess)
+IDUNN (Youth goddess, keeper of apples)
+BRAGI (Poetry god)
+FORSETI (Justice god)
+NJORD (Sea god)
+ULLR (Archery/skiing god)
+HODER (Blind god)
+VALI (Avenger)
+MAGNI (Thor's son - strength)
+MODI (Thor's son - courage)
+NANNA (Baldr's wife)
+EIR (Healing goddess)
+GEFION (Giver goddess)
+VAR (Goddess of oaths)
+VOR (Goddess of wisdom)
+SYN (Guardian goddess)
+HLIN (Protection goddess)
+SNOTRA (Wisdom goddess)
+GERSEMI (Freyja's daughter - precious)
+HNOSS (Freyja's daughter - treasure)
+
+Giants/Creatures:
+
+HRUNGNIR (Stone giant)
+JÖRMUNGANDR (World serpent)
+NIDHOGG (Dragon gnawing roots)
+RATATOSK (Already used)
+HRAESVELGR (Eagle creating wind)
+SKOLL (Wolf chasing sun)
+HATI (Wolf chasing moon)
+SURTR (Fire giant)
+YMIR (Primordial giant)
+THRYM (Frost giant king)
+THIAZI (Storm giant)
+GRENDEL (Monster)
+FAFNIR (Dragon)
+AUDUMBLA (Primordial cow)
+
+Valkyries:
+
+BRUNHILDE
+SIGRUN
+SVAFA
+KARA
+SKULD
+GÖNDUL
+HILDR
+GEIRSKÖGUL
+RANDGRID
+RADGRID
+REGINLEIF
+
+Dwarves:
+
+ANDVARI
+BROKK
+EITRI
+DVALIN
+ALFRIGG
+BERLING
+GRERR
+SINDRI
+DURIN
+
+Other:
+
+HEL (Death/underworld)
+SIGYN (Loki's wife)
+MODGUD (Bridge guardian)
+HVERGELMIR (Source of rivers)
+MUSPELHEIM (Fire realm)
+NIFLHEIM (Ice realm)
+ALFHEIM (Light elf realm)
+SVARTALFHEIM (Dark elf realm)
+JOTUNHEIM (Giant realm)
+MIDGARD (Human realm)
+ASGARD (God realm)
+-->
+
+<!-- 
+## Complete Archaic Greek Alphabet Reference
+
+- 𐌀 (Alpha) - A
+- 𐌁 (Beta) - B
+- 𐌂 (Gamma) - G
+- 𐌃 (Delta) - D
+- 𐌄 (Epsilon) - E
+- 𐌅 (Digamma/Wau) - W/V
+- 𐌆 (Zeta) - Z
+- 𐌇 (Eta) - H/Ē
+- 𐌈 (Theta) - Th
+- 𐌉 (Iota) - I
+- 𐌊 (Kappa) - K
+- 𐌋 (Lambda) - L
+- 𐌌 (Mu) - M
+- 𐌍 (Nu) - N
+- 𐌎 (Xi) - X
+- 𐌏 (Omicron) - O
+- 𐌐 (Pi) - P
+- 𐌑 (San/Tsade) - Ts
+- 𐌒 (Qoppa) - Q
+- 𐌓 (Rho) - R
+- 𐌔 (Sigma) - S
+- 𐌕 (Tau) - T
+- 𐌖 (Upsilon) - U/Y
+- 𐌗 (Phi) - Ph
+- 𐌘 (Chi) - Ch/Kh
+- 𐌙 (Psi) - Ps
+- 𐌚 (Omega) - Ō
+- -->
+
+

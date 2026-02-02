@@ -1,4 +1,181 @@
-# MIÐGARÐR: Formerly known as CATALYST UI LIBRARY
+# MIÐGARÐR SDK: Formerly known as CATALYST UI LIBRARY
+
+# Table of Contents
+
+## [MIÐGARÐR: Formerly known as CATALYST UI LIBRARY](#miðgarðr-formerly-known-as-catalyst-ui-library)
+- [Editor Context Insert](#editor-context-insert)
+- [Quick Pick Insert](#quick-pick-insert)
+- [Automated Installation](#automated-installation)
+  - [UPDATE: Configure Import Call](#update-configure-import-call)
+  - [Installation](#installation)
+    - [Quick Start](#quick-start)
+    - [Menu](#menu)
+  - [Premium Access](#premium-access)
+  - [Component Categories](#component-categories)
+    - [Primitives](#primitives)
+    - [Forms](#forms)
+    - [Data Display](#data-display)
+    - [Navigation](#navigation)
+    - [Feedback](#feedback)
+    - [Interactive](#interactive)
+    - [Utilities](#utilities)
+  - [Package Managers](#package-managers)
+  - [Configuration](#configuration)
+    - [Config File (Optional)](#config-file-optional)
+    - [Config Options Explained](#config-options-explained)
+    - [Auto-Install with Config](#auto-install-with-config)
+    - [Tailwind Setup](#tailwind-setup)
+    - [Utils File](#utils-file)
+  - [Requirements](#requirements)
+    - [Utils File](#utils-file-1)
+  - [Examples](#examples)
+    - [Installing a Button Component](#installing-a-button-component)
+    - [Using the Button Component](#using-the-button-component)
+    - [Installing Multiple Components](#installing-multiple-components)
+  - [Component Import Paths](#component-import-paths)
+  - [Features](#features)
+  - [Dependencies](#dependencies)
+  - [File Structure](#file-structure)
+  - [Support](#support)
+  - [License](#license)
+
+## [VS Code Integration Features](#vs-code-integration-features)
+- [Smart Prop Autocomplete](#smart-prop-autocomplete)
+- [Signature Help](#signature-help)
+- [Hover Documentation](#hover-documentation)
+- [Auto Import](#auto-import)
+- [Go To Definition](#go-to-definition)
+- [Missing Import Warnings](#missing-import-warnings)
+- [In Editor Comp Autocomplete](#in-editor-comp-autocomplete)
+- [Developer Experience Achievements](#developer-experience-achievements)
+
+## [Tool Suite](#tool-suite)
+- [Development Tools](#development-tools)
+  - [VSCode Cmd Reference](#vscode-cmd-reference)
+  - [Markdown Cheat Sheet](#markdown-cheat-sheet)
+  - [IRIS: Color Tools](#iris-color-tools)
+    - [IRIS: Color Converter](#iris-color-converter)
+    - [IRIS: Color Wheel](#iris-color-wheel)
+  - [React/Tailwind Sandbox](#react-tailwind-sandbox)
+  - [Theme Builder](#theme-builder)
+  - [Typography Tester](#typography-tester)
+  - [Layout Generator](#layout-generator)
+  - [X Tester](#x-tester)
+  - [Components Reel](#components-reel)
+  - [Tailwind Converter](#tailwind-converter)
+  - [Animation Builder](#animation-builder)
+  - [Responsive Design Helper](#responsive-design-helper)
+  - [Code Carousel](#code-carousel)
+  - [Sandbox](#sandbox)
+  - [Icons](#icons)
+  - [RÚNAR Editor](#rúnar-editor)
+  - [Regex Tester](#regex-tester)
+  - [JSON Formatter & Validator](#json-formatter--validator)
+  - [API Response Mocker](#api-response-mocker)
+  - [Lorem Ipsum Generator](#lorem-ipsum-generator)
+  - [Cron Expression Builder](#cron-expression-builder)
+  - [UUID Hash Generator](#uuid-hash-generator)
+  - [Code Diff Viewer](#code-diff-viewer)
+  - [Flexbox Sandbox](#flexbox-sandbox)
+  - [Grid Sandbox](#grid-sandbox)
+  - [QR Code Generator](#qr-code-generator)
+  - [Responsive Preview](#responsive-preview)
+  - [Accessibility Checker](#accessibility-checker)
+  - [Animation Builder](#animation-builder-1)
+  - [Chart Playground](#chart-playground)
+  - [MD Badge Builder](#md-badge-builder)
+  - [Spinner Generator](#spinner-generator)
+  - [Terminal Menu Generator](#terminal-menu-generator)
+- [ENCODER_DECODER_LAB](#encoder_decoder-lab)
+  - [Image to Base64](#image-to-base64)
+    - [PNG to Base64](#png-to-base64)
+    - [JPG to Base64](#jpg-to-base64)
+    - [WEBP to Base64](#webp-to-base64)
+    - [PDF to Base64](#pdf-to-base64)
+  - [Base64 to Image](#base64-to-image)
+    - [Base64 to PNG](#base64-to-png)
+    - [Base64 to JPG](#base64-to-jpg)
+    - [Base64 to WEBP](#base64-to-webp)
+    - [Base64 to PDF](#base64-to-pdf)
+  - [Data Conversion](#data-conversion)
+    - [CSV to JSON](#csv-to-json)
+    - [Image to SVG](#image-to-svg)
+      - [PNG to SVG](#png-to-svg)
+      - [JPG to SVG](#jpg-to-svg)
+      - [WEBP to SVG](#webp-to-svg)
+    - [Media Conversion](#media-conversion)
+      - [MP4 to MP3](#mp4-to-mp3)
+
+## [SKALD: Monaco Editor](#skald-monaco-editor)
+- [Monaco Editor Overview](#monaco-editor-overview)
+- [Feature Set](#feature-set)
+- [Special Characters](#special-characters)
+- [PRE_MADE_ASSETS](#pre_made_assets)
+  - [File Trees](#file-trees)
+  - [Progress Bars](#progress-bars)
+  - [ASCII Tables](#ascii-tables)
+  - [Spinners](#spinners)
+  - [Terminal Dashboards](#terminal-dashboards)
+  - [Code Block Previews](#code-block-previews)
+  - [Terminal Menus](#terminal-menus)
+  - [Terminal Logs](#terminal-logs)
+  - [Git Branch Visualization](#git-branch-viz)
+  - [Status Indicators](#status-indicators)
+  - [Notification Boxes](#notification-boxes)
+  - [Output Separators](#output-separators)
+  - [Nested Data Visualization](#nested-data)
+  - [Activity Timeline](#activity-timeline)
+  - [Terminal Dashboards](#terminal-dashboards-1)
+  - [Box Drawing](#box-drawing)
+  - [Various Spinners](#various-spinners)
+  - [Badges and Logos](#badges-and-logos)
+- [Documentation Tools](#documentation-tools)
+  - [Readme Generator](#readme-generator)
+  - [Readme Templates](#readme-templates)
+  - [Remote Access](#remote-access)
+  - [Local Settings](#local-settings)
+
+## [MIÐGARÐR UI](#miðgarðr-ui)
+- [Overview](#overview)
+- [Features](#features-1)
+  - [Component Library](#component-library)
+  - [Built-in Tools](#built-in-tools)
+    - [Development Environment](#development-environment)
+    - [Utility Tools](#utility-tools)
+    - [Reusable Project Tools](#reusable-project-tools)
+- [Component Insertion Methods](#component-insertion-methods)
+  - [Editor Context Menu](#insert-component-via-editor-context-menu)
+  - [Quick Pick Menu](#insert-component-via-quick-pick)
+- [Installation Guide](#installing-catalyst-ui-components)
+  - [Installation Methods](#installation-1)
+    - [Quick Start](#quick-start-1)
+    - [Menu](#menu-1)
+  - [Premium Access](#premium-access-1)
+  - [Component Categories](#component-categories-1)
+    - [Primitives](#primitives-1)
+    - [Forms](#forms-1)
+    - [Data Display](#data-display-1)
+    - [Navigation](#navigation-1)
+    - [Feedback](#feedback-1)
+    - [Interactive](#interactive-1)
+    - [Utilities](#utilities-1)
+  - [Package Managers](#package-managers-1)
+  - [Configuration](#configuration-1)
+    - [Config File (Optional)](#config-file-optional-1)
+    - [Config Options Explained](#config-options-explained-1)
+    - [Auto-Install with Config](#auto-install-with-config-1)
+    - [Tailwind Setup](#tailwind-setup-1)
+    - [Utils File](#utils-file-2)
+  - [Requirements](#requirements-1)
+    - [Utils File](#utils-file-3)
+  - [Examples](#examples-1)
+    - [Installing a Button Component](#installing-a-button-component-1)
+    - [Using the Button Component](#using-the-button-component-1)
+    - [Installing Multiple Components](#installing-multiple-components-1)
+  - [Component Import Paths](#component-import-paths-1)
+  - [Features](#features-2)
+  - [Dependencies](#dependencies-1)
+  - [File Structure](#file-structure-1)
 
 # Editor Context Insert
 
@@ -335,13 +512,30 @@ Pressing ctrl & spacebar while your cursor is inside the quotations of any props
 
 # Hover Documentation
 
-Whenever hovering over a components name a hovercard will appear with its relevant documentation, removing the need to ever visit the site again.
+Whenever hovering over a components name a hovercard will appear with its relevant documentation, removing the need to ever visit the site. The card will contain the following:
+- name
+- cateogry
+- import statement
+- basic usage example
+- usage example
+- props
+- link to the components url to quickly navigate straight to the page instead having to make us, open a browser, go to the landing page.... ya no
+- if the component is a primitive or uses any primitive, links will be provided to radix ui's site
+- dependencies
+- features list 
+- tags list
 
-> [!NOTE] 
-> There will be a few components that will have duplicate data within the hovercard. While it won't be an exact duplicate, they will however contain 2 sets of usage examples and props values. 
-> This is due to the fact that prior to learning how to progmatically provide a solution through the vscode extension itself, which was accomplished very easily and with zero extra effort all the while it covers the entire inventory, I was manually coding it into the source code of each and every single component. 
-> At this time I don't remember how I came across the vscode implementation because I wasn't able to test it for a while after coding it, but however it came to be... thank-you, lol. 
-> As you have saved me from manually writing it for 2500+ components which... would have sucked to say the least.
+Personally, it really bothers me when a library uses a component to build off of... and not provide the apis to use the thing. To make matters WORSE, I've noticed libraries aren't even providing links... the components documentation page, lets just build something, ship it... and if the user needs something... fuck it they can figure it out right?
+
+With so much on my plate, I too have forgotten to include it, but I won't just be including the links, personally that alone I think is absurd. I understand, devs are used to a shitty fucking user experience... and don't expect one because it's just that bad.
+
+Instead each component that uses any one of the primitives, there will be a second props table added displaying all the props values for that primitive straight from the radix ui, or whoever the provider is. 
+
+Thus truly ensuring that you do not need to minimize or open another window while coding as all the information, components and everything else you need, is already here.
+
+
+
+
 
 # Auto Import
 
@@ -491,7 +685,7 @@ A comprehensive UI component library with 1808+ components spanning free and pre
 
 **Access:** Shortcut available through title pane
 
-**Website:** [Catalyst Software](https://catalyst-software.vercel.app/Catalyst/UI)
+**Website:** [Catalyst Software](https://catalyst-software.vercel.app/asgard/midgardr)
 
 ##### Features
 

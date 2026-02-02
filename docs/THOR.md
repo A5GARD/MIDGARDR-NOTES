@@ -257,7 +257,6 @@ Add powerful utility classes through custom plugins. All plugins can be added as
 #### Available Plugins:
 
 ## Tailwind V4 Plug-in
-Currently still alpha testing 
 It's just plug and play, and drop a v4 configured component into your project.
 
 > [!IMPORTANT]

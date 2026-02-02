@@ -279,7 +279,7 @@ Here is an unordered list of all the line item titles followed by `:` and their 
   - `portReaper:` Zombie process killer
   - `Auto Reaper:` Automatic cleanup
   - `Log to Lens:` (errorParser) Scans the last output of the integrated terminal for file paths and line numbers
-- `HERMES:` API secret management
+- `HERMÓÐR:` API secret management
   - `API Secret Grabber:` (vaultFetch) A type that fetches a value from a CLI-based vault
 - `NEMESIS:` Tunnel management
   - `Create Incoming Tunnel:` A specialized command that launches a tunnel, captures the generated URL, and automatically updates a specific line in your config.ts or .env with the new public URL

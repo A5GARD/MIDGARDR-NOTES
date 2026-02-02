@@ -1,5 +1,18 @@
 ## Config Item Examples
 
+## Table of Contents
+
+- [Config Item Examples](#config-item-examples)
+  - [Example 1: Local Build & Install VSCode Extension](#example-1-local-build--install-vscode-extension)
+  - [Example 2: Open Project in New Window](#example-2-open-project-in-new-window)
+  - [Example 3: Open URL in Browser](#example-3-open-url-in-browser)
+  - [Example 4: VLC with Playlist](#example-4-vlc-with-playlist)
+  - [Example 5: Clean Project](#example-5-clean-project)
+  - [Example 6: Complete Automation Workflow](#example-6-complete-automation-workflow)
+  - [Scripts And Others](#scripts-and-others)
+  - [Return to Main](#return-to-main)
+
+
 
 **Example 1: Local Build & Install VSCode Extension**
 

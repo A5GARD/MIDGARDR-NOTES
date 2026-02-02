@@ -369,8 +369,8 @@ REMOTE_DATABASE_URL="postgresql://neondb_owner:npg_mfHjL51BCRlg@ep-solitary-glad
 LOCAL_SESSION_SECRET='9k7mN2pQ8xR4vL6wE3tY1zH5jC0bF8dG7aS4nM9qK2uI6oP3vX8wR1eT5yH7jN0m'
 REMOTE_SESSION_SECRET='9k7mN2pQ8xR4vL6wE3tY1zH5jC0bF8dG7aS4nM9qK2uI6oP3vX8wR1eT5yH7jN0m'
 
-LOCAL_UI_CHECKOUT='/Catalyst/UI/code/list/all'
-REMOTE_UI_CHECKOUT='/Catalyst/UI/code/list/all'
+LOCAL_UI_CHECKOUT='/asgard/midgardr/code/list/all'
+REMOTE_UI_CHECKOUT='/asgard/midgardr/code/list/all'
 
 LOCAL_PADDLE_CLIENT_TOKEN="live_79e842b9aee2a289dc3431d8967"
 REMOTE_PADDLE_CLIENT_TOKEN="live_79e842b9aee2a289dc3431d8967"
