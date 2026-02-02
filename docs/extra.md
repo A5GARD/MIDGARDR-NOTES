@@ -1,4 +1,5 @@
-## The ".env" Context Swapper (envProfile)
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **The ".env" Context Swapper (envProfile)**
+
 
 - Manual .env editing is a nightmare because one typo breaks the whole app.
 - The Pain: Opening .env, commenting out 10 lines of "Prod" vars, uncommenting 10 lines of "Dev" vars, and repeating this for every microservice.
@@ -22,13 +23,12 @@
   - no matter what the current state is, it will always grab the the corresponding values of which is triggered and set them in .env so as to never error out
 
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Pro7 Archiver**
 
-## Pro7 Archiver
 Secure sensitive files in password-protected archives before pushing to GitHub, ensuring safe version control for proprietary code.
 
 
-
-### VSCode Icons
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSCode Icons**
 
 Visual reference for all available VSCode icons and their identifiers.
 

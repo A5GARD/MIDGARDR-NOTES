@@ -1,8 +1,9 @@
 # MIÐGARÐR SDK: Formerly known as CATALYST UI LIBRARY
 
-# Table of Contents
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Table of Contents**
+ 
 
-## [MIÐGARÐR: Formerly known as CATALYST UI LIBRARY](#miðgarðr-formerly-known-as-catalyst-ui-library)
+## [MIÐGARÐR: Formerly known as CATALYST UI LIBRARY](#miðgarðr-formerly-known-as-midgardr-library)
 - [Editor Context Insert](#editor-context-insert)
 - [Quick Pick Insert](#quick-pick-insert)
 - [Automated Installation](#automated-installation)
@@ -146,7 +147,7 @@
 - [Component Insertion Methods](#component-insertion-methods)
   - [Editor Context Menu](#insert-component-via-editor-context-menu)
   - [Quick Pick Menu](#insert-component-via-quick-pick)
-- [Installation Guide](#installing-catalyst-ui-components)
+- [Installation Guide](#installing-midgardr-components)
   - [Installation Methods](#installation-1)
     - [Quick Start](#quick-start-1)
     - [Menu](#menu-1)
@@ -177,20 +178,19 @@
   - [Dependencies](#dependencies-1)
   - [File Structure](#file-structure-1)
 
-# Editor Context Insert
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Editor Context Insert**
 
 Inserts selected component at cursor via the editor context menu. Menu options will be based upon current subscription status.
 
-# Quick Pick Insert
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Quick Pick Insert**
 
 Copies the selected component into your clipboard via the quick pick menu located in the status bar. Menu options will be based upon current subscription status.
 
-# Automated Installation
-
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Automated Installation**
 
 ## UPDATE
 
-Adding a new line option 'Configure Import Call'. Configures your package.json and tsconfig.json files to allow the use of '#icons' and '#catalyst' in-place of the traditional '~/components/catalyst-ui' and '@catalystsoftware/icons'
+Adding a new line option 'Configure Import Call'. Configures your package.json and tsconfig.json files to allow the use of '#icons' and '#catalyst' in-place of the traditional '~/components/midgardr' and '@catalystsoftware/icons'
 
 ```javascript
 import { Command, CommandGroup, CommandItem, CommandList, cn } from '#catalyst'
@@ -205,13 +205,13 @@ Selecting the full installation will also configure your project for this use as
 Install a single component:
 
 ```bash
-bunx @catalystsoftware/ui button
+bunx @a5gard/migardr-ui button
 ```
 
 ### Menu
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 ```
 
 Then select from the interactive menu:
@@ -297,10 +297,10 @@ Catalyst UI automatically detects and uses your package manager:
 
 ### Config File (Optional)
 
-Create a `config.catalyst` file in your project root to customize installation behavior:
+Create a `config.midgardr` file in your project root to customize installation behavior:
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Create Config File
 ```
 
@@ -312,7 +312,7 @@ Or create it manually:
     "theme": "blue",                      // presetting the theme
     "preset": "MODERN",                   // presetting the preset
     "font": "Geist",                      // presetting the font
-    "all-components": false,              // auto-install all on `bunx @catalystsoftware/ui`
+    "all-components": false,              // auto-install all on `bunx @a5gard/migardr-ui`
     "install-tailwind": true,             // install Tailwind dependencies
     "configure-tailwind": true,           // create and paste .css file
     "configure-tailwind.config": true,    // true, "ngin", or false
@@ -330,7 +330,7 @@ Or create it manually:
 | `theme` | string | `"blue"` | Default theme color |
 | `preset` | string | `"MODERN"` | Default preset style |
 | `font` | string | `"Geist"` | Default font family |
-| `all-components` | boolean | `false` | Auto-install all components when running `bunx @catalystsoftware/ui` |
+| `all-components` | boolean | `false` | Auto-install all components when running `bunx @a5gard/migardr-ui` |
 | `install-tailwind` | boolean | `true` | Install Tailwind CSS and related dependencies |
 | `configure-tailwind` | boolean | `true` | Create the tailwind.css file at specified location |
 | `configure-tailwind.config` | boolean\|"ngin" | `true` | `true` for basic config, `"ngin"` for 18k presets, `false` for none |
@@ -344,7 +344,7 @@ Or create it manually:
 Once you have a config file with `"all-components": true`, simply run:
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 ```
 
 This will automatically:
@@ -362,13 +362,13 @@ Catalyst UI includes pre-configured Tailwind setups:
 
 **Standard Configuration:**
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Configure Tailwind + PostCSS
 ```
 
 **Ngin Configuration** (18,000 presets):
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Configure with Ngin
 ```
 
@@ -381,7 +381,7 @@ Or set in config:
 
 ### Utils File
 
-All installations automatically create a `components/catalyst-ui/utils/utils.ts` file with helper functions:
+All installations automatically create a `components/midgardr/utils/utils.ts` file with helper functions:
 - `cn()` - Class name merger
 - `focusInput` - Focus styles
 - `focusRing` - Focus ring utilities
@@ -407,18 +407,18 @@ All installations automatically create a `utils/utils.ts` file with helper funct
 ### Installing a Button Component
 
 ```bash
-bunx @catalystsoftware/ui button
+bunx @a5gard/migardr-ui button
 ```
 
 This will:
-1. Create `/components/catalyst-ui/primitives/button.tsx`
+1. Create `/components/midgardr/primitives/button.tsx`
 2. Install required dependencies (extracted from component imports)
 3. Create `utils/utils.ts` if it doesn't exist
 
 ### Using the Button Component
 
 ```tsx
-import { Button } from '~/components/catalyst-ui';
+import { Button } from '~/components/midgardr';
 
 export default function MyPage() {
   return (
@@ -436,7 +436,7 @@ export default function MyPage() {
 ### Installing Multiple Components
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Select Components
 # Choose from the list
 ```
@@ -446,14 +446,14 @@ bunx @catalystsoftware/ui
 All components use the centralized import path:
 
 ```tsx
-import { Button, Card, Dialog } from '~/components/catalyst-ui';
+import { Button, Card, Dialog } from '~/components/midgardr';
 ```
 
 Or import directly from category folders:
 
 ```tsx
-import { Button } from '~/components/catalyst-ui/primitives';
-import { useTimer } from '~/components/catalyst-ui/hooks';
+import { Button } from '~/components/midgardr/primitives';
+import { useTimer } from '~/components/midgardr/hooks';
 ```
 
 ## Features
@@ -482,7 +482,7 @@ After installation, your project will have:
 ```
 your-project/
 ├── components/
-│   └── catalyst-ui/
+│   └── midgardr/
 │       ├── primitives/
 │       ├── forms/
 │       ├── overlays/
@@ -566,7 +566,7 @@ Whenever you start to code a component `<`, pressing ctrl & spacebar will bring 
 >   - configures tailwind and goes so far as configuring everything else needed to run tailwind
 >   - creates tailwind.css
 >   - depending on the selection you get a basic tailwind.config.ts or an extremely feature rich version of it, grating access to over 18,000 configrations that you can change your projects font, theme and preset ( padding, margins, etc )
->   - whenever a component is installed, whether it is the full installation or just a single component, it creates a new index file in the relevant locations so as you get to use `~/components/catalyst-ui` for literlly every single component no mattter the location
+>   - whenever a component is installed, whether it is the full installation or just a single component, it creates a new index file in the relevant locations so as you get to use `~/components/midgardr` for literlly every single component no mattter the location
 >   - just today I added, 'Configure Imports' which takes the previous item... a whole step further by configuring the tsconfig and package.json files so that all you have to do to import a component is `#catalyst` and if you use the icon library as well `#icons`. Now that I think of it, I've never ever... seen a dev or heard of one use this technique. I know as of late, a ton of devs are moving towards the @ in place of the tilde ( ~ ), to save typing the slash, but if your going to so far as to configuring your project so that you save typing a single character... why wouldn't you go the step further and do this? Since it saves you typing out a shit ton of characters... **shrugs**, anyways this feature is also trigger whenever you use full installation
 >   - all in all, it provides a one clickesque solution for everything related to the library. I say one clickish, because it used to be such when it was implemented in the extension and only moved it to its own npm library to offer more variations for installation, but still it's just a single command. There isn't one other library that I know of that comes close to that... to my knowledge anyways. To this day, I beleive I have tried them all, that are react based anyways, as I will touch exactly why I tried them all in the next point.
 > 5. Completely removing the need in having to 'need' more than one library - When trying to fulfill this goal, I was shocked at the current trend. The main larger libraries, it feels as if each one of them started with an idea that was either specialized or somewhat so and never really expanded upon once they reached that initial goal. Meanwhile, the lazy copy cats create an exact carbon copy of shadcn without adding anything of their own, or if they did or it was at first perceived that they did, it was one... maybe two items at most. Thus, each main library has massive holes in its offered inventory that leaves users... wanting / needing more. For example, the amount of hooks in this library, is unparallel to say the least, but there is only a single other library that can even be considered as coming close in terms of total hooks. While yes, the foundation of this libraries components used shadcn's but if you look at them today, you wouldn't be able to discern that fact. As each and every single one of them have been edited and expanded upon. Not to mention, a whole category, x, that no one else has, an entire animations category, a tool suite unlike any other I've ever seen, a ever growing blocks category in which I try to copy over any page that I code whenever I think of it, and to top it off unique reusable tools that if they aren't available yet they soon will be since they're on the to do list such as: 
@@ -749,13 +749,13 @@ A comprehensive React component library with 100+ production-ready components fo
 Install a single component:
 
 ```bash
-bunx @catalystsoftware/ui button
+bunx @a5gard/migardr-ui button
 ```
 
 ### Menu
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 ```
 
 Then select from the interactive menu:
@@ -844,7 +844,7 @@ Catalyst UI automatically detects and uses your package manager:
 Create a `catalyst.config.jsonc` file in your project root to customize installation behavior:
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Create Config File
 ```
 
@@ -856,7 +856,7 @@ Or create it manually:
     "theme": "blue",                      // presetting the theme
     "preset": "MODERN",                   // presetting the preset
     "font": "Geist",                      // presetting the font
-    "all-components": false,              // auto-install all on `bunx @catalystsoftware/ui`
+    "all-components": false,              // auto-install all on `bunx @a5gard/migardr-ui`
     "install-tailwind": true,             // install Tailwind dependencies
     "configure-tailwind": true,           // create and paste .css file
     "configure-tailwind.config": true,    // true, "ngin", or false
@@ -874,7 +874,7 @@ Or create it manually:
 | `theme` | string | `"blue"` | Default theme color |
 | `preset` | string | `"MODERN"` | Default preset style |
 | `font` | string | `"Geist"` | Default font family |
-| `all-components` | boolean | `false` | Auto-install all components when running `bunx @catalystsoftware/ui` |
+| `all-components` | boolean | `false` | Auto-install all components when running `bunx @a5gard/migardr-ui` |
 | `install-tailwind` | boolean | `true` | Install Tailwind CSS and related dependencies |
 | `configure-tailwind` | boolean | `true` | Create the tailwind.css file at specified location |
 | `configure-tailwind.config` | boolean\|"ngin" | `true` | `true` for basic config, `"ngin"` for 18k presets, `false` for none |
@@ -888,7 +888,7 @@ Or create it manually:
 Once you have a config file with `"all-components": true`, simply run:
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 ```
 
 This will automatically:
@@ -906,13 +906,13 @@ Catalyst UI includes pre-configured Tailwind setups:
 
 **Standard Configuration:**
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Configure Tailwind + PostCSS
 ```
 
 **Ngin Configuration** (18,000 presets):
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Configure with Ngin
 ```
 
@@ -925,7 +925,7 @@ Or set in config:
 
 ### Utils File
 
-All installations automatically create a `components/catalyst-ui/utils/utils.ts` file with helper functions:
+All installations automatically create a `components/midgardr/utils/utils.ts` file with helper functions:
 - `cn()` - Class name merger
 - `focusInput` - Focus styles
 - `focusRing` - Focus ring utilities
@@ -951,18 +951,18 @@ All installations automatically create a `utils/utils.ts` file with helper funct
 ### Installing a Button Component
 
 ```bash
-bunx @catalystsoftware/ui button
+bunx @a5gard/migardr-ui button
 ```
 
 This will:
-1. Create `/components/catalyst-ui/primitives/button.tsx`
+1. Create `/components/midgardr/primitives/button.tsx`
 2. Install required dependencies (extracted from component imports)
 3. Create `utils/utils.ts` if it doesn't exist
 
 ### Using the Button Component
 
 ```tsx
-import { Button } from '~/components/catalyst-ui';
+import { Button } from '~/components/midgardr';
 
 export default function MyPage() {
   return (
@@ -980,7 +980,7 @@ export default function MyPage() {
 ### Installing Multiple Components
 
 ```bash
-bunx @catalystsoftware/ui
+bunx @a5gard/migardr-ui
 # Select: Select Components
 # Choose from the list
 ```
@@ -990,14 +990,14 @@ bunx @catalystsoftware/ui
 All components use the centralized import path:
 
 ```tsx
-import { Button, Card, Dialog } from '~/components/catalyst-ui';
+import { Button, Card, Dialog } from '~/components/midgardr';
 ```
 
 Or import directly from category folders:
 
 ```tsx
-import { Button } from '~/components/catalyst-ui/primitives';
-import { useTimer } from '~/components/catalyst-ui/hooks';
+import { Button } from '~/components/midgardr/primitives';
+import { useTimer } from '~/components/midgardr/hooks';
 ```
 
 ## Features
@@ -1026,7 +1026,7 @@ After installation, your project will have:
 ```
 your-project/
 ├── components/
-│   └── catalyst-ui/
+│   └── midgardr/
 │       ├── primitives/
 │       ├── forms/
 │       ├── overlays/
@@ -1038,3 +1038,9 @@ your-project/
     ├── tailwind.config.js
     └── postcss.config.js
 ```
+
+> [!TIP]
+>
+> When your looking at code examples and see the import '#midgardr' being used in place of '~/components/midgardr/primitives/button', theres an option with the cli tool to configure your project to use it. 
+>
+> Every single comopnent in the library can be called with '#midgardr'. The same configuration also allows you to access the icons library via '#baldr' 

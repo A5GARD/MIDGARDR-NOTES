@@ -1,44 +1,109 @@
 # THOR 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **tailwind.config.js**
 
-## tailwind.config.js
 
 Creates a basic tailwind.config.js file pre configured with animations, etc.
 ### postcss.config.js, taiwlind.css
 These files are created the same as the above mentioned files. While nothing can really be done for the postcss.config.js file, tailwind.css does host a number of modifications such as a themed scroll bar.
 
-## tailwind.config preset ngin
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **tailwind.config preset ngin**
+
 Creates a config file that features optoins to customize font, theme and preset and controlling it with only 3 variables. Granting access to over 18,000 configurations all from one file.
 The top of the file is where you will find the variables to set:
 
-```javascript
-// =====================================================================================================================================================
-// ====================================================== SELECT A PRESET, FONT & THEME ================================================================ 
-// PRESET - Change this to switch between design systems:
-// 1. MODERN     - "MODERN SAAS" Refined & Professional, tight, clean, high-performance feel. (15% smaller spacing, tight layouts)  - Best paired font: Geist, Inter, Plus Jakarta Sans  
-// 2. CREATIVE   - "CREATIVE STUDIO" Lots of breathing room and very round shapes. (Soft & Elegant)                                 - Best paired font: Outfit, Playfair Display, Montserrat
-// 3. TECHNICAL  - Square corners, consistent spacing, "IDE" feel. (Precision & Focus)                                              - Best paired font: JetBrains Mono, Fira Code, Geist Mono
-// 4. FINTECH    - "FINTECH DENSE" Maximum information density for dashboards. (Data Heavy)                                         - Best paired font: IBM Plex Mono (numbers), Roboto, Source Code Pro
-// 5. LUXURY     - Characterized by extreme letter spacing, thin borders, and huge breathing room. (High-end & Sophisticated)       - Best paired font: Playfair Display, Lora, Montserrat (for subheaders)
-// 6. BRUTALIST  - Thick borders, no rounding, and high-contrast sizing. (Bold, Raw, & Experimental)                                - Best paired font: Space Grotesk, IBM Plex Mono, Roboto Mono
-// 7. EDITORIAL  - Focuses on vertical rhythm and classic typesetting. (The New Yorker / Magazine Style)                            - Best paired font: Source Serif 4, Merriweather, Libre Baskerville
-// 8. PLAYFUL    - Thick "bouncy" borders and very round shapes. (Mobile-First / Duolingo Style)                                    - Best paired font: Nunito, Delius Swash Caps, Poppins     
-const SELECTED_PRESET = 'MODERN'
+<pre style="max-width: 800px; white-space: pre-wrap; overflow-wrap: break-word; background-color: transparent; line-height: 1.4;">
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                              tailwind.config.ts Ngin                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  A fully configured Tailwind engine providing access to 18,000+ design combinations. By adjusting just three        │ 
+│  values, you can transform the entire visual identity of your application.                                          │ 
+│                                                                                                                     │ 
+│  1. THEME:  Sets the core color palette (Brand, Semantic, and Accent colors).                                       │ 
+│  2. PRESET: Defines the "feel"—adjusting spacing, margins, and border-radii across 9 distinct systems.              │ 
+│  3. FONT:   Select from 90+ curated typefaces optimized for readability and style.                                  │ 
+│                                                                                                                     │  
+│  Only selected assets are bundled into your build, ensuring maximum performance with zero runtime bloat.            │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                     │ 
+│  Please select each of the following:                                                                               │ 
+│  1. Theme                                                                                                           │ 
+│  2. Preset                                                                                                          │ 
+│  1. Font ( Not required, if left blank will default to the themes default )                                         │ 
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                    PRESET                                                           │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 1. MODERN                       - Refined & Professional, tight, clean, high-performance feel.                      │ 
+│                                 - 15% smaller spacing, tight layouts - Geist, Inter, Plus Jakarta Sans              │ 
+│                                                                                                                     │ 
+│ 2. CREATIVE                     - Lots of breathing room and very round shapes.                                     │ 
+│                                 - Soft & Elegant - Outfit, Playfair Display, Montserrat                             │ 
+│                                                                                                                     │ 
+│ 3. TECHNICAL                    - Square corners, consistent spacing, "IDE" feel.                                   │ 
+│                                 - Precision & Focus - JetBrains Mono, Fira Code, Geist Mono                         │ 
+│                                                                                                                     │ 
+│ 4. FINTECH                      - Maximum information density for dashboards.                                       │ 
+│                                 - Data Heavy - IBM Plex Mono (numbers), Roboto, Source Code Pro                     │ 
+│                                                                                                                     │ 
+│ 5. LUXURY                       - Characterized by extreme letter spacing, thin borders, and huge breathing room.   │ 
+│                                 - High-end & Sophisticated - Playfair Display, Lora, Montserrat (for subheaders)    │ 
+│                                                                                                                     │ 
+│ 6. BRUTALIST                    - Thick borders, no rounding, and high-contrast sizing.                             │ 
+│                                 - Bold, Raw, & Experimental - Space Grotesk, IBM Plex Mono, Roboto Mono             │ 
+│                                                                                                                     │ 
+│ 7. EDITORIAL                    - Focuses on vertical rhythm and classic typesetting.                               │ 
+│                                 - The New Yorker / Magazine Style - Source Serif 4, Merriweather, Libre Baskerville │ 
+│                                                                                                                     │ 
+│ 8. PLAYFUL                      - Thick "bouncy" borders and very round shapes.                                     │ 
+│                                 - Mobile-First / Duolingo Style - Nunito, Delius Swash Caps, Poppins                │ 
+│                                                                                                                     │ 
+│*/                                         SELECTED_PRESET = 'MODERN'                                              /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                       FONT                                                          │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ SANS-SERIF     - Inter, Roboto, Geist, Poppins, Montserrat, Outfit, Plus Jakarta Sans, DM Sans, Urbanist,           │ 
+│                  Nunito, Lato, Barlow, Gabriela, Delius Swash Caps, Public Sans, Work Sans, Manrope, Figtree,       │ 
+│                  Archivo                                                                                            │ 
+│                                                                                                                     │ 
+│ SERIF          - Merriweather, Playfair Display, Lora, Source Serif 4, Libre Baskerville, Space Grotesk,            │ 
+│                  PT Serif, Fraunces, Cormorant Garamond, Crimson Pro, EB Garamond, Newsreader, DM Serif Display,    │ 
+│                  Prata, Bodoni Moda, Young Serif                                                                    │ 
+│                                                                                                                     │ 
+│ MONO           - JetBrains Mono, Fira Code, Geist Mono, IBM Plex Mono, Roboto Mono, Space Mono,                     │ 
+│                  Source Code Pro, Ubuntu Mono, Red Hat Mono, Cutive Mono, Nanum Gothic Coding                       │ 
+│                                                                                                                     │ 
+│ DISPLAY        - Sora, Bricolage Grotesque, Clash Display, Syne, Unbounded, Cabinet Grotesk, Righteous,             │ 
+│                  Lexend, Kanit                                                                                      │ 
+│                                                                                                                     │ 
+│*/                                             SELECTED_FONT = 'Geist'                                             /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                        THEME                                                        │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                  THEME ORIENTATED                                                   │ 
+│                     marshmallow                      art-deco                        vs-code                        │ 
+│                       spotify                         summer                      material-design                   │ 
+│                       marvel                         valorant                     ghibli-studio                     │ 
+│                    modern-minimal                     nature                      elegant-luxury                    │ 
+│                       claude                       neo-brutalism                     caffeine                       │ 
+│                    pastel-dreams                    clean-slate                      corporate                      │ 
+│                    midnight-bloom                  sunset-horizon                     slack                         │ 
+│                      perplexity                                                                                     │ 
+│                                                                                                                     │ 
+│                                                  COLOR ORIENTATED                                                   │ 
+│                        rose                           orange                          green                         │ 
+│                        blue                           yellow                          violet                        │ 
+│                        amber                           lime                           emerald                       │ 
+│                       fuchsia                          cyan                           indigo                        │ 
+│                        lime                          darkBlue                         neutral                       │ 
+│                        red                                                                                          │ 
+│                                                                                                                     │ 
+│*/                                             SELECTED_THEME = 'blue'                                             /*│  
+│*/                                              SELECTED_MODE = 'dark'                                             /*│ 
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+*/  
+</pre>
 
-// =================================================================== FONTS ============================================================================ 
-// Sans-serif: Inter | Roboto | Geist | Poppins | Montserrat | Outfit | Plus Jakarta Sans | DM Sans | Nunito | Lato | Barlow | Gabriela | Delius Swash Caps | Barlow | Public Sans | Work Sans | Manrope | Urbanist | Figtree | Archivo
-// Serif: Merriweather | Playfair Display | Lora | Source Serif 4 | Libre Baskerville | Space Grotesk | PT Serif | Fraunces | Cormorant Garamond | Crimson Pro | EB Garamond | Newsreader | DM Serif Display | Prata | Bodoni Moda | Young Serif
-// Mono: JetBrains Mono | Fira Code | Geist Mono | IBM Plex Mono | Roboto Mono | Space Mono | Source Code Pro | Ubuntu Mono | Red Hat Mono | Nanum Gothic Coding | Cutive Mono
-// Sand-Serif ( display & experimental ): Sora | Bricolage Grotesque | Clash Display | Syne | Unbounded | Cabinet Grotesk | Righteous | Lexend | Kanit
-const SELECTED_FONT = 'Fira Code'
-
-// ==================================================================== THEME =========================================================================== 
-// Themes: marshmallow | art-deco | vs-code | spotify | summer | material-design | marvel | valorant | ghibli-studio | modern-minimal | nature | elegant-luxury | neo-brutalism | pastel-dreams | clean-slate | midnight-bloom | sunset-horizon | claude | caffeine | corporate | slack | perplexity | neutral | red | rose | orange | green | blue | yellow | violet | amber | lime | emerald | fuchsia | cyan | indigo | lime | darkBlue
-
-// or if you would just like to include your own set the value to 'css' and you may set your own theme in the .css file
-const SELECTED_THEME = 'blue'
-```
-
-## Plugins
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Plugins**
 
 Selecting any one of the plugins mentioned in the list will create a file with the desired plugin. Once created, you just need to install it in your tailwind.config.js file like so:
 
@@ -134,7 +199,7 @@ Current available plugins include:
 - Interaction Magnetism ....... Spring-loaded hover states
 - Border Utilities ............ Advanced border styles
 
-## CSS
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **CSS**
 
 > [!WARNING]
 > Currently in testing

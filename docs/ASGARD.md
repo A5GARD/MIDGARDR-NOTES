@@ -3,7 +3,8 @@
 
 What started as a React UI components library has evolved into a full-stack development toolkit. As such, it has now transitioned into an SDK and even though it sounds like everything just got more complicated, it has actually made things far simpler and easier.
 
-# ASGARD SDK
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **ASGARD SDK**
+ 
 ## Architecture
 
 The SDK is built on three foundational layers:

@@ -33,8 +33,8 @@
 >
 > So currently, please try to use the viewer in order to make changes to the ui as your coding. The customize layout system is literlly exactly the same as vscodes. Because we can only track certain states ourselves without relying on vscode, this will be vital for a reliable state.
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Layout Configuration Guide**
 
-## Layout Configuration Guide
 More of an overview of what to expect, than an actual guide since it's extremely straight forward, except maybe one part which I will go over.
 
 ### Casual
@@ -246,7 +246,7 @@ This quick view/edit menu wont touch the objects performance, workspace or workb
 
 <br /><br />
 
-## Notes for future features... 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Notes for future features**
 
 > [!NOTE] 
 > In this section I will be leaving myself notes that I do not want to forget because I think I stumbled on exactly what I wanted... from the begining. If you aren't into reverse engineering things and diving into something that has zero documentation, or just don't get enjoy getting to the level NERDNESS, that this is going to get into. I would suggest skipping this part entirely as you will probably find 100% of this boring among other things. 

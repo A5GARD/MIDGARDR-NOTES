@@ -1,9 +1,8 @@
 # BIFRÖST
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Terminal and Multi Kernel Ngin**
 
-## Terminal and Multi Kernel Ngin
-
-- [About the Project](#star2-about-the-project)
+ 
 <pre style="max-width: 800px; white-space: pre-wrap; overflow-wrap: break-word;">
 /DEVSTACK_SYSTEM_ROOT/
 ├── 📂 TABLE_OF_CONTENTS/
@@ -135,8 +134,7 @@
 </pre>
 
 
-
-## Item Types
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Item Types**
 
 ### Files & Navigation
 
@@ -1392,8 +1390,9 @@ IF you want to try your hand at creating your own label, in the below accordian 
 
 </details>
 
-## Project Agnostic Configuration
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Project Agnostic Configuration**
  
+
 Create configurations that work across workspaces or stay project-specific. 
 1. To take advantage of this feature you must create or set a folder to global: true at the root level
 2. any item placed inside the global folders will now be available to use in any workspace
@@ -1432,7 +1431,7 @@ I've played around with a TON of different label styles, landing on this being t
 - Configure folders as globally available or workspace-specific
 - Support for hybrid configurations and per-project customization
 
-## Complete Example
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Complete Example**
 
 <details>
 <summary>Config</summary>
@@ -3286,15 +3285,14 @@ I've played around with a TON of different label styles, landing on this being t
 
 </details>
 
-## Resources
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Resources**
+
 - [Visual Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
 - [Video Tutorial](https://youtu.be/NtnVq8CNJ7A)
 
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Reveal In Explorer**
 
-## Reveal In Explorer
-
-  
 **Right-click any file → Reveal in Explorer**
 
 Open file locations directly in Windows Explorer or macOS Finder from:
@@ -3304,8 +3302,7 @@ Open file locations directly in Windows Explorer or macOS Finder from:
 
 ![Reveal in Explorer](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/reveal-in-explorer.jpg?raw=true)
   
-
-## Copy Path
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Copy Path**
 
 
 **Right-click any file → Copy Path**
@@ -3315,7 +3312,8 @@ Copy full or relative file paths to clipboard. Works with multiple path formats 
 [Video Demo](https://youtu.be/FWa6o5FK3sU)
 
 
-## Search
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Search**
+
 **Access:** Click title bar button
 
 Powerful search functionality to find and execute any command you've created. Preview commands before execution to ensure you're running the right one.
@@ -3326,8 +3324,7 @@ Powerful search functionality to find and execute any command you've created. Pr
 
 
 
-
-## Configuration Settings
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Configuration Settings**
 
 DevStack provides extensive configuration options to customize your development workflow. All settings are prefixed with `ocrmnavigator.` and can be configured in your VS Code settings.
 
@@ -3799,7 +3796,8 @@ All feature toggles default to `true` unless otherwise specified and can be disa
 ---
 
 
-## Usage
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Usage**
+
 
 All item types share common actions:
 - **Add**: Create new items through the interface
@@ -3815,14 +3813,13 @@ Set item type in config object or click the plus icon in the title pane.
 - **Sequential Execution**: [Video](https://youtu.be/ySp83VqxQ8s) | [Image](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
 
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Architecture Notes**
 
-
-## Architecture Notes
 This section provides a deep dive into the underlying systems of this extension. Understanding these architectural choices will help you write more effective configurations and leverage the full power of the codebase.
 
 With the recent redesign, the project has moved toward an engine-based, object-oriented approach. By utilizing dedicated classes for core logic, the codebase is more efficient, modular, and easier to extend.
 
-## Core Architectural Priorities
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Core Architectural Priorities**
 The topics below are ranked by their impact on your development workflow. High-priority items focus on the modular systems you will interact with daily, while lower-priority items cover "under-the-hood" utilities.
 
 1. Modular Engine Structure (High Priority) Learning how our engines and classes interact is the most valuable use of your time. This modularity allows you to hook into specific functionalities and customize the extension's behavior without rewriting core logic.
@@ -3835,10 +3832,11 @@ The topics below are ranked by their impact on your development workflow. High-p
 By centralizing these notes here rather than scattering them across individual README files, provide a single source of truth for the "how" and "why" behind the code. This bird's-eye view ensures you can build your config with a clear understanding of the underlying framework.
 
 
-## Environment Variable Integration (.env)
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Environment Variable Integration (.env)**
 To handle sensitive data—like NPM authentication tokens—the extension supports the use of .env variables directly within your configuration strings. This allows you to keep secrets out of your source code while automating authenticated commands.
 
-#### Security First: Execution-Time Loading
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Security First: Execution-Time Loading**
+
 For security reasons, the extension does not load environment variables when the extension starts. Instead, variables are resolved "just-in-time":
 - Lazy Loading: The extension stores the raw string (e.g., ${NPM_TOKEN}) and only injects the actual value at the moment of execution.
 - Scoped Access: Because variables are pulled at runtime, they are scoped to the .env file present in the active project, preventing cross-project credential leakage.
@@ -3864,7 +3862,8 @@ Use the standard ${VARIABLE_NAME} syntax within your path or command strings:
 >
 > [Link to video, showcasing the above command being executed and pulling the env var.](https://youtu.be/XwsO4DnEpRg)
 
-## Modular Function Building
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Modular Function Building**
+
 Previously, this extension was built on a "function-per-feature" basis—each tool was isolated, with no awareness of or connection to other features. The latest architecture moves away from this rigid structure in favor of modular, exposed functions.
 
 By breaking core logic into independent, reusable methods, the extension essentially becomes a toolkit. This grants you the "absurd" level of freedom to chain functions together, effectively turning the extension into a manual CI/CD pipeline tailored to your specific workflow.
@@ -3889,7 +3888,7 @@ While traditional extensions lock you into a specific UI or sequence, this modul
 The Vision: This isn't just an extension; it's a suite of tools. What it lacks in automated triggers, it makes up for in total manual control and flexibility that you won't find in standard marketplace offerings.
 
 
-## The Philosophy of Automation 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **The Philosophy of Automation**
 (or Lack Thereof)
 In this extension, you will not find "passive" automation. Unless the benefit is astronomical, I will never implement a feature that runs in the background without user consent.
 
@@ -3910,7 +3909,8 @@ To prove that triggered automation is superior to background bloat, here is how 
 Because everything is triggered, there are zero processes running in the background. We have all experienced VS Code performance issues where we had to start disabling extensions just to type smoothly. This extension rejects that reality. You get the functionality of a massive CI/CD suite, but it only exists when you ask for it.
 
 
-## The Autorun System
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **The Autorun System**
+
 The Autorun Folder is a unique architectural feature designed to let you execute custom logic at build time (or any other lifecycle stage) without polluting your codebase or your package.json scripts.
 
 Instead of hardcoding new features or adding endless NPM scripts, you simply drop a standalone Node.js file into a specific folder. The extension handles the rest.
@@ -3920,14 +3920,15 @@ Instead of hardcoding new features or adding endless NPM scripts, you simply dro
 - Cleaner package.json: Avoid "script bloat." You can have dozens of utility scripts without adding a single line to your manifest.
 - Sequential Control: Scripts are executed alphabetically and sequentially. By naming your files (e.g., 01_setup.js, 02_process.js), you have total control over the execution order.
 
-## How to Implement
+### How to Implement
+
 1. Create the Folder: By default, place a folder named autorun inside your src directory.
 2. Custom Path: If your project uses a different structure (e.g., /app), update the setting:
   - `ocrmnavigator.AUTORUN_DIR`
 3. Trigger the Scripts: To run all scripts within your autorun folder, call this command within your config:
   - `ocrmnavigator.autorun.trigger`
 
-## The "Updaters" Alternative
+### The "Updaters" Alternative
 If you need a second, separate layer of scripts—perhaps for tasks you don't want running with your main build—you can use the Updaters folder:
 - Location: Place a folder named updaters in your workspace root.
 - Trigger: Use the command `ocrmnavigator.autorun.updaters.`
@@ -3935,7 +3936,8 @@ If you need a second, separate layer of scripts—perhaps for tasks you don't wa
 This provides a secondary, less-customized execution path for maintenance tasks, database migrations, or minor file updates that sit outside your core build logic.
 
 
-## Dynamic Package Manager Detection
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Dynamic Package Manager Detection**
+
 In modern development, switching between npm, pnpm, and yarn is common when jumping between projects. Most tools detect your package manager once when they load, which can lead to errors if you switch managers mid-session.
 
 This extension takes a Just-In-Time (JIT) approach. Every time you trigger a command that requires a package manager (such as an NPM script or a build process), the extension performs a real-time check of your workspace.
@@ -3952,7 +3954,8 @@ The extension natively detects and executes commands for:
 
 
 
-## Intelligent Terminal & Command Engine
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Intelligent Terminal & Command Ngin**
+
 Most extensions spawn a new terminal instance every time you click a button, leading to a "terminal graveyard" by the end of the day. This extension uses a centralized Command Engine class to manage all terminal interactions through a single, intelligent interface.
 
 ### The Smart Queue System
@@ -4070,10 +4073,10 @@ From a maintenance perspective, this "One Ring" function makes the extension inc
 
 Bottom Line: By moving away from "one function per item" and toward a unified execution switch, the extension gains a level of "absurd" power and efficiency that makes it a true CI/CD-grade tool inside your editor.
 
-## Concurrent And Chain
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Concurrent And Chain**
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Autonomous Maintenance**
 
-## Autonomous Maintenance
 #### Local Instance Scans
 Maintaining an extension of this scale—covering the functionality of 125+ individual tools—would normally be an impossible chore. To solve this, the extension uses Autonomous Scanning to keep its data fresh without me ever having to lift a finger.
 
@@ -4093,7 +4096,8 @@ While there is a manual list of core VS Code commands, the extension also featur
 - Catalyst-UI context menu
 - Contextual Menu Options: The extension scans your local environment to ensure that the menu options presented to you are relevant to the tools you actually have installed and active.
 
-## Naming Conventions
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Naming Conventions**
+
 #### Functions & Settings
 As this extension has grown to include over 1,500 commands, the risk of "naming collisions" (where two commands share the same name) has become a reality. To prevent these conflicts and make the API more intuitive, I am transitioning all internal and exposed functions to a hierarchical naming convention.
 
@@ -4107,7 +4111,8 @@ Previously, commands followed a standard extension.function format. Moving forwa
 - API Discoverability: It is now much easier to guess or memorize functions. If you need a Git tool, you know it starts with ocrmnavigator.git.
 - Future-Proofing: This structure allows us to merge large sub-extensions (like the recent "To-Do" extension integration) without worrying about breaking existing features.
 
-## Settings & Migration
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Settings & Migration**
+
 This same logic is being applied to the Extension Settings.
 - New Settings: Will follow the category.subcategory.setting format.
 - Legacy Settings: To avoid breaking your existing settings.json files, current settings will remain as-is for now.
@@ -4117,13 +4122,15 @@ This same logic is being applied to the Extension Settings.
 > I am currently in the process of converting all 1,500+ commands. If you are referencing the old naming convention in your custom configs, be aware that these may stop working as they are migrated to the new system. If a command fails, check the logs—it has likely just moved to its new hierarchical home.
 
 
-## pro7
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **pro7**
+
 ### Workspace Secrets & Encrypted Backups
 Managing .env files and sensitive credentials across multiple workstations can be a headache. Standard practices often involve third-party "Secret Managers," but those often come with monthly costs or complex setups.
 
 My solution—built directly into this extension—is a Password-Protected Archive workflow.
 
-## Local Encryption 
+
+### Local Encryption 
 Instead of relying on external platforms, this feature allows you to bundle your secrets into a password-protected ZIP archive before pushing your project to GitHub. This provides three major benefits:
 - Portability: Your secrets travel with your repository. No matter which workstation you sit down at, your .env files are just a decryption away.
 - Versioning: Your secrets are backed up alongside your code history.
@@ -4143,21 +4150,17 @@ The Fix: Ensure your archive is excluded from the build or listed in your .vscod
 
 
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Context**
 
-## Context
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSIX Archiver**
 
-## VSIX Archiver
 
-## Publishing To Marketplace
-
-###
-
-## Configuration Settings
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Configuration Settings**
 
 
 All settings are prefixed with `ocrmnavigator.` and can be configured in your VS Code settings.
 
-## Core Settings
+### Core Settings
 
 **Tasks & NPM Scripts**
 - `tasks` (boolean, default: `true`) - Controls whether the 'Tasks' folder is displayed in DevStack explorer as a global folder. Items from tasks.json are automatically populated.
@@ -4170,7 +4173,7 @@ All settings are prefixed with `ocrmnavigator.` and can be configured in your VS
 - `F_DISABLE` (boolean, default: `false`) - File disable toggle. Do not set manually unless you need to change it back to false in settings.json.
 - `EXT_DISABLE` (boolean, default: `false`) - Extension disable toggle. Do not set manually unless you need to change it back to false in settings.json.
 
-## Code Snapshot Settings
+### Code Snapshot Settings
 
 **Visual Appearance**
 - `backgroundPalette` (enum, default: `"pinky"`) - Background gradient palette for code snapshots. Options: magnum, pinky, passion, steel, tropic, forest, blueman, sand
@@ -4192,7 +4195,7 @@ All settings are prefixed with `ocrmnavigator.` and can be configured in your VS
 - `target` (enum, default: `"container"`) - Snapshot target. Options: container (includes background), window (just the code window)
 - `trimEmptyLines` (boolean, default: `true`) - Trim empty lines from the beginning and end of snapshot
 
-## GitHub Integration
+### GitHub Integration
 
 **Repository Configuration**
 - `repo` (string, default: `""`) - Repository name (e.g., "DevStack")
@@ -4212,7 +4215,7 @@ All settings are prefixed with `ocrmnavigator.` and can be configured in your VS
 - `syncInterval` (string, default: `"30"`) - Sync interval in minutes
 - `checkRemindersInterval` (string, default: `"10"`) - Reminder check interval in minutes
 
-## Build & Automation Settings
+### Build & Automation Settings
 
 **Package Management**
 - `CONCURRENT` (string, default: `"stable"`) - Determines concurrent function mode. Options: 'stable', 'bleeding-edge'
@@ -4232,7 +4235,7 @@ All settings are prefixed with `ocrmnavigator.` and can be configured in your VS
 - `UPDATE_PROMPT_OBJECTS` (boolean, default: `false`) - Updates prompt objects
 - `CONVERT_README_DEV_MD` (boolean, default: `false`) - Converts README.dev.md to README.md during build
 
-## UI & Interface Settings
+### UI & Interface Settings
 
 **Quick Pick Menus**
 - `BE_QP` (boolean, default: `false`) - BE Quickpick menu found on the status bar
@@ -4245,7 +4248,7 @@ All settings are prefixed with `ocrmnavigator.` and can be configured in your VS
 - `configPath` (string, default: `".vscode/ocrmnavigator/search-config.json"`) - Path to the search configuration file
 - `toggleHiddenItems` (boolean, default: `true`) - Toggle visibility of chain items in UI (items with hidden: true)
 
-## Feature Toggles
+### Feature Toggles
 
 **Development Tools**
 - `commands` (boolean, default: `true`) - Enables VS Code commands
@@ -4403,7 +4406,7 @@ Third Ættr (Tyr's Ættr)
     - ᛒ BIFRÖST - Template installer/creator
     - ᛒ BIFRÖST-PLUGIN - Plugin installer/creator
     - ᛇ YGGDRASIL - Central CLI hub (connects all tools)
-    - ᛗ MIÐGARÐR - formerly know as Catalyst UI & @catalystsoftware/ui is a npm libarry that will now get cahnged
+    - ᛗ MIÐGARÐR - formerly know as Catalyst UI & @a5gard/migardr-ui is a npm libarry that will now get cahnged
     - ᚦ THOR - CSS/tailwind
     - ᛒ BALDR - @catalystsoftware/icons
     - ᛗ MÍMIR - DevArchive?

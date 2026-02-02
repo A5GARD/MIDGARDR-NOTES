@@ -1,6 +1,6 @@
 # FREYR
 
-## VSCODE & TAILWIND STYLING
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSCODE & TAILWIND STYLING**
 
 ## Table of Contents
 
@@ -10,7 +10,7 @@
 - [Window Differentiator](#window-differentiator)
 - [Reset - Window Differentiator](#reset---window-differentiator)
 
-### VSCode & Tailwind Theme Builder
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSCode & Tailwind Theme Builder**
 
 Create custom themes for both VSCode and Tailwind with live preview and multiple export formats.
 
@@ -28,7 +28,7 @@ Create custom themes for both VSCode and Tailwind with live preview and multiple
 
 ---
 
-### Blacked Out
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Blacked Out**
 
 Ultra-dark theme preset for VSCode with deep black backgrounds and optimized contrast.
 
@@ -43,8 +43,7 @@ Ultra-dark theme preset for VSCode with deep black backgrounds and optimized con
 ![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 ---
-
-### Blued Out
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Blued Out**
 
 Dark blue theme preset combining deep blacks with subtle blue accents.
 
@@ -60,7 +59,7 @@ Dark blue theme preset combining deep blacks with subtle blue accents.
 
 ---
 
-### Window Differentiator
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Window Differentiator**
 
 Color-code multiple VSCode windows to easily distinguish between different projects.
 
@@ -77,7 +76,7 @@ Color-code multiple VSCode windows to easily distinguish between different proje
 
 ---
 
-### Reset - Window Differentiator
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Reset - Window Differentiator**
 
 Restore default VSCode window colors and remove custom window differentiation.
 
