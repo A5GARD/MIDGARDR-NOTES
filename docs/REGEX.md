@@ -1,4 +1,4 @@
-# VS Code Find & Replace Regex Reference
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VS Code Find & Replace Regex Reference**
 
 ## Multi-Cursor Patterns
 

@@ -1,8 +1,16 @@
-# SAGA
-
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **SAGA**
 ## Notes Manager & GitHub Sync Extension
 
 A comprehensive VS Code extension for managing notes, todos, reminders, and post-it pads with GitHub synchronization capabilities.
+
+> [!NOTE] 
+> I thought I would mention this because, it didn't dawn on me the gravity of the situation when it comes to the level of issues, well lack of to be more precise since I haven't had a single reject push while using github as a source of truth. 
+>
+> If your thinking that I may be babying the system, far from it. At times I'll have 4 workspaces open, all have their own "instance" of the note app meaning that, they aren't linked to one another in any way, except the repo. I'll create a note in one, leave it unsaved, jump to another workspace create and save a new note, jump to another workspace create a new note but not for my current workspaces files, but for the one that still has an unsaved note open. Saving that note, jumping back to the original workspace to finish off that note and save it. 
+>
+> Meanwhile under the hood, every save event executes a custom push sequence where I have not experienced a single reject in 9-10 months. Not to mention, making matters worse, the UI is pretty sweet when it comes to the to do lists. This is due to the fact that you do not even need to open the file, to check or uncheck to do items, each check pushes the save to github and if you do 3 or 4 really fast... that's ok, because if one push were to be triggered before the current one finishes, it just gets added to a queue. Even when you trigger it 10 times, theres 10 items in the queue and they get done when they get done.
+
+
 
 # Table of Contents
 
@@ -382,49 +390,27 @@ Honestly, I'm still baffled by how those initial users even discovered the exten
 > When starting this process, it will be a lot easier if you already have your github access token created with the value temparirly stored somewhere, like your .env file. ( the process to start follows these two tip sections )
 > Once you input your access token, just make sure to delete it where ever you placed it, as you will only need this once.
 >
-> IF you have NEVER acquired an access token before... that's ok. Instead of leaving you high and dry thinking, `Where tf do I get an access token?`, open the Devstack quickpick menu
-> `To do / Notes` → `Settings` → `Navigate To Token Gen`, this will navigate you to the settings page within github for you to start the process.
-> If you would rather learn where it is:
-> right click in any file in any editor in vscode and select `Open Github Repo In Browser`, this devstack feature opens your current workspaces repo in your default browser
-> from here: `User menu dropdown ( top right hand corner )` → `settings`
-> scroll down, and in the left hand pages sidebar, click the last option `Developer Settings`
-> on the left you have three options, we want `Personal Access Tokens`, in that dropdown select `fine-grained tokens`
+> Creating a classic token is far easier, of the two available options, [click here to navigate straight to the classic tokens page](https://github.com/settings/tokens).
+>
+> Once there, there is only 2 requirements but if you want to do everything from the extension, you should enable more access. Personally through my access token I can create, edit, share, unshare and delete repos and more.
+>
+> When this was first build, it was built in a way where it did not limit you in order to do anything in regards to your repo.
+>
+> Once completed with setting the permissions, don't forget to name it.
+>
+> If your new to tokens, as soon as the key generates copy it to your clipboard and, for the time being, place it within your .env file till you get to that point in the set up process as this token only shows up once, if you navigate anywhere from that page you will have to remake a new one.
+>
+> Then within the devstack menu, under saga select 'set all' and it will guide you through the process.
+>
+> You can technically skip, and place everything but your access token into your settings.json file.
 
-> [!TIP] Personal Access Token Guide
-> I thought I already had a token creation guide to help you, in case you never made one before... Oh well, I'll create a new one, personally I hate when apps / extensions leave you high and dry and in so doing leaving you with more questions than answers in order to use the thing they created.
->
-> At this point, due to where this tip section is in relevance to discussing the button / guiding you on how to get to the github pat settings page, I will assume you are already on the correct page. If you are not at the url `github.com/settings/personal-access-tokens` see above ↑↑↑
->
-> click `Generate New Token`
-> it will probably ask you to either re-input your password, provide a token, or yada yada
-> enter in a `Token name`
-> you can leave `Description` blank
-> expiration: `No expiration`, unless you are extremely security focused then go ahead and set a expiration. If you do, you will have to come back and generate a new one, once this token has expired. 
-> `Repository Access`: `All repositories`, unless again, your security focused you can first manually intialize and create an empty repo for your source of truth and select that repo here so as to not let this token have access to anything else BUT that one repo. Depending on your you work, you may end up having to do this.
-> `Permissions`, I hate... their implementation of selecting access rules, its so un-intuitive.
-> If you selected any other option than then what I suggested under `Repository Access` you will have different options available to you
->
-> To start click `+ Add Permissions`
->   - check off:
->       - `Administration`
->           - in this items line, click on `Access: Read-only` and change it to `Access: Read and Write`
->       - `Contents`
->           - in this items line, click on `Access: Read-only` and change it to `Access: Read and Write`
->       - `Metadata` gets selected as default as it is required
-> Next, to the left of the `+ Add permissions` button, there are two tabs to choose, select `Account`
->   - check off:
->       - `profile`
->
-> click `Generate Token`
-> It will then give you an api token that you need to copy, you will only have access to this value ONCE, so I would suggest copying and pasting it somewhere for a couple of minutes so you have access to it when you need it when you go to input the access token during the set up process in the extension
->
-> If you just read this guide and would like a quick reference instead of going back and rereading everything
-> - `Administration`
->   - `Access: Read and Write`
-> - `Contents`
->   - `Access: Read and Write`
-> - under the `Account` tab
-> - `profile`
+```json
+{
+    "ocrmnavigator.todo.branch": "main",
+    "ocrmnavigator.todo.repo": "mynotesrepo",
+    "ocrmnavigator.todo.owner": "8an3",
+}
+```
 
 
 1. `To do / Notes` → `Set All`

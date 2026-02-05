@@ -1,8 +1,8 @@
 # THOR
 
-## TAILWIND_NGIN
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **TAILWIND_NGIN**
 
-## Tailwind CSS
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Tailwind CSS**
 **Command:** `ocrmnavigator.tailwind.file.css.create`
 
 Creates a complete `tailwind.css` file at `app/routes/styles/tailwind.css` with:
@@ -52,7 +52,7 @@ The generated `tailwind.css` includes:
 
 ---
 
-## Tailwind Config 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Tailwind Config**
 **Command:** `ocrmnavigator.tailwind.file.config.base.create`
 
 Generates a minimal `tailwind.config.js` with essential configurations:
@@ -67,7 +67,7 @@ Generates a minimal `tailwind.config.js` with essential configurations:
 
 ---
 
-## Tailwind Config Preset Ngin
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Tailwind Config Preset Ngin**
 **Command:** `ocrmnavigator.tailwind.file.config.create`
 
 Creates the **ultimate Tailwind configuration** with 525+ pre-configured settings and **zero additional implementation work**. Simply set 3 variables at the top:
@@ -256,7 +256,7 @@ Add powerful utility classes through custom plugins. All plugins can be added as
 
 #### Available Plugins:
 
-## Tailwind V4 Plug-in
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Tailwind V4 Plug-in**
 It's just plug and play, and drop a v4 configured component into your project.
 
 > [!IMPORTANT]
@@ -348,7 +348,7 @@ element.addEventListener('mousemove', (e) => {
 
 ---
 
-## Tailwind Plugin Library (Ngin) - Documentation
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Tailwind Plugin Library (Ngin) - Documentation**
 
 #### Overview
 

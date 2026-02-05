@@ -1,4 +1,4 @@
-### Clipboard History Pro
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Clipboard History Pro**
 
 Multi-item clipboard manager that tracks and stores your clipboard history.
 
@@ -13,7 +13,7 @@ Multi-item clipboard manager that tracks and stores your clipboard history.
 
 ---
 
-### Global Bookmarking System
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Global Bookmarking System**
 
 Never lose your place in large projects again. The extension provides a persistent, global bookmarking system that allows you to tag specific lines of code and jump back to them instantly, even after restarting VS Code.
 
@@ -53,7 +53,7 @@ Later, click the $(bookmark) Bookmarks icon in the Status Bar to see your histor
 ---
 
 
-### Icons
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Icons**
 
 A quick pick hosting every avialable icon from the icons library, that can be searched and each item is alphabetically organized
 
@@ -62,7 +62,7 @@ Once an item has been selected it either places it into your clipboard for use o
 too use you would need: `pnpm i @catalystsoftware/icons`
 
 
-### DevStack Quick Pick
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **DevStack Quick Pick**
 
 **Access:** Press `Alt + Shift + D`
 

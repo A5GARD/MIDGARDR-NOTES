@@ -1,11 +1,24 @@
-# Catalyst Software
+# Asgard Software
 
 - [ ] ★ ━━━━ ☆ ━━━━     TO-DO     ━━━━ ☆ ━━━━ ★
+- [ ] need to change landing pages components list to use the same layout as we did in markdown cheat sheet, and this is to be placed under the transistion statement we posted in asgard.md over in devestack
+  - [ ] on load display all categories and items
+  - [ ] left side bar contains the 3 root level cateogies meanwhile the right sidebar contains all the catgories in that root level cateogiry
+  - [ ] centered at the top will be a search bar
+  - [ ] this still conveys how large the library but doesnt force the user to subject them to searching through that horse shit list
+  - [ ] with the same list foundation use this as the new list components that works similar to showcase
+- [ ] for docs create docs layout with outlet so as to create a docs sidebar that points to all the doumentation
+  - [ ] need to add performance 
+  - [ ] app layer data store need a better name for this
+- [ ] need to change x viewer to instead dispaly a sidebar and navigate between components there
+- [ ] need to change midgardr index
+- [ ] need to change asgard index
+- [ ] need to change code/list/all is getting a new comopnents listing dispaly, where using visualizer and a rows users can filter and search for components, this same viewer will be used on the index page
+- [ ] need to change code $name, or integrate it with list all 
+
 - [ ] change auth in catalystsoftware/ui from pssword to, grabbing the current user email instaed pinging the server to see if they subscribe and if they do offer the prem menu
-- [ ] each component needs the same comment section as animated text, or anything within the x category
-- [ ] offer cdn? see bottom
-- [x] premium only catalyst-ui focused extension
-- [ ] need to add best in class `search` to readme
+- [ ] each component needs the same comment section as animated text, or anything within the x category 
+- [x] premium only midgardr focused extension 
 - [ ] pnpm dlx ui-thing@latest add flip-clock
 
 - [ ] need to add best in class `settings.json resource`
@@ -14,7 +27,20 @@
 - [ ] test new motions category
 - [ ] need to go through coss origin and compare x to his variants
   - [ ] ★ ━━━━ X ━━━━ ★
-    - [ ] need to compare against coss i think ists called
+    - [ ] slider-x
+  - [x] ★ ━━━━ core ━━━━ ★
+    - [x] in-development.tsx
+  - [x] ★ ━━━━ PERFORMANCE ━━━━ ★
+    - [ ] ALLL FILES
+  - [ ] ★ ━━━━ tailwind ━━━━ ★
+    - [ ] ALLL FILES
+  - [ ] ★ ━━━━ interactive ━━━━ ★
+    - [x] DirectionAwareHover
+    - [x] color area
+  - [x] ★ ━━━━ BACKGROUND ━━━━ ★
+    - [x] tracing-beam.tsx
+    - [x] glitch-background.tsx
+    - [x] need to compare against coss i think ists called
   - [ ] ★ ━━━━ UTILS ━━━━ ★
     - [ ] auth.ts
     - [ ] auth_session.ts
@@ -33,11 +59,11 @@
     - [ ] code-block-examples.tsx
     - [ ] prompt-feedback-bar.tsx
   - [ ] ★ ━━━━ PRIMITIVE ━━━━ ★
-    - [ ] button-group
-    - [ ] alert
-    - [ ] tracker
-    - [ ] multi-select
-    - [ ] list-box
+    - [x] button-group
+    - [x] alert
+    - [x] tracker
+    - [x] multi-select
+    - [x] list-box
   - [ ] ★ ━━━━ BG ━━━━ ★
     - [ ] gistorted glasses 
     - [ ] texture overlay
@@ -198,8 +224,8 @@
     - [ ] https://github.com/mxkaske/mxkaske.dev/tree/main/components/craft/google-places-autocomplete
     - [ ] https://github.com/mxkaske/mxkaske.dev/tree/main/components/craft/wheel-picker
     - [ ] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-box.tsx
-    - [ ] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
-    - [ ] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
+    - [x] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
+    - [x] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
     - [ ] https://github.com/m4nute/pricing-page-shadcn
     - [ ] https://github.com/udecode/plate
     - [ ] https://github.com/jakobhoeg/shadcn-chat
@@ -218,7 +244,7 @@
     - [x] https://pro.cult-ui.com/sections
     - [x] https://www.aisdkagents.com/patterns/basics-tool-scrape-cheerio
     - [x] https://kokonutui.com/docs/components/ai-prompt
-    - [x] https://coss.com/origin/alert
+    - [ ] https://coss.com/origin/alert
     - [x] https://www.cult-ui.com/
     - [x] https://www.tremor.so/
     - [x] https://www.heroui.com/
@@ -230,7 +256,7 @@
     - [x] https://www.hyperui.dev/
     - [ ] https://flowbite.com/blocks/application/crud-create-drawers/
     - [ ] https://blocks.tremor.so/blocks/account-and-user-management#account-and-user-manage
-    - [ ] https://github.com/tremorlabs/tremor-blocks/blob/main/src/content/components/status-monitoring/tracker-10.tsx
+    - [x] https://github.com/tremorlabs/tremor-blocks/blob/main/src/content/components/status-monitoring/tracker-10.tsx
     - [ ] https://ui.lukacho.com/
     - [ ] https://sailboatui.com/
     - [ ] https://tw-elements.com/
@@ -272,7 +298,7 @@
       - [ ] Catalyst Scheduler
   
 
-    - [ ] CATALYST EDITOR
+    - [x] CATALYST EDITOR
       - [ ] the editor that is for use will be built as a useable component
       - [ ] Since the last post this has seen a great number of updates, and is just about to receive more
       - [ ] I haven't converted it yet to become a reusable component yet but will be done in the near future
@@ -286,7 +312,7 @@
       - [ ] will feature several size types along with custom height and dynamic height
    
 
-    - [ ] THEME BUILDER
+    - [x] THEME BUILDER
       - [ ] an actual theme builder will not be made available as everyone enjoys building these from scratch but there arehooks within the library to make it alot easier for you to code one such as
   
 

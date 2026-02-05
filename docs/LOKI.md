@@ -1,5 +1,5 @@
 
-# LOKI AI: Limitless
+# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **LOKI AI: Limitless**
 
 > Taken from a blog post I wrote about limitless as I have yet to write up the how-to.
 
@@ -123,7 +123,7 @@ I have to admit that was much needed ego boost...since I typically get imposters
 Till next time!
 
 
-# Deterministic AI Ngin Compiler
+# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Deterministic AI Ngin Compiler**
 
 That eliminates 99% of AI prompt issues and frustrations across all AI engines.
 
@@ -287,12 +287,26 @@ A comprehensive web application featuring:
 
 One of the key innovations is addressing the root cause of most AI-related issues that stem from the unconstrained vectors through which AI makes assumptions. AI generates multiple assumptions per response, each backed by different "facts" that shift between instances. This inconsistency makes it virtually impossible for users to identify patterns or determine where to begin troubleshooting. By controlling these assumption vectors, this solution eliminates the seemingly random behavior that makes AI troubleshooting so difficult.
 
-## Getting Started
 
-Your more than welcome to browse the current write ups I have in regards to taking control of an AI engine. They have since been updated, as I have found a couple of engines that let me take advantage of this without the need of manual user interaction on a instance per instance basis. Because of this, I have completely restructed the system in order to better leverage the abilities gained with this strategy.
+ 
+# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Prompt- COMING SOON**
 
----
+ 
+ A comprehensive pre-prompt management system with support for multiple AI providers
 
-> "Pre-Prompt transformed my understanding of AI's potential—revealing countless use cases I hadn't considered. It 10x'd my code output while simultaneously improving prompt effectiveness and eliminating the verbose, unhelpful responses that typically plague AI interactions."
+**Features:**
+- 29 AI provider configurations
+- Hot-swap between providers
+- Pre-prompt template library
+- Monaco editor for complex prompts
+- Auto-save functionality
+- File management system
+- Default pre-prompt settings
 
-> "This solution addresses significantly more issues than initially outlined. Through extensive testing, I've found it can overcome nearly all AI limitations except the fundamental intelligence ceiling of the model itself."
+**Supported Capabilities:**
+- Set and manage default pre-prompts
+- Switch between AI providers instantly
+- Create and edit complex prompts with syntax highlighting
+- Organize and save prompt templates
+- Automatic session persistence
+

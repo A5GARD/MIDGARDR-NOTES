@@ -1,6 +1,6 @@
 # ODIN
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Search Editor**
 
-## Search Editor
 Odin, as its now called, got a bit of a re work and with it came some features I've never heard of from a search feature. From the beginning I've wanted to create this using custom editor, couldn't get it working at the time, moved forward with a webivew... which i hate. When I was looking at adding a couple of features, I said fuck it lets try again, and was successful.
 
 Along with that, some cool features were added:
@@ -138,7 +138,7 @@ Same as exclude minus the first option.
 >
 > Also the remote editing is working... perfectly again. Originally it was built with a horrible ux design, changed the context area and result to a text area... but that didn't bode well for the remote editing aspect. Finally, changing it over to single line divs with some custom controls to make it feel like a text area still, meanwhile the actual results line is highlighted so as to make it easier to find the result. The highlighted line is dynamic so no matter what you use for the before and after context lines, the highlighted line will always be placed on the line of the result. Each div is assigned an id so that whenever a line has been edited it replaces the entire line in the file with what you have in the editor. Works phenomenally, and saving 10+ edits saves in the same amount of time as saving 10 files at once. So happy with that stroke of genius because I love this feature. 
 
-## GitHub Tag Navigator
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **GitHub Tag Navigator**
 
 Github does a lot of things right but... it also gets a lot of things wrong. Relevant use case: When your searching for a section of code within a file, without knowing exactly with version it was in. It's great that you can version the hell out of a project but when it comes to this specific use case, its a pain to incrementally navigate tags/version in your project. This specializes in that, for now anyways. I know there are a lot of areas on their site that need improvements, but instead of going off the deep end and going after all of them right away. For the mean time this will just specialize in tag navigation.
 
@@ -146,22 +146,9 @@ Built using vscodes custom editor, enabling us to open as many editors we wish t
 
 Accessible via devstack quick pick.
 
-## Dependency "Deep Link" (packageSearch)
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Dependency "Deep Link" (packageSearch)**
 
-Quick access to library documentation and entry points directly from imports.
-
-**Access:** Hover over imports in your code
-
-**Features:**
-- Clickable links for package.json
-- Clickable links for README.md
-- Direct access to package entry point
-- No more scrolling through node_modules in sidebar
-- Instant documentation access
-
-**Usage:** Hover over any import statement to reveal clickable links to package documentation and code.
-
-## File Line Jumper
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **File Line Jumper**
 
 Create clickable file links with specific line numbers.
 
@@ -180,7 +167,7 @@ Create clickable file links with specific line numbers.
 [Video Demo](https://youtu.be/xR1osGkuNCA)
 ![File Line Jumper](https://raw.githubusercontent.com/8an3/midgardr-notes/main/ui/vfs/file-linking.jpg?raw=true)
 
-## File Search Jumper
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **File Search Jumper**
 
 Create search-based file links that navigate to the first instance of a search term.
 

@@ -10,8 +10,7 @@
         ├── 📄 Markdown Cheat Sheet ........... Markdown reference
         └── 📄 Markdown Pre-Processor ......... Markdown preprocessing
 ```
-
-### MD Viewer/Renderer
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **MD Viewer/Renderer**
 
 Render markdown files directly in your browser with proper formatting and styling
 
@@ -26,8 +25,7 @@ Render markdown files directly in your browser with proper formatting and stylin
 
 ![MD Viewer](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-render-vscode.jpg?raw=true)
 
-
-### MD Viewer/Renderer In VS Code
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **MD Viewer/Renderer In VS Code**
 
 Side-by-side markdown preview within VS Code for seamless editing workflow
 
@@ -42,8 +40,8 @@ Side-by-side markdown preview within VS Code for seamless editing workflow
 
 ![MD Viewer VS Code](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-render-vscode.jpg?raw=true)
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Skald Editor**
 
-### Catalyst Editor
 
 A powerful multi-language editor built on Microsoft's Monaco Editor, originally designed for markdown but evolved to support comprehensive development workflows
 
@@ -135,7 +133,7 @@ A powerful multi-language editor built on Microsoft's Monaco Editor, originally 
 
 </details>
 
-### Convert MD File To Safe Inline String
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Convert MD File To Safe Inline String**
 
 
 Convert markdown file content into JSON-safe inline strings by escaping special characters and replacing line breaks with `\n`.
@@ -156,8 +154,7 @@ Convert markdown file content into JSON-safe inline strings by escaping special 
 **BE Quick Pick Access:** Select `Convert MD File To Safe Inline String` from the BE Quick Pick menu
 
 
-
-### Markdown Cheat Sheet
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Markdown Cheat Sheet**
 
 Complete GitHub-flavored Markdown reference guide with examples.
 
@@ -175,9 +172,7 @@ Complete GitHub-flavored Markdown reference guide with examples.
 
 ---
 
-
-### MD PRE-PROCESSOR
-
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **MD PRE-PROCESSOR**
 
 ---
 
