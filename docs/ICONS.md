@@ -1,7 +1,355 @@
+# Icons
 
-# Icons Library
+> [!NOTE]
+>
+> Whether it is product icons, file icons or themes, they need to activated via the file drop down menu > prefrences > themes > and selecting the desired option
 
-## File Ext Icons 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Product Icons**
+
+Can be used with your config items.
+
+<details> <summary>Icons list</summary>
+
+
+
+- explore
+- search
+- symbol-method
+- rocket
+- remote
+- account-circle
+- puzzle
+- settings
+- file-plus
+- folder-plus
+- refresh
+- collapse-all
+- plus
+- delete-forever
+- check
+- list-tree
+- flat-list
+- open-file
+- expanded
+- feedback
+- bell
+- bell-dot
+- close
+- file-compare
+- split-vertical
+- more
+- source-branch
+- error
+- warning
+- pause
+- play
+- step-over
+- step-into
+- step-out
+- stop
+- clear-all
+- filter
+- chevron-up
+- chevron-down
+- trash
+- lock
+- lock-open
+- chevron-right
+- format-letter-case
+- full-word
+- regex
+- preserve-case
+- chevron-left
+- selection
+- breakpoint
+- check-all
+- debug-console
+- exclude
+- search-context
+- star
+- star-half
+- star-empty
+- download
+- upload
+- terminal
+- log-output
+- pulse
+- speedometer
+- plug
+- question
+- window-maximize
+- window-minimize
+- window-close
+- window-restore
+- symbol-string
+- symbol-object
+- symbol-array
+- symbol-boolean
+- symbol-class
+- symbol-color
+- symbol-constant
+- symbol-constructor
+- symbol-event
+- file
+- folder
+- symbol-function
+- symbol-numeric
+- symbol-property
+- symbol-enum
+- symbol-enum-member
+- symbol-field
+- symbol-value
+- symbol-null
+- symbol-ruler
+- symbol-interface
+- symbol-operator
+- symbol-snippet
+- symbol-variable
+- symbol-structure
+- symbol-misc
+- tune
+- symbol-reference
+- symbol-keyword
+- smiley
+- device-camera
+- device-desktop
+- device-camera-video
+- device-mobile
+- bug
+- calendar
+- documentation
+- get-started
+- report-issue
+- review
+- move
+- lightbulb
+- lightbulb-autofix
+- search-editor
+- zoom-in
+- zoom-out
+- word-wrap
+- pilcrow
+- loading
+- clock
+- history
+- expand-all
+- beaker
+- format-bold
+- bookmark
+- broadcast
+- menu
+- close-all
+- database
+- archive
+- pin
+- pin-off
+- preview
+- eye
+- eye-off
+- git-commit
+- info
+- pencil
+- arrow-down
+- arrow-left
+- arrow-right
+- arrow-up
+- arrow-small-down
+- arrow-small-left
+- arrow-small-up
+- arrow-small-right
+- arrow-left-right
+- book
+- application
+- briefcase
+- checklist
+- cancel
+- code
+- editor-layout
+- library
+- github
+- twitter
+- call-incoming
+- call-outgoing
+- clipboard-flow
+- comment
+- comment-plus
+- comment-multiple
+- gift
+- list-filter
+- list-ordered
+- list-selection
+- watch
+- dash
+- credit-card
+- versions
+- volume-mute
+- volume-unmute
+- keyboard
+- fullscreen
+- fullscreen-exit
+- tools
+- flame
+- save
+- save-all
+- save-as
+- search-save
+- login
+- logout
+- server
+- server-network
+- server-process
+- split-horizontal
+- link
+- open-in-new
+- map-marker
+- law
+- color-mode
+- close-dirty
+- share
+- thumb-up
+- thumb-down
+- tag
+- tag-plus
+- tag-minus
+- tasklist
+- telescope
+- radio-tower
+- mail
+- mail-read
+- reply
+- rss
+- shield
+- sync-off
+- ruby
+- quote
+- dashboard
+- account
+- account-plus
+- account-star
+- account-outline
+- paintcan
+- package
+- account-group
+- account-group-outline
+- school
+- microscope
+- milestone
+- megaphone
+- jersey
+- inbox
+- heart
+- home
+- graph
+- earth
+- monitor
+- monitor-play
+- monitor-check
+- monitor-outline
+- at
+- note
+- verified
+- unverified
+- triangle-down
+- triangle-left
+- triangle-up
+- triangle-right
+- play-all
+- root-folder
+- root-folder-opened
+- message-alert
+- repo-add
+- request-changes
+- repo
+- cloud-download
+- boxing-glove
+- ungroup
+- group
+- unfold
+- fold
+- squirrel
+- circle
+- circle-outline
+- chip
+- activate-breakpoints
+- breakpoint-conditional
+- breakpoint-data
+- more-vertical
+- breakpoint-log
+- robot
+- breakpoint-unsupported
+- collapsed
+- plug-off
+- skip-previous
+- skip-next
+- step-back
+- restart
+- rocket-launch
+- breakpoint-function
+- markdown
+- italic
+- drag-horizontal
+- drag
+- no-newline
+- plus-box
+- minus-box
+- arrow-right-bold-box
+- pencil-box
+- texture-box
+- sort
+- submodule
+- issue
+- issue-reopened
+- issue-closed
+- issue-opened
+- stop-circle
+- check-circle
+- play-circle
+- mirror
+- source-branch-plus
+- source-branch-remove
+- source-merge
+- source-pull-request
+- source-fork
+- folder-opened
+- folder-selected
+- debug-alt
+- fold-up
+- fold-down
+- file-document
+- file-pdf
+- file-code
+- file-music
+- zip-box
+- file-link
+- file-binary
+- file-lock
+- debug-stackframe-active
+- debug-stackframe-focused
+- debug-stackframe-dot
+- cloud
+- magnet
+- export
+- undo
+- redo
+- notebook
+- pinned-dirty
+- file-multiple
+- octoface
+- undo-variant
+- redo-variant
+- breakpoints-remove-all
+- sync
+- table
+- play-below
+- play-above
+- connection
+- folder-minus
+- bell-off
+
+</details>
+
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **File Icons**
 
 A variety of custom icons has been created for use within the explorer pane. Icons are styled the same as they were created by the original creators and even following the original color scheme, only deviating on a few select colors such as black for example. 
 
@@ -37,22 +385,22 @@ pink #ec4899
 rose #f43f5e
 
 
-## Icons NPM Package
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **BALDR**
 
 A React icon library designed for simplicity and accuracy with a sensible naming convention.
 
 **Installation:**
 
 ```bash
-npm install @catalystsoftware/icons
+npm install @a5gard/baldr
 # or
-pnpm add @catalystsoftware/icons
+pnpm add @a5gard/baldr
 ```
 
 **Usage:**
 
 ```javascript
-import { Message } from '@catalystsoftware/icons'
+import { Message } from '@a5gard/baldr'
 ```
 
 **Features:**
@@ -67,9 +415,10 @@ import { Message } from '@catalystsoftware/icons'
 
 ---
 
-## Icons Quick Pick
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Icons Quick Pick**
 
-Browse and insert icons from the @catalystsoftware/icons library directly in your editor
+
+Browse and insert icons from the @a5gard/baldr library directly in your editor
 
 
 **Access:** Editor context menu → Catalyst → Icons
@@ -88,6 +437,6 @@ Icons follow a logical pattern: `[MainTheme][Container/Feature][Filled]`
 ![Icons Quick Pick](https://raw.githubusercontent.com/8an3/midgardr-notes/main/icons/icon-quickpic.jpg?raw=true)
 
 
----
+ 
 
-[🡄 Return](https://github.com/8an3/DevStack)
+

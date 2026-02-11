@@ -26,30 +26,30 @@
 - [ ] need to create blog like we did changelog
 - [ ] test new motions category
 - [ ] need to go through coss origin and compare x to his variants
-  - [ ] ★ ━━━━ X ━━━━ ★
-    - [ ] slider-x
+  - [x] ★ ━━━━ X ━━━━ ★
+    - [x] slider-x
   - [x] ★ ━━━━ core ━━━━ ★
     - [x] in-development.tsx
   - [x] ★ ━━━━ PERFORMANCE ━━━━ ★
     - [ ] ALLL FILES
   - [ ] ★ ━━━━ tailwind ━━━━ ★
     - [ ] ALLL FILES
-  - [ ] ★ ━━━━ interactive ━━━━ ★
+  - [x] ★ ━━━━ interactive ━━━━ ★
     - [x] DirectionAwareHover
     - [x] color area
   - [x] ★ ━━━━ BACKGROUND ━━━━ ★
     - [x] tracing-beam.tsx
     - [x] glitch-background.tsx
     - [x] need to compare against coss i think ists called
-  - [ ] ★ ━━━━ UTILS ━━━━ ★
-    - [ ] auth.ts
-    - [ ] auth_session.ts
-    - [ ] auth_github.ts
-    - [ ] auth.github.callback.tsx
-    - [ ] auth.github.tsx
-    - [ ] honeypot-react
-    - [ ] tailwind-config.ts ngin
-    - [ ] check all files
+  - [x] ★ ━━━━ UTILS ━━━━ ★
+    - [x] auth.ts
+    - [x] auth_session.ts
+    - [x] auth_github.ts
+    - [x] auth.github.callback.tsx
+    - [x] auth.github.tsx
+    - [x] honeypot-react
+    - [x] check all files
+    - [x] safe-execute
   - [ ] ★ ━━━━ PROMPT ━━━━ ★
     - [ ] providers.tsx
     - [ ] snippets.tsx
@@ -59,67 +59,50 @@
     - [ ] code-block-examples.tsx
     - [ ] prompt-feedback-bar.tsx
   - [ ] ★ ━━━━ PRIMITIVE ━━━━ ★
+    - [ ] input-group
     - [x] button-group
     - [x] alert
     - [x] tracker
     - [x] multi-select
     - [x] list-box
-  - [ ] ★ ━━━━ BG ━━━━ ★
-    - [ ] gistorted glasses 
-    - [ ] texture overlay
-    - [ ] stripe-bg-guides
+  - [x] ★ ━━━━ BG ━━━━ ★
+    - [x] gistorted glasses 
+    - [x] texture overlay
+    - [x] stripe-bg-guides
   - [ ] ★ ━━━━ MOTION ━━━━ ★
-    - [ ] motion-logo-carosel.tsx
+    - [x] motion-logo-carosel.tsx
     - [ ] need to update MotionButton MotionPopover1
-    - [ ] Motionsgroup
-    - [ ] MotionAvatar
-    - [ ] MotionRadioCard
-    - [ ] ColorPicker
-    - [ ] Roladex1
-    - [ ] Roladex
-    - [ ] border-beam
-    - [ ] smooth draweer
+    - [x] Motionsgroup
+    - [x] MotionAvatar
+    - [x] MotionRadioCard
+    - [x] ColorPicker
+    - [x] border-beam
+    - [x] smooth draweer
     - [ ] profile dropdwn
-    - [ ] morphic navabr
-    - [ ] morph-surface
-    - [ ] motion-separator
-    - [ ] morph-navbar
-  - [ ] ★ ━━━━ MEDIA ━━━━ ★
-    - [ ] color pallete card
-    - [ ] InfiniteSlider
-    - [ ] MotionMap
-  - [ ] ★ ━━━━ HOOKS ━━━━ ★
-    - [ ] useSlideInV1
-    - [ ] useTailwindConverter
-    - [ ] use-validate-credit-card
-    - [ ] use-keyboard-shortcut
-    - [ ] use-lucide-drawer-animation
-  - [ ] ★ ━━━━ FORMS ━━━━ ★
-    - [ ] fancy-area
-  - [ ] ★ ━━━━ CORE ━━━━ ★
-    - [ ] loadingBoundary 
-    - [ ] bento-system
-    - [ ] HeroBadge
-    - [ ] current timeline is now timeline2, add new timeline
-    - [ ] list -> coreLists
-    - [ ] list1 -> coreLists
-    - [ ] tree -> coreLists
-    - [ ] AppShell -> shells
-    - [ ] Min Pricing Section -> Minamilist
-    - [ ] Min Pricing Cards -> Minamilist
-    - [ ] Min Hero Section -> Minamilist
-    - [ ] Animated Hero -> Minamilist
-    - [ ] Min Feature -> Minamilist
-    - [ ] Faq Section -> Minamilist
-    - [ ] docs layout
-    - [ ] content-shell
-  - [ ] ★ ━━━━ COMBOBOX ━━━━ ★
-    - [ ] emojiPicker
-  - [ ] ★ ━━━━ TYPOGRAPHY ━━━━ ★
-    - [ ] text-scramble
-    - [ ] paragraph-scramble
-  - [ ] ★ ━━━━ BUTTONS ━━━━ ★
-    - [ ] copty-text update item sice it can now also take children
+    - [x] morphic navabr
+    - [x] morph-surface
+    - [x] motion-separator
+    - [x] morph-navbar
+    - [x] loading-border
+  - [x] ★ ━━━━ MEDIA ━━━━ ★
+    - [x] color pallete card
+    - [x] InfiniteSlider
+    - [x] MotionMap
+  - [x] ★ ━━━━ HOOKS ━━━━ ★
+    - [x] useSlideInV1
+    - [x] useTailwindConverter
+    - [x] use-validate-credit-card
+    - [x] use-keyboard-shortcut
+    - [x] use-lucide-drawer-animation
+  - [x] ★ ━━━━ FORMS ━━━━ ★
+    - [x] fancy-area
+  - [x] ★ ━━━━ COMBOBOX ━━━━ ★
+    - [x] emojiPicker
+  - [x] ★ ━━━━ TYPOGRAPHY ━━━━ ★
+    - [x] text-scramble
+    - [x] paragraph-scramble
+  - [x] ★ ━━━━ BUTTONS ━━━━ ★
+    - [x] copty-text update item sice it can now also take children
   - [ ] ★ ━━━━ TEMPLATES ━━━━ ★
     - [ ] [text](https://www.shadcn.io/blocks/account-data-export)
     - [ ] https://flowbite.com/blocks/application/crud-create-drawers/

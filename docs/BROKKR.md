@@ -1,5 +1,9 @@
 # BROKKR
 
+> [!IMPORTANT]
+>
+> Please excuse the current state of the docs as this feature is currently undergoing an overhaul as it contains notes for the overhaul as well as documentation for the old version and the new version. New version documentation is indicated by the new icon that has been adopted into the docs, the red valknut. Despite the new version not yet available, this doc does contain documentation pertaining to the new version as it goes through its transformation. Some features that are meant for the newer version are currently available for you to use with manually editing your configs object. Such as the new theme variable, product icon theme, brokker viewer, file icon theme and more.
+
 > [!NOTE]
 > The new layout system is already underway, starting with focusing on the UI and how each level feels along with adjusting which level should control what exactly. No idea how I'll go about the back end of things yet, but we'll get there and figure it out. 
 >
@@ -16,7 +20,8 @@
 >
 > The new atlas layout system will come out in 2 versions, one after another. The first will be virtually how it is now but in ui form. Since there are a lot of moving parts I want to make sure the ui works before even moving on to the more complex settings that will be available in level 4, which means if you don't plan on using that level, you will be able to work with the new system rather quickly. With the new system being so simple the only documentation there will be is just an overview of each of the levels, and that's it really. as it's pretty self explanatory. At which point I will start working on the last tab, which might be over and done with quickly or... it will take some time with trying to figure out what everything does. A lot of that extra time will depend on new the systems being introduced to handle the new features, if any.
 
-> [!UPDATE]
+> [!NOTE]
+> 
 > finally took the time and went through every ui toggle and setting and grabbed all the necessary values with the exception of two values that I'm shocked I couldn't find... but I'll try blindly setting them to see if I can't find them since the files I'm now searching through do not have intellisense. 
 >
 > This means in addition to offering every setting available to certain levels, every level will atleast be getting a basic ui configuration manipulation section and I'm leaning towards offering the advance to all levels. Simply because the ui is so simple and makes for a really easy time of it.
@@ -33,11 +38,12 @@
 >
 > So currently, please try to use the viewer in order to make changes to the ui as your coding. The customize layout system is literlly exactly the same as vscodes. Because we can only track certain states ourselves without relying on vscode, this will be vital for a reliable state.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Layout Configuration Guide**
+# **Layout Configuration Guide**
 
 More of an overview of what to expect, than an actual guide since it's extremely straight forward, except maybe one part which I will go over.
 
-### Casual
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Casual**
+
 - Layout name
 - Icon - allowing you to set that layouts icon to be displayed in the sidebar
 - Pre-configured theme dropdown - that will provide a selection of pre configured themes that I have registered with the extension
@@ -53,7 +59,8 @@ More of an overview of what to expect, than an actual guide since it's extremely
 - file inputs so as to set a file for a 2 col editor group, you may only place one file in each of the 2 columns that are avaialable at this level
 - checkbox to set the layout to deafult
 
-### Intermediate
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Intermediate**
+
 In addition to the above:
 - Custom theme colors - instead of going with one of the many pre configured themes you may set your own color scheme. By shrinking down the amount of values needed to be placed in the custom section, this allows for you to create a nice cohesive theme across the entire UI with very little effort. Saving you tons of time in the process compared to the default process of completing this task. The following colors will be avaialbe for you to customize:
   - Background
@@ -64,7 +71,9 @@ In addition to the above:
   - primary
   - primary foreground
 - Instead of one file per col, you may select as many files as you wish and organize them per col
-### Power User
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Power User**
+
 In addition to the above:
 - Plex vs Default Layout: Editor Grid
 - Plex vs Default Layout: Terminal Grid
@@ -74,7 +83,8 @@ If you prefer the linux `plex` style layout configuration, you may choose the am
 
 Just like you can with editors, you may choose to add as many config items to any terminal group you may wish, each item adds a new tab within that terminal group.
 
-### Sauron
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Sauron**
+
 In addition to the above:
 This one has changed the most... weirdly, due to the overall length I have had to modify it by adding in a second sidebar to the right, and a search bar when dealing with settings values.
 The sidebar contains the following: 
@@ -90,17 +100,162 @@ The sidebar contains the following:
 - Terminal Grid - same as last group
 - and this isn't all the items just yet, below you will find documentation on how to use the remaining items.
 
-#### Themes
+> [!NOTE] 
+>
+> For the next 3 following options whether they are set manually or using the newly created UI, whenever the ngin goes to set these values it will set them within your workspaces settings.json files instead of the global counterpart. These three values will be the only settings that will save in this fashion, which means you are free to set a default value for each of them to be used no matter what instance you are currently in. While at the same time, allowing for personal touches in each of the layouts configs.
 
-Not entirely related but the backend of this feature will be implemented into the layout, thought to mention it so you can use it now on its own
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Product Icons**
 
-Several themes... well, probably more than that tbh, will be registed for use to quickly switch from theme to theme. To use one its own, go into the thor quick pick ( located in the devstack quick pick menu ), and there will be a list available to choose from. 
+This now grants the ability to change product icons, file icons and themes on a workspace context level. 
 
-Once the new system is available to use every level will have access to a dropdown menu containing these same theme options and will insert the required values into your layout item so you can very easily have a different theme accross a dozen layouts.
+### Manually
+Currently, you can do this manually as it is already coded into the ngin.
 
-#### BROKKR Viewer
+You can now set a registered product icon theme explicitly through the following setting:
 
-Snapshot ngin may be changing a little bit and I don't know if this we become snapshot ngin, part of it or something else entirely but, even though a new ui is coming I still want be able to do what I want from this feature.
+```json
+{
+  "productIconTheme": "baldr-icons",
+}
+```
+
+Placement is at the root level of the args object alongside customizeLayout and others.
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **File Icons**
+
+### Manually
+Currently, you can do this manually as it is already coded into the ngin.
+
+You can now set a registered file icon theme explicitly through the following setting:
+
+```json
+{
+  "fileIconTheme": "baldr-icons",
+}
+```
+
+Placement is at the root level of the args object alongside customizeLayout and others.
+
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Themes**
+
+> [!NOTE] 
+>
+> Whether you opt in to choosing a registered theme or providing your own custom theme through workbench.colorCustomizations, these are now set in the workspace settings.json file. Where as previously everything was set at the global level, which allows for even further customization in terms of a globally set theme and themes set with a workspace context. 
+> 
+> This has been mentioned previously but will mention it again here incase you missed it, along with workbench.colorCustomizations the following values are only set at a workspace level, workbench.iconTheme ( registered file icon theme packs ), workbench.colorTheme ( registered theme packs ), workbench.productIconTheme ( registered product icon theme packs ). The only way this would necessitate a change is if these three values, or any value on its own, can only be set a global level.
+
+
+### Manually
+Currently, you can do this manually as it is already coded into the ngin.
+
+You can now set a registered theme explicitly through the following setting:
+
+```json
+{
+  "theme": "Deep-Void",
+}
+```
+
+Placement is at the root level of the args object alongside customizeLayout and others.
+
+### BROKKR
+It may be up and running by the time you read this but once this is up and running you will be able to select one of the extensions registered themes via a dropdown menu, I will try to make it so that the dropdown menu contains ALL registered themes even ones you have registered or installed else where but currently I have no idea how to obtain that information. Currently the themes offered through this extension are as follows, but is not limited to:
+
+
+> [!NOTE] 
+>
+> There is now a "base" counterpart version for each of the listed themes, these themes do not contain themed syntax highlighting. At the same time, I don't currently know if this will even work out but, each themes label in vscodes ui will contain which colors that theme was based off of when it was created.
+
+
+- Acid-Trip // lime
+- Another-Acid-Trip // Lime2
+- Afterglow-Fade 
+- Amazon-Jungle // Green
+- Amethyst-Stone // Violet
+- Aqua-Glacier // Cyan
+- Black-Velvet-Luxe 
+- Blueprint-Grid 
+- C-Carbon-6 // blacked-out
+- Cirrus-Float 
+- Cobalt-Ice // Blue
+- Concrete-slab // gray
+- Crystal-Quartz // Rose
+- Cyber-Industrial 
+- Cyber-Pop 
+- Dark-Crimson // Red
+- Deep-Abyss // darkBlue
+- Deep-Emerald // Emerald
+- Deep-Ocean 
+- Deep-Sea-Navigator 
+- Deep-Teal // teal
+- Deep-Void // blued-out
+- Desert-Night 
+- Espresso-High 
+- Executive-Level 
+- Fifth-Element-Aether // sky
+- Forest-Tech 
+- Frozen-Deep 
+- Glacier-Blue 
+- Graphite-Neutron-Moderator // slate
+- Granite-Top // stone
+- High-Alert-Crimson 
+- Interstellar-Nebula // purple
+- Loki // dark green
+- Mainframe-Terminal 
+- Meadow-Whisper 
+- Metropolis-Sky-Scape 
+- Midas-Touch // Yellow
+- Middle-Field-Canvas // neutral
+- Mineral-Forest 
+- Modern-Retro 
+- Monet-Impressionism 
+- Nightshade-Venom // Indigo
+- Obsidian-Wine 
+- Oceanic-Gradient 
+- Oceanic-Sunset 
+- Office-Paper 
+- Oracle-Vision 
+- Pastel-Sorbet 
+- Polymer-Flow 
+- Retro-Arcade 
+- Silk-Petal // Fuchsia
+- Smoldering-Ember // Amber
+- Solar-Flare // Orange
+- Solstice-Heat 
+- Sonic-Pulse 
+- Sorbet-Swirl 
+- Studio-Apartment 
+- Synthwave-Neon // eighties
+- Tactical-Ops 
+- Terra-Verde 
+- Ti-Titanium-22 // zinc
+- True-Veridian // emerald
+- Twilight-Bloom 
+- Vanguard-Strike 
+- Vintage-Heritage 
+- Workplace-Chatter 
+- Tree-Hugger 
+
+The only reason I say is not limited too is because, the themes have been turning out better than I had hoped. Even the syntax highlighting looks... fucking great, albeit personally thats not for me but never the less they look phenomanal which makes me kinda jealous. To the point that, I have now included base variants for each of the themes which was a lot less of a headache than I originally thought and took way less time.
+
+Anywho, whenever I have the time or whenever I need a break from regular coding I would like to continue going through the most popular pallete color combinations and use them to create more themes. Which is how a lot of the current themes were made. Following such a design decision ensures that whatever theme I do end up making I know that the majority of people would enjoy since the colors used are colors that have been voted most popular on the color pallete sites. 
+
+I find this design philosophy makes each theme look phenomonal, despite a lot of the featuring colors I would have not at first chosen for a theme. But since the themes color pallete already jives with one another so much, they turned out to be great themes in compar
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **BROKKR Viewer**
+
+> [!IMPORTANT]
+>
+> Brokkr ngin now tracks ALL UI states that are changed while using the ngin.
+>
+> If you would like a reliable user experience of changing layouts, use the newly created customize layout feature that you can find in the viewer in place of vscodes customize layout. It works and looks EXACTLY the same as vscodes implementation, the only difference being is that each change commited to the UI is tracked and will be used with customizing ui elements. This is due to the fact that some ui elements and their current state, cannot be accessed progmatically by extension authors.
+
+> [!NOTE]
+>
+> Quick note, the ngin doesn't allow for the use of special characters. If any are used in the naming of the layout, the viewer will not be able to find it.
+
+Snapshot ngin may be changing, be replaced by in part or in its entirety or something else entirely but, even though a new ui is coming I still want be able to do what I want from this feature.
 Basically, a quick pick that pulls up the current layout and provides quick details with ability to change certain things on the fly. Despite it being as great as it is, still in its original form, there were defiently times I wish I could just quickly add, edit or remove something, followed with either closing vscode because something came up or I wanted to reload vscode with that one file opening back up when the default layout initialized once vscode started up again. 
 
 The quick pick will be present in the status bar and once opened the following options will be presented to you:
@@ -116,7 +271,17 @@ The quick pick will be present in the status bar and once opened the following o
   - onOpen, same as autorun
   - onClose, same as onClose
 
-This quick view/edit menu wont touch the objects performance, workspace or workbench.colorCustomizations... but I would love to re-create vscodes customize layout menu and work the same way, but as it changes the values to work in the same way it saves that value to the correct line within your config.
+### Themes, product icon themes and file icon themes
+
+Brokkr viewer now also serves as an easier means to setting your vscodes color theme, icon theme and product icon theme.
+
+In the quick pick menu the first three options are devoted to each of them and will consist of opetions that are currently available to you that are registered in your current vscode instance. Which means, whatever theme you have registered previously via marketplace extenions will also be listed here among this extensions offerings as well.
+
+Whenever an option has been selected it saves it to your workspaces settings.json file instead of your global, leaving whatever settings you have in place for the three intact.
+
+### Customize Layout
+
+As a means to track all UI state changes, I have re-created vscodes custmize layout quick pick. Each option works exactly like vscodes implementation with the exception of each option now updates the ngin's state that it tracks for each ui element. This one change allows for a much more reliable user experience when using toggles such as zen mode, full screen and so on. 
         
 - global config - `const globalConfigPath = path.join(ctx.storagePath, 'global-navigator-config.json');`
 - project id - `const projectId = await getOrCreateProjectId(ctx.workspaceRoot);`
@@ -246,9 +411,630 @@ This quick view/edit menu wont touch the objects performance, workspace or workb
 
 <br /><br />
 
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **BROKKR Menu**
+
+While brokker viewer takes care of your current layout configs needs, brokkr menu takes care of others while allowing it to keep track of updating the current UI's state while at the same time offering a easier means to setting those values. 
+
+For example setting the current theme through the menu bar, means traversing through 4 different levels of menus and submenus to finally present the quickpick that offers the selection of themes you have available to you.
+
+The same will will be achieved through a single click in this menu.
+
+While not only being a faster alternative, it also takes what is currently scattered throughout different menus, quickpicks, submenus and commands and consolidating it to a single source.
+
+I do not know why Microsoft designed it this way that, whenever you want to change different elements of the UI that you have to go on a scavenger hunt and find them scattered throughout in a haphazard fashion. Themes being in thrown 4 levels deep in submenus, meanwhile a portion of manipulating the UI is in an entirely different menu, and then you have customize layout and the three panel toggles on the opposite end of the menu bar and lets not forget about the command pallete.
+
+It's kind of a pain really, but its weird that no one even really attempts to bother solving as it seems all devs just live with it. As if collectively, everyone just shrugged and said, "it is the way it is".
+
+This menu will grow over time as I find more to place within it, but it will serve the idea of a single source of all things UI. Currently it contains the following:
+
+- Select a theme
+- Select a file icon theme
+- Select a product icon theme
+- Toggle sidebar
+  - toggle displayed tabs
+- Toggle secondar sidebar
+  - display labels
+- toggle layout controls
+- toggle navigation controls
+- toggle share controls
+- toggle command center
+- toggle folding
+- select folding controls configuration
+- toggle fold imports by default
+- toggle line numbers
+- Toggle panel
+- select panel position
+- select panel alignment
+- toggle panel show labels
+- Toggle activity bar
+- select activity bar position
+- Toggle Status bar
+- Toggle title bar style
+- Select title bar style (native, custom)
+- Toggle zen mode
+- Toggle full screen
+- toggle word wrap
+- Toggle inline suggestions
+- Toggle snippets suggestions
+- Toggle quick suggestions
+- Toggle tab completion
+- Toggle format on paste
+- Toggle format on type
+- Toggle format on save
+- Toggle auto save
+- Select auto save delay
+- Toggle timeline view
+- Toggle outline view
+- Toggle trim trailing whitespace
+- Toggle insert final newline
+- Toggle emmet
+- Toggle code lens
+- Toggle rulers
+- Toggle parameter hints
+- Toggle suggest widget
+- Toggle hover
+- select default external browser
+- Move primary sidebar right
+- Toggle editor tabs
+- select tab bar configuration
+- Select tab sizing (fit, shrink, fixed)
+- Toggle indent guides
+- Select indent guides style
+- Toggle explorer compact folders
+- Toggle explorer sort order
+- Select explorer sort order type
+- Toggle problems view
+- Toggle output view
+- Toggle debug console
+- Toggle terminal tabs
+- Toggle screencast mode
+- Select workbench appearance (compact, default, comfortable)
+- toggle minimap
+  - select max column
+  - toggle show region section headers
+  - toggle show mark section headers
+  - select auto hide configuration
+  - select show slider configurations
+  - select side
+  - select size 
+  - select render characters
+- toggle breadcrumbs
+- toggle sticky scroll
+- Toggle smooth scrolling
+- toggle terminal stick scroll
+- toggle render whitespace
+- toggle render control characters
+- zoom in
+- zoom out
+- reset zoom level
+- increase font size
+- decrease font size
+- reset font size to 12
+- select font
+- toggle font ligatures
+- toggle font variations
+- set editors actions position
+- editor layout
+  - split
+    - split up
+    - split down
+    - split right
+    - split left
+  - split in group
+  - move editor into new window
+  - copy editor into new window
+  - modify current editor group
+    - single
+    - two cols
+    - three cols
+    - two rows
+    - three rows
+    - grid 2x2
+    - two rows right
+    - two cols bottom
+  - flip layout
+- decorations
+  - toggle git diff editor render gutter menu
+  - toggle git decorations
+  - toggle scroll beyond last line
+  - toggle editor decorations colors
+  - toggle editor highlight modified tabs
+  - select scm diff decorations
+  - select scm diff deorations gutter action
+  - Toggle tab decorations
+  - Toggle color decorators
+  - Toggle explorer decorations
+- git
+  - Toggle git lens inline blame
+  - Toggle git lens code lens
+- Toggle terminal bell
+
+This menu will NOT change your current config, think of it more as an expanded upon customize layout feature.
+
+Did not see that coming... in terms of the total number of options that were going to be included. If this were anyone elses extension, this itself would be its own extension as a means to consolidate all UI features.
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Current Config**
+
+While the new ngin is being created you can still use this feature while its under construction by following the configuration below:
+
+```json
+     {
+          "label": "DevStack Default",
+          "path": "",
+          "type": "layout",
+          "icon": "layout",
+          "args": [
+            {
+              "default": true, // determines this config to be used as a default and loaded in whenever you open this workspace if placed in a workspace context config, if placed in a global config then this would be loaded in every single workspace you open and you may only have one default in each workspace, whether or not you include the object in your global or workspace folders
+              "fileIconTheme": "baldr-icons", // this allows you to set a different file icon theme pack per config
+              "productIconTheme": "baldr-icons", // the same goes for product icon theme packs as well
+              "theme": "Deep-Void-Base", // instead of just relying on the workbench.colorCustomizations object to allow us to change the theme on a config by config basis, setting this value allows you to change the registered theme on a config by config basis
+              // all items pertaining to custmoziing the layout, the values found within this object must be contained within this object since these values are tracked and are called upon from this object only
+              "customizeLayout": {
+                "window.menuBarVisibility": "classic",
+                "window.commandCenter": true,
+                "menubar.layoutControls": true,
+                "editor.renderControlCharacters": false,
+                "editor.renderWhitespace": "none",
+                "editor.minimap.enabled": true,
+                "breadcrumbs.enabled": false,
+                "workbench.sideBar.location": "left",
+                "workbench.statusBar.visible": true,
+                "workbench.layoutControl.enabled": true,
+                "workbench.secondarySideBar.showLabels": false,
+                "workbench.navigationControl.enabled": true,
+                "workbench.editor.showTabs": "multiple",
+                "menubar.navigationControls": true,
+                "menubar.share": true,
+                "primarySidebar.display": true,
+                "secondarySidebar.display": true,
+                "panel.display": false,
+                "panel.alignment": "center",
+                "panel.view": "output",
+                "modes.centeredLayout": false,
+                "modes.fullScreen": false,
+                "modes.zenMode": false,
+                "window.zoomLevel": -2,
+                "editor.glyphMargin": true,
+                "editor.folding": true,
+                "editor.lineNumbers": "relative",
+                "editor.showFoldingControls": "always",
+                "editor.minimap.maxColumn": 50,
+                "editor.minimap.showRegionSectionHeaders": true,
+                "editor.minimap.showMarkSectionHeaders": false,
+                "editor.minimap.autohide": "mouseover",
+                "editor.minimap.showSlider": "mouseover",
+                "editor.minimap.side": "left",
+                "editor.minimap.size": "fill",
+                "editor.minimap.renderCharacters": false,
+                "editor.wordWrap": "on",
+                "editor.fontLigatures": true,
+                "editor.fontVariations": true,
+                "workbench.editor.pinnedTabsOnSeparateRow": true,
+                "workbench.editor.alwaysShowEditorActions": true,
+                "workbench.editor.enablePreviewFromQuickOpen": false,
+                "workbench.editor.wrapTabs": true,
+                "workbench.externalBrowser": "Opera",
+                "workbench.remoteIndicator.showExtensionRecommendations": false,
+                "workbench.commandPalette.history": 30,
+                "window.restoreWindows": "one",
+                "workbench.editor.autoLockGroups": true,
+                "workbench.panel.showLabels": false,
+                "editor.foldingImportsByDefault": false,
+                "git.diffEditor.renderGutterMenu": false,
+                "git.decorations.enabled": false,
+                "editor.fontFamily": "JetBrains Mono",
+                "editor.scrollBeyondLastLine": false,
+                "terminal.integrated.fontSize": 12,
+                "editor.fontSize": 12,
+                "scm.diffDecorationsGutterAction": "none",
+                "scm.diffDecorations": "none",
+                "workbench.iconTheme": "baldr-icons",
+                "workbench.activityBar.location": "default",
+                "workbench.editor.decorations.colors": false,
+                "window.newWindowDimensions": "inherit",
+                "workbench.editor.highlightModifiedTabs": false,
+                "markdown.preview.scrollPreviewWithEditor": false,
+                "markdown.preview.scrollEditorWithPreview": false
+              },
+              // settings values pertaining to this extension, more or less a means of organization since there are so many, you may place anything in here other than what is found within the custmizeLayout object
+              "devstack": {
+                "ocrmnavigator.devstack.icons": true,
+                "ocrmnavigator.devstack.snapshotNgin": true,
+                "ocrmnavigator.devstack.ivaldi": true,
+                "ocrmnavigator.devstack.devstack": true,
+                "ocrmnavigator.devstack.odin": true,
+                "ocrmnavigator.devstack.formatters": true,
+                "ocrmnavigator.devstack.titlebar.search": true,
+                "ocrmnavigator.devstack.titlebar.refresh": true,
+                "ocrmnavigator.devstack.titlebar.config": true,
+                "ocrmnavigator.devstack.titlebar.ui": true,
+                "ocrmnavigator.baldr.icons": true,
+                "ocrmnavigator.odin.settings.exlcude.default": "",
+                "ocrmnavigator.odin.contextLinesBefore": 4,
+                "ocrmnavigator.odin.contextLinesAfter": 10,
+                "ocrmnavigator.odin.query": "",
+                "ocrmnavigator.odin.replace": "",
+                "ocrmnavigator.odin.includePattern": "",
+                "ocrmnavigator.odin.excludePattern": "",
+                "ocrmnavigator.odin.useRegex": false,
+                "ocrmnavigator.odin.caseSensitive": false,
+                "ocrmnavigator.odin.matchWholeWord": false,
+                "ocrmnavigator.odin.useFuzzy": false,
+                "ocrmnavigator.odin.searchInOpenEditorsOnly": false,
+                "ocrmnavigator.odin.useExcludeSettings": false,
+                "ocrmnavigator.odin.includeEnabled": false,
+                "ocrmnavigator.odin.excludeEnabled": false,
+                "ocrmnavigator.odin.searchScope": "workspace",
+                "ocrmnavigator.vfs.onFileOpen": "openInSetCol",
+                "ocrmnavigator.vfs.targetEditorGroup": 1,
+                "ocrmnavigator.codesnap.windowControlStyle": "Windows",
+                "ocrmnavigator.codesnap.showWindowTitle": true,
+                "ocrmnavigator.codesnap.windowBorderRadius": "8px",
+                "ocrmnavigator.codesnap.windowTitleStyle": "Filename",
+                "ocrmnavigator.codesnap.showLineNumbers": true,
+                "ocrmnavigator.codesnap.realLineNumbers": false,
+                "ocrmnavigator.codesnap.transparentBackground": false,
+                "ocrmnavigator.codesnap.trimEmptyLines": false,
+                "ocrmnavigator.vfs.AUTO_FOLD_PKGJSON_2": false,
+                "ocrmnavigator.vfs.AUTO_FOLD_PKGJSON_2_3": true,
+                "ocrmnavigator.vfs.AUTO_FOLD_1": false,
+                "ocrmnavigator.vfs.AUTO_FOLD_1_2": true,
+                "ocrmnavigator.devstack.tasks": true,
+                "ocrmnavigator.devstack.npmScripts": true,
+                "ocrmnavigator.devstack.snippets": true,
+                "ocrmnavigator.devstack.be": true,
+                "ocrmnavigator.AUTORUN_DIR": "src",
+                "ocrmnavigator.UPDATE_PROMPT_OBJECTS": false,
+                "ocrmnavigator.AUTORUN_SCRIPTS": true,
+                "ocrmnavigator.CONVERT_README_DEV_MD": false,
+                "ocrmnavigator.PRO7": false,
+                "ocrmnavigator.CONCURRENT": "bleeding-edge",
+                "ocrmnavigator.ARCHIVER": "custom",
+                "ocrmnavigator.DELETE_OLD_VSIX": true,
+                "ocrmnavigator.AUTO_INSTALL_VSIX": true,
+                "ocrmnavigator.OPEN_PUB_DASH": true,
+                "ocrmnavigator.RELOAD_INSTANCE": true,
+                "ocrmnavigator.todo.isPriv": false,
+                "ocrmnavigator.todo.checkRemindersInterval": "10",
+                "ocrmnavigator.todo.syncInterval": "20",
+                "ocrmnavigator.todo.syncOnSave": true,
+                "ocrmnavigator.todo.owner": "8an3",
+                "ocrmnavigator.todo.branch": "main",
+                "ocrmnavigator.runar.repository": "https://github.com/8an3/mynotesrepo.git",
+                "ocrmnavigator.todo.repo": "mynotesrepo",
+                "ocrmnavigator.todo.repository": "8an3/mynotesrepo",
+                "ocrmnavigator.runar.repo": "runardb",
+                "ocrmnavigator.runar.owner": "8an3",
+                "ocrmnavigator.runar.branch": "main",
+                "ocrmnavigator.devstack.item.hidden.toggle": true,
+                "ocrmnavigator.strPrismaUpdater": true,
+                "ocrmnavigator.commands": true,
+                "ocrmnavigator.vscodecmdref": true,
+                "ocrmnavigator.markdownViewer": true,
+                "ocrmnavigator.snippetsInEditor": true,
+                "ocrmnavigator.editorContextSnippets": true,
+                "ocrmnavigator.formatters": true,
+                "ocrmnavigator.trailingCommas": true,
+                "ocrmnavigator.batchRename": true,
+                "ocrmnavigator.eslintPrettier": true,
+                "ocrmnavigator.remixUtils": true,
+                "ocrmnavigator.theme": true,
+                "ocrmnavigator.vscode.theme.blacked": true,
+                "ocrmnavigator.vscode.theme.window.differentiator": true,
+                "ocrmnavigator.shadCNComponents": true,
+                "ocrmnavigator.repoMgr": true,
+                "ocrmnavigator.openGithub": true,
+                "ocrmnavigator.githubFunctions": true,
+                "ocrmnavigator.prismaFunctions": true,
+                "ocrmnavigator.remixComponents": true,
+                "ocrmnavigator.clickToSchema": true,
+                "ocrmnavigator.crudResolvers": true,
+                "ocrmnavigator.fileNesting": true,
+                "ocrmnavigator.revealExplorer": true,
+                "ocrmnavigator.devstack.item.path.copy": true,
+                "ocrmnavigator.bookmarks": true,
+                "ocrmnavigator.searchBar": true,
+                "ocrmnavigator.clipBoardHistory": true,
+                "ocrmnavigator.lucideIcons": true,
+                "ocrmnavigator.share": true,
+                "ocrmnavigator.url": true,
+                "ocrmnavigator.format.json.remove.comments.file": true,
+                "ocrmnavigator.con": true,
+                "ocrmnavigator.format.remove.comments.file": true,
+                "ocrmnavigator.unusedFunctions": true,
+                "ocrmnavigator.viewers": true,
+                "ocrmnavigator.uiDashboard": true,
+                "ocrmnavigator.devStackFunctions": true,
+                "ocrmnavigator.devstack.site.md.render": true,
+                "ocrmnavigator.project.index.smart.create": true,
+                "ocrmnavigator.devstack.site.tailwindConverter": true,
+                "ocrmnavigator.remix.project2agnostic.convert": true
+              },
+              // same as the devstack object, more of a means of organizing settings values you may place anything in here other than what is found within the custmizeLayout object
+              "performance": {
+                "css.validate": false,
+                "diffEditor.codeLens": false,
+                "debug.openDebug": "neverOpen",
+                "debug.toolBarLocation": "hidden",
+                "debug.showInStatusBar": "never",
+                "editor.inlineSuggest.enabled": false,
+                "workbench.editor.enablePreviewFromQuickOpen": false,
+                "editor.inlayHints.enabled": "off",
+                "editor.parameterHints.enabled": false,
+                "editor.suggestOnTriggerCharacters": false,
+                "editor.acceptSuggestionOnEnter": "off",
+                "editor.acceptSuggestionOnCommitCharacter": false,
+                "editor.wordBasedSuggestions": "off",
+                "editor.formatOnType": false,
+                "editor.formatOnPaste": false,
+                "editor.formatOnSave": false,
+                "editor.semanticHighlighting.enabled": true,
+                "editor.occurrencesHighlight": "off",
+                "editor.selectionHighlight": true,
+                "editor.codeLens": false,
+                "editor.lightbulb.enabled": "onCode",
+                "merge-conflict.codeLens.enabled": false,
+                "multiDiffEditor.experimental.enabled": false,
+                "jsonc.validate.enable": true,
+                "json.validate.enable": true,
+                "prettier.enable": true,
+                "javascript.validate.enable": true,
+                "markdown.validate.enable": false,
+                "javascript.updateImportsOnFileMove.enabled": "always",
+                "extensions.ignoreRecommendations": true,
+                "github.copilot.enable": {
+                  "*": false,
+                  "plaintext": true,
+                  "markdown": false,
+                  "scminput": false
+                },
+                "files.watcherExclude": {},
+                "files.exclude": {},
+                "search.exclude": {},
+                "typescript.updateImportsOnFileMove.enabled": "always",
+                "typescript.validate.enable": true,
+                "markdown.server.log": "off",
+                "html.validate.scripts": false,
+                "search.smartCase": true,
+                "search.useIgnoreFiles": false,
+                "Codegeex.GenerationPreference": "line by line",
+                "Codegeex.Privacy": false,
+                "Codegeex.License": "",
+                "codegeex.codeLens.functionQuickOptions": {
+                  "addComment": false,
+                  "ghostComment": false,
+                  "fixBug": false,
+                  "generateUnitTest": false,
+                  "reviewCode": false,
+                  "codeOptimization": false,
+                  "addDocString": false,
+                  "addExceptionHandling": false,
+                  "printLogForDebugging": false,
+                  "improveRunningEfficiency": false,
+                  "renameSymbols": false,
+                  "newFileForDebugging": false,
+                  "tryANewApproach": false,
+                  "explainCode": false
+                },
+                "codegeex.codeLens.classQuickOptions": {
+                  "explainCode": false,
+                  "ghostComment": false,
+                  "fixBug": false,
+                  "generateUnitTest": false,
+                  "reviewCode": false,
+                  "addDocStringForClass": false,
+                  "addDocStringForMethods": false,
+                  "addComment": false
+                },
+                "geminicodeassist.chat.changeView": "Default diff view",
+                "geminicodeassist.displayInlineContextHint": false,
+                "geminicodeassist.enableTelemetry": false,
+                "geminicodeassist.inlineSuggestions.enableAuto": false,
+                "geminicodeassist.localCodebaseAwareness": false,
+                "[typescriptreact]": {
+                  "editor.defaultFormatter": "vscode.typescript-language-features"
+                },
+                "[json]": {
+                  "editor.defaultFormatter": "skyler.ocrmnav"
+                },
+                "[typescript]": {
+                  "editor.defaultFormatter": "skyler.ocrmnav"
+                }
+              },
+              // if no theme is provided via the theme value, you may provide your desired theme through this object
+              "workbench.colorCustomizations": {
+                "background": "#020817",
+                "menubar.background": "#020817",
+                "menubar.menu": "#020817",
+                "activityBar.background": "#020817",
+                "terminal.background": "#020817",
+                "titleBar.inactiveBackground": "#020817",
+                "titleBar.activeBackground": "#020817",
+                "panel.background": "#020817",
+                "terminalCommandDecoration.defaultBackground": "#020817",
+                "sideBar.background": "#020817",
+                "sideBarSectionHeader.background": "#1E293B",
+                "editor.background": "#020817",
+                "editorGroup.emptyBackground": "#020817",
+                "statusBar.background": "#020817",
+                "editorGroupHeader.tabsBackground": "#020817",
+                "activityBar.border": "#020817",
+                "menu.border": "#1E293B",
+                "menu.separatorBackground": "#1E293B",
+                "sideBar.border": "#1E293B",
+                "tree.tableColumnsBorder": "#1E293B",
+                "tab.border": "#1E293B",
+                "statusBar.border": "#1E293B",
+                "panel.border": "#1E293B",
+                "menu.foreground": "#94A3B8",
+                "foreground": "#94A3B8",
+                "menubar.foreground": "#94A3B8",
+                "activityBar.foreground": "#F8FAFC",
+                "sideBarSectionHeader.foreground": "#F8FAFC",
+                "explorer.folderItem.foreground": "#1E293B",
+                "panelTitle.activeForeground": "#F8FAFC",
+                "list.focusForeground": "#F8FAFC",
+                "sideBar.foreground": "#94A3B8",
+                "statusBar.foreground": "#94A3B8",
+                "editor.foreground": "#F8FAFC",
+                "activityBar.inactiveForeground": "#94A3B8",
+                "explorer.fileItem.foreground": "#94A3B8",
+                "input.background": "#1E293B",
+                "dropdown.background": "#1E293B",
+                "button.background": "#3B82F6",
+                "button.hoverBackground": "#3B82F6",
+                "input.foreground": "#F8FAFC",
+                "button.foreground": "#0F172A",
+                "menubar.selectionBackground": "#1E293B",
+                "menu.selectionBackground": "#1E293B",
+                "menubar.selectionForeground": "#F8FAFC",
+                "menu.selectionForeground": "#F8FAFC",
+                "list.activeSelectionBackground": "#1E293B",
+                "list.activeSelectionForeground": "#F8FAFC",
+                "input.border": "#1E293B",
+                "inputOption.activeBorder": "#1D4ED8",
+                "focusBorder": "#1D4ED8",
+                "errorForeground": "#7F1D1D",
+                "editor.lineHighlightBackground": "#1E293B",
+                "editor.selectionBackground": "#1E293B",
+                "editorCursor.foreground": "#F8FAFC",
+                "editorIndentGuide.background1": "#1E293B",
+                "editorWhitespace.foreground": "#1E293B",
+                "list.focusBackground": "#1E293B",
+                "list.hoverBackground": "#1E293B",
+                "list.highlightForeground": "#3B82F6",
+                "explorer.fileItem.hoverForeground": "#F8FAFC",
+                "explorer.folderItem.hoverForeground": "#F8FAFC",
+                "tree.indentGuidesStroke": "#1E293B",
+                "tab.activeBackground": "#020817",
+                "tab.activeForeground": "#F8FAFC",
+                "tab.inactiveBackground": "#020817",
+                "tab.inactiveForeground": "#94A3B8",
+                "tab.activeBorder": "#020817",
+                "gitDecoration.deletedResourceForeground": "#7F1D1D",
+                "gitDecoration.conflictingResourceForeground": "#3B82F6",
+                "terminal.ansiBlack": "#020817",
+                "terminal.ansiBlue": "#3B82F6",
+                "terminal.ansiCyan": "#29c3a0",
+                "terminal.ansiGreen": "#29c3a0",
+                "terminal.ansiMagenta": "#3B82F6",
+                "terminal.ansiRed": "#7F1D1D",
+                "terminal.ansiWhite": "#F8FAFC",
+                "terminal.ansiYellow": "#d29922",
+                "scrollbarSlider.hoverBackground": "#3B82F6",
+                "scrollbarSlider.activeBackground": "#3B82F6",
+                "scrollbarSlider.background": "#3B82F620",
+                "activityBarBadge.background": "#3B82F6",
+                "activityBarBadge.foreground": "#F8FAFC",
+                "explorer.folderItem.selectedIconForeground": "#3B82F6",
+                "explorer.fileItem.conflictForeground": "#7F1D1D",
+                "explorer.fileItem.errorForeground": "#7F1D1D",
+                "explorer.fileItem.warningForeground": "#d29922",
+                "explorer.folderItem.iconForeground": "#F8FAFC",
+                "explorer.fileItem.selectedIconForeground": "#F8FAFC",
+                "explorer.fileItem.modifiedForeground": "#29c3a0",
+                "list.dropBackground": "#02081740",
+                "list.filterMatchBackground": "#02081720",
+                "list.inactiveSelectionBackground": "#1E293B40",
+                "list.hoverForeground": "#F8FAFC",
+                "statusBarItem.hoverBackground": "#1E293B",
+                "gitDecoration.submoduleResourceForeground": "#F8FAFC"
+              },
+              "editorGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "editorFocus": "last",
+                "groups": [
+                  {
+                    "size": 0.5
+                  },
+                  {
+                    "size": 0.5
+                  }
+                ],
+                "files": [
+                  {
+                    "group": 1,
+                    "pinned": true,
+                    "foldLevel": [
+                      1,
+                      2
+                    ],
+                    "path": [
+                      "src/context.ts",
+                      "src/helpers/search.ts",
+                      "src/helpers/atlas.ts"
+                    ]
+                  },
+                  {
+                    "group": 2,
+                    "pinned": true,
+                    "foldLevel": [
+                      1,
+                      2
+                    ],
+                    "path": [
+                      "README.md",
+                      "package.dev.jsonc",
+                      "src/helpers/menus.ts",
+                      "src/extension.ts",
+                      "src/helpers/itemsActionsMenu.ts",
+                      "src/helpers/master.ts",
+                      "src/extension/navigatorView.ts",
+                      "F:/DevStack/docs/BROKKR.md",
+                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/project-configs/project-1744496862041-y866zpqtd9.json",
+                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/global-navigator-config.json"
+                    ]
+                  }
+                ],
+                "floatingWindow": []
+              },
+              // setting terminals will execute the command once the layout has been initialized
+              "terminalGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "terminals": [
+                  {
+                    "name": "Dev Server",
+                    "group": 0,
+                    "cmd": "pnpm run dev",
+                    "pinned": true,
+                    "location": "editor",
+                    "priority": 1
+                  }
+                ]
+              },
+              // allows you to set keybindings on a config by config basis
+              "keybindings": {
+                "ocrmnavigator.menu.devstack": "alt+d",
+                "ocrmnavigator.odin.open": "alt+s",
+                "ocrmnavigator.icons.menu": "alt+i",
+                "ocrmnavigator.menu.catalystUi": "alt+u",
+                "ocrmnavigator.menu.snippets": "alt+f",
+                "ocrmnavigator.region.insert": "alt+r",
+                "ocrmnavigator.endregion.insert": "alt+e",
+                "ocrmnavigator.region.wrap": "alt+w",
+                "ocrmnavigator.devstack.site.colorWheel": "alt+q",
+                "ocrmnavigator.clipboardMgr.history.show": "alt+h",
+                "ocrmnavigator.bookmarks.show": "alt+b",
+                "ocrmnavigator.menu.github": "alt+g",
+                "ocrmnavigator.project.pkg.open": "alt+p",
+                "ocrmnavigator.project.readme.open": "alt+m"
+              },
+              "autorun": [],
+              "onClose": [],
+              "git": {}
+            }
+          ]
+        }
+```
+
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Notes for future features**
 
 > [!NOTE] 
+> 
 > In this section I will be leaving myself notes that I do not want to forget because I think I stumbled on exactly what I wanted... from the begining. If you aren't into reverse engineering things and diving into something that has zero documentation, or just don't get enjoy getting to the level NERDNESS, that this is going to get into. I would suggest skipping this part entirely as you will probably find 100% of this boring among other things. 
 > If your the NERD among geeks, your more than welcome to read on, with saying that these will be structured as notes, not actual documentation even though this topic will probably get documented more here... then anywhere else. I will start off by quickly going over what it is that I found, because I totally found it by accident, and if it wasn't for actually making this layout engine ( most people dont ), I would have saw that data in the file and just immediatly closed it. LUCKILY, I saw some values... that I fucking wanted to modify, lol. 
 > features 

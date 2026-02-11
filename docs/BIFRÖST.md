@@ -1706,7 +1706,7 @@ I've played around with a TON of different label styles, landing on this being t
               "expanded": false,
               "icon": "json",
               "items": [
-                { "label": "Format .json", "path": "ocrmnavigator.project.json.file.format", "type": "command", "icon": "json" },
+                { "label": "Format .json", "path": "ocrmnavigator.format.json.file", "type": "command", "icon": "json" },
                 { "label": "TGL Json Errors", "path": "ocrmnavigator.performanceSwitch.json.validate.toggle", "type": "command", "icon": "json" },
                 { "label": "TGL Jsonc Errors", "path": "ocrmnavigator.performanceSwitch.jsonc.validate.toggle", "type": "command", "icon": "json" }
               ]
@@ -1880,7 +1880,7 @@ I've played around with a TON of different label styles, landing on this being t
             { "label": "generateuiinventoryjsU", "path": "node ./updaters/generate-ui-inventory.js", "type": "powershellCommand", "icon": "terminal-powershell", "hidden": true },
             { "label": "iconlibraryinventoryjsU", "path": "node ./updaters/icon-library-inventory.js", "type": "powershellCommand", "icon": "terminal-powershell", "hidden": true },
             { "label": "updatepromptfrommdU", "path": "node ./updaters/update-prompt-from-md.js", "type": "powershellCommand", "icon": "terminal-powershell", "hidden": true },
-            { "label": "Buildpkgjson", "path": "ocrmnavigator.project.pkg.format", "type": "command", "icon": "json", "hidden": true },
+            { "label": "Buildpkgjson", "path": "ocrmnavigator.format.json.pkg", "type": "command", "icon": "json", "hidden": true },
             { "label": "CreatekgJsonCommandsQpMenu", "path": "ocrmnavigator.menu.items.pkg.scan.convert.items", "type": "command", "icon": "three-bars", "hidden": true },
             { "label": "↓↓ DOES NOT WORK ↓↓", "path": "saveall", "type": "command", "hidden": true },
             { "label": "pro7 - AR", "path": "node ./src/autorun/pro7.js", "type": "powershellCommand", "icon": "terminal-powershell", "hidden": true },
@@ -1990,7 +1990,7 @@ I've played around with a TON of different label styles, landing on this being t
         { "label": "VSCE", "path": "vsce package", "type": "powershellCommand", "icon": "archive" },
         { "label": "pro7", "path": "ocrmnavigator.pro7.acrhive", "type": "command", "icon": "json" },
         { "label": "★ ━━━━ ☆ ━━━━ PROCESS FILE ━━━━ ☆ ━━━━ ★", "type": "label", "icon": "chrome-minimize" },
-        { "label": "PACKAGE.DEV.JSON: Build pkg.json", "path": "ocrmnavigator.project.pkg.format", "type": "command", "icon": "json" },
+        { "label": "PACKAGE.DEV.JSON: Build pkg.json", "path": "ocrmnavigator.format.json.pkg", "type": "command", "icon": "json" },
         { "label": "README.DEV.MD: MD Pre-Processor", "path": "ocrmnavigator.md.convertReadme", "type": "command", "icon": "markdown" },
         { "label": "MD: Update Prompt From md", "path": "node ./updaters/update-prompt-from-md.js", "type": "powershellCommand", "icon": "terminal-powershell" },
         { "label": "★ ━━━━ ☆ ━━━━ AUTORUN SCRIPTS ━━━━ ☆ ━━━━ ★", "type": "label", "icon": "chrome-minimize" },
@@ -2664,9 +2664,9 @@ I've played around with a TON of different label styles, landing on this being t
                 "ocrmnavigator.lucideIcons": true,
                 "ocrmnavigator.share": true,
                 "ocrmnavigator.url": true,
-                "ocrmnavigator.project.json.comments.remove": true,
+                "ocrmnavigator.format.json.remove.comments.file": true,
                 "ocrmnavigator.con": true,
-                "ocrmnavigator.project.file.comments.remove": true,
+                "ocrmnavigator.format.remove.comments.file": true,
                 "ocrmnavigator.unusedFunctions": true,
                 "ocrmnavigator.viewers": true,
                 "ocrmnavigator.uiDashboard": true,
@@ -3201,9 +3201,9 @@ I've played around with a TON of different label styles, landing on this being t
                 "ocrmnavigator.lucideIcons": true,
                 "ocrmnavigator.share": true,
                 "ocrmnavigator.url": true,
-                "ocrmnavigator.project.json.comments.remove": true,
+                "ocrmnavigator.format.json.remove.comments.file": true,
                 "ocrmnavigator.con": true,
-                "ocrmnavigator.project.file.comments.remove": true,
+                "ocrmnavigator.format.remove.comments.file": true,
                 "ocrmnavigator.unusedFunctions": true,
                 "ocrmnavigator.viewers": true,
                 "ocrmnavigator.uiDashboard": true,
@@ -3734,9 +3734,9 @@ All feature toggles default to `true` unless otherwise specified and can be disa
 - `ocrmnavigator.searchBar` - Search bar for navigation
 
 **Code Quality:**
-- `ocrmnavigator.project.json.comments.remove` - Remove JSON comments
+- `ocrmnavigator.format.json.remove.comments.file` - Remove JSON comments
 - `ocrmnavigator.con` - Remove all console.logs
-- `ocrmnavigator.project.file.comments.remove` - Remove all comments
+- `ocrmnavigator.format.remove.comments.file` - Remove all comments
 - `ocrmnavigator.unusedFunctions` - Find unused functions
 
 **Additional Features:**

@@ -56,6 +56,10 @@ The end result places the mini map on the left side with a smaller width than wh
 
 Blacked-out was made with the same design ideas as blued-out.
 
+> [!UPDATE]
+>
+> As I was waiting for some things to load I added... And for some reason I can't remember the total, and I'm not going back to count again... Lets just agree to agree that the new total count is between 50-55. Doesn't matter at this point really what the total is now because before adding these it was already a rediculous amount in comparison to the marketplace average... of 1 per extension. Noticed there were some gaps missing in comparison to whats available on the color wheel, and had some time to kill so I added a 80's miami theme as well. lol, its god awful but who knows, maybe someone out there may love it since its so loud. I can tell you one thing, it would def stop me in my tracks if I were walking by your station and saw that out of the corner of my eye and say, "what the f...", so if that's what your going for, than this is the theme for you.
+
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSCode & Tailwind Theme Builder**
 
