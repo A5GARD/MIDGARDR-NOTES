@@ -63,19 +63,50 @@ Blacked-out was made with the same design ideas as blued-out.
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSCode & Tailwind Theme Builder**
 
-Create custom themes for both VSCode and Tailwind with live preview and multiple export formats.
+Obviously I enjoy looking at a nice user interface, who doesn't? The real question is, who wants to build themes the way microsoft intended with vscode? Fucking nobody... My god, this is a prime example on how to not include a feature. Especially a feature that so many people would want to use at varying skill levels.
 
-**Access:** Web GUI
+This being such a complicated task to complete it took me ages, just to work up the confidence to start editing that object in the settings.json file... let me re-phrase that, it took me ages just to learn on how to find out what values are needed to be modified in order to create a theme in the first place, unbelievable.
 
-**Features:**
-- Visual theme configurator with live preview
-- Export to Tailwind v4 CSS format
-- Export to Tailwind v3 CSS format
-- Export to VSCode settings file format
-- Real-time color customization
-- Complete theme control
+Seriously, the system that vscode created to edit the theme is simply, just garbage, but we have to endure it because... that's how you edit the theme. After creating... about the third theme I stopped creating them all together. Once I got good enough at coding, I created a tailwind theme builder that maps the same tailwind theme to all the elements found in vscodes UI. Making it so that creating a vscode theme, no longer sucks.
 
-![Theme Builder](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/theme.jpg)
+Now the theme builder is currently at it's umphteen revision, it does quite a lot more while solving some critical UX problems... that nobody even seems to be attempting to solve. 
+
+Like color pickers? I know you, myself and every other dev has just lived with these things, but fuck do they suck when building a theme. Taking an exercise that, lets be honest, takes a while all on its own but then whenever you want to manually customize a color and use that color picker, your adding a unknown multiplier thats based on how perfect you want the theme to look and then again, multipling the time by the amount of custom colors you want to customize. Who wants to build themes like that? Again, fucking nobody. So along side every single color picker, just in case that one person out there that wants it, there is a new style of color picker that, tbh I've never seen created anywhere else in any context. Simply named, the color wheel picker. Instead of making you dial in each color with 6 different knobs, it just provides every option available on the color wheel. Whenever you hover over a color, a tooptip displays with the colors name and number value. It works so much better, here on out I will be droping the color picker all together and use the color wheel picker in its place, except for uses cases like this theme builder.
+
+![Z](https://raw.githubusercontent.com/8an3/midgardr-notes/main/freyr/colorwheelpicker.png)
+
+### Live Previews
+
+The theme builder hosts a number of live previews so you can see exactly what your building as you build it, consisting of but not limited to:
+- a webpage that features a host of components to ensure you know exactly the theme your building for your tailwind.css file
+- a recreated vscode user interface that achieves the same as above
+- lastly a specialized vscode interface that hosts a number of different files to view that you can change from switch tab to tab, just like you do in vscode. Each file features a different language so that you can preview token colors and semantic token colors that change how the syntax highlighting looks as you build on the fly. This is another feature, I have yet to see elsewhere
+
+### Color Output Formats
+
+Due to working in so many enviroments it obviously outputs in more formats than the current tailwind version, such as:
+- tailwind v4
+- tailwind v3
+- settings.json ( so you can paste it straight into your file )
+- while the last one doesn't exactly have a name per say, but it outputs the exact object you need in order to create your very own vscode theme extension. Actually... as it includes all the colors needed, all the values that are required, the token colors you have chosen along side the semantic token colors as well
+
+### Intelligent Color Mapping
+
+This one took a while to get right but when it was perfected... it really made the exercise of creating a vscode theme a breeze.
+
+Whenever you select a preset theme configuration, or whenever you select a color to use in your tailwind theme it automatically applies the same colors to your vscode theme, token colors and semantic token colors. 
+
+In the time it takes to create a tailwind theme, you now have two other output options that you can choose from for setting that same theme in vscode.
+
+Not only does it provide the perfect vscode theme to quickly paste into your project, it also provides THEMED token colors its semantic counterpart. Thus taking a task that was usually only being done, by seasoned devs and opening it up to virtually... any skill level. Not to mention, drastically cutting down the required time in creating themes 100 fold.
+
+MEANWHILE, the theme builder still lets you custmize each vscode color option whenever you go to individually custmize it. So if you hate the color of the border that used in your tailwind theme, no problem change it.
+
+### Closing Notes
+
+Obviously, I do not stick to industry norms when it comes to things and since I already have a vscode UI, why not squeeze more out of it. Ontop of visually see what colors do what and where, I've also added options to change several elements in the ui itself as well. For example, toggling breadcrumbs, minimap, and a long list of other UI manipulation features that are found in vscode.
+
+The theme builder is up and does all the points listed above. Just don't mind the tailwind section as I use it to build more complicated than normal components by putting them through there paces over several examples. So if you see some components that are kind of messed up thats why but I hope the awesomeness of the theme builder as a whole makes you overlook that.
 
 ---
 
