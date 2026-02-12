@@ -1,4 +1,4 @@
-# MIÐGARÐR SDK: Formerly known as CATALYST UI LIBRARY
+# MIÐGARÐR SDk
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Table of Contents**
  
@@ -188,329 +188,15 @@ Copies the selected component into your clipboard via the quick pick menu locate
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Automated Installation**
 
-## UPDATE
 
-Adding a new line option 'Configure Import Call'. Configures your package.json and tsconfig.json files to allow the use of '#icons' and '#catalyst' in-place of the traditional '~/components/midgardr' and '@catalystsoftware/icons'
 
-```javascript
-import { Command, CommandGroup, CommandItem, CommandList, cn } from '#catalyst'
-import { X } from '#icons'
-```
-Selecting the full installation will also configure your project for this use as well.
-
-## Installation
-
-### Quick Start
-
-Install a single component:
-
-```bash
-bunx @a5gard/migardr-ui button
-```
-
-### Menu
-
-```bash
-bunx @a5gard/migardr-ui
-```
-
-Then select from the interactive menu:
-- **Full Install** - Components + Libraries + Tailwind + PostCSS
-- **Full Install with Ngin** - Includes 18,000 Tailwind config presets
-- **Components + Libraries** - Install without config files
-- **Configure Tailwind + PostCSS** - Setup only
-- **Configure Tailwind + PostCSS w/ ngin** - Setup with preset that contains 18,000 configurations set with only 3 variables
-- **Select Components** - Choose specific components
-- **Create Config** - Creates config file that can be used in conjuction with the bunx command
-
-## Premium Access
-
-Unlock the full component library with a premium access key:
-
-
-Premium features include:
-- Access to all 2000+ components
-- Advanced interactive components
-- Specialized tools and utilities
-- Priority updates
-
-## Component Categories
-
-### Primitives
-Core UI components following modern design patterns:
-- Button, Input, Select, Checkbox, Radio, Switch
-- Dialog, Sheet, Popover, Tooltip
-- Card, Badge, Avatar, Separator
-- Accordion, Tabs, Collapsible
-- And more...
-
-### Forms
-Advanced form components with validation:
-- Input variants (masked, OTP, password)
-- Date pickers and calendars
-- File uploads and dropzone
-- Toggle groups and button groups
-
-### Data Display
-Components for presenting data:
-- Tables with sorting and filtering
-- Charts and data visualizations
-- Timeline and progress indicators
-- Empty states and skeletons
-
-### Navigation
-Navigation and layout components:
-- Menus and navigation bars
-- Breadcrumbs and pagination
-- Sidebars and dual sidebars
-- Command palette
-
-### Feedback
-User feedback components:
-- Alerts and notifications
-- Toast messages
-- Loading spinners
-- Progress indicators
-
-### Interactive
-Advanced interactive elements:
-- Drag and drop
-- Resizable panels
-- Image zoom and crop
-- Code editors with syntax highlighting
-
-### Utilities
-Helper components and hooks:
-- Custom hooks (useTimer, useCopyToClipboard, etc.)
-- Auth utilities
-- Server middleware
-- Context management
-
-## Package Managers
-
-Catalyst UI automatically detects and uses your package manager:
-- npm
-- pnpm
-- yarn
-
-## Configuration
-
-### Config File (Optional)
-
-Create a `config.midgardr` file in your project root to customize installation behavior:
-
-```bash
-bunx @a5gard/migardr-ui
-# Select: Create Config File
-```
-
-Or create it manually:
-
-```jsonc
-// catalyst.config.jsonc
-{
-    "theme": "blue",                      // presetting the theme
-    "preset": "MODERN",                   // presetting the preset
-    "font": "Geist",                      // presetting the font
-    "all-components": false,              // auto-install all on `bunx @a5gard/migardr-ui`
-    "install-tailwind": true,             // install Tailwind dependencies
-    "configure-tailwind": true,           // create and paste .css file
-    "configure-tailwind.config": true,    // true, "ngin", or false
-    "install-postcss": true,              // install PostCSS dependencies
-    "configure-postcss": true,            // create postcss.config.js
-    "css": "app/routes/styles/tailwind.css",  // CSS file location
-    "components": "app/"                  // components folder location
-}
-```
-
-### Config Options Explained
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `theme` | string | `"blue"` | Default theme color |
-| `preset` | string | `"MODERN"` | Default preset style |
-| `font` | string | `"Geist"` | Default font family |
-| `all-components` | boolean | `false` | Auto-install all components when running `bunx @a5gard/migardr-ui` |
-| `install-tailwind` | boolean | `true` | Install Tailwind CSS and related dependencies |
-| `configure-tailwind` | boolean | `true` | Create the tailwind.css file at specified location |
-| `configure-tailwind.config` | boolean\|"ngin" | `true` | `true` for basic config, `"ngin"` for 18k presets, `false` for none |
-| `install-postcss` | boolean | `true` | Install PostCSS dependencies |
-| `configure-postcss` | boolean | `true` | Create postcss.config.js file |
-| `css` | string | `"app/routes/styles/tailwind.css"` | Path and filename for tailwind.css |
-| `components` | string | `"app/"` | Base directory for components folder |
-
-### Auto-Install with Config
-
-Once you have a config file with `"all-components": true`, simply run:
-
-```bash
-bunx @a5gard/migardr-ui
-```
-
-This will automatically:
-1. Install all components to your specified components directory
-2. Install required dependencies (if enabled)
-3. Configure Tailwind CSS (if enabled)
-4. Configure PostCSS (if enabled)
-5. Create utils file
-
-No menu selection needed!
-
-### Tailwind Setup
-
-Catalyst UI includes pre-configured Tailwind setups:
-
-**Standard Configuration:**
-```bash
-bunx @a5gard/migardr-ui
-# Select: Configure Tailwind + PostCSS
-```
-
-**Ngin Configuration** (18,000 presets):
-```bash
-bunx @a5gard/migardr-ui
-# Select: Configure with Ngin
-```
-
-Or set in config:
-```jsonc
-{
-    "configure-tailwind.config": "ngin"
-}
-```
-
-### Utils File
-
-All installations automatically create a `components/midgardr/utils/utils.ts` file with helper functions:
-- `cn()` - Class name merger
-- `focusInput` - Focus styles
-- `focusRing` - Focus ring utilities
-- `formatDate()` - Date formatting
-
-
-## Requirements
-
-- React 18+
-- Tailwind CSS 3+
-- Node.js 16+
-
-### Utils File
-
-All installations automatically create a `utils/utils.ts` file with helper functions:
-- `cn()` - Class name merger
-- `focusInput` - Focus styles
-- `focusRing` - Focus ring utilities
-- `formatDate()` - Date formatting
-
-## Examples
-
-### Installing a Button Component
-
-```bash
-bunx @a5gard/migardr-ui button
-```
-
-This will:
-1. Create `/components/midgardr/primitives/button.tsx`
-2. Install required dependencies (extracted from component imports)
-3. Create `utils/utils.ts` if it doesn't exist
-
-### Using the Button Component
-
-```tsx
-import { Button } from '~/components/midgardr';
-
-export default function MyPage() {
-  return (
-    <Button 
-      variant="default"
-      size="lg"
-      onClick={() => console.log('clicked')}
-    >
-      Click Me
-    </Button>
-  );
-}
-```
-
-### Installing Multiple Components
-
-```bash
-bunx @a5gard/migardr-ui
-# Select: Select Components
-# Choose from the list
-```
-
-## Component Import Paths
-
-All components use the centralized import path:
-
-```tsx
-import { Button, Card, Dialog } from '~/components/midgardr';
-```
-
-Or import directly from category folders:
-
-```tsx
-import { Button } from '~/components/midgardr/primitives';
-import { useTimer } from '~/components/midgardr/hooks';
-```
-
-## Features
-
-- **TypeScript First** - Full TypeScript support with type definitions
-- **Accessible** - Built with accessibility in mind following WAI-ARIA standards
-- **Customizable** - Highly customizable with Tailwind CSS
-- **Tree-shakeable** - Import only what you need
-- **Dark Mode** - Built-in dark mode support
-- **Responsive** - Mobile-first responsive design
-- **Zero Config** - Works out of the box with sensible defaults
-
-## Dependencies
-
-Components automatically install their required dependencies. Common dependencies include:
-- `@radix-ui/react-*` - Primitive components
-- `class-variance-authority` - Variant management
-- `clsx` & `tailwind-merge` - Class name utilities
-- `lucide-react` - Icons
-- `framer-motion` - Animations (where applicable)
-
-## File Structure
-
-After installation, your project will have:
-
-```
-your-project/
-├── components/
-│   └── midgardr/
-│       ├── primitives/
-│       ├── forms/
-│       ├── overlays/
-│       ├── hooks/
-│       ├── utils/
-│       │   └── utils.ts
-│       └── index.ts
-└── (optional config files)
-    ├── tailwind.config.js
-    └── postcss.config.js
-```
-
-## Support
-
-For issues, questions, or feature requests, please visit our documentation or contact support.
-
-## License
-
-MIT License - See LICENSE file for details
-
-
-# Smart Prop Autocomplete
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Smart Prop Autocomplete**
 
 Pressing ctrl & spacebar while your cursor is inside the quotations of any props value will bring up an intellisense dropdown with the available prop values that can be assigned.
 
-# Signature Help
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Signature Help**
 
-# Hover Documentation
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Hover Documentation**
 
 Whenever hovering over a components name a hovercard will appear with its relevant documentation, removing the need to ever visit the site. The card will contain the following:
 - name
@@ -537,24 +223,20 @@ Thus truly ensuring that you do not need to minimize or open another window whil
 
 
 
-# Auto Import
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Auto Import**
 
 To auto import the component right click the components name where ever it may be used within the editor, select `Add Import` in the editor context menu. 
 
-# Go To Definition
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Go To Definition**
 
 Using cmd & ctrl & clicking the components name will bring up the source codes file in a, sheet style dropdown? I don't what what you call this really, any how, it allows you to view the source code file without navigating to it, while at the same time double clicking anywhere inside the "dropdown sheet" will navigate you to the source code file itself.
 
-# Missing Import Warnings
-
-Using the UI libraries inventory data, vscode will warn when not importing the component within any given file and should properly import from the correct location despite any other library installed that uses the same naming convention.
-
-# In Editor Comp Autocomplete
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **In Editor Comp Autocomplete**
 
 Whenever you start to code a component `<`, pressing ctrl & spacebar will bring up the intellisense dropdown containing every single component currently available in the library, all 2500+.
 
 > [!IMPORTANT]
-> As far as you or I using the components library, I beleive the above mentioned features finally completes all the goals I set out in regards to the UI library and delivering the absolute best DX... possible.
+> As far as you or myself using the components library, I beleive the above mentioned features finally completes all the goals I set out in regards to the UI library and delivering the absolute best DX... possible.
 >
 > 1. Accessibility to any component without visiting the site - Acheived through the editor and quick pick menus that inserts the relevant usage example right into the editor
 > 2. Shorten the length to mastery - Achieved but still on going, as this is more done so on the side of the actual components them selves. There are many faucets to this goal some examples include, removing as many required props as possible, where ever possible in the case of tabs you do not have to supply a default tab value, or values for any of the tabs themselves, providing default values... literally anywhere, and every where that I could which also saves you from remembering from what is required whenever using a component.
@@ -590,457 +272,156 @@ Whenever you start to code a component `<`, pressing ctrl & spacebar will bring 
 > Other than the create-remix2 replacement, I corrently do not see any other avenue in which it can be improved upon in terms of ux/dx. 
 
 # Tool Suite
-The library hosts a number of tools for devs to use, the following list is up to date, at the time of writing and will feature more tools as time goes on.
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Mathmatical Color Converter**
 
-- VSCode Cmd Reference ........ Built-in command library
-- Markdown Cheat Sheet ........ Web-based reference
-- IRIS: Color Converter ....... Multi-format conversion
-- IRIS: Color Wheel ........... Visual color picker
-- React/Tailwind Sandbox ...... Development playground
-- Theme Builder ............... settings.json & tailwind.css generator
-- Typography Tester ........... Font testing suite
-- Layout Generator ............ UI layout tools
-- X Tester .................... Cross-testing utilities
-- Components Reel ............. Component showcase
-- Tailwind Converter .......... v3 <-> v4, oklch, hsl, 
-- Animation Builder ........... Visual editor
-- Responsive Design Helper .... Breakpoint visualizer
-- Code Carousel ............... Code display tool
-- Sandbox ..................... Live react playground hosting libraries comps
-- Icons ....................... Searchable, Rendered icons
-- RÚNAR Editor ................ Formally catalyst-editor
-- Regex Tester ................ Build and test regex string, cheatsheet included
-- JSON Formatter & Validator .. Sanity check for json files
-- API Response Mocker ......... Mock REST endpoints with custom JSON responses
-- Lorem Ipsum Generator ....... Pick any length and copy to clipboard
-- Cron Expression Builder ..... Visual builder for scheduling cron jobs
-- UUID Hash Generator ......... Generate random hashes in a flash
-- Code Diff Viewer ............ Differences become illuminated
-- Flexbox Sandbox ............. Live preview sandbox featuring flexbox 
-- Grid Sandbox ................ Live preview sandbox feature grid
-- QR Code Generator ........... Images, text, urls 
-- Responsive Preview .......... Test layouts across platforms and breakpoints
-- Accessibility Checker ....... Scan for WCAG compliance and contrast issues
-- Animation Builder ........... Live preview animation builder
-- Chart Playground ............ Build charts, outputing react code to paste
-- MD Badge Builder ............ Quickly build md badges, that render in real time
-- Spinner Generator ........... Build as large of a spinner as you need
-- Terminal Menu Generator ..... Best in class, no limitations terminal menu builder
-- ENCODER_DECODER_LAB/
-  - PNG to Base64
-  - JPG to Base64
-  - WEBP to Base64
-  - PDF to Base64
-  - Base64 to PNG
-  - Base64 to JPG
-  - Base64 to WEBP
-  - Base64 to PDF
-  - CSV to JSON
-  - PNG to SVG
-  - JPG to SVG
-  - WEBP to SVG
-  - MP4 to MP3
+> [!NOTE]
+>
+> While I admit this being a bit more of an advanced tool, I promise that no matter what skill level you are currently at in terms of building themes or generating picture perfect UI color schemes, this will catapult your skill level far beyond what it should be. And I will go over this, as if you know nothing about colors... will barely even mention the proper terminology in order to explain everything.
+> 
+> Currently, I know enough about colors, color palletes, hues, shading and all other matters pertaining to colors, to know that... I fucking suck at making themes from scratch. At this knowledge level  I currently won't even waste my time trying because I know that there is an art to picking a color pallete that everyone will lov, but I did not attend art school although I am good at other things. 
+>
+> For example, math and science is every where and while art really... doesn't have anything to do those topics, maybe we can find some math in art. As I was staring at some one elses theme, I just kept asking myself, "How the fuck did they get that "input" color from that "background" color? Like what sliders or knobs do you need to use in order to achieve that end result?". Not even bothering with taking on that challenge, and attempting to achieve that same input color by playing with a bunch of color sliders. 
+>
+> Thankfully at this point I asked myself, "Is there a way to mathmatically calculate the difference between these two colors?" Again, thankfully when I took this question to an ai prompt... it didn't take long to convey what I wanted to get done.
+>
+> I'll be using a common libraries resource for this so as to make it a lot easier to provide the correct colors and a visual to go with the explanation if you need it. Go to [shadcn](https://ui.shadcn.com/)'s home page, to the right of the tabs there is a dropdown that allows you to select a theme, currently I'm on dark neutral.
+>
+> Click on the copy button beside the dropdown so you can open the color swatches that the theme is based off of, because when using a color picker with a live theme it's not always the most reliable  in extracting the exact color you want as it tends to change as you move the mouse around. To keep everyone on the same page, please use the background swatch found in the dialog that pops.
+> 
+> So using whatever color picker you have available to you, if you don't have one and are on windows pressing windows key + shift + c, will trigger a color picker if you have power toys installed ( a windows app ). If you don't have that installed ( or even if you do since this tool I'm about to go over is a lot better ), using microsfts store, download 'desktop color picker pro' its free and it features a cursor/picker with a zoomed in view so you can properly get the right color whenever you are trying to extract it from any ui. 
+> 
+> If you don't know what I'm talking about, install this tool and just going around your ui and look at different colored elements and you will see, for example blue text... isn't always exactly blue text, when you zoom in, it features different shades of blues, greens, whites, yellows and without that zoomed in view of what you are clicking on to extract the exact color you want... you could be sitting there for... 2, 4, sometimes even 10 minutes randomly click the same blue character... just to get the blue you see on the screen.
+>
+> With your color picker hover over background color swatch and you should get '#0A0A0A', and after checking the actual background it matches so this is perfect. Looking at the rest of the ui, you will notice that the inputs are not as dark, being slightly lighter in color, and active items even more so such as the radio group.
+>
+> While shadcn/vercel probably has a staff member or two who have art degrees, we're going to try to cheat our way to the top when it comes to creating picture perfect themes.
+>
+> Using your color picker hover over one of the inputs that does not change color... when you hover over it with the picker, and you should get a value of '#161616'
+>
+> Is there some possiblity of mathmatically determining how to achieve the same color difference between that background and input color, and then take any background color and find out what the correct color value should be used for its input? To expand on it even further, can we use that same formula/function and just slightly change the knob ( values ) in order to also determine what our active radio group colors should be? Well... apparently there is.
+>
+> I won't dive into the actual math, but now that you get the idea behind this in what this tool sets out to achieve, I can go over the converter.
+
+The converter will contain 4 parts, parts 1 and 2 will work along side one another and parts 3 and 4 will work on their own.
+
+The first section, will take in that background color in the first input and also take in that input color in the second input. When these two values are populated there will be a result that pops up that gives you the exact number you need in order to complete the next step.
+
+Working on whatever theme you are, taking whatever color you need to start with, place it within the first input. The tool should already have the value derived from the previous step so it will automatically produce a color value that is mathmatically the same difference between itself and the color you just provided, as it is for the first two colors you provided. 
+
+Now you aren't limited to just background and input colors, as you can use the same formula on a number of things in order to find the perfect color to use in combination with the first color. And since the first step, calculates what the actual difference is between the two, it doesn't matter how much of a difference there is.
+
+The third section will contain an input and to the right of it you will be able to adjust the rgb value up or down to dynamically to achieve the same result that would be produced above, but allowing you to visually see a mathmatically correct color across its sliding values in comparison to sliding the color knob on a 16 different colored background.
+
+The fourth section, while similar to the previous, uses a different formula that you can change the value of the given percentage in order to slide up and down that color range.
+
+Depending on where, exactly the color is from in terms of the spectrum the mulitpler method gets messy with low color values, which is why I decided to include both of them.
+
+Hopefully, I explained this in a way that anyone from any skill level can understand, even if you never created your own theme before. Personally, I wish I had a tool like this when I started playing around with themes. The hours I spent staring at other peoples themes just wondering how exactly they got the colors they did that were based off of the backgrounds and such and going so far as attempting to play with the hues and such to attempt in getting the same result... omg. This literlly takes a task that, without that degree, would take hours in order to properly get the perfect color to use and cutting it down to seconds. And yes, I know those art majors probably have some stupidly expensive art software where it does exactly the above for them too.
+
+Personally, I will be taking these exact formulas and pumping them into my theme builder, which will enable me to... with very little inputs, create the perfect theme every time. This will be achieved by supplying a hex value and the mulipler value into a function, in order for it to calculate it on its own by setting the values once and letting it do the rest.
+
+```jsx
+export function getInputColorByOffset(hex: string, multi = 10) {
+  // Remove # if present
+  const cleanHex = hex.replace('#', '');
+  
+  // Parse RGB values
+  const r = parseInt(cleanHex.substring(0, 2), 16);
+  const g = parseInt(cleanHex.substring(2, 4), 16);
+  const b = parseInt(cleanHex.substring(4, 6), 16);
+  
+  // Add "multi" to each channel, clamp to 255
+  const newR = Math.min(r + Number(multi), 255);
+  const newG = Math.min(g + Number(multi), 255);
+  const newB = Math.min(b + Number(multi), 255);
+  
+  // Convert back to hex
+  return '#' + 
+    newR.toString(16).padStart(2, '0') +
+    newG.toString(16).padStart(2, '0') +
+    newB.toString(16).padStart(2, '0');
+}
+
+export function getInputColorByMultiplier(hex: string, multi = 1.83){
+  // Remove # if present
+  const cleanHex = hex.replace('#', '');
+  
+  // Parse RGB values
+  const r = parseInt(cleanHex.substring(0, 2), 16);
+  const g = parseInt(cleanHex.substring(2, 4), 16);
+  const b = parseInt(cleanHex.substring(4, 6), 16);
+  
+  // Multiply by "multi", round, clamp to 255
+  const newR = Math.min(Math.round(r * Number(multi)), 255);
+  const newG = Math.min(Math.round(g * Number(multi)), 255);
+  const newB = Math.min(Math.round(b * Number(multi)), 255);
+  
+  // Convert back to hex
+  return '#' + 
+    newR.toString(16).padStart(2, '0') +
+    newG.toString(16).padStart(2, '0') +
+    newB.toString(16).padStart(2, '0');
+}
+```
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSCode & Tailwind Theme Builder**
+
+Obviously I enjoy looking at a nice user interface, who doesn't? The real question is, who wants to build themes the way microsoft intended with vscode? Fucking nobody... My god, this is a prime example on how to not include a feature. Especially a feature that so many people would want to use at varying skill levels.
+
+This being such a complicated task to complete it took me ages, just to work up the confidence to start editing that object in the settings.json file... let me re-phrase that, it took me ages just to learn on how to find out what values are needed to be modified in order to create a theme in the first place, unbelievable.
+
+Seriously, the system that vscode created to edit the theme is simply, just garbage, but we have to endure it because... that's how you edit the theme. After creating... about the third theme I stopped creating them all together. Once I got good enough at coding, I created a tailwind theme builder that maps the same tailwind theme to all the elements found in vscodes UI. Making it so that creating a vscode theme, no longer sucks.
+
+Now the theme builder is currently at it's umphteen revision, it does quite a lot more while solving some critical UX problems... that nobody even seems to be attempting to solve. 
+
+Like color pickers? I know you, myself and every other dev has just lived with these things, but fuck do they suck when building a theme. Taking an exercise that, lets be honest, takes a while all on its own but then whenever you want to manually customize a color and use that color picker, your adding a unknown multiplier thats based on how perfect you want the theme to look and then again, multipling the time by the amount of custom colors you want to customize. Who wants to build themes like that? Again, fucking nobody. So along side every single color picker, just in case that one person out there that wants it, there is a new style of color picker that, tbh I've never seen created anywhere else in any context. Simply named, the color wheel picker. Instead of making you dial in each color with 6 different knobs, it just provides every option available on the color wheel. Whenever you hover over a color, a tooptip displays with the colors name and number value. It works so much better, here on out I will be droping the color picker all together and use the color wheel picker in its place, except for uses cases like this theme builder.
+
+![Z](https://raw.githubusercontent.com/8an3/midgardr-notes/main/freyr/colorwheelpicker.png)
+
+### Live Previews
+
+The theme builder hosts a number of live previews so you can see exactly what your building as you build it, consisting of but not limited to:
+- a webpage that features a host of components to ensure you know exactly the theme your building for your tailwind.css file
+- a recreated vscode user interface that achieves the same as above
+- lastly a specialized vscode interface that hosts a number of different files to view that you can change from switch tab to tab, just like you do in vscode. Each file features a different language so that you can preview token colors and semantic token colors that change how the syntax highlighting looks as you build on the fly. This is another feature, I have yet to see elsewhere
+
+### Color Output Formats
+
+Due to working in so many enviroments it obviously outputs in more formats than the current tailwind version, such as:
+- tailwind v4
+- tailwind v3
+- settings.json ( so you can paste it straight into your file )
+- while the last one doesn't exactly have a name per say, but it outputs the exact object you need in order to create your very own vscode theme extension. Actually... as it includes all the colors needed, all the values that are required, the token colors you have chosen along side the semantic token colors as well
+
+### Intelligent Color Mapping
+
+This one took a while to get right but when it was perfected... it really made the exercise of creating a vscode theme a breeze.
+
+Whenever you select a preset theme configuration, or whenever you select a color to use in your tailwind theme it automatically applies the same colors to your vscode theme, token colors and semantic token colors. 
+
+In the time it takes to create a tailwind theme, you now have two other output options that you can choose from for setting that same theme in vscode.
+
+Not only does it provide the perfect vscode theme to quickly paste into your project, it also provides THEMED token colors its semantic counterpart. Thus taking a task that was usually only being done, by seasoned devs and opening it up to virtually... any skill level. Not to mention, drastically cutting down the required time in creating themes 100 fold.
+
+MEANWHILE, the theme builder still lets you custmize each vscode color option whenever you go to individually custmize it. So if you hate the color of the border that used in your tailwind theme, no problem change it.
+
+### Closing Notes
+
+Obviously, I do not stick to industry norms when it comes to things and since I already have a vscode UI, why not squeeze more out of it. Ontop of visually see what colors do what and where, I've also added options to change several elements in the ui itself as well. For example, toggling breadcrumbs, minimap, and a long list of other UI manipulation features that are found in vscode.
+
+The theme builder is up and does all the points listed above. Just don't mind the tailwind section as I use it to build more complicated than normal components by putting them through there paces over several examples. So if you see some components that are kind of messed up thats why but I hope the awesomeness of the theme builder as a whole makes you overlook that.
+
+---
+
+ 
+
 
 # SKALD
-### Monaco Editor
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Monaco Editor**
+
 If this were anyone elses extension, this would be it's own extension but in this extension it is classified under the tool suite. What first started out as a simple markdown editor, it has since evolved into a full blown monaco editor with 150+ custom features with each feature making it become more and more a full blown ide. 
 
 I have used this so much more than I ever thought I would and because of this it continues to receive regular updates. The largest update to date, is just about to be pushed to the site and will host a list of features so large I cannot remember them all to list but here are some of the features that will be available.
-- Feature Set .............. 150-200+ click-to-clipboard MD features
-- Special Chars ............ HTML and MD style format character list
-- PRE_MADE_ASSETS/
-  - File Trees ........... Automated folder visualization
-  - Progress Bars ........ Markdown progress indicators
-  - ASCII Tables ......... Pre-formatted tables
-  - Spinners ............. 17+ different loading spinners
-  - Terminal Dashboards .. Terminal-style UI layouts
-  - Code Block Previews .. Code styling previews
-  - Terminal Menus ....... Visual terminal menu blocks
-  - Terminal Logs ........ Logs with hierarchy visualization
-  - Git Branch Viz ....... Branch style visualization
-  - Status Indicators .... Terminal status boxes
-  - Notification Boxes ... Terminal notification styling
-  - Output Separators .... Command output dividers
-  - Nested Data .......... Nested data structure visualization
-  - Activity Timeline .... Sequential activity logs
-  - Terminal Dashboards .. Pre-made dashboards
-  - Box Drawing .......... Character-based box drawing
-  - Various Spinners ..... 17 different spinners
-  - Badges and Logos ..... Pre-made badges and icons
-  - One night while creating a terminal menu... I kinda went overboard with this section, because of this, part of the sidebar... does need an overhaul, lol, just because the sheer amount of items there are now in this section I need to figure out the best way for users to interact with it, myself included. In the mean time, all of it is available and each "category" of items is nicely categorized the only issue being once clicking on a category it copies the entire category to the clipboard instead of a single item.
-- Readme Generator ......... Feature-rich readme builder
-- Readme Templates ......... Includes several pre-made templates to start from
-- Remote Access ............ Connect remotely to workspace MD files
-- Local Settings ........... Locally saved editor settings
 
 
-
-
-# MIÐGARÐR UI
-
-Overview
-
-
-A comprehensive UI component library with 1808+ components spanning free and premium tiers. Currently features 193 free components alongside extensive development tools.
-
-**Access:** Shortcut available through title pane
-
-**Website:** [Catalyst Software](https://catalyst-software.vercel.app/asgard/midgardr)
-
-##### Features
-
-**Component Library:**
-- Search and filter capabilities
-- Component viewer with live preview
-- React sandbox environment
-- One-click library installation with Tailwind configuration
-- Option to install components only (without full setup)
-
-##### Built-in Tools
-
-**Development Environment:**
-- **Sandbox** - Live React/Tailwind development environment with accessible libraries inventory
-  - ![Live Playground 1](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/tools/live-playground1.png?raw=true)
-  - ![Live Playground 2](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/tools/live-playground.png?raw=true)
-
-**Utility Tools:**
-- Color Wheel
-- MD Reference Sheet
-- Icons Library
-- VS Code Commands Reference
-- Tailwind CSS v3 ↔ v4 Converter
-- Tailwind and VS Code Theme Builder
-- Code Formatters
-- Catalyst Editor
-- Encoder/Decoder
-
-**Reusable Project Tools:**
-All tools are designed to be integrated into your own projects for extended functionality.
-
-
-### Insert Component via Editor Context Menu
-
-Access the entire 1808+ component library directly from the editor context menu, inserting components at your cursor position.
-
-
-**Access:** Right-click → Catalyst UI → Select component
-
-![Context Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/ui/context-menu.png?raw=true)
-
-
-### Insert Component via Quick Pick
-
-Quick pick menu with search capabilities featuring a nested list of all available components for fast insertion at cursor
-
-
-**Access:** Click UI button on status bar → Select component
-
-![Quick Pick](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/ui/quickpick.jpg)
-
-
-### Installing Catalyst-UI Components
-
-A comprehensive React component library with 100+ production-ready components for building modern web applications.
-
-## Installation
-
-### Quick Start
-
-Install a single component:
-
-```bash
-bunx @a5gard/migardr-ui button
-```
-
-### Menu
-
-```bash
-bunx @a5gard/migardr-ui
-```
-
-Then select from the interactive menu:
-- **Full Install** - Components + Libraries + Tailwind + PostCSS
-- **Full Install with Ngin** - Includes 18,000 Tailwind config presets
-- **Components + Libraries** - Install without config files
-- **Configure Tailwind + PostCSS** - Setup only
-- **Configure Tailwind + PostCSS w/ ngin** - Setup with preset that contains 18,000 configurations set with only 3 variables
-- **Select Components** - Choose specific components
-- **Create Config** - Creates config file that can be used in conjuction with the bunx command
-
-## Premium Access
-
-Unlock the full component library with a premium access key:
-
-
-Premium features include:
-- Access to all 2000+ components
-- Advanced interactive components
-- Specialized tools and utilities
-- Priority updates
-
-## Component Categories
-
-### Primitives
-Core UI components following modern design patterns:
-- Button, Input, Select, Checkbox, Radio, Switch
-- Dialog, Sheet, Popover, Tooltip
-- Card, Badge, Avatar, Separator
-- Accordion, Tabs, Collapsible
-- And more...
-
-### Forms
-Advanced form components with validation:
-- Input variants (masked, OTP, password)
-- Date pickers and calendars
-- File uploads and dropzone
-- Toggle groups and button groups
-
-### Data Display
-Components for presenting data:
-- Tables with sorting and filtering
-- Charts and data visualizations
-- Timeline and progress indicators
-- Empty states and skeletons
-
-### Navigation
-Navigation and layout components:
-- Menus and navigation bars
-- Breadcrumbs and pagination
-- Sidebars and dual sidebars
-- Command palette
-
-### Feedback
-User feedback components:
-- Alerts and notifications
-- Toast messages
-- Loading spinners
-- Progress indicators
-
-### Interactive
-Advanced interactive elements:
-- Drag and drop
-- Resizable panels
-- Image zoom and crop
-- Code editors with syntax highlighting
-
-### Utilities
-Helper components and hooks:
-- Custom hooks (useTimer, useCopyToClipboard, etc.)
-- Auth utilities
-- Server middleware
-- Context management
-
-## Package Managers
-
-Catalyst UI automatically detects and uses your package manager:
-- npm
-- pnpm
-- yarn
-
-## Configuration
-
-### Config File (Optional)
-
-Create a `catalyst.config.jsonc` file in your project root to customize installation behavior:
-
-```bash
-bunx @a5gard/migardr-ui
-# Select: Create Config File
-```
-
-Or create it manually:
-
-```jsonc
-// catalyst.config.jsonc
-{
-    "theme": "blue",                      // presetting the theme
-    "preset": "MODERN",                   // presetting the preset
-    "font": "Geist",                      // presetting the font
-    "all-components": false,              // auto-install all on `bunx @a5gard/migardr-ui`
-    "install-tailwind": true,             // install Tailwind dependencies
-    "configure-tailwind": true,           // create and paste .css file
-    "configure-tailwind.config": true,    // true, "ngin", or false
-    "install-postcss": true,              // install PostCSS dependencies
-    "configure-postcss": true,            // create postcss.config.js
-    "css": "app/routes/styles/tailwind.css",  // CSS file location
-    "components": "app/"                  // components folder location
-}
-```
-
-### Config Options Explained
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `theme` | string | `"blue"` | Default theme color |
-| `preset` | string | `"MODERN"` | Default preset style |
-| `font` | string | `"Geist"` | Default font family |
-| `all-components` | boolean | `false` | Auto-install all components when running `bunx @a5gard/migardr-ui` |
-| `install-tailwind` | boolean | `true` | Install Tailwind CSS and related dependencies |
-| `configure-tailwind` | boolean | `true` | Create the tailwind.css file at specified location |
-| `configure-tailwind.config` | boolean\|"ngin" | `true` | `true` for basic config, `"ngin"` for 18k presets, `false` for none |
-| `install-postcss` | boolean | `true` | Install PostCSS dependencies |
-| `configure-postcss` | boolean | `true` | Create postcss.config.js file |
-| `css` | string | `"app/routes/styles/tailwind.css"` | Path and filename for tailwind.css |
-| `components` | string | `"app/"` | Base directory for components folder |
-
-### Auto-Install with Config
-
-Once you have a config file with `"all-components": true`, simply run:
-
-```bash
-bunx @a5gard/migardr-ui
-```
-
-This will automatically:
-1. Install all components to your specified components directory
-2. Install required dependencies (if enabled)
-3. Configure Tailwind CSS (if enabled)
-4. Configure PostCSS (if enabled)
-5. Create utils file
-
-No menu selection needed!
-
-### Tailwind Setup
-
-Catalyst UI includes pre-configured Tailwind setups:
-
-**Standard Configuration:**
-```bash
-bunx @a5gard/migardr-ui
-# Select: Configure Tailwind + PostCSS
-```
-
-**Ngin Configuration** (18,000 presets):
-```bash
-bunx @a5gard/migardr-ui
-# Select: Configure with Ngin
-```
-
-Or set in config:
-```jsonc
-{
-    "configure-tailwind.config": "ngin"
-}
-```
-
-### Utils File
-
-All installations automatically create a `components/midgardr/utils/utils.ts` file with helper functions:
-- `cn()` - Class name merger
-- `focusInput` - Focus styles
-- `focusRing` - Focus ring utilities
-- `formatDate()` - Date formatting
-
-
-## Requirements
-
-- React 18+
-- Tailwind CSS 3+
-- Node.js 16+
-
-### Utils File
-
-All installations automatically create a `utils/utils.ts` file with helper functions:
-- `cn()` - Class name merger
-- `focusInput` - Focus styles
-- `focusRing` - Focus ring utilities
-- `formatDate()` - Date formatting
-
-## Examples
-
-### Installing a Button Component
-
-```bash
-bunx @a5gard/migardr-ui button
-```
-
-This will:
-1. Create `/components/midgardr/primitives/button.tsx`
-2. Install required dependencies (extracted from component imports)
-3. Create `utils/utils.ts` if it doesn't exist
-
-### Using the Button Component
-
-```tsx
-import { Button } from '~/components/midgardr';
-
-export default function MyPage() {
-  return (
-    <Button 
-      variant="default"
-      size="lg"
-      onClick={() => console.log('clicked')}
-    >
-      Click Me
-    </Button>
-  );
-}
-```
-
-### Installing Multiple Components
-
-```bash
-bunx @a5gard/migardr-ui
-# Select: Select Components
-# Choose from the list
-```
-
-## Component Import Paths
-
-All components use the centralized import path:
-
-```tsx
-import { Button, Card, Dialog } from '~/components/midgardr';
-```
-
-Or import directly from category folders:
-
-```tsx
-import { Button } from '~/components/midgardr/primitives';
-import { useTimer } from '~/components/midgardr/hooks';
-```
-
-## Features
-
-- **TypeScript First** - Full TypeScript support with type definitions
-- **Accessible** - Built with accessibility in mind following WAI-ARIA standards
-- **Customizable** - Highly customizable with Tailwind CSS
-- **Tree-shakeable** - Import only what you need
-- **Dark Mode** - Built-in dark mode support
-- **Responsive** - Mobile-first responsive design
-- **Zero Config** - Works out of the box with sensible defaults
-
-## Dependencies
-
-Components automatically install their required dependencies. Common dependencies include:
-- `@radix-ui/react-*` - Primitive components
-- `class-variance-authority` - Variant management
-- `clsx` & `tailwind-merge` - Class name utilities
-- `lucide-react` - Icons
-- `framer-motion` - Animations (where applicable)
-
-## File Structure
-
-After installation, your project will have:
-
-```
-your-project/
-├── components/
-│   └── midgardr/
-│       ├── primitives/
-│       ├── forms/
-│       ├── overlays/
-│       ├── hooks/
-│       ├── utils/
-│       │   └── utils.ts
-│       └── index.ts
-└── (optional config files)
-    ├── tailwind.config.js
-    └── postcss.config.js
-```
-
-> [!TIP]
->
-> When your looking at code examples and see the import '#midgardr' being used in place of '~/components/midgardr/primitives/button', theres an option with the cli tool to configure your project to use it. 
->
-> Every single comopnent in the library can be called with '#midgardr'. The same configuration also allows you to access the icons library via '#baldr' 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **MIÐGARÐR SDK**

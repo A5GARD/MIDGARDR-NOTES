@@ -56,59 +56,22 @@ The end result places the mini map on the left side with a smaller width than wh
 
 Blacked-out was made with the same design ideas as blued-out.
 
-> [!UPDATE]
+> [!NOTE]
 >
-> As I was waiting for some things to load I added... And for some reason I can't remember the total, and I'm not going back to count again... Lets just agree to agree that the new total count is between 50-55. Doesn't matter at this point really what the total is now because before adding these it was already a rediculous amount in comparison to the marketplace average... of 1 per extension. Noticed there were some gaps missing in comparison to whats available on the color wheel, and had some time to kill so I added a 80's miami theme as well. lol, its god awful but who knows, maybe someone out there may love it since its so loud. I can tell you one thing, it would def stop me in my tracks if I were walking by your station and saw that out of the corner of my eye and say, "what the f...", so if that's what your going for, than this is the theme for you.
+> FEB 7, 2026: As I was waiting for some things to load I added... And for some reason I can't remember the total, and I'm not going back to count again... Lets just agree to agree that the new total count is between 50-55. Doesn't matter at this point really what the total is now because before adding these it was already a rediculous amount in comparison to the marketplace average... of 1 per extension. Noticed there were some gaps missing in comparison to whats available on the color wheel, and had some time to kill so I added a 80's miami theme as well. lol, its god awful but who knows, maybe someone out there may love it since its so loud. I can tell you one thing, it would def stop me in my tracks if I were walking by your station and saw that out of the corner of my eye and say, "what the f...", so if that's what your going for, than this is the theme for you.
+>
+> FEB 8, 2026: An update... to the previous update, lol. 
+> There are now 140+ total themes to choose from. This total comes from 70 themes that all contian themed color tokens and semantic color tokens. Personally, I don't like the themed syntax highlighting but I know there are people out there that will go nuts for it, sitting there frantically clapping their hands together the first time they lay eyes on it. At the same time I know there are people, like myself, who do not want that. 
+> 
+> FEB 10, 2026: For each of the provided themes there is a "base" variant, that uses vscodes default dark syntax highlighting in place of the themed version because I was quite jealouse due to the themes turning out... way better than expected and not being able to use any of theme. The moment I tried coding with any one of theme since I tried multiple themes to find a syntax hightlight theme I could live with but trying each of them, I was like, "NOOPPEE". I'm pretty sure somewhere above I said this feature would get even more rediculous compared to the competing marketplace offerings, well I told ya so. Who knows there may be one out there, but the themes I've seen and installed... for some reason I've not once seen a theme that offered both a syntax theme and a default version of it without it. It's weird, as I continue to code I find a lot of features that I would consider to be the industry norm / default way of doing things, only to find out that even paid options don't even offer the same feature parity.
+>
+> FEB 11, 2026: As I was building my own theme completely from scratch I have noticed, I wasn't including as many items to each theme as I could have. This update... will take me a while since each theme will be almost tripling in size. Theres nothing wrong with the current themes, they're fucking great. It just bugs me knowing that, I could easily do better, albeit taking a while to complete. Not only will each theme look great given its base colors that are already set out in each theme, but every single theme will have the same level of depth with attention to detail.
+>
+> And I'll admit, I'm trying to cheat as much as I can by getting ai engines to help with this task but due to the size of the themes, they are becoming quite token heavy and can only complete a couple at a time, while I also manually edit them as well. Speaking of which, just burned through another quota and have to wait another 3 or so hours before receiving help again with this task, fuck I'm not even half way through, sigh that sucks, lol
+>
+> 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSCode & Tailwind Theme Builder**
-
-Obviously I enjoy looking at a nice user interface, who doesn't? The real question is, who wants to build themes the way microsoft intended with vscode? Fucking nobody... My god, this is a prime example on how to not include a feature. Especially a feature that so many people would want to use at varying skill levels.
-
-This being such a complicated task to complete it took me ages, just to work up the confidence to start editing that object in the settings.json file... let me re-phrase that, it took me ages just to learn on how to find out what values are needed to be modified in order to create a theme in the first place, unbelievable.
-
-Seriously, the system that vscode created to edit the theme is simply, just garbage, but we have to endure it because... that's how you edit the theme. After creating... about the third theme I stopped creating them all together. Once I got good enough at coding, I created a tailwind theme builder that maps the same tailwind theme to all the elements found in vscodes UI. Making it so that creating a vscode theme, no longer sucks.
-
-Now the theme builder is currently at it's umphteen revision, it does quite a lot more while solving some critical UX problems... that nobody even seems to be attempting to solve. 
-
-Like color pickers? I know you, myself and every other dev has just lived with these things, but fuck do they suck when building a theme. Taking an exercise that, lets be honest, takes a while all on its own but then whenever you want to manually customize a color and use that color picker, your adding a unknown multiplier thats based on how perfect you want the theme to look and then again, multipling the time by the amount of custom colors you want to customize. Who wants to build themes like that? Again, fucking nobody. So along side every single color picker, just in case that one person out there that wants it, there is a new style of color picker that, tbh I've never seen created anywhere else in any context. Simply named, the color wheel picker. Instead of making you dial in each color with 6 different knobs, it just provides every option available on the color wheel. Whenever you hover over a color, a tooptip displays with the colors name and number value. It works so much better, here on out I will be droping the color picker all together and use the color wheel picker in its place, except for uses cases like this theme builder.
-
-![Z](https://raw.githubusercontent.com/8an3/midgardr-notes/main/freyr/colorwheelpicker.png)
-
-### Live Previews
-
-The theme builder hosts a number of live previews so you can see exactly what your building as you build it, consisting of but not limited to:
-- a webpage that features a host of components to ensure you know exactly the theme your building for your tailwind.css file
-- a recreated vscode user interface that achieves the same as above
-- lastly a specialized vscode interface that hosts a number of different files to view that you can change from switch tab to tab, just like you do in vscode. Each file features a different language so that you can preview token colors and semantic token colors that change how the syntax highlighting looks as you build on the fly. This is another feature, I have yet to see elsewhere
-
-### Color Output Formats
-
-Due to working in so many enviroments it obviously outputs in more formats than the current tailwind version, such as:
-- tailwind v4
-- tailwind v3
-- settings.json ( so you can paste it straight into your file )
-- while the last one doesn't exactly have a name per say, but it outputs the exact object you need in order to create your very own vscode theme extension. Actually... as it includes all the colors needed, all the values that are required, the token colors you have chosen along side the semantic token colors as well
-
-### Intelligent Color Mapping
-
-This one took a while to get right but when it was perfected... it really made the exercise of creating a vscode theme a breeze.
-
-Whenever you select a preset theme configuration, or whenever you select a color to use in your tailwind theme it automatically applies the same colors to your vscode theme, token colors and semantic token colors. 
-
-In the time it takes to create a tailwind theme, you now have two other output options that you can choose from for setting that same theme in vscode.
-
-Not only does it provide the perfect vscode theme to quickly paste into your project, it also provides THEMED token colors its semantic counterpart. Thus taking a task that was usually only being done, by seasoned devs and opening it up to virtually... any skill level. Not to mention, drastically cutting down the required time in creating themes 100 fold.
-
-MEANWHILE, the theme builder still lets you custmize each vscode color option whenever you go to individually custmize it. So if you hate the color of the border that used in your tailwind theme, no problem change it.
-
-### Closing Notes
-
-Obviously, I do not stick to industry norms when it comes to things and since I already have a vscode UI, why not squeeze more out of it. Ontop of visually see what colors do what and where, I've also added options to change several elements in the ui itself as well. For example, toggling breadcrumbs, minimap, and a long list of other UI manipulation features that are found in vscode.
-
-The theme builder is up and does all the points listed above. Just don't mind the tailwind section as I use it to build more complicated than normal components by putting them through there paces over several examples. So if you see some components that are kind of messed up thats why but I hope the awesomeness of the theme builder as a whole makes you overlook that.
-
----
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Blacked Out**
 
