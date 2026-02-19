@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+>
+> Any time you see a feature mentioning finding it among the status bar menus, this has recently been changed as all status bar menus have been moved into the activity bar. If it is not apparent as to which activity bar view it currently resides in, then it will be covered under the devstack menu sidebar. As this has been the single point of focus when consolidating and exposing all of vscodes features as well as hosting as a menu system for this extensions features.
+
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Quick Setup (2 minutes)
    
 ### Step 1 Restart VS Code
@@ -38,6 +42,8 @@ Before moving on, yes there are a couple of features you will notice that aren't
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Before / After
 
+<img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/ui/vanilla.png"   style="vertical-align: middle; horizontal-align: middle;">
+<img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/ui/extension.png"   style="vertical-align: middle; horizontal-align: middle;">
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Default Configs
 
