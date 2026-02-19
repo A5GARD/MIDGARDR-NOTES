@@ -1,6 +1,6 @@
  
 <!-- #region Overview -->
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Overview**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Overview
 
 
 I stopped looking for VSCode alternatives. Not because VSCode is perfect. Because DevStack made it perfect. 45 projects. 20,000+ lines of configuration. One seamless environment. This is what VSCode should have been.

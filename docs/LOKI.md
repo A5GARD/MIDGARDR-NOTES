@@ -1,5 +1,5 @@
 
-# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **LOKI AI: Limitless**
+# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> LOKI AI: Limitless
 
 > Taken from a blog post I wrote about limitless as I have yet to write up the how-to.
 
@@ -123,7 +123,7 @@ I have to admit that was much needed ego boost...since I typically get imposters
 Till next time!
 
 
-# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Deterministic AI Ngin Compiler**
+# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Deterministic AI Ngin Compiler
 
 That eliminates 99% of AI prompt issues and frustrations across all AI engines.
 
@@ -289,7 +289,7 @@ One of the key innovations is addressing the root cause of most AI-related issue
 
 
  
-# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Prompt- COMING SOON**
+# <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Prompt- COMING SOON
 
  
  A comprehensive pre-prompt management system with support for multiple AI providers

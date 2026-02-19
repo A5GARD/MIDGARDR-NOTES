@@ -4,7 +4,7 @@
 >
 > Whether it is product icons, file icons or themes, they need to activated via the file drop down menu > prefrences > themes > and selecting the desired option
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Product Icons**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Product Icons
 
 Can be used with your config items.
 
@@ -349,8 +349,7 @@ Can be used with your config items.
 </details>
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **File Icons**
-
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> File Icons
 A variety of custom icons has been created for use within the explorer pane. Icons are styled the same as they were created by the original creators and even following the original color scheme, only deviating on a few select colors such as black for example. 
 
 Despite using the original logo's, each svg was edited in order to obtain the most clarity out of each svg. Where applicable a black background was place behind the logo, in order for the text/logos to appear sharper when rendered while at the same time, not letting your current color scheme change the overall look of each of the icons.
@@ -385,7 +384,7 @@ pink #ec4899
 rose #f43f5e
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **BALDR**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> BALDR
 
 A React icon library designed for simplicity and accuracy with a sensible naming convention.
 
@@ -415,7 +414,7 @@ import { Message } from '@a5gard/baldr'
 
 ---
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Icons Quick Pick**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Icons Quick Pick
 
 
 Browse and insert icons from the @a5gard/baldr library directly in your editor

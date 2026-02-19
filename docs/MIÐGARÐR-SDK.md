@@ -1,6 +1,6 @@
 # MIÐGARÐR SDk
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Table of Contents**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Table of Contents
  
 
 ## [MIÐGARÐR: Formerly known as CATALYST UI LIBRARY](#miðgarðr-formerly-known-as-midgardr-library)
@@ -178,25 +178,25 @@
   - [Dependencies](#dependencies-1)
   - [File Structure](#file-structure-1)
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Editor Context Insert**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Editor Context Insert
 
 Inserts selected component at cursor via the editor context menu. Menu options will be based upon current subscription status.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Quick Pick Insert**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Quick Pick Insert
 
 Copies the selected component into your clipboard via the quick pick menu located in the status bar. Menu options will be based upon current subscription status.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Automated Installation**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Automated Installation
 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Smart Prop Autocomplete**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Smart Prop Autocomplete
 
 Pressing ctrl & spacebar while your cursor is inside the quotations of any props value will bring up an intellisense dropdown with the available prop values that can be assigned.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Signature Help**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Signature Help
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Hover Documentation**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Hover Documentation
 
 Whenever hovering over a components name a hovercard will appear with its relevant documentation, removing the need to ever visit the site. The card will contain the following:
 - name
@@ -223,15 +223,15 @@ Thus truly ensuring that you do not need to minimize or open another window whil
 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Auto Import**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Auto Import
 
 To auto import the component right click the components name where ever it may be used within the editor, select `Add Import` in the editor context menu. 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Go To Definition**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Go To Definition
 
 Using cmd & ctrl & clicking the components name will bring up the source codes file in a, sheet style dropdown? I don't what what you call this really, any how, it allows you to view the source code file without navigating to it, while at the same time double clicking anywhere inside the "dropdown sheet" will navigate you to the source code file itself.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **In Editor Comp Autocomplete**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> In Editor Comp Autocomplete
 
 Whenever you start to code a component `<`, pressing ctrl & spacebar will bring up the intellisense dropdown containing every single component currently available in the library, all 2500+.
 

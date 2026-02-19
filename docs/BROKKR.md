@@ -38,11 +38,11 @@
 >
 > So currently, please try to use the viewer in order to make changes to the ui as your coding. The customize layout system is literlly exactly the same as vscodes. Because we can only track certain states ourselves without relying on vscode, this will be vital for a reliable state.
 
-# **Layout Configuration Guide**
+# Layout Configuration Guide
 
 More of an overview of what to expect, than an actual guide since it's extremely straight forward, except maybe one part which I will go over.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Casual**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Casual
 
 - Layout name
 - Icon - allowing you to set that layouts icon to be displayed in the sidebar
@@ -59,7 +59,7 @@ More of an overview of what to expect, than an actual guide since it's extremely
 - file inputs so as to set a file for a 2 col editor group, you may only place one file in each of the 2 columns that are avaialable at this level
 - checkbox to set the layout to deafult
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Intermediate**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Intermediate
 
 In addition to the above:
 - Custom theme colors - instead of going with one of the many pre configured themes you may set your own color scheme. By shrinking down the amount of values needed to be placed in the custom section, this allows for you to create a nice cohesive theme across the entire UI with very little effort. Saving you tons of time in the process compared to the default process of completing this task. The following colors will be avaialbe for you to customize:
@@ -72,7 +72,7 @@ In addition to the above:
   - primary foreground
 - Instead of one file per col, you may select as many files as you wish and organize them per col
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Power User**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Power User
 
 In addition to the above:
 - Plex vs Default Layout: Editor Grid
@@ -83,7 +83,7 @@ If you prefer the linux `plex` style layout configuration, you may choose the am
 
 Just like you can with editors, you may choose to add as many config items to any terminal group you may wish, each item adds a new tab within that terminal group.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Sauron**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Sauron
 
 In addition to the above:
 This one has changed the most... weirdly, due to the overall length I have had to modify it by adding in a second sidebar to the right, and a search bar when dealing with settings values.
@@ -104,7 +104,7 @@ The sidebar contains the following:
 >
 > For the next 3 following options whether they are set manually or using the newly created UI, whenever the ngin goes to set these values it will set them within your workspaces settings.json files instead of the global counterpart. These three values will be the only settings that will save in this fashion, which means you are free to set a default value for each of them to be used no matter what instance you are currently in. While at the same time, allowing for personal touches in each of the layouts configs.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Product Icons**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Product Icons
 
 This now grants the ability to change product icons, file icons and themes on a workspace context level. 
 
@@ -121,7 +121,7 @@ You can now set a registered product icon theme explicitly through the following
 
 Placement is at the root level of the args object alongside customizeLayout and others.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **File Icons**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> File Icons
 
 ### Manually
 Currently, you can do this manually as it is already coded into the ngin.
@@ -137,7 +137,7 @@ You can now set a registered file icon theme explicitly through the following se
 Placement is at the root level of the args object alongside customizeLayout and others.
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Themes**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Themes
 
 > [!NOTE] 
 >
@@ -243,7 +243,7 @@ Anywho, whenever I have the time or whenever I need a break from regular coding 
 
 I find this design philosophy makes each theme look phenomonal, despite a lot of the featuring colors I would have not at first chosen for a theme. But since the themes color pallete already jives with one another so much, they turned out to be great themes in compar
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **BROKKR Viewer**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> BROKKR Viewer
 
 > [!IMPORTANT]
 >
@@ -253,14 +253,14 @@ I find this design philosophy makes each theme look phenomonal, despite a lot of
 
 > [!NOTE]
 >
-> Quick note, the ngin doesn't allow for the use of special characters. If any are used in the naming of the layout, the viewer will not be able to find it.
+> Viewer has had some items added to it, making it so that it serves as a means to quickly edit your config on the fly. Whether that be adding files to specific groups or removing them, it now does a lot more than I had first thought this would do. Currently the only thing it doesn't do that I can remember is removing or editing values contained within the performance, ocrmnav, workspace and color customizations objects. Along side the new brokkr menu, this feature as a whole is... rounding out quite nicely despite having 0 plans when I first started the layout ngin. Not only does it solve a number of issues, but does so in cohesive well-rounded manner. With the addition of that menu, vscode... no longer feels like vscode anymore. But just thinking about that for a moment... it trully no longer feels like I'm using the same software. It will feel even more separated with the addition of the github wrapper that I'm working on, and when I'm done I plan on removing gits icon from the ui... so it will TRULY feel like a completely different app. At the same time I will be removing the search icon as well which will leave, folders, to do / notes, and devstack... jeeze.
 
 Snapshot ngin may be changing, be replaced by in part or in its entirety or something else entirely but, even though a new ui is coming I still want be able to do what I want from this feature.
 Basically, a quick pick that pulls up the current layout and provides quick details with ability to change certain things on the fly. Despite it being as great as it is, still in its original form, there were defiently times I wish I could just quickly add, edit or remove something, followed with either closing vscode because something came up or I wanted to reload vscode with that one file opening back up when the default layout initialized once vscode started up again. 
 
 The quick pick will be present in the status bar and once opened the following options will be presented to you:
 - default toggle, whenever clicked it toggles to the opposite value after confirming your selection
-- catergoized list of files by group using a label to declare the group on the first line, clicking on any line item will ask you if you would like to remove that item ( meanwhile the editors context menu will get a new submnu, while 'add file' will be the only item in there currently I'm sure there will more added down the road. Whenever adding a file this way it just quickly adds the file to the first files group. )
+- catergoized list of files by group using a label to declare the group on the first line, clicking on any line item will ask you if you would like to remove that item 
 - categorized list of terminals, same features as the previous
   - the only difference being that the first line of each group will be a 'add terminal command' option
 - a read only menu for keybindings, opens a new quick pick stating your current keybindings with a back button to return to the previous menu
@@ -405,14 +405,14 @@ As a means to track all UI state changes, I have re-created vscodes custmize lay
         }
 ```
 
-#### Ignore All Notifications / Toasts ( WIP )
-#### Workspace Extensions Context ( WIP )
-#### Profile Context ( WIP )
+## Ignore All Notifications / Toasts ( WIP )
+## Workspace Extensions Context ( WIP )
+## Profile Context ( WIP )
 
 <br /><br />
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **BROKKR Menu**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> BROKKR Menu
 
 While brokker viewer takes care of your current layout configs needs, brokkr menu takes care of others while allowing it to keep track of updating the current UI's state while at the same time offering a easier means to setting those values. 
 
@@ -554,7 +554,7 @@ This menu will NOT change your current config, think of it more as an expanded u
 
 Did not see that coming... in terms of the total number of options that were going to be included. If this were anyone elses extension, this itself would be its own extension as a means to consolidate all UI features.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Current Config**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Current Config
 
 While the new ngin is being created you can still use this feature while its under construction by following the configuration below:
 
@@ -1031,7 +1031,7 @@ While the new ngin is being created you can still use this feature while its und
         }
 ```
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Notes for future features**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Notes for future features
 
 > [!NOTE] 
 > 

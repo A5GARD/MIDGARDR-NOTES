@@ -1,6 +1,6 @@
 # Config Item Examples
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Table of Contents**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Table of Contents
 
 - [Config Item Examples](#config-item-examples)
   - [Example 1: Local Build & Install VSCode Extension](#example-1-local-build--install-vscode-extension)

@@ -1,24 +1,28 @@
+# ASGARD
+
+Essentially the home for all things sidebar, since that exploded and finalized how awesome vscode can be
 
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> DevStack Menu
 
-What started as a React UI components library has evolved into a full-stack development toolkit. As such, it has now transitioned into an SDK and even though it sounds like everything just got more complicated, it has actually made things far simpler and easier.
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Color Pallete Generator
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **ASGARD SDK**
- 
-## Architecture
+- maybe, maybe not
 
-The SDK is built on three foundational layers:
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> BIFROST GATE
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> GITHUB CLI WRAPPER
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> SEARCH
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> ERRORS
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> BROKKR: UI CONTROL PANEL
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> BROKKR: LAYOUT VIEWER
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> BOOKMARKS
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> TO DO
 
-- **UI Components** - Everything that returns JSX/renders to DOM
-- **Services** - External integrations and business logic
-- **Utilities** - App-layer infrastructure
+How weirdly awesome it is, splitting this feature into their own sidebar tabs
 
-Complemented by VSCode extensions and NPM packages that streamline development workflows.
-
-## Design Philosophy
-
-**Flat over nested.** Sub-categories (E-Commerce, Core, Marketing) work well for small libraries but create unnecessary complexity at scale. All nested structures have been flattened to root-level categories or merged into existing ones.
-
-**Norse mythology naming** embraced throughout - from the SDK name (Asgard) to individual packages.
-
-**Category-first organization.** While the codebase serves three architectural layers, the file structure prioritizes categorical clarity over hierarchical depth. This scales better and reduces cognitive overhead.
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MIÐGARÐR UI
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MIÐGARÐR CLI
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> ICONS
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> CLIPBOARD MANAGER
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> COLOR WHEEL
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> COLOR PICKER

@@ -1,4 +1,4 @@
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **SAGA**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> SAGA
 ## Notes Manager & GitHub Sync Extension
 
 A comprehensive VS Code extension for managing notes, todos, reminders, and post-it pads with GitHub synchronization capabilities.

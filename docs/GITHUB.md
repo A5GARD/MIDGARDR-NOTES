@@ -6,29 +6,44 @@
 - [Open Repo in Browser](#open-repo-in-browser)
 - [Open Repo at File](#open-repo-at-file)
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Github Wrapper**
-
-This npm library already does far more than just a simple github wrapper as I no longer care for have 8+ npm libraries and would rather shrink them down to one, with saying that I already know I'm going to have atleast three, icons, ui components and lastly this new one. This library will work cohesively with the icons and components library, but will also be a platform installer, platform plugin system, and much more. As far as the github wrapper goes, I did make it with devstack in mind so it will work quite easily and nicely with it. The terminal menu styling, I need to work on as I found after working on it 13 hours straight there really isn't a library that does them reasonably. Who knows maybe I missed the one that does, but that does need working on so whenever you go to use it don't mind that. But I'll place the relevant docs from the library here for you to review.
-
-
-### Installing
-
-```sh
-npm install @a5gard/asgard
-```
-
-### Usage
-
-To display the main menu / help screen
-
-```sh
-asgard menu
-```
-
-Otherwise you can use the commands that are designed for each feature
-
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Github Wrapper
+ 
 > [!IMPORTANT]
-> Currently in alpha, if you have never used my projects before so as to not waste time I conduct testing as I code, once an issue crosses my path it gets fixed immediatly. Your more than welcome to use this, but if you come across an issue before I do, this is why
+>
+> This section of the docs needs to be rewritten again because of the below section. Till then you are free to use it, as its pretty straight forward despite the naming convention being changed from what github uses
+> 
+> Back in alpha again, if you have never used my projects before so as to not waste time I conduct testing as I code, once an issue crosses my path it gets fixed immediatly. Your more than welcome to use this, but if you come across an issue before I do, this is why
+>
+> The npm library has been let go as a means to serve this funtionality, moving it into the extension it self. The extension already deals with and will have a github token on hand to deal with your user account. In addition to remove anoter external tool/resource albeit my own, the performance... was something on the level of non-existant. Attempting to get the most out of it, there was much orange to squeeze as, it really wasn't a large app/library... no matter the context you gave it. Where as, similar commands triggered through the extension made it seem like the library was created 15 years ago.
+>
+> Not to mention, getting a ui this way and not having to bother remembering any cli command in its entirety as this will completely replace your use of github within vscode. 
+>
+> Another in addition to the above, while essentially recreating the library again from scratch, I went a couple of steps further in several ways to go that extra mile. Such as the config has been expanded upon, same name though:
+>
+> ```tsx
+>    const configData = {
+>      repo: 'newRepo',
+>      owner: 'newOwner',
+>      branch: 'newBranch',
+>      private: 'isPrivate',
+>      license: 'licensePick',
+>      packageManager: 'packageManagerPick',
+>      autoPushRepo: 'autoPushRepo',
+>      baldr: 'baldr',
+>      midgardr: 'midgardr',
+>      midgardrLevel: "",
+>      postcss: 'postcss',
+>      tailwind: 'tailwind',
+>      presetNgin: `presetNgin}`,
+>      installPostInit: true,
+>      readmeTemplate: readmeTemp || "none",
+>      ensureBaseGitignore: true,
+>      updatedAt: new Date().toISOString(),
+>    }
+> ```
+>
+>
+> So all in all, took a long time to go around and land back at this point, lol. Despite trying to branch off and creating things outside this extension, this now being the fourth time this has happened, I guess I have finally learned my lesson in that... just make it here instead. Unless there is some massive downside, otherwise theres no point fighting against it anymore. There are literlly zero performance issues with the extension
 
 ### TOC
 
@@ -58,9 +73,24 @@ Otherwise you can use the commands that are designed for each feature
   - [view-versions](#view-versions)
   - [download-file](#download-file)
   - [download-folder](#download-folder)
+  - New additions
+    - asgard.git.config.check
+    - asgard.git.repo.check
+    - asgard.git.conflict.resolve
+      - The Pain: You try to combineTimelines or sync, and Git screams: "CONFLICT (content): Merge conflict in file.js". The user is then left with those ugly <<<<<<< HEAD markers in their code. The Fix: resolveConflicts. Instead of leaving them to manually edit text, you can trigger the VS Code Merge Editor or provide a simple "Keep My Changes" vs. "Keep Their Changes" toggle.
+    - .gitignore gaurdian ( executes silently )
+      - The Pain: A user accidentally adds a 500MB node_modules folder or a .env file with secret keys and pushes it. Even if they delete it later, it’s stuck in the Git history forever, making the repo massive and insecure. The Fix: protectSecrets or cleanHistory. A command that scans for common "forbidden" files and offers to add them to .gitignore before the first saveProject happens.
+    - asgard.git.timeline.repair
+      - The Pain: Sometimes Git just breaks. You get an error saying index.lock exists, and you can't run any commands. Or you're in the middle of a "rebase" or "merge" and you don't know how to cancel it. The Fix: repairTimeline. A "Self-Heal" button that: Deletes index.lock. Runs git merge --abort or git rebase --abort. Cleans up dead processes.
+    - asgard.git.timeline.emergency.splinter
+      - The Pain: You’ve been coding for 2 hours on main before realizing, "Wait, this should have been a separate experiment!" Now you have to move your uncommitted work to a new branch without losing it. The Fix: moveWorkToNewTimeline. This stages your current work, creates a new branch, and resets main back to how it was, effectively "teleporting" your progress to a safe space.
+    - asgard.project.install.offConfig
+      - For users who want to skip everything and just create a new project based solely off of a config for a project in which you are already "standing" in, meaning you created a new empty folder and opened that folder in a new workspace and all you have it a config.asgard file in it. Allowing you to bypass all the prompts and all the other things. Because like most things once you go through it 4 or 5 times you will probably want a faster means in getting the job done but at the same level as if you went through all the prompts
 - [BALDR](#baldr)
 - [BIFRÖST](#bifrost)
+  - SOON GETTING MERGED INTO DEVSTACK LIKE THE GH WRAPPER 
 - [BIFRÖST PLUGIN](#bifrost-plugin)
+  - SOON GETTING MERGED INTO DEVSTACK LIKE THE GH WRAPPER 
 - [MIÐGARÐR](#midgardr)
 - [THOR](#thor)
 
@@ -430,7 +460,7 @@ asgard publish-project
 ```
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Repo Management**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Repo Management
 
 Comprehensive GitHub repository management and functionality accessible from multiple locations
 
@@ -449,7 +479,7 @@ See DevStack Quick Pick documentation for full feature outline.
 ![GitHub Functions](https://raw.githubusercontent.com/8an3/midgardr-notes/main/github/github-pic.jpg?raw=true)
 ![GitHub Context Menu](https://raw.githubusercontent.com/8an3/midgardr-notes/main/github/contextr.jpg?raw=true)
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Open Repo in Browser**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Open Repo in Browser
 
 Open your GitHub repository in browser directly from any file in your workspace
 
@@ -464,7 +494,7 @@ Open your GitHub repository in browser directly from any file in your workspace
 [Video Demo](https://youtu.be/CQ2rYtbZKJk)
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Open Repo at File**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Open Repo at File
 
 Navigate directly to a specific file's location in your GitHub repository
 
@@ -479,7 +509,7 @@ Navigate directly to a specific file's location in your GitHub repository
 [Video Demo](https://youtu.be/0CLkYvWSVqI)
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Pro7 Archiver**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Pro7 Archiver
 
 Create password-encrypted archives containing sensitive files for safe inclusion in your GitHub repository
 

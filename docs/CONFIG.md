@@ -3,7 +3,7 @@
 > [!TIP]
 > Configuration files are automatically formatted at load time, removing trailing commas and comments. While comments are stripped during loading, it's recommended not to store comments in config files since formatted versions are used when the save function triggers.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Share Config**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Share Config
 
 
 Export your complete DevStack configuration to share with team members or backup your setup.
@@ -28,7 +28,7 @@ Export your complete DevStack configuration to share with team members or backup
 
 ---
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **View Config Example**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> View Config Example
 
 Browse example configuration files to understand DevStack's setup and structure.
 
@@ -45,7 +45,7 @@ Browse example configuration files to understand DevStack's setup and structure.
 ![Settings](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/settings.jpg)
 
 ---
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Add Missing Imports w/ Global Config**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Add Missing Imports w/ Global Config
 
 Automatically detect and add missing import statements based on your global configuration.
 
@@ -61,7 +61,7 @@ Automatically detect and add missing import statements based on your global conf
 ![Add Missing Imports](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/add-missing.jpg)
 
 ---
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Default Apps Configuration**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Default Apps Configuration
 
 Control which DevStack features load on startup for optimal performance and workflow.
 
@@ -129,7 +129,7 @@ Control which DevStack features load on startup for optimal performance and work
 ```
 
 ---
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Create Export Index && Create Named Export Index**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Create Export Index && Create Named Export Index
 
 Generate index files that act as registries for easier imports across your project.
 
@@ -167,7 +167,7 @@ import * as Components from './index';
 ![Registry](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/registry.jpg)
 
 ---
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Edit .json Config**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Edit .json Config
 
 Quick access to edit your DevStack configuration file directly in the editor.
 
@@ -183,7 +183,7 @@ Quick access to edit your DevStack configuration file directly in the editor.
 ![Edit Config](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/edit-config.jpg)
 
 ---
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Export Config**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Export Config
 
 Export your current configuration to a file in your workspace root directory.
 
@@ -199,7 +199,7 @@ Export your current configuration to a file in your workspace root directory.
 ![Export Config](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/export-config.jpg)
 
 ---
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Import Config**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Import Config
 
 Import a previously exported configuration or load a modified config file.
 
@@ -216,7 +216,7 @@ Import a previously exported configuration or load a modified config file.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Add ESLint & Prettier Configs**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Add ESLint & Prettier Configs
 
 Install standard ESLint and Prettier configuration files to your project.
 
@@ -233,7 +233,7 @@ Install standard ESLint and Prettier configuration files to your project.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **To Do Notes Reminders and Post Its**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> To Do Notes Reminders and Post Its
 
 Comprehensive task and note management system with GitHub repo sync and mobile-friendly web app.
 
@@ -318,7 +318,7 @@ Comprehensive task and note management system with GitHub repo sync and mobile-f
 
 ---
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Markdown Pre-Processor**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Markdown Pre-Processor
 
 
 Advanced markdown document processor with variables, table of contents, sourcemap generation, and content conversion.

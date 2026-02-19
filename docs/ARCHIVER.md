@@ -11,7 +11,7 @@
   - [Publish from Existing VSIX](#publish-from-existing-vsix)
   - [Package Commands](#package-commands)
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSIX Archiver**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> VSIX Archiver
 
 The status quo is to use vsce, but I experienced an edge case in which I could not push my extension, despite there being nothing wrong with it. As I naturally do when something gives me issues, I just rebuild it myself. Not just reminding me how much I have microsfts docs, but I was shocked by the end result.
 
@@ -35,9 +35,9 @@ Personally, I've never went back to vsce not just because it's faster, despite b
 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSIX Publisher**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> VSIX Publisher
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Pro7**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Pro7
 
  
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSIX Publishing Commands**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> VSIX Publishing Commands

@@ -16,7 +16,7 @@
 >
 > Despite my feelings for github, it fits the need that devarchive has in terms of the whole idea behind it. Personally, I'd rather just code my own version of github and not have to deal with it again... but it then falls back to, the owner ultimately being the caretaker of data and if the owner goes, so does your data. While I have no intention on such an event and the service will be created in such a way that if I were to HAVE to pass it along and its responsibilities that it wouldn't be a chore in any sense, other than making sure the credit card that pays for hosting doesn't expire. That way, atleast it can continue living on instead of just... dying like so many resources right now, and I beleive that we are just on the cusp of witnessing a lot more of that.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **SNIPPETS**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> SNIPPETS
 
 
 ```markdown
@@ -161,7 +161,7 @@ Workspace context snippet system built with Monaco editor for creating, editing,
 7. **Selective Sharing**: Choose exactly what to share (config/snippets/to-dos)
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Context Snippets**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Context Snippets
 
 One of the fundamental problems with snippet systems is prefix recall - you create a snippet with a prefix three months ago, and when you need it, you can't remember what you called it. At that point, IntelliSense becomes useless, and you're forced to open your snippet manager, search for the snippet, find the prefix, navigate back to your editor, and then type it in. Or you just give up and write the code manually.
 DevStack solves this with Context Snippets: a searchable quick pick accessible directly from your editor's context menu.

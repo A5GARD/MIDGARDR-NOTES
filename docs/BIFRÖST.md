@@ -1,16 +1,9 @@
 # BIFRÖST
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Terminal and Multi Kernel Ngin**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Terminal and Multi Kernel Ngin
 
  
 <pre style="max-width: 800px; white-space: pre-wrap; overflow-wrap: break-word;">
-/DEVSTACK_SYSTEM_ROOT/
-├── 📂 TABLE_OF_CONTENTS/
-│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/OVERVIEW.md">OVERVIEW</a> 
-│   ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/USAGE.md">GETTING STARTED & USAGE</a> 
-│   ├── <a href="#license">LICENSE</a> 
-│   └── <a href="#acknowledgments">ACKNOWLEDGMENTS</a>
-│  
 ├── <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md"><img src="https://img.shields.io/badge/📂%20BIFRÖST%20/%20-0284c7?style=plastic" valign="middle"></a> .......................... Terminal and Multi Kernel Ngin
 │   ├── 📂 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md">Item Types</a> ..................... VFS item types
 │   │   ├── 📄 <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/BIFRÖST.md#file">`file`</a> ..................... Providing shortcuts to any file in any location 
@@ -134,7 +127,9 @@
 </pre>
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Item Types**
+
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Item Types
 
 ### Files & Navigation
 
@@ -1390,7 +1385,19 @@ IF you want to try your hand at creating your own label, in the below accordian 
 
 </details>
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Project Agnostic Configuration**
+> [!TIP] 
+>
+> This unexpected feature will only be available by manually edting the workspace / global config files.
+>
+> You may nest line items together by placing an items array inside any config type, which will render a accodrian arrow beside the line item so that the config items functionality remains intact while also providing a means of group similarily funcitioned line items together for organization. Or simply put turning a line item into a folder that acts like a line item itself.
+>
+> I did not plan this and honestly only found out about it when I was testing a feature out and it perfectly deleted a section of my config making it so that a items array was placed inside another object. Amazingly, that perfect deletion didn't error out the config file and when it ran fine.
+>
+> A win through a mistake is still a win.
+
+
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Project Agnostic Configuration
  
 
 Create configurations that work across workspaces or stay project-specific. 
@@ -1431,7 +1438,7 @@ I've played around with a TON of different label styles, landing on this being t
 - Configure folders as globally available or workspace-specific
 - Support for hybrid configurations and per-project customization
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Complete Example**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Complete Example
 
 <details>
 <summary>Config</summary>
@@ -3285,13 +3292,13 @@ I've played around with a TON of different label styles, landing on this being t
 
 </details>
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Resources**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Resources
 
 - [Visual Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
 - [Video Tutorial](https://youtu.be/NtnVq8CNJ7A)
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Reveal In Explorer**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Reveal In Explorer
 
 **Right-click any file → Reveal in Explorer**
 
@@ -3302,7 +3309,7 @@ Open file locations directly in Windows Explorer or macOS Finder from:
 
 ![Reveal in Explorer](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/reveal-in-explorer.jpg?raw=true)
   
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Copy Path**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Copy Path
 
 
 **Right-click any file → Copy Path**
@@ -3312,7 +3319,7 @@ Copy full or relative file paths to clipboard. Works with multiple path formats 
 [Video Demo](https://youtu.be/FWa6o5FK3sU)
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Search**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Search
 
 **Access:** Click title bar button
 
@@ -3324,7 +3331,7 @@ Powerful search functionality to find and execute any command you've created. Pr
 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Configuration Settings**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Configuration Settings
 
 DevStack provides extensive configuration options to customize your development workflow. All settings are prefixed with `ocrmnavigator.` and can be configured in your VS Code settings.
 
@@ -3796,7 +3803,7 @@ All feature toggles default to `true` unless otherwise specified and can be disa
 ---
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Usage**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Usage
 
 
 All item types share common actions:
@@ -3813,13 +3820,13 @@ Set item type in config object or click the plus icon in the title pane.
 - **Sequential Execution**: [Video](https://youtu.be/ySp83VqxQ8s) | [Image](https://raw.githubusercontent.com/8an3/midgardr-notes/blob/main/vfs/SequentialExecution+.gif?raw=true)
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Architecture Notes**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Architecture Notes
 
 This section provides a deep dive into the underlying systems of this extension. Understanding these architectural choices will help you write more effective configurations and leverage the full power of the codebase.
 
 With the recent redesign, the project has moved toward an engine-based, object-oriented approach. By utilizing dedicated classes for core logic, the codebase is more efficient, modular, and easier to extend.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Core Architectural Priorities**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Core Architectural Priorities
 The topics below are ranked by their impact on your development workflow. High-priority items focus on the modular systems you will interact with daily, while lower-priority items cover "under-the-hood" utilities.
 
 1. Modular Engine Structure (High Priority) Learning how our engines and classes interact is the most valuable use of your time. This modularity allows you to hook into specific functionalities and customize the extension's behavior without rewriting core logic.
@@ -3831,11 +3838,24 @@ The topics below are ranked by their impact on your development workflow. High-p
 
 By centralizing these notes here rather than scattering them across individual README files, provide a single source of truth for the "how" and "why" behind the code. This bird's-eye view ensures you can build your config with a clear understanding of the underlying framework.
 
+> [!NOTE] 
+>
+> There has since been an update to the extensions activate function, for newer devs the activate function is... the extensions brain or root level function as it is the extensions main function that activates everything contained within.
+>
+> Previously while developing a feature may slip by me that has a breaking change and this breaking change would make it so all the features that following that broken feature would not get loaded in. 
+>
+> Redesigning this main function to ensure that this does not happen moving forward. Making it so no matter what state any single feature is currently in, it will not effect any other feature found within the extension. Well, thats the intention anyways as my previous attempts at this proved... ineffective at acheiving this end result.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Environment Variable Integration (.env)**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Environment Variable Integration (.env)
 To handle sensitive data—like NPM authentication tokens—the extension supports the use of .env variables directly within your configuration strings. This allows you to keep secrets out of your source code while automating authenticated commands.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Security First: Execution-Time Loading**
+> [!NOTE]
+>
+> I created a nice little hack for myself a while back that allowed me to on the fly create config items and trigger them progmatically, essentially allowing me to create a config item and run it through the terminal ngin as if it was coming from your config, which will very neatly allow the following. As I was in the file that holds the extensions function for npm publish, I coudln't NOT edit it so everyone else can enjoy the function and benefit from it while doing nothing to set it up. Just run "ocrmnavigator.npm.publish" as you would any other vscode cmd and ensure you have your token set in your .env file with NPM_TOKEN, ie 'NPM_TOKEN=2345t3rt34rtw34'. When the command runs through the terminal ngin, the ngin pulls the env variable out at the very last second before sending it to the terminal.
+>
+> Same with pushing vsix's in place of using vsces publish command, execute 'ocrmnavigator.vsix.push' and having 'MS_TOKEN' placed in your env file. For anyone currently using this function, it will still work for you exactly as it does now. The only change was adding a check to see if there was a token saved, if not it runs vsce publish --packagePath vsixPath --pat pat, grabbing the pat from your env file as it gets executed. So with this function you can either save the token using vscodes secret states, or place it in you env file.
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Security First: Execution-Time Loading
 
 For security reasons, the extension does not load environment variables when the extension starts. Instead, variables are resolved "just-in-time":
 - Lazy Loading: The extension stores the raw string (e.g., ${NPM_TOKEN}) and only injects the actual value at the moment of execution.
@@ -3862,7 +3882,7 @@ Use the standard ${VARIABLE_NAME} syntax within your path or command strings:
 >
 > [Link to video, showcasing the above command being executed and pulling the env var.](https://youtu.be/XwsO4DnEpRg)
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Modular Function Building**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Modular Function Building
 
 Previously, this extension was built on a "function-per-feature" basis—each tool was isolated, with no awareness of or connection to other features. The latest architecture moves away from this rigid structure in favor of modular, exposed functions.
 
@@ -3888,7 +3908,7 @@ While traditional extensions lock you into a specific UI or sequence, this modul
 The Vision: This isn't just an extension; it's a suite of tools. What it lacks in automated triggers, it makes up for in total manual control and flexibility that you won't find in standard marketplace offerings.
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **The Philosophy of Automation**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> The Philosophy of Automation
 (or Lack Thereof)
 In this extension, you will not find "passive" automation. Unless the benefit is astronomical, I will never implement a feature that runs in the background without user consent.
 
@@ -3909,7 +3929,7 @@ To prove that triggered automation is superior to background bloat, here is how 
 Because everything is triggered, there are zero processes running in the background. We have all experienced VS Code performance issues where we had to start disabling extensions just to type smoothly. This extension rejects that reality. You get the functionality of a massive CI/CD suite, but it only exists when you ask for it.
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **The Autorun System**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> The Autorun System
 
 The Autorun Folder is a unique architectural feature designed to let you execute custom logic at build time (or any other lifecycle stage) without polluting your codebase or your package.json scripts.
 
@@ -3936,7 +3956,7 @@ If you need a second, separate layer of scripts—perhaps for tasks you don't wa
 This provides a secondary, less-customized execution path for maintenance tasks, database migrations, or minor file updates that sit outside your core build logic.
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Dynamic Package Manager Detection**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Dynamic Package Manager Detection
 
 In modern development, switching between npm, pnpm, and yarn is common when jumping between projects. Most tools detect your package manager once when they load, which can lead to errors if you switch managers mid-session.
 
@@ -3954,7 +3974,7 @@ The extension natively detects and executes commands for:
 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Intelligent Terminal & Command Ngin**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Intelligent Terminal & Command Ngin
 
 Most extensions spawn a new terminal instance every time you click a button, leading to a "terminal graveyard" by the end of the day. This extension uses a centralized Command Engine class to manage all terminal interactions through a single, intelligent interface.
 
@@ -3964,8 +3984,30 @@ When you trigger a command, the engine performs a real-time status check:
 - Busy Terminal: If a process is already running, the engine queues your next command. It will fire automatically as soon as the current task finishes.
 - User Flow: This allows you to click multiple menu items in succession and return to your code, knowing the engine will handle the execution sequence in the background.
 
-> [!UPDATE] 
-> The 'The Smart Queue System' feature used with powershell commands, bash commands executed through the terminal ngin will now also benefit from this feature.
+I have to admit, while even documenting it, I had forgotten to finish it off due to the fact that with the way it's currently built it really worked well with await despite edge cases. So much so I geniunely thought, I had coded it. Earlier today as I was in that part of the code... I was staring at it wondering where the fuck the queue system went lol. 
+
+The terminal ngin now actually features a queue system and it is clearly evident if you go smash a bunch of config items like a kid in an elevator. Previously, when I thought I had done it, we did not have the second concurrent instance that runs along side the powershell instance to allow two concurrent instances running on both windows and linux enviroments.
+
+The linux counterpart now features a mirrored implmentation, so you can run dev servers, regular commands, smash a shit ton of config items all at once and both instances will act the exact same.
+
+Speaking of such, the dev server bug seems to have been completely removed which is nice but on a more depressing note, I just finished coding all the merges that happened... It was only then did I think about, I wonder if I can progmatically trigger a "press enter to continue" screen through the terminal as users go through certain functionality. As i would have defiently have used it in the latest updates in several spots. After that addition, I truly do not know what else this ngin could get updated with at this point.
+
+1. env variables that get nabbed the second before the comand executes
+2. 24 different config item types that get executed through it
+3. "enter to continue" sceens that get triggered progmatically
+4. a real concurrent system, that can even be nested or also run its counterpart WITHIN the same sequence
+5. concurrent system features a single parent instance that delegates all input to the child instances while the parent acts as the viewer by taking all children outputs, coloring them and piping them to one window
+6. not to mention, doing the exact same thing with wsl debian bash shell, AT THE SAME TIME
+7. each command executed, re-uses the same terminal instance for every single command, instead of just creating a new one whenever the user triggers a command
+8. to ensure dev servers are not only forgotten but are also given the ability to do what ever they want whenever they want. For exmaple whenever you trigger a dev server command, the ngin first picks it up from its scans to determine what your executing, it then takes that dev server command and checks it against all currently open terminals. If there is already a dev server running on that same port, it first sends ctrl + c to that instance, closes it, and then opens a new instance to execute the dev server again. MEANWHILE, if there are no other terminals running that dev server command, no matter what state all the instances are in it will open a new terminal for that dev server, in any amount that you trigger. The end result being a beautiful cohesive system, that would otherwise be chaotic and a pain having to manually do everything.
+9. BTW, ^ is not only done in just the windows powershell enviroment, but also wsl debian
+10. through the use of one of its args
+11. chain sequence exection 
+12. queue system, thats actually pretty robust... just smashed the same button over 100 times, we'll see how that goes but so far it's hammering one command as soon as the previous finishes
+13. terminal ngin is also being used in and alongside other features like the layout ngin, allowing a customized grid or col layout and a workspace context basis, or even whenever you trigger a new layout
+14. I know I'm missing some things...
+15. Perfect surgical percision when it comes to executing, whatever you want... wherever you want and when that command finishes from executing something on an entirely different drive... your greeted with your terminal being, exactly where it was before you triggered that command. Have to admit this has come in handy with the bifrost merge.
+16. Ya I'm missing some for sure, I know I didn't meantion the use of conditional command execution, but thats kinda covered under 24 differrent command types
 
 ### Self-Managing Dev Servers
 The engine treats Dev Servers (persistent processes) differently than one-off scripts:
@@ -4073,9 +4115,17 @@ From a maintenance perspective, this "One Ring" function makes the extension inc
 
 Bottom Line: By moving away from "one function per item" and toward a unified execution switch, the extension gains a level of "absurd" power and efficiency that makes it a true CI/CD-grade tool inside your editor.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Concurrent And Chain**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Concurrent And Sequential Command Execution
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Autonomous Maintenance**
+The Terminal Engine was architected to support both sequential and concurrent execution across all of its command types. Working in tandem with its queue system, the engine systematically processes each command ensuring consistent, deterministic execution on every invocation regardless of the command type.
+
+An emergent capability of this architecture — one not part of the original design — is the ability for concurrent and sequential commands to invoke one another, producing a chain reaction across different command types. This behavior is a natural consequence of how the Terminal Engine was constructed and how every command type, feature, and function within the extension interfaces with it.
+
+When any function handling a command type is triggered, it passes its configuration object directly into the Terminal Engine, which determines the appropriate execution path via a switch statement, advancing through each case until a match is found and that case's logic is initiated.
+
+For concurrent and sequential commands specifically, despite being routed through the Terminal Engine like any other command, each internally defined command within their configuration object is dispatched the same way any standalone feature would be. This means a concurrent command can dispatch all of its child commands simultaneously while delegating a subset of those commands to a sequential command — ensuring that operations with stateful dependencies are executed in strict order, with each step only triggering after the previous one has completed successfully. The result is a model where you benefit from the performance characteristics of concurrent execution without sacrificing the correctness guarantees that sequential execution provides.
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Autonomous Maintenance
 
 #### Local Instance Scans
 Maintaining an extension of this scale—covering the functionality of 125+ individual tools—would normally be an impossible chore. To solve this, the extension uses Autonomous Scanning to keep its data fresh without me ever having to lift a finger.
@@ -4096,7 +4146,7 @@ While there is a manual list of core VS Code commands, the extension also featur
 - Catalyst-UI context menu
 - Contextual Menu Options: The extension scans your local environment to ensure that the menu options presented to you are relevant to the tools you actually have installed and active.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Naming Conventions**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Naming Conventions
 
 #### Functions & Settings
 As this extension has grown to include over 1,500 commands, the risk of "naming collisions" (where two commands share the same name) has become a reality. To prevent these conflicts and make the API more intuitive, I am transitioning all internal and exposed functions to a hierarchical naming convention.
@@ -4111,7 +4161,7 @@ Previously, commands followed a standard extension.function format. Moving forwa
 - API Discoverability: It is now much easier to guess or memorize functions. If you need a Git tool, you know it starts with ocrmnavigator.git.
 - Future-Proofing: This structure allows us to merge large sub-extensions (like the recent "To-Do" extension integration) without worrying about breaking existing features.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Settings & Migration**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Settings & Migration
 
 This same logic is being applied to the Extension Settings.
 - New Settings: Will follow the category.subcategory.setting format.
@@ -4122,7 +4172,7 @@ This same logic is being applied to the Extension Settings.
 > I am currently in the process of converting all 1,500+ commands. If you are referencing the old naming convention in your custom configs, be aware that these may stop working as they are migrated to the new system. If a command fails, check the logs—it has likely just moved to its new hierarchical home.
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **pro7**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> pro7
 
 ### Workspace Secrets & Encrypted Backups
 Managing .env files and sensitive credentials across multiple workstations can be a headache. Standard practices often involve third-party "Secret Managers," but those often come with monthly costs or complex setups.
@@ -4150,12 +4200,89 @@ The Fix: Ensure your archive is excluded from the build or listed in your .vscod
 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Context**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Context
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **VSIX Archiver**
+At this point in time, it feels as if vscodes entire context data set has been recreated for use within this extension, since the last major addition to the context data set was vscodes UI states.
 
+This is due to the fact that, despite exposing so many data points to developers to use during extension developement for some weird reason they have kept out several states for us to track.
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **Configuration Settings**
+In addition to vscodes states, the extension also keeps track of a all the configurable settings that are available for you to edit, as well as currently logged in users to vscodes instance, along with a exhastive list of other data sets in order for all the features to work cohesively. 
+
+Centralizing the data through the use of a context system akin to something you would find in a react app, despite the extension featuring what is now 175+ worth of extensions features, the amount of calls each feature does is kept to a minimum as it can acquire the needed data that was already obtained by the function that controls the context and all of its data, as it distributes to all features extension wide. 
+
+Obviously, in an extension such as this, this provides a huge boost to performance in comparison to how extension are typically built.
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Extension Architectural Overview
+
+To provide a birds eye view I will try my best at re-creating an overview of the overall structure of the extension as it currently stands:
+
+```markdown
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                    DEVSTACK                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                     │  
+│                                                                                                                     │  
+│                                                    ACTIVATE                                                         │  
+│                                                        ↓                                                            │  
+│                    ┍─ ← FEATURE 1 ─┑                   ↓                   ┍─ FEATURE 8  → ─┑                       │  
+│                    ┝─ ← FEATURE 2 ─┥                CONTEXT                ┝─ FEATURE 9  → ─┥                       │  
+│                    ┝─ ← FEATURE 3 ─┥                   ↓                   ┝─ FEATURE 10 → ─┥                       │  
+│                    ┝─ ← FEATURE 4 ─┥                   ↓                   ┝─ FEATURE 11 → ─┥                       │  
+│                    │               ┝───←────←──── FEATURE HUB ───→───→─────┥                │                       │  
+│                    ┝─ ← FEATURE 5 ─┥                                       ┝─ FEATURE 12 → ─┥                       │  
+│                    ┝─ ← FEATURE 6 ─┥                                       ┝─ FEATURE 13 → ─┥                       │  
+│                    ┝─ ← FEATURE 7 ─┥                                       ┝─ FEATURE 14 → ─┥                       │  
+│                    ┝─ ← FEATURE 8 ─┙                                       ┕─ FEATURE 15 → ─┥                       │  
+│                    ↓                                                                        ↓                       │ 
+│                    ↓                                                                        ↓                       │ 
+│                    ┕────────→─────────→───────── TERMINAL NGIN ─────────←─────────←─────────┙                       │ 
+│                                                                                                                     │ 
+│                                                                                                                     │ 
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+```
+
+When you boil it down to its core its essentially works like the above diagram. The end result does not allow performance bottle necks due to feature re calling the same data over and over again, it does not allow the littering of your ui with terminal windows, while at the same time keeping every nicely organized in order to not go completely crazy looking for a feature that is currently not working or currently has some sort of bug to fix.
+
+I do not foresee this structure changing again any time soon as it ticks all the boxes needed for this extension to run as it does, as it achieves many things, no other extension can come close to. 
+
+Not just in terms of performance which is clearly evident whenever you download and have 13+ extensions active at any one time. 
+Its ability for context switching as perfectly as it does while other extensions that attempts a go at this I have not yet found a single one where they they did NOT have a restore type feature in case something were to go wrong, which there is no such feature in this extension, since nothing goes wrong.
+Among other things but I'll end it with one more, its use of using github as a source of truth for features and its data. The to do list, notes, reminders uses github as a single source of truth for not only the use of it within vscode but also the accompanying webapp, which no other to do, notes or reminders extension does... at all.
+I'm not going over these points to boast about any one thing, but more as points to prove that an extension doesn't have to be created the way they currently are. As it seems that virtually every single extension suffers from the same problems when you look at them as a whole. If your peer has issues with his or her software, why not atleast try a different method when creating your own. 
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> VSIX Archiver
+
+Was going to add yet another use case to the custom vsix archiver but it would seem I forgot to finish this section SO with that said...
+
+While the current industry norm is to use vsce... across the board, it seems to be incredily rare to come across a custom archiver. Although I doubt other devs run into the same issues I seem to run into from time to time. 
+
+Vsce, while shrouded with mystery on what it does or how it works, everyone just seems content with using it as a solution and deal with its requirements despite vsce's requirements actually being more strict than what is needed.
+
+For example, did you know microsft actually allows the use of svgs in your readme? That fact is so little known to everyone that even AI engines consider it a fact that microsoft does NOT allow svgs to be included with your readme... but that fact is wrong.
+
+Vsce, simply, is just an archiving tool that produces a like .zip archive that is not password protected. Along with adding a two very simple files... that's all it does at its basic functionality. Vsce complicates the process by including a check list against its requirements which are long and ensures your extension meets those requirements in order to be packaged.
+
+Because of its exhausting list of checks, its also a lot longer of a process then it needs to be, really.
+
+The custom archiver that is included does not copy that list of requirements... since it doesn't need to. In actuality the list of requirements is very small which entails:
+- readme.md
+- license.md
+- changelog.md
+- and that you have the package.json script that compiles your extension
+
+Thats it really, even if you do not have a license.md or changelog, it makes one for you, if I remember correctly. Thus making the function complete the process in much quicker times, as all it does is compiles the extension, copies over the extension based on what is included in your .vscodeignore and creates the two files needed that microsoft requires. That is it.
+
+Use cases to use over vsce:
+- when you want to include the use of svgs in markdown files
+- the inclusion of simple files contained within your src folder ( this is the current use case I'm in now as vsce, simply ignores my list of what to include and exclude with my extension when packaging it, as I've spent the last hour trying to diagnose this and just remembering that I have my own god damn archiver that works perfectly fine and to my very unsurprised reaction... worked perfectly the first execution )
+- There were several more, but happened to me so long ago that I just don't remember at this time
+
+If vsce gives you any issue at all, or would like faster archiving times, just try the custom archiver as it seems to be the go to any time I have ever had an issue with vsce. The archives are always accepted by microsoft despite the very short list of requirements
+
+I will be expanding the feature set of the archiver to include a means to copy files to where ever indicated as I'm currently relying on scripts to carry out this functionality, where as I see no reason not to include it within the archiver itself for all to benefit and even for myself as adding it as an option would be a lot quicker then adjusting my scripts.
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Configuration Settings
 
 
 All settings are prefixed with `ocrmnavigator.` and can be configured in your VS Code settings.

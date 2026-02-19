@@ -1,4 +1,4 @@
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> **LOKI AI**
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> LOKI AI
 ## A Deterministic AI Engine Compiler
 **Reliable AI Outputs • Predictable Results • No More Headaches • Works With Any Engine • No Instance Locks**
 
