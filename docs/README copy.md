@@ -1,11 +1,13 @@
 
 <!-- #region HEADER -->
 
+<div align="center">
 
-<img class='mx-auto' src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/odin.png">
+<img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/odin.png">
 
-<h1 class='text-center' >DevStack</h1>
-<p class='text-center'><em>The Extension That Fixed VSCode</em></p>
+</div>
+<p align="center"><h1 align="center">DevStack</h1></p>
+<p align="center"><em>The Extension That Fixed VSCode</em></p>
 
 
 
@@ -28,9 +30,7 @@
 || **<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/FREYR.md#themes"><img src="https://img.shields.io/badge/ᛊ SAGA: To Do, Notes, Reminders and Post Its-0284c7?style=plastic" ></a>**<br>★ Reliable GitHub as a source of true, 0 rejected pushes within the past year<br>★ Interactive VSCode UI, clickable to do line items allowing to un/check without having to open the file with priority system<br>★ Innovative UI ie, tab based copy button<br>★ Compatibility, uses md file type<br>★ Autosync, pushes on each save event<br>★ Cross-platform, accompanied web app with offline capabilties<br>★ Utilizes VSCodes toast/notification system for reminders  |
 || **<a href="https://github.com/8an3/midgardr-notes/blob/main/docs/FREYR.md#themes"><img src="https://img.shields.io/badge/ᛗ MIÐGARÐR UI-0284c7?style=plastic" ></a>**<br>★ Single command library install that also installs and configures tailwind and postcss<br>★ 2500+ components<br>★ providing a UX/DX that is unprecedented in the extention/ui library ecosystem<br>★ in app functionality to insert usage example at cursor<br>★ full docuemntation provided entirely in the editor while you code<br>★ each component created with ease of use in mind<br>★ each component designed and created to allow users to quickly and easily add their own THOR variant flavours<br>★ Each component, while already providing a default barely stylized variant, hosts a wide range of pre-configured CVA variations<br>★ extensions unqiue sync with library for premium users |
  
-<img class='mx-auto' src="https://img.shields.io/badge/DevStack-0284c7?style=plastic" >
-</br>
-<p class='text-center'>Best-in-Class Multi-Purpose VSCode Extension: This entry was just too large to fit into the above table </p>
+<div align="center"><img src="https://img.shields.io/badge/DevStack-0284c7?style=plastic" ></br>Best-in-Class Multi-Purpose VSCode Extension: This entry was just too large to fit into the above table </div> 
 
 |  |  |
 |:-------------------------|:-------------------------|

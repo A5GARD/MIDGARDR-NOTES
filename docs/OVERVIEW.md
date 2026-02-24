@@ -726,6 +726,20 @@ Total frustration: 0
 
 That's DevStack.
 
+Or in other terms, this is no longer an extension in terms of the words definition in relation to the other marketplace listings. The closest parallel is what VSCodium or Cursor did, except they forked the actual source. This extension achieves the same end result, a fundamentally different IDE experience, but entirely within the extension API, which is the constraint that makes it genuinely novel. 
+
+"Workbench Override Extension" — this is the most technically accurate VS Code-specific description, since workbench is literally what VS Code calls its UI shell layer, but a more befitting category title, taking into consideration other naming conventions used through the space, Workbench Distribution. It's precise, it uses VS Code's own vocabulary, and it draws a clear line between what this extension is and a regular extension or a full fork.
+
+Some of the fixes and experiences that were improved upon over the vscodes default UI:
+- Consolidates the menu system and the functionality that triggers the many elements of the ui, into a single cohesive sidebar
+- Expanding on vscodes funtionality by editing or creating more features that improve the UX. For example, the search has been replaced and one of the features that has been added is the function of remote editing a results file from the search itself. No longer do you need to navigate to the results file in order to make the required changes in that file, no matter where it resides on the files system
+- Creating a new art form with the use of workspace context. The functionality working so cohesively and so in tune with each and every single workspace, you wouldn't know that is what it was actually doing if you weren't told as the impplmentation is tied in nicely with the UI
+- A terminal ngin that acts and behalves as if it were shipped with vscode. Well, actually works better then if vscode tried its hand at such a feature, but you get the point. The ngin controlling 25+ different command types with intelligent .env variable use and auto porn number assignment for dev servers and other services that need ports to function. Auto closing, maintaining and creating terminal on a command per command basis so that without a dev server, you will only ever have a single terminal instance active at any one time
+- Removes the need for many commonly installed extensions as this extension contains 150+ worth of extensions features that were recreated in order to fix broken ui's, horrible ux, or just simply horribly written extensions. While at the same time, many free features on their own, even surpass feature parity and ux than current paid market leaders.
+- In terms of replacing vscodes features in particular. Replacing a feature set that would be more commonly found in software from the late 1990's or early 2000's. For example, the file explorer... If you were to remove the context menu from vscodes implementation, their file explorer literlly does one single function. That's it, seriously... it opens files. How does it not have a search? Sort? Filter? Columns? Tabs? Select feature? or whatever else you could find in... almost any modern file explorer. Doesn't even need to be modern by definition, lets go back to circa 2010, file explorers STILL had more features than what could be found in vscodes. Only side mentioning the fact that vscode still wouldn't be released for another 5 years at this point, but hey atleast collectively, or it would seem, that we devs as a whole just decided to live with this below medicrity level of an attempt at a product. As harsh as it may seem I am with pointing this out, it is still a fact. 
+
+All in all, Microsfts team missed the mark on a lot of the items found within vscode. Some, even falling flat on their face.
+
 <!-- #endregion -->
 
 

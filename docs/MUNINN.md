@@ -11,7 +11,7 @@
 - [Auto Create Schema](#auto-create-schema)
 
 
-### Best Practice Guide
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Best Practice Guide
 
 > **💡 TIP:** When using Prisma functions that require a schema object name, follow this workflow to avoid disrupting your code:
 >
@@ -23,7 +23,7 @@
 >
 > **Bonus:** This workflow even works with "Click to Schema Object" - type the object name anywhere in your workspace, trigger the function, and navigate directly to that object in your schema file.
 
-### Create Include Object
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Create Include Object
 
 Generate Prisma include objects that automatically include all relations for your models.
 
@@ -43,7 +43,7 @@ Generate Prisma include objects that automatically include all relations for you
 
 ![Include Object](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/include-object.jpg)
 
-### Click to Schema Object
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Click to Schema Object
 
 Navigate directly to any Prisma model definition in your schema file.
 
@@ -57,7 +57,7 @@ Navigate directly to any Prisma model definition in your schema file.
 
 ![Open Schema Object](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/open-object.jpg)
 
-### Generate CRUD Resolvers / REST End Points
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Generate CRUD Resolvers / REST End Points
 
 Automatically generate complete CRUD operations and REST endpoints for your Prisma models.
 
@@ -84,7 +84,7 @@ Automatically generate complete CRUD operations and REST endpoints for your Pris
 ![Wrappers](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/wrappers.jpg)
 ![REST Endpoints](https://raw.githubusercontent.com/8an3/midgardr-notes/main/prisma/rest.jpg)
 
-### Auto Create Schema
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Auto Create Schema
 
 **🔴 BLEEDING EDGE FEATURE** - Only available when bleeding edge mode is enabled
 

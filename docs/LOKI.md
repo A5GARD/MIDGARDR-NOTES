@@ -1,3 +1,23 @@
+# LOKI AI
+
+> [!NOTE]
+>
+> All the code that I use that pertains to manipulating ai engines in the various forms are now available for you to view.
+>
+> Currently, there are 6 that under created for the usage outlined in deterministic ai ngin compiler and one for use that is covered under limitless. If you are reading this from editor, refer to the sidebar for links to navigate to the docs instead of the below http links
+>
+> Determinisc AI Ngin Compiler
+> - <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LOKI_DEC_V7.md">V7</a>
+> - <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LOKI_DEC_MIDGARDR_REUSABLE_COMPONENTS.md">Creating Reusable Components</a>
+> - <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LOKI_DEC_BUILDING_TOOLS.md">Building Tools</a>
+> - <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LOKI_DEC_REMIX_ROUTES.md">Creating Remix Routes</a>
+> - <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LOKI_DEC_TEMPLATES_AND_BLOCKS.md">Creating Templates / Blocks</a>
+> - <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LOKI_DEC_DEVSTACK.md">Creating DevStack Features</a>
+>
+> Limitless
+> - <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/LOKI_LIMITLESS_UI_CATEGORY_X.md">Creating Category X Components</a>
+> 
+
 
 # <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> LOKI AI: Limitless
 

@@ -28,28 +28,180 @@
 - [ ] need to go through coss origin and compare x to his variants
   - [x] ★ ━━━━ X ━━━━ ★
     - [x] slider-x
-  - [x] ★ ━━━━ core ━━━━ ★
-    - [x] in-development.tsx
-  - [x] ★ ━━━━ PERFORMANCE ━━━━ ★
     - [ ] ALLL FILES
   - [ ] ★ ━━━━ tailwind ━━━━ ★
     - [ ] ALLL FILES
-  - [x] ★ ━━━━ interactive ━━━━ ★
-    - [x] DirectionAwareHover
-    - [x] color area
-  - [x] ★ ━━━━ BACKGROUND ━━━━ ★
-    - [x] tracing-beam.tsx
-    - [x] glitch-background.tsx
-    - [x] need to compare against coss i think ists called
-  - [x] ★ ━━━━ UTILS ━━━━ ★
-    - [x] auth.ts
-    - [x] auth_session.ts
-    - [x] auth_github.ts
-    - [x] auth.github.callback.tsx
-    - [x] auth.github.tsx
-    - [x] honeypot-react
-    - [x] check all files
-    - [x] safe-execute
+  - [ ] ★ ━━━━ form ━━━━ ★
+  - [ ] ★ ━━━━ navigation ━━━━ ★
+    - [ ] link-component
+    - [ ] links-component
+    - [ ] nav-link-component
+    - [ ] form-component
+  - [ ] ★ ━━━━ feedback ━━━━ ★
+    - [ ] await-component
+    - [ ] error boundary
+  - [ ] ★ ━━━━ elements ━━━━ ★
+    - [ ] meta-component
+    - [ ] swr-config-component
+  - [ ] ★ ━━━━ client-server ━━━━ ★
+    - [ ] swr-prefetch
+    - [ ] swr-mutable
+    - [ ] sse-client
+    - [ ] api-route
+  - [ ] ★ ━━━━ API ━━━━ ★
+    - [ ] api-routes
+  - [ ] ★ ━━━━ HOOKS ━━━━ ★
+    - [ ] demo.tsx
+    - [ ] index.ts
+    - [ ] react-hook-docs.tsx
+    - [ ] use-api-key.tsx
+    - [ ] use-character-limit.tsx
+    - [ ] use-current-time-indicator.tsx
+    - [ ] use-event-visibility.tsx
+    - [ ] use-export-markdown-usage.tsx
+    - [ ] use-export-markdown.tsx
+    - [ ] use-export-tsx.tsx
+    - [ ] use-external-scripts.tsx
+    - [ ] use-file-icon.tsx
+    - [ ] use-google-font.tsx
+    - [ ] use-locales.tsx
+    - [ ] use-markdown-batches.tsx
+    - [ ] use-markdown-to-html.tsx
+    - [ ] use-mutation-observer-useage.tsx
+    - [ ] use-mutation-observer.tsx
+    - [ ] use-script.tsx
+    - [ ] use-sec-fetch-parser.tsx
+    - [ ] use-tailwind-converter.tsx
+    - [ ] useDevList.tsx
+    - [ ] useOnWindowResize.tsx
+  - [ ] hooks-async
+    - [ ] index.ts
+    - [ ] use-async.tsx
+    - [ ] use-debounce-fetcher.tsx
+    - [ ] use-debounce-submit.tsx
+    - [ ] use-debounce.tsx
+    - [ ] use-event-source.tsx
+    - [ ] use-fetch.tsx
+    - [ ] use-interval.tsx
+    - [ ] use-stream.tsx
+    - [ ] use-throttle.tsx
+    - [ ] use-timeout.tsx
+    - [ ] use-timer.tsx
+  - [ ] hooks-data
+    - [ ] index.ts
+    - [ ] use-cache.tsx
+    - [ ] use-swr-config.tsx
+    - [ ] use-swr-immutable.tsx
+    - [ ] use-swr-infinite.tsx
+    - [ ] use-swr-mutation.tsx
+    - [ ] use-swr-subscription.tsx
+    - [ ] use-swr.tsx
+  - [ ] hooks-dom
+    - [ ] index.ts
+    - [ ] use-breakpoint.tsx
+    - [ ] use-click-outside.tsx
+    - [ ] use-event-listener.tsx
+    - [ ] use-focus-within.tsx
+    - [ ] use-focus.tsx
+    - [ ] use-hover.tsx
+    - [ ] use-intersection-observer.tsx
+    - [ ] use-key-press.tsx
+    - [ ] use-keyboard-shortcut.tsx
+    - [ ] use-keyboard.tsx
+    - [ ] use-long-press.tsx
+    - [ ] use-media-query.tsx
+    - [ ] use-mobile.tsx
+    - [ ] use-mouse-enter.tsx
+    - [ ] use-move.tsx
+    - [ ] use-on-click-outside.tsx
+    - [ ] use-outside-click.tsx
+    - [ ] use-press.tsx
+    - [ ] use-resize-listener.tsx
+    - [ ] use-resize-observer.tsx
+    - [ ] use-screen.tsx
+    - [ ] use-scroll-lock.tsx
+    - [ ] use-scroll-position.tsx
+    - [ ] use-smooth-scroll.tsx
+    - [ ] use-window-size.tsx
+  - [ ] hooks-form
+    - [ ] index.ts
+    - [ ] use-copy-to-clipboard.tsx
+    - [ ] use-debounced-fuse-search.tsx
+    - [ ] use-file-upload.tsx
+    - [ ] use-form.tsx
+    - [ ] use-fuse-search.tsx
+    - [ ] use-fuzzy-search.tsx
+    - [ ] use-validate-credit-card.tsx
+  - [ ] hooks-lifecycle
+    - [ ] index.ts
+    - [ ] use-client.tsx
+    - [ ] use-event-callback.tsx
+    - [ ] use-hydrated.tsx
+    - [ ] use-is-client.tsx
+    - [ ] use-isomorphic-layout-effect.tsx
+    - [ ] use-mount-effect.tsx
+    - [ ] use-mounted.tsx
+    - [ ] use-previous.tsx
+    - [ ] use-reducer.tsx
+    - [ ] use-should-hydrate.tsx
+    - [ ] use-unmount-effect.tsx
+    - [ ] use-update-effect.tsx
+  - [ ] hooks-navigation
+    - [ ] index.ts
+    - [ ] use-delegated-anchors.tsx
+    - [ ] use-document-title.tsx
+    - [ ] use-favicon.tsx
+    - [ ] use-global-loading-state.tsx
+    - [ ] use-global-navigation-state.tsx
+    - [ ] use-global-pending-state.tsx
+    - [ ] use-global-submitting-state.tsx
+    - [ ] use-online-status.tsx
+  - [ ] hooks-router
+    - [ ] index.ts
+    - [ ] use-action-data.tsx
+    - [ ] use-async-value.tsx
+    - [ ] use-before-unload.tsx
+    - [ ] use-blocker.tsx
+    - [ ] use-fetcher.tsx
+    - [ ] use-fetchers.tsx
+    - [ ] use-form-action.tsx
+    - [ ] use-href.tsx
+    - [ ] use-loader-data.tsx
+    - [ ] use-location.tsx
+    - [ ] use-matches.tsx
+    - [ ] use-navigate.tsx
+    - [ ] use-navigation.tsx
+    - [ ] use-params.tsx
+    - [ ] use-pathname.tsx
+    - [ ] use-resolved-path.tsx
+    - [ ] use-revalidator.tsx
+    - [ ] use-route-error.tsx
+    - [ ] use-search-params.tsx
+    - [ ] use-should-revalidate.tsx
+    - [ ] use-submit.tsx
+    - [ ] use-view-transition-state.tsx
+  - [ ] hooks-storage
+    - [ ] index.ts
+    - [ ] use-local-storage-auto-save.tsx
+    - [ ] use-local-storage.tsx
+    - [ ] use-read-local-storage.tsx
+    - [ ] use-session-storage.tsx
+  - [ ] hooks-ui
+    - [ ] index.ts
+    - [ ] use-auto-scroll.tsx
+    - [ ] use-color-theme.tsx
+    - [ ] use-color-wheel.tsx
+    - [ ] use-counter.tsx
+    - [ ] use-expandable.tsx
+    - [ ] use-lucide-drawer-animation.tsx
+    - [ ] use-overlay-listener.tsx
+    - [ ] use-overlay-scroll-listener.tsx
+    - [ ] use-pagination.tsx
+    - [ ] use-slide-in-1.tsx
+    - [ ] use-slide-in.tsx
+    - [ ] use-slider-with-input.tsx
+    - [ ] use-toggle.tsx
+    - [ ] use-transition.tsx
   - [ ] ★ ━━━━ PROMPT ━━━━ ★
     - [ ] providers.tsx
     - [ ] snippets.tsx
@@ -60,49 +212,9 @@
     - [ ] prompt-feedback-bar.tsx
   - [ ] ★ ━━━━ PRIMITIVE ━━━━ ★
     - [ ] input-group
-    - [x] button-group
-    - [x] alert
-    - [x] tracker
-    - [x] multi-select
-    - [x] list-box
-  - [x] ★ ━━━━ BG ━━━━ ★
-    - [x] gistorted glasses 
-    - [x] texture overlay
-    - [x] stripe-bg-guides
   - [ ] ★ ━━━━ MOTION ━━━━ ★
-    - [x] motion-logo-carosel.tsx
     - [ ] need to update MotionButton MotionPopover1
-    - [x] Motionsgroup
-    - [x] MotionAvatar
-    - [x] MotionRadioCard
-    - [x] ColorPicker
-    - [x] border-beam
-    - [x] smooth draweer
     - [ ] profile dropdwn
-    - [x] morphic navabr
-    - [x] morph-surface
-    - [x] motion-separator
-    - [x] morph-navbar
-    - [x] loading-border
-  - [x] ★ ━━━━ MEDIA ━━━━ ★
-    - [x] color pallete card
-    - [x] InfiniteSlider
-    - [x] MotionMap
-  - [x] ★ ━━━━ HOOKS ━━━━ ★
-    - [x] useSlideInV1
-    - [x] useTailwindConverter
-    - [x] use-validate-credit-card
-    - [x] use-keyboard-shortcut
-    - [x] use-lucide-drawer-animation
-  - [x] ★ ━━━━ FORMS ━━━━ ★
-    - [x] fancy-area
-  - [x] ★ ━━━━ COMBOBOX ━━━━ ★
-    - [x] emojiPicker
-  - [x] ★ ━━━━ TYPOGRAPHY ━━━━ ★
-    - [x] text-scramble
-    - [x] paragraph-scramble
-  - [x] ★ ━━━━ BUTTONS ━━━━ ★
-    - [x] copty-text update item sice it can now also take children
   - [ ] ★ ━━━━ TEMPLATES ━━━━ ★
     - [ ] [text](https://www.shadcn.io/blocks/account-data-export)
     - [ ] https://flowbite.com/blocks/application/crud-create-drawers/

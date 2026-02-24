@@ -509,7 +509,7 @@ Navigate directly to a specific file's location in your GitHub repository
 [Video Demo](https://youtu.be/0CLkYvWSVqI)
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Pro7 Archiver
+
 
 Create password-encrypted archives containing sensitive files for safe inclusion in your GitHub repository
 
