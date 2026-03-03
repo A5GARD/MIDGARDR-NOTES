@@ -1,6 +1,6 @@
 # Asgard Software
 
-- [ ] ★ ━━━━ ☆ ━━━━     TO-DO     ━━━━ ☆ ━━━━ ★
+- [x] ★ ━━━━ ☆ ━━━━     TO-DO     ━━━━ ☆ ━━━━ ★
 - [ ] need to change landing pages components list to use the same layout as we did in markdown cheat sheet, and this is to be placed under the transistion statement we posted in asgard.md over in devestack
   - [ ] on load display all categories and items
   - [ ] left side bar contains the 3 root level cateogies meanwhile the right sidebar contains all the catgories in that root level cateogiry
