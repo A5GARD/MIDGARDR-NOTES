@@ -25,7 +25,7 @@ Render markdown files directly in your browser with proper formatting and stylin
 
 ![MD Viewer](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-render-vscode.jpg?raw=true)
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD Viewer/Renderer In VS Code
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD Viewer In VS Code
 
 Side-by-side markdown preview within VS Code for seamless editing workflow
 
@@ -82,6 +82,6 @@ Complete GitHub-flavored Markdown reference guide with examples.
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD PRE-PROCESSOR
 
----
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD Renderer
 
-[🡄 Return](https://github.com/8an3/DevStack)
+

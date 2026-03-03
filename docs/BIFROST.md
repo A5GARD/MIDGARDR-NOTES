@@ -3,38 +3,45 @@
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Terminal and Multi Kernel Ngin
 
 The terminal ngin is where all of the features sends it code to execute in a temrinal enviroment or the triggering of any of the config item types. 
-<br />
+
 It pulls its weight in so many areas, and even working in ways that were some unforeseen benefits. It not only ensures for a much more effecient coding enviroment as it reuses the same terminal window whenever a command is executed, but it also automatically takes care of the chore of having to take care of dev servers. As the ngin sends a ctrl + c command to the currently open dev server, closes it, then opens a new terminal to run the dev server command. 
-<br />
+
 This is just one of the many benefits it provides, and honestly it's because of the ngin that this extension is where it's at today due to being such a an asset within the codebase.
-<br />
+
 This extension started out life as a vscode command short cut creator, where using a file tree in the sidebar to allow the creation of as many commands as I needed at less than an arms length away. 
-<br />
+
 It is because of how much better and surprisingly more reliable my extension was at providing that solution in comparison to at the time current marketplace offerings that, the next time a extension just really got on my nerves it gave me the confidence to try again. And again, and again... 100+ times later is how we arrive where we are today.
-<br />
+
 This section is not required by any means, but if you want to get the absolute most out of your config and the items you place within. It will be a benefit in knowing how it works. Because out of all the features in this extension, the config and the sidebar that uses it... is still by far the most power part of this extension. Any part that is required or important, was pulled out of this doc and placed in the same file as the overview of the config items.
-<br />
+
 With saying that, it takes a while to truly see not just the over amount of use you could get from it but also at just how capable it is. This is due to the fact that your config, builds over time. Slowely, but surely it ends up being this amazing tool... that you probably won't be able to live without ever again. And to prove the point of its perceived value being built over time, look at the layout ngin in comparison. You make one config object, and bam your done. Your ENTIRE vscode experience changes... from the second you save that layout config in your workspace folder. Each and every single time you open vscode, it provides that perceived value over and over and over again. 
-<br />
+
 I'm not trying to downplay by any means, as it is probably my second favorite feature, but I hope the point comes across to you that while the layout ngin, gives amazing wow factor with zero work. The temrinal ngin and the config, is almost the exact opposite. 
-<br />
-While, its more of a slow burn, there is nothing else on the marketplace that can accomplish and do what it does. From one workspace, I can control... every single project, and its build, commits, pushing, version bumping, all the while there are some apps that require data from others so among all the commands being executed there data being flown around to land where it needs to for the apps to update themselves all on their own, the ability to push to npm, github, vercel and all other manner of providers to push to from one workspace... with a single click that does 8 projects currently. 
-<br />
-Never seen a ci/cd do that before, well I haven't. I can't imagine you couldn't, but... it definitely wouldn't be as easy to pull off that... I can promise. 
-<br />
-There are a couple of features in this extension that... are so ahead of competing offerings that they would be a millennium falcon, where as the others would be a 2004 pt Cruiser. Not trying to boost my own ego, as I am in trying to bring this point up without underselling it so much that its true value doesn't even get noticed. I truly do not care who downloads this extension, because I have always built this for my use and my use only.
-<br />
-For example this extensions ability to work on a workspace context basis, while yes 100% there are other extensions that have tried their go at this. None of them come close to the fluid, reliable, cohesive functionality that this one does. To the point that, if I didn't tell you... you wouldn't know. As it doesn't error out, even if you let your kid on your computer who does something stupid, god knows what and the end result is 20-30 features firing off across 8 different workspaces, while your vscode instances will more than likely come to a grinding halt, the use of workspace contexts used for and by this extension in each workspace, will still be 100% working without a single issue. Even if you accidently open and or create 4, 5 or even 10 workspaces in a second. When the dust finally settles and your finally able to use your vscodes instances, it wouldn't even enter my mind to confirm the workspace config in the current instance before going to use any of its items. Each and every workspace will contain and editable config of the global context in addition to the workspace config. Giving you complete control over more app functions and features than vscode ever did. This part of the extension WILL NOT error and crash. I'm not that great of a dev, I just got really lucky.
-<br />
+
+While, its more of a slow burn, there is nothing else on the marketplace that can accomplish and do what it does. From one workspace, I can control... every single project, and its build, commits, pushing, version bumping, all the while there are some apps that require data from others. Making it so among all the commands being executed there is data being flown around to land where it needs to for the apps to update themselves all on their own, the ability to push to npm, github, vercel and all other manner of providers to push to from one workspace... with a single click that does 8 projects simultaneously. 
+
+Never seen a ci/cd do that before, well I haven't. I can't imagine you couldn't do this on some of them, but... it definitely wouldn't be as easy to pull off... I can promise you that. 
+
+There are a couple of features in this extension that... are so ahead of competing offerings that they would be a millennium falcon, where as the others would be a 2004 pt Cruiser. Not trying to boost my own ego, as I'm just trying to bring this point up without underselling it so much that, its true value doesn't even get noticed. I truly do not care who downloads this extension, because I have always built this for my use and my use only.
+
+For example this extensions ability to work on a workspace context basis, while yes 100% there are other extensions that have tried their go at this. None of them come close to the fluid, reliable, cohesive functionality that this one does. To the point that, if I didn't tell you... you wouldn't know. As it doesn't error out, and loads into your vscode instance while combining global and workspace data together as one. Even if you let your kid on your computer who does something stupid, god knows what and the end result is 20-30 features firing off across 8 different workspaces, while your vscode instances will more than likely come to a grinding halt, the use of workspace contexts used for and by this extension in each workspace, will still be 100% working without a single issue. Even if you accidently open and or create 4, 5 or even 10 workspaces in a second. When the dust finally settles and your finally able to use your vscodes instances, it wouldn't even enter my mind to confirm the workspace config in the current instance before going to use any of its items. Each and every workspace will contain an editable config of the global context in addition to the workspace config. Giving you complete control over more app functions and features than vscode ever did. This part of the extension WILL NOT error and crash. I'm not that great of a dev, I just got really lucky.
+
 One of the others is the terminal and multi kernel ngin. There is not a single... other example that comes close. Yes there are extensions that fire off vscode commands, or powershell commands. IF your lucky, you may find one that does powershell and bash. Even if you were to handicap this extension, and have a 1 on 1 comparison whhere it just compared this extensions powershell and bash terminal features against any other, this extensions use of them will still put it in a class all on its own. I won't go over all the resons right here, but [click here](#terminal-list) if you want to go over some of them that I outline later on.
-<br />
+
 There are several others, that I won't go over again, as the extensions tldr goes over the majority of them as I still have not gone through the extension in its entirety to see if anything else should be added to that list. Which, I am very strict with that list, by not only check each item on that list myself, but also verifying through 2 seperate ai ngins in order to compare features and data points to see if that feature should be on that list or not no matter which column it ends up under. Currently there is one other that is not featured in the tldr, but should be... Honestly... I don't even know what category to put this under, even after inquiring 4 different ai's in trying to find the answer.
-<br />
+
 This extension is something that people have tried to attempt, but never finished, and I wouldn't blame them. Currently, there is no category that this extension fits under... as one does not exist. The closest parallel is what VSCodium or Cursor did, except they forked the actual source. This extension achieves the same end result, a fundamentally different IDE experience, but entirely within the extension API, which is the constraint that makes it genuinely novel. As it provides an experience difference that you can only get by installing an entirely different software, without all the hassle. With a single click, its added to your vscode application and ready to go. Don't want it anymore, just disable or uninstall the extension. No bloated app installers, or ad infested .exes.
-<br />
+
 "Workbench Override Extension" — this is the most technically accurate VS Code-specific description, since workbench is literally what VS Code calls its UI shell layer, but a more befitting category title, taking into consideration other naming conventions used through the space, Workbench Distribution. It's precise, it uses VS Code's own vocabulary, and it draws a clear line between what this extension is and a regular extension or a full fork.
-<br />
+
 Anyways, welcome and I truly hope this extension helps you with your day to day as a dev and allows you to be a lot more efficient at the same time.
+
+
+
+
+
+
+
 
 ### Terminal Ngin
 
@@ -74,6 +81,24 @@ Speaking of such, the dev server bug seems to have been completely removed which
 17. dynamically setting and keeping track of ports it assigns through the use of ${PORT}, so whenever feature V gets assigned port V, every single time you go to restart that service the terminal ngin ensures that the same port is used for that service for the entirety of that vscode instance
 18. I knew I was forgetting something and it seems like I have forgotten more than I thought I would as this line should be split up across 5-6, the automatic use of the terminal ngin through the use of the layout config and all the different capabilties and run times it has
 19. technically, the extensions workspace context journal, because it is a undocumented config item type
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> The Smart Queue System - Show Queue Status & Skip Current Queue Item
+
+More than once now, it has happened to me where I've queued a bunch of items but I accidently triggered one function I didn't want, instead of interrupting functions already in progress along with everything else you have queued, you can just skip the one item via the devstack menu 'skip terminal cmd'. Once triggered it will send a 'resolved' status to the terminal ngins promise so that it moves on to the next item within your queue and continue working.
+
+In addition to that, there will also be a 'view current queue function' where it querys the queue within the terminel ngin for it to return the currently running command. Thus helping you make sure that it is the command you want to skip. 
+
+> [!NOTE]
+> Ahhh... fuck it. I want a media player ui panel that displays all currently active commands sitting in the queue as if it were a playlist where you can pause, stop, play the queue at will. 
+> 
+> Ontop of that, I want each of the items in the queue to act like... songs in a playlist. Move them up, or down, move to top of queue or bottom of the queue as well as completely removing them via context menu.
+>
+> ... Why not... As soon as I had finished putting together the skip and view... It just came to mind, I have no idea why though. In all my years of using a computer, I have never once seen any type of terminal have such functionality, whether it be linux, mac os or windows.. How the fuck am I going to pause the commands? lol, meh its a part of the details. Pausing would be nice though, especially in this type of enviroment where half way through a pnpm i or some other kinda resource heavy command, but as your still coding you need the resources for something else... instead of waiting or skipping it to come back to later... just pause the install process. I already know without looking this is not something... that currently exists in another extension... so I can't even cheat off of someone elses homework to learn how to do it...
+>
+> It will be a sidebar, btw. Split into two, one for powershell and one for debian, ya because I just NEEDED to make it harder for myself.
+
+
+
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Self-Managing Dev Servers
 The engine treats Dev Servers (persistent processes) differently than one-off scripts:

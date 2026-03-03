@@ -163,6 +163,8 @@ Workspace context snippet system built with Monaco editor for creating, editing,
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Context Snippets
 
+
+
 One of the fundamental problems with snippet systems is prefix recall - you create a snippet with a prefix three months ago, and when you need it, you can't remember what you called it. At that point, IntelliSense becomes useless, and you're forced to open your snippet manager, search for the snippet, find the prefix, navigate back to your editor, and then type it in. Or you just give up and write the code manually.
 DevStack solves this with Context Snippets: a searchable quick pick accessible directly from your editor's context menu.
 Access: Right-click → DevStack → Context Snippets
@@ -180,6 +182,15 @@ Context Snippets transforms the snippet workflow from "hoping you remember the r
 
 ![Context Snippets](https://raw.githubusercontent.com/8an3/midgardr-notes/main/snippets/context-snippets.jpg?raw=true)
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Code Snapshot
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Workspace Context
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> DevArchive
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Snippet Profiles
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Remote Access
 
 ---
 

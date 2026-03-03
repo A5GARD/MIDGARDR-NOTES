@@ -1,6 +1,265 @@
 # THOR
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> TAILWIND_NGIN
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Vanilla Tailwind
+
+```
+/* 
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                              Vanilla Tailwind Ngin                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  A fully configured Tailwind engine providing access to 46,060+ design combinations. By adjusting just three        │ 
+│  values, you can transform the entire visual identity of your application.                                          │ 
+│                                                                                                                     │ 
+│  1. THEME:  Sets the core color palette with 47 to choose from (Brand, Semantic, and Accent colors).                │ 
+│  2. PRESET: Defines the "feel"—adjusting spacing, margins, and border-radius across 15 distinct systems.            │ 
+│  3. FONT:   Select from 70+ curated typefaces optimized for readability and style.                                  │ 
+│                                                                                                                     │  
+│  Only selected assets are bundled into your build, ensuring maximum performance with zero runtime bloat.            │ 
+│  Other values that can be, but are not required to configure:                                                       │  
+│  4. USE_CUSTOM_TYPOGRAPHY & TYPOGRAPHY                                                                              │
+│  4. USE_FONT_WEIGHTS & FONT_WEIGHTS                                                                                 │
+│  5. ENVIROMENT                                                                                                      │  
+│  6. COLORS & CUSTOM_THEME                                                                                           │  
+│                                                                                                                     │  
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                     │ 
+│  Please select each of the following:                                                                               │ 
+│  1. Theme                                                                                                           │ 
+│  2. Preset                                                                                                          │ 
+│  3. Font ( Not required, if left blank will default to the themes default )                                         │ 
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                    PRESET                                                           │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 1. MODERN                       - Refined & Professional, tight, clean, high-performance feel.                      │ 
+│                                 - 15% smaller spacing, tight layouts - Geist, Inter, Plus Jakarta Sans              │ 
+│                                                                                                                     │ 
+│ 2. CREATIVE                     - Lots of breathing room and very round shapes.                                     │ 
+│                                 - Soft & Elegant - Outfit, Playfair Display, Montserrat                             │ 
+│                                                                                                                     │ 
+│ 3. TECHNICAL                    - Square corners, consistent spacing, "IDE" feel.                                   │ 
+│                                 - Precision & Focus - JetBrains Mono, Fira Code, Geist Mono                         │ 
+│                                                                                                                     │ 
+│ 4. FINTECH                      - Maximum information density for dashboards.                                       │ 
+│                                 - Data Heavy - IBM Plex Mono (numbers), Roboto, Source Code Pro                     │ 
+│                                                                                                                     │ 
+│ 5. LUXURY                       - Characterized by extreme letter spacing, thin borders, and huge breathing room.   │ 
+│                                 - High-end & Sophisticated - Playfair Display, Lora, Montserrat (for subheaders)    │ 
+│                                                                                                                     │ 
+│ 6. BRUTALIST                    - Thick borders, no rounding, and high-contrast sizing.                             │ 
+│                                 - Bold, Raw, & Experimental - Space Grotesk, IBM Plex Mono, Roboto Mono             │ 
+│                                                                                                                     │ 
+│ 7. EDITORIAL                    - Focuses on vertical rhythm and classic typesetting.                               │ 
+│                                 - The New Yorker / Magazine Style - Source Serif 4, Merriweather, Libre Baskerville │ 
+│                                                                                                                     │ 
+│ 8. PLAYFUL                      - Thick "bouncy" borders and very round shapes.                                     │ 
+│                                 - Mobile-First / Duolingo Style - Nunito, Delius Swash Caps, Poppins                │ 
+│                                                                                                                     │ 
+│ 9. MINIMALIST                   - Ultra-clean with subtle refinements, maximum clarity.                             │ 
+│                                 - Calm & Spacious - SF Pro Display, Helvetica Neue, Inter                           │ 
+│                                                                                                                     │ 
+│ 10. GAMING                      - Aggressive sizing with heavy weights, cinematic impact.                           │ 
+│                                 - Bold & Energetic - Rajdhani, Orbitron, Teko                                       │ 
+│                                                                                                                     │ 
+│ 11. MEDICAL                     - Clean, trustworthy, optimized for clinical readability.                           │ 
+│                                 - Professional & Reliable - Source Sans Pro, Open Sans, Lato                        │ 
+│                                                                                                                     │ 
+│ 12. ECOMMERCE                   - Product-focused with strong visual hierarchy for pricing and CTAs.                │ 
+│                                 - Conversion Optimized - Proxima Nova, Avenir, Work Sans                            │ 
+│                                                                                                                     │ 
+│ 13. CORPORATE                   - Conservative spacing with traditional letter-spacing for enterprise trust.        │ 
+│                                 - Authoritative & Traditional - Calibri, Arial, Segoe UI                            │ 
+│                                                                                                                     │ 
+│ 14. RETRO                       - Squared-off with chunky weights, arcade and 80s computing aesthetics.             │ 
+│                                 - Nostalgic & Pixel-Perfect - Press Start 2P, VT323, Courier Prime                  │
+│                                                                                                                     │ 
+│*/                                             PRESET = 'MODERN'                                                   /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                       FONT                                                          │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ SANS-SERIF     - Inter, Roboto, Geist, Poppins, Montserrat, Outfit, Plus Jakarta Sans, DM Sans, Urbanist,           │ 
+│                  Nunito, Lato, Barlow, Gabriela, Delius Swash Caps, Public Sans, Work Sans, Manrope, Figtree,       │ 
+│                  Archivo                                                                                            │ 
+│                                                                                                                     │ 
+│ SERIF          - Merriweather, Playfair Display, Lora, Source Serif 4, Libre Baskerville, Space Grotesk,            │ 
+│                  PT Serif, Fraunces, Cormorant Garamond, Crimson Pro, EB Garamond, Newsreader, DM Serif Display,    │ 
+│                  Prata, Bodoni Moda, Young Serif                                                                    │ 
+│                                                                                                                     │ 
+│ MONO           - JetBrains Mono, Fira Code, Geist Mono, IBM Plex Mono, Roboto Mono, Space Mono,                     │ 
+│                  Source Code Pro, Ubuntu Mono, Red Hat Mono, Cutive Mono, Nanum Gothic Coding                       │ 
+│                                                                                                                     │ 
+│ DISPLAY        - Sora, Bricolage Grotesque, Clash Display, Syne, Unbounded, Cabinet Grotesk, Righteous,             │ 
+│                  Lexend, Kanit                                                                                      │ 
+│                                                                                                                     │ 
+│*/                                                FONT = 'Geist'                                                   /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                        THEME                                                        │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                     │ 
+│                     Cirrus-Float                  Synthwave-Neon                        Geek-Blue                   │
+│                  Metropolis-Sky-Scape                Solar-Flare                       Desert-Night                 │
+│                   Mainframe-Terminal                Amazon-Jungle                    Cyber-Industrial               │
+│                      Sonic-Pulse                     Cobalt-Ice                        Forest-Tech                  │
+│                     Solstice-Heat                   Midas-Touch                       Oceanic-Sunset                │
+│                      Polymer-Flow                  Amethyst-Stone                      Deep-Emerald                 │
+│                    Vanguard-Strike                 Smoldering-Ember                  Deep-Sea-Navigator             │
+│                     Tactical-Ops                     Acid-Trip                         Glacier-Blue                 │
+│                     Meadow-Whisper                      Loki                        High-Alert-Crimson              │
+│                    Studio-Apartment                   Silk-Petal                        Cyber-Pop                   │ 
+│                      Terra-Verde                    Aqua-Glacier                       Forest-Tech-2                │
+│                   Black-Velvet-Luxe                Nightshade-Venom                    Frozen-Deep                  │
+│                     Blueprint-Grid                Another-Acid-Trip                    Pastel-Sorbet                │
+│                     Sorbet-Swirl                      Deep-Abyss                       Modern-Retro                 │
+│                     Office-Paper                  Fifth-Element-Aether                 Obsidian-Wine                │
+│                    Twilight-Bloom                    True-Veridian                     Mineral-Forest               │
+│                    Afterglow-Fade                     Deep-Teal                          Deep-Ocean                 │
+│                  Monet-Impressionism              Interstellar-Nebula                   Retro-Arcade                │
+│                     Espresso-High                    Granite-Top                       Vintage-Heritage             │
+│                    Executive-Level                  Ti-Titanium-22                     Oceanic-Gradient             │
+│                   Workplace-Chatter             Graphite-Neutron-Moderator              Crystal-Quartz              │
+│                     Oracle-Vision                   Concrete-slab                         Deep-Void                 │
+│                   Middle-Field-Canvas                 C-Carbon-6                         Dark-Crimson               │
+│                                                                                                                     │ 
+│                                                                                                                     │ 
+│*/                                               THEME = 'Deep-Void'                                               /*│  
+│*/                                                  MODE = 'dark'                                                  /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                     TYPOGRAPHY                                                      │ 
+│                                                                                                                     │ 
+│ If you would like to use other values instead of the provide options that are available through the ngin, you may   │
+│ configure the following objects and values.                                                                         │ 
+│                                                                                                                     │ 
+│*/ USE_CUSTOM_TYPOGRAPHY = false                                                                                   /*│
+│*/ TYPOGRAPHY = {                                                                                                  /*│ 
+│*/    h1: {                                                                                                        /*│ 
+│*/      fontSize: "1.875rem",                                                                                      /*│ 
+│*/      fontWeight: "700",                                                                                         /*│ 
+│*/      lineHeight: "1.25",                                                                                        /*│ 
+│*/      letterSpacing: "-0.025em",                                                                                 /*│ 
+│*/      textAlign: "center",                                                                                       /*│ 
+│*/      "@media (min-width: 1024px)": {                                                                            /*│ 
+│*/        lineHeight: "1.1",                                                                                       /*│ 
+│*/      },                                                                                                         /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h2: {                                                                                                        /*│ 
+│*/      marginTop: "0.75rem",                                                                                      /*│ 
+│*/      color: "hsl(var(--muted-foreground))",                                                                     /*│ 
+│*/      fontWeight: "300",                                                                                         /*│ 
+│*/      textAlign: "center",                                                                                       /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h3: {                                                                                                        /*│ 
+│*/      fontWeight: "600",                                                                                         /*│ 
+│*/      marginBottom: "1rem",                                                                                      /*│ 
+│*/      marginTop: "1rem",                                                                                         /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h4: {                                                                                                        /*│ 
+│*/      fontSize: "1.25rem",                                                                                       /*│ 
+│*/      fontWeight: "600",                                                                                         /*│ 
+│*/      marginBottom: "0.75rem",                                                                                   /*│ 
+│*/      marginTop: "0.75rem",                                                                                      /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h5: {                                                                                                        /*│ 
+│*/      fontSize: "1.125rem",                                                                                      /*│ 
+│*/      fontWeight: "500",                                                                                         /*│ 
+│*/      marginBottom: "0.5rem",                                                                                    /*│ 
+│*/      marginTop: "0.5rem",                                                                                       /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    p: {                                                                                                         /*│ 
+│*/      textWrap: "balance",                                                                                       /*│ 
+│*/      fontWeight: "300",                                                                                         /*│ 
+│*/      color: "hsl(var(--foreground))",                                                                           /*│ 
+│*/      fontSize: "0.875rem",                                                                                      /*│ 
+│*/    },                                                                                                           /*│ 
+│*/  }                                                                                                              /*│  
+│                                                                                                                     │ 
+│*/ USE_FONT_WEIGHTS = false                                                                                        /*│
+│*/ FONT_WEIGHTS = {                                                                                                /*│
+│*/    thin: "100",                                                                                                 /*│
+│*/    light: "300",                                                                                                /*│
+│*/    normal: "400",                                                                                               /*│
+│*/    medium: "500",                                                                                               /*│
+│*/    semibold: "600",                                                                                             /*│
+│*/    bold: "700",                                                                                                 /*│
+│*/    black: "900",                                                                                                /*│
+│*/  }                                                                                                              /*│  
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                     ENVIROMENT                                                      │ 
+│                                                                                                                     │ 
+│ Depending on what your building, the css will need to be built differently. For example if building a vscode        │
+│ extension, it is a much wiser choice to use the already configured color theme that the user has chosen in place    │
+│ of your own custom theme. Setting this value to VSCODE, will do just that.                                          │
+│ "VSCODE" and "OTHER"                                                                                                │ 
+│                                                                                                                     │ 
+│*/ ENVIROMENT = "VSCODE"                                                                                           /*│ 
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                    CUSTOM COLORS                                                    │ 
+│                                                                                                                     │ 
+│ If you would like to use your own theme in place of the available options, set colors to "CUSTOM" and you will      │
+│ be free to set the values as you wish. The ngin expects the colors to be bare hsl strings without the use of 'hsl()'│ 
+│ "CUSTOM" | "NGIN"                                                                                                   │ 
+│                                                                                                                     │ 
+│*/ COLORS = "NGIN"                                                                                                 /*│ 
+│*/ CUSTOM_THEME = {                                                                                                /*│
+│*/    "--background": '222.2 84% 4.9%',                                                                            /*│
+│*/    "--foreground": '210 40% 98%',                                                                               /*│
+│*/    "--card": '222.2 84% 4.9%',                                                                                  /*│
+│*/    "--card-foreground": '210 40% 98%',                                                                          /*│
+│*/    "--popover": '222.2 84% 4.9%',                                                                               /*│
+│*/    "--popover-foreground": '210 40% 98%',                                                                       /*│
+│*/    "--primary": '217.2 91.2% 59.8%',                                                                            /*│
+│*/    "--primary-foreground": '222.2 47.4% 11.2%',                                                                 /*│
+│*/    "--secondary": '217.2 32.6% 17.5%',                                                                          /*│
+│*/    "--secondary-foreground": '210 40% 98%',                                                                     /*│
+│*/    "--muted": '217.2 32.6% 17.5%',                                                                              /*│
+│*/    "--muted-foreground": '215 20.2% 65.1%',                                                                     /*│
+│*/    "--accent": '217.2 32.6% 17.5%',                                                                             /*│
+│*/    "--accent-foreground": '210 40% 98%',                                                                        /*│
+│*/    "--destructive": '0 62.8% 30.6%',                                                                            /*│
+│*/    "--border": '217.2 32.6% 17.5%',                                                                             /*│
+│*/    "--input": '217.2 32.6% 17.5%',                                                                              /*│
+│*/    "--ring": '224.3 76.3% 48%',                                                                                 /*│
+│*/    "--sidebar": "",                                                                                             /*│
+│*/    "--sidebar-foreground": "",                                                                                  /*│
+│*/    "--sidebar-primary": "",                                                                                     /*│
+│*/    "--sidebar-primary-foreground": "",                                                                          /*│
+│*/    "--sidebar-accent": "",                                                                                      /*│
+│*/    "--sidebar-accent-foreground": "",                                                                           /*│
+│*/    "--sidebar-border": "",                                                                                      /*│
+│*/    "--sidebar-ring": "",                                                                                        /*│
+│*/                                                                                                                 /*│
+│*/    "--chart-1": '220 70% 50%',                                                                                  /*│
+│*/    "--chart-2": '160 60% 45%',                                                                                  /*│
+│*/    "--chart-3": '30 80% 55%',                                                                                   /*│
+│*/    "--chart-4": '280 65% 60%',                                                                                  /*│
+│*/    "--chart-5": '340 75% 55%',                                                                                  /*│
+│*/                                                                                                                 /*│
+│*/    "--font-sans": "",                                                                                           /*│
+│*/    "--font-serif": "",                                                                                          /*│
+│*/    "--font-mono": "",                                                                                           /*│
+│*/                                                                                                                 /*│
+│*/    "--radius": '0.5rem',                                                                                        /*│
+│*/                                                                                                                 /*│
+│*/    "--shadow-color": "",                                                                                        /*│
+│*/    "--shadow-opacity": "",                                                                                      /*│
+│*/    "--shadow-blur": "",                                                                                         /*│
+│*/    "--shadow-spread": "",                                                                                       /*│
+│*/    "--shadow-offset-x": "",                                                                                     /*│
+│*/    "--shadow-offset-y": "",                                                                                     /*│
+│*/  }                                                                                                              /*│ 
+│                                                                                                                     │ 
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ The following configurable values are for the 1% use cases and are more here due to the preset ngin already coded   │
+│ to have these included but instead of removing them I have decided to include them just incase they are needed in   │
+│ the future. In other words, if you are not editing the code, do not change these values.                            │ 
+│*/ THEME_SWITCHER = false                                                                                          /*│ 
+│*/ VERSION = 'v3'                                                                                                  /*│ 
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+*/
+```
+
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Tailwind CSS
 **Command:** `ocrmnavigator.tailwind.file.css.create`

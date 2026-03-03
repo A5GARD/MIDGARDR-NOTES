@@ -1,4 +1,4 @@
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> ShadCN UI
+#  ShadCN UI
 
 ## Table of Contents
 
@@ -6,7 +6,9 @@
 - [Install ShadCN Components w/ Configs](#install-shadcn-components-w-configs)
 - [Insert ShadCN Components](#insert-shadcn-components)
 
-### Add ShadCN Components
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Add ShadCN Components 
+ 
 
 Add ShadCN UI components to your project with one click - components and libraries only
 
@@ -22,7 +24,7 @@ Add ShadCN UI components to your project with one click - components and librari
 
 ---
 
-### Install ShadCN Components w/ Configs
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Install ShadCN Components w/ Configs 
 
 Complete ShadCN UI installation with full configuration setup
 
@@ -40,7 +42,7 @@ Complete ShadCN UI installation with full configuration setup
 
 ---
 
-### Insert ShadCN Components
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Insert ShadCN Components 
 
 Add individual ShadCN UI components directly into your project at cursor position
 

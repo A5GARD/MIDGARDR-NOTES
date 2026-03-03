@@ -13,29 +13,6 @@ Be sure to remove all non svg files as it will error out if the folder contains 
 Can be executed via the devstack menu, option labeled 'SVG to WOFF'
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> RATATOSKR
-
-Needs some work, as it is currently not in the state that I wish it to be, but it still works.
-
-Accessible via the explorers context menu, just right click any folder and select ratatoskr. A new editor will open and allow you to make some edits and preview it via the preview tab.
-
-Currently the only items that are working are the:
-- use icons toggle
-- wrapper type
-- if you place any text in the import from text, clicking parse text to tree ( doesnt matter what text you use as it doesn't stick ), a editable tree will display to the right allowing you to edit individual line items. Click on any line item and the editable options will display below the tree itself.
-- preview tab
-- copy to clipboard
-
-IMO, its jank as fuck right now because half the features don't work, but it still works and when I don't have more important things to do I will come back to this and make proper but might not be for a while, since it does do 95% of the jobs I use it forand to be honest, I use this waaaayy more than I ever thought I would as it is incredily handy when dealing with ai prompts. As giving ai's my exact file structure was not something I did do, due to how time consuming it is. But now that this is here... atleast once a day I'm using this feature.
-
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> File Nesting
-
-pfft... this seems to be like the other lost function. This extension is way too big, this was built and as I was working on it I started from scratch to start fresh and because I had a file nesting extesion in use... I forgot about finishing this. I might just pound this one out right now so its in the extension.
-
-When I do get to this, it will place configurable settings within your global settings file with a default that covers, a lot. Really nice feature if you have a lot of files in your root folder, as it hides the majority of them and if you have weirdly named files, custom configurations, or files/configs that wouldn't really be used by many devs, you can quickly edit the settings to include those files.
-
-There will be a option within the devstack menu that will activate this feature.
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> env Context Swapper
 

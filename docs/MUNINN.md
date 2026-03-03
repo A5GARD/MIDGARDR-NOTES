@@ -86,6 +86,7 @@ Automatically generate complete CRUD operations and REST endpoints for your Pris
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Auto Create Schema
 
+
 **🔴 BLEEDING EDGE FEATURE** - Only available when bleeding edge mode is enabled
 
 Intelligent schema generation that scans your codebase and automatically creates or updates your Prisma schema.
@@ -132,6 +133,10 @@ Create visual diagrams showing relationships between your database tables and mo
 - Interactive model exploration
 - Relation mapping
 - Export diagram capabilities
+
+
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Visualizer
 
 
 ---

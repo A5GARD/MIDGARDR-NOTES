@@ -3,6 +3,7 @@
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Workspace Context
  
+![Z](https://raw.githubusercontent.com/8an3/midgardr-notes/main/ui/devstack.jpg)
 
 Create configurations that work across workspaces or stay project-specific. 
 1. To take advantage of this feature you must create or set a folder to global: true at the root level

@@ -51,6 +51,3 @@
 <!-- #endregion -->
 
 
-<!-- #region LICENSE -->
-
-

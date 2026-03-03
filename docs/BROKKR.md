@@ -4,41 +4,8 @@
 >
 > Please excuse the current state of the docs as this feature is currently undergoing an overhaul as it contains notes for the overhaul as well as documentation for the old version and the new version. New version documentation is indicated by the new icon that has been adopted into the docs, the red valknut. Despite the new version not yet available, this doc does contain documentation pertaining to the new version as it goes through its transformation. Some features that are meant for the newer version are currently available for you to use with manually editing your configs object. Such as the new theme variable, product icon theme, brokker viewer, file icon theme and more.
 
-> [!NOTE]
-> The new layout system is already underway, starting with focusing on the UI and how each level feels along with adjusting which level should control what exactly. No idea how I'll go about the back end of things yet, but we'll get there and figure it out. 
->
-> Want to say this here in case you don't make it to the end, IF you haven't tried it yet... try this layout engine. I now have a config or more for every workspace... and it has been such a better experience than I first thought this feature would have as far as overall impact to the user experience within vscode. Even though an update is coming, who knows when it will done enough to use which is why I'm still suggesting, try this out seriously if I had to choose 5 features for someone to try out with this extension... this would be number 1 or number 2.
->
-> In case you didn't read the notes below, some things that I did come across but still have to dive into further to see if they are viable paths to edit. A while back I tried adding a feature to the extension where it blocks... ALL toast notifications. Using insiders, they're plentiful and annoying and to make matters worse there seems to be a ton of devs that love recommending things that also pop up and ya... hit a dead end with it before, but it seems like this could be something that might get done.
-> Don't read into this too much, but I did see some icons values... who knows, maybe even add custom icons to vscode?! That would be nice. And not just in the file tree.
-> Even after finding that security threat in vscode and before even talking to microsoft I had decided NOT to move forward with it because of that... after all that, they never even responded, figures. Despite that I still don't want to use the workaround that I had found, primarily due to, exposing how its done and even though microsoft doesn't care I'd rather just keep that under wraps instead of advertising it to everyone. With saving that, I did see some values that might actually get the end result that I was going for... so, atleast the idea isn't completely dead yet, because weirdly this one feature excites me most currently. I don't know why, maybe it's because I had to deal with performance issues a lot, I was running a lot although I wasn't running a lot in vscode itself which was the main culprit but still.
-> I don't know how but, I do really want some sort of stale data / garbage collector since going through those values... I saw A LOT of old data, that hasn't been used in years just sitting there. I'll try to calculate just how much storage that's actually taking up, because if it isn't enough to warrant going through the trouble, then theres no point.
-> OH, almost forgot, once sauron is up and working I will be working on setting up the profile contexts up next in regards to layouts, and probably even for the rest of the extension. 
 
-> [!NOTE]
-> Levels 1, 2 and 3 will be getting more options to configure. Currently I have only coded in my own settings into Saurons tab, and it is astromically funny just how big of a difference there is between them. But after seeing it come together in the ui, it's going to be easy enough to know that no one should have any issue having the config they want as each part has descriptions and what not. 
->
-> The new atlas layout system will come out in 2 versions, one after another. The first will be virtually how it is now but in ui form. Since there are a lot of moving parts I want to make sure the ui works before even moving on to the more complex settings that will be available in level 4, which means if you don't plan on using that level, you will be able to work with the new system rather quickly. With the new system being so simple the only documentation there will be is just an overview of each of the levels, and that's it really. as it's pretty self explanatory. At which point I will start working on the last tab, which might be over and done with quickly or... it will take some time with trying to figure out what everything does. A lot of that extra time will depend on new the systems being introduced to handle the new features, if any.
-
-> [!NOTE]
-> 
-> finally took the time and went through every ui toggle and setting and grabbed all the necessary values with the exception of two values that I'm shocked I couldn't find... but I'll try blindly setting them to see if I can't find them since the files I'm now searching through do not have intellisense. 
->
-> This means in addition to offering every setting available to certain levels, every level will atleast be getting a basic ui configuration manipulation section and I'm leaning towards offering the advance to all levels. Simply because the ui is so simple and makes for a really easy time of it.
->
-> Ontop of that I think I beleive I have though of the perfect solution, when it comes to reliably tracking the state of the ui now that I've gained access to more values.
-> 
-> - It would be best if you started both of your settings files with a blank state, aside from the settings that are too advanced, obscure or any extensions specific settings, but be absolutely sure that no ui setting is currently in your workspace settings.json file. If you don't know what I mean by this, your in the clear and dont worry about it because whenever changes are made to the ui through the user interface, they are saved to the global file only.
-> - thus making the next part more reliable, on start up it will not only take in any settings that are relevant that you may have set through this extensions settings, but also scan your current global settings file for each of the required values, IF there is no value among these sources a default will be used. The same default that would be used as if both your settings files were empty.
-> - at which point using the already in place global context system in the extension, these values will be added so that they can be viewed, compared against and changed when needed as there will be more than one function with the ability to change them
-> - whenever a layout is triggered, these values will be updated so as to know exactly what state everything is in when used else where but the global settings file will be used as a source of truth in certain circumstances to ensure the most up to date information is available prior to executing some functions. As the function sweeps through the list of functions that control every thing it will first check what the current state is, compare it against what you want and either skip it or trigger the function in order to get the desired end result
-> - the new viewer, will also view and edit these values even going so far as re creating the custom layout menu that vscode has implemented into the system
->
-> The only values I beleive I'm currently missing are primary and secondary sidebar boolean values, along with panel. I can toggle them, I just don't know what state they are in prior to toggling them so if your current ui is not what is expected of your configuration, then it does behalf with the opposite end result. Atleast these three ui items are... very easy to toggle back into view if that does happen.
->
-> So currently, please try to use the viewer in order to make changes to the ui as your coding. The customize layout system is literlly exactly the same as vscodes. Because we can only track certain states ourselves without relying on vscode, this will be vital for a reliable state.
-
-# Layout Configuration Guide
+## Layout Configuration Guide
 
 More of an overview of what to expect, than an actual guide since it's extremely straight forward, except maybe one part which I will go over.
 
@@ -114,18 +81,120 @@ The sidebar contains the following:
 >
 > This won't effect new users or users opening new workspaces, but if your workspace currently does not have a layout it previously just returned the function... unintentionally crashing out all the features loading in after it. Instead if this were to happen, where it doesn't scan a config object in either the workspace or global config it will create a empty layout object to "build" the layout from, which obviously won't build anything as it contains nothing, but will stop the function from crashing out features loading after it.
 
+These are gone over in more detail in the relevant docs, but it should be mentioned here since they their own dedicated values.
+
+This extension has all three categories of themes registered:
+- product icons theme
+- file icons theme
+- and 150+ registered color themes
+
+In addition to now having hte ability to set these values within the config, but you can also set any other extensions themes as well. If you wanted you could have a different product and icon theme pack for each config in addition to a different theme as well
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Ignore All Notifications / Toasts ( Planned )
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Workspace Extensions Manipulation 
+
+I'm happy to report that a process has been outlined that will achieve the desired result while at the same time following all security protocols.
+
+Right now every VS Code user either lives with all extensions loaded at once tanking performance, or manually manages workspace profiles which is tedious and incomplete. Is essentially intelligent context-aware extension orchestration — the right tools, active only when actually needed, automatically.
+Combined with the layout engine handling UI, settings, and shortcuts per environment... each profile becomes a completely isolated, purpose-built IDE. A React environment feels nothing like a Python environment feels nothing like a DevOps environment — all in the same install.
+That's the kind of thing that makes VS Code feel like it was rebuilt from scratch for the user.
+
+I'll admit this one feature has been the hold up with new version being finalized because this was a feature I was dead set on implementing despite, personally I currently do not have a use case for it. Only because whatever function / feature I want or feel that I'm missing I just code into the extension myself due to performance reasons, I know I will build it better than one I can download. performance being such a wide spread issue due to extensions this would be helpful for every single user to have, not to mention this opens that oppurtunity back up for me to start using other extensions.
+
+> [!NOTE]
+> FUCK... YES... my 1 - 2 punch I needed to connect in order to get this working the way I wanted... finally just landed. You have no idea how gratifying this is. NOT only are we doing something vscode tries VERY hard for an extension developer NOT to do. But we are also doing a second process that vscode has tried very hard to not let people do within the vscode instance / sandbox. The end result being a very clean implementation while at the same time... conforming to every security implementation / roadblock / or whatever you want to call them so that we have a nice and secure enviroment because we aren't opening holes in the secuirty system, we aren't bypassing anything, technically that we aren't supposed to. 
+> 
+> Not only the weight that was just lifted off of my chest but just... the satisfaction of being able to include a feature that EVERY SINGLE USER can benefit from is so massive. This feature now creates a developer experience that not even jetbrains or vscodium has achived through there platforms... and they built an entire platform in order to change the experience while... this is just a fucking extension. Not to mention, not only did I not see this become a reality but I was pretty upset with this not being included because every other solution I have created that actually got this working, unfortuantly had to do so by an RCE vuln, which microsoft still hasn't responded to and I've reached out for the third and final time. The first time was 6 months ago. Anyways who cares anymore since this new solution is perfect in every way possible... 
+>
+> And while not breaking the security is the biggest win... well if a vscode dev were to read this, it would probably be met with skepticism along with them majorily frowning upon this since this is smoething they actually worked hard on not letting extensions accomplishing. The code doesn't break any rules in any way shape or form, no matter what context your looking at it with.
+>
+> This feature being the chefs kiss that the layoout ngin... didn't need but is the perfect addition. If testing is a one shot success... whatever god is smiling down upon me today, please stick around because I appreciate you.
+>
+> Honestly, I'm so pumped about this even if it takes 5 attempts at getting right, I think I might just finish the layout ngin and file explorer off today because I was planning on coding in another project.
+>
+> BOOOO YAAAKASHA! lol, took a couple more than 5, but that wasn't the fault of the code itself, it was just getting a sqlite3 library that actually works in this enviroment. All in all the end result... is a nice clean editing of the current extensions in your vscode instance literally just toggles the enabled/disabled state, auto restarts the instance, then when it comes back it then loads in the remaining items in your config... and off to the races you go!
+>
+> If your wondering why there is such a level of excitement here, it is due to several reasons. The first is bypassing two seperate areas in which... vscode has actually spent a considerable amount of time and resources on to ensure devs cannot do, what was done here. And I'm not the only person who thinks they spent, TOO much time on it. And making it so it doesn't break any security protocols... pffft, that was tough. In the past, I was able to create two different working implementations... problem was, the way they worked and what they needed to do, simply put it was an automated RCE. I know the average dev would had just not said or done anything about it, but just ship the feature with the rce. Which I didn't want to do, as it not just increases the surface area of the attack surface but your also doing it on every single user your product has. I wish I weren so responssible but, unfortuantly I'm just built that for better or worse. 
+> 
+> So with saying that, yes it may seem like a small thing, while this feature when its coupled with other things is VERY POWERFUL. 
+> 
+> The second, that honestly makes the first point compond, is the fact that this is a feature... every single vscode user would benefit from. I'm not talking about a prettier extension or tailwind extenion, despite the millions of downloads those produects have. But those products aren't a solution for EVERY single user. THIS IS, as every single user has had to deal with it atleast once and in varying degrees. That's why I'm so pumped about this, because it takes vscode, I've said this before and I'll say it again, that was built using the wrong engine/platform and I don't know if it still has this disclaimer... but I have read this disclairmer myself so it isn't through word of mouth and is THE reason why I chose not to go with it for one of my projects. BUT the disclaimer explicilty said, NOT FOR PRODUCTION USE due to performance reasons. So... this solves that problem for them, the problem they created and said fuck it, it is what it is. Now you don't have to pick and choose what extensions you need / want or can't live without. YOU CAN HAVE ALL OF THEM, albeit not at the same time. But in a single project you could have 3, 4, 10 different coding enviroments, that swaps out the entire extensions landscape. Allowing you to have every single extensoin for that coding context enviroment that you could possible want without the performance drops offs or the manual chore of taiking care of it yourself. Adding fuel to the fire, you also gain a TON of performance back the second you installed this, since you got rid of github. 
+
+After it has ran... A LOT, just making a slight adjustment to when the settings in the config are the same as what they are currently now, it will skip the restart process as it isn't needed. 
+
+It's been running, way better than I thought this was going to run. I thought it was going to be slower than what it turned out to be and me making this change is more nitpicking and wanting the code to be perfect in every situtation. If for some reason I can't get the adjustment to work, you may not even notice it restarting each time because as soon as it restarts after making the changes, it resets the editor groups so it feels really fluid. 
+
+But this has been getting triggered atleast once every 5 minutes all day long, so its definitely taken a beating and beyond the first issue with the swlite3 library there hasn't been a single error or crash yet.
+
+I honestly... can't tell if the instance is restarting its that clean. I have to open the extensions tab in order to see if what change I had made... took place. That's not a bad thing, lol. I guess I should probably show how you do it, might be useful eh?
+
+```json
+{
+  "default": true,
+  "fileIconTheme": "baldr-icons",
+  "productIconTheme": "baldr-icons",
+  // so new object labeled extensions, each value can either by enabled or disabled that its. 
+  // if you do not know how to acquire the extensions identifier need for this to work don't worry, for some reason vscode... finally made something, pretty easy to obtain
+  // open your extensions tab, right click on the extension and select, copy extension id, then paste what you have in your clipboard, skyler.ocrmnav, and create remainder of the key value pair.
+  // repeat for all of your extensions
+
+  // for the new layout configurator that will consist of a user interface, hopefully I can make it so that it automatically pulls all of your extensions id's for you and there would be a toggle that would enable to disable the extension for you
+  "extensions": {
+    "skyler.ocrmnav": "enabled",
+    "yzhang.markdown-all-in-one": "enabled",
+    "mblode.pretty-formatter": "enabled",
+    "esbenp.prettier-vscode": "enabled",
+    "Prisma.prisma": "enabled",
+    "GitHub.copilot-chat": "disabled",
+    "keyshout.sqlite-db-viewer": "disabled",
+    "yy0931.vscode-sqlite3-editor": "disabled",
+    "AMiner.codegeex": "disabled",
+    "NoThlnG.vscode-open-wsl": "disabled",
+    "ban.spellright": "disabled",
+    "tomoki1207.pdf": "enabled",
+    "ms-vscode-remote.remote-wsl": "enabled"
+  },
+}
+
+```
+
+<!--
+extrension manipulation
+
+write data to file as to which step in the process the layout activation is at, is the user has any enabling or disabling of any extensions to accompolish this configuration FIRST, write what step that you are in in terms of already configuring or hav enot yet ocnfdigured extensions, prompt user for restart, user restarts the instance via a quiuck pick that restarts the instance throughhow we do it now when we compile new extensions. once the workspace opens again, the layout engine should first check  the data file where we would werite to to see which step in the process we have alrleady complete, seeing that we have already congiured the extensions, to skip that part and move on with the remainder of the layout functionlaity
+ -->
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Profile Context ( Planned )
 
 
-## Ignore All Notifications / Toasts ( WIP )
-## Workspace Extensions Context ( WIP )
-## Profile Context ( WIP )
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Layout Behaviors
+
+Layouts can be triggered, at any one time that you need it to be changed. In addition to that you can set a single config to default across your entire config object, meaning that between your global and workspace configs you can only set one default layout. When a default layout has been defined, that config will trigger every time the vscode instance starts up. 
+
+A recent change has been made that, if your current editor layout is the same as what is defined in the configuration. Instead of wiping all the editor groups and starting from scratch to reopen each file. It will instead, leave the editor group layout the way it is, and check each file to see if it is outlined in your config or not. Closing ones that aren't and skipping ones that are outlined and after it has scanned each of the files, it will then proceed in opening the missing files that you need.
+
+After testing, while from a defining point of view it is more effecient, it turned out to take twice the amount of time for that process to complete. For that reason the code was reverted back to what it was before the change.
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Setup
+
+The new version is still under construction. Desote the ongoing changes made to the layout ngin, you can still use and benefit from it by configuring the layout object manually.
+
+Each workspace you create automatically creates a global and workspace config to place your devstack items into. As each workspace config is created a baseline layout config containing the default value set to true is created with each workspace config. Making it a trivial task to set up. Open your workspace config via the devstack menu option, and in the layout section you will find the config object to edit.
+
 
 <br /><br />
 
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Current Config
 
-While the new ngin is being created you can still use this feature while its under construction by following the configuration below:
+While the new ngin is being created you can still use this feature while its under construction by following the configuration below.
+
+There will be 2 examples, the first being more of an overview with 3 or less examples per section while the second one that is in the second accordian, will be a full example outlining my default layout config. It is quite long which is why I made the first one into more of a overview style object, but didn't want to leave out a full example for the ppl who would rather see that. As I know some people would rather a longer more detailed version to go over. 
+
+
+<details open>
+<summary>Overview</summary>
 
 ```json
      {
@@ -143,19 +212,220 @@ While the new ngin is being created you can still use this feature while its und
               "customizeLayout": {
                 "window.menuBarVisibility": "classic",
                 "window.commandCenter": true,
-                "menubar.layoutControls": true,
+                "menubar.layoutControls": true
+              },
+              // settings values pertaining to this extension, more or less a means of organization since there are so many, you may place anything in here other than what is found within the custmizeLayout object
+              "devstack": {
+                "ocrmnavigator.devstack.icons": true,
+                "ocrmnavigator.devstack.snapshotNgin": true,
+                "ocrmnavigator.devstack.ivaldi": true
+              },
+              // same as the devstack object, more of a means of organizing settings values you may place anything in here other than what is found within the custmizeLayout object
+              "performance": {
+                "css.validate": false,
+                "diffEditor.codeLens": false,
+                "debug.openDebug": "neverOpen"
+              },
+              // if no theme is provided via the theme value, you may provide your desired theme through this object
+              "workbench.colorCustomizations": {
+                "background": "#020817",
+                "menubar.background": "#020817",
+                "menubar.menu": "#020817"
+              },
+              "editorGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "editorFocus": "last",
+                "groups": [
+                  { "size": 0.5 },
+                  { "size": 0.5 }
+                ],
+                "files": [
+                  {
+                    "group": 1,
+                    "pinned": true,
+                    "foldLevel": [ 1, 2 ],
+                    "path": [ "src/context.ts", "src/helpers/search.ts", ]
+                  },
+                  {
+                    "group": 2,
+                    "pinned": true,
+                    "foldLevel": [ 1,  2 ],
+                    "path": [ "README.md", "package.dev.jsonc", ]
+                  }
+                ],
+                "floatingWindow": []
+              },
+              // setting terminals will execute the command once the layout has been initialized
+              "terminalGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "terminals": [
+                  {
+                    "name": "Dev Server",
+                    "group": 0,
+                    "cmd": "pnpm run dev",
+                    "pinned": true,
+                    "location": "editor",
+                    "priority": 1
+                  }
+                ]
+              },
+              // allows you to set keybindings on a config by config basis
+              "keybindings": {
+                "ocrmnavigator.menu.devstack": "alt+d",
+                "ocrmnavigator.odin.open": "alt+s",
+                "ocrmnavigator.icons.menu": "alt+i",
+              },
+              "commandPalette": [
+                {"label": "Unfold All" , "cmd": "editor.unfoldAll"},
+                {"label": "ocrmnavigator.format.json.pkg" , "cmd": "ocrmnavigator.format.json.pkg"},
+                {"label": "Compile, Custom .vsix Archiver & Install" , "cmd": "ocrmnavigator.vsix.archive"},
+              ],
+              "extensions": {
+                "skyler.ocrmnav": "enabled",
+                "yzhang.markdown-all-in-one": "enabled",
+                "mblode.pretty-formatter": "enabled",
+              },
+              "autorun": [],
+              "onClose": [],
+              "git": {}
+            }
+          ]
+        }
+```
+
+
+</details>
+
+<details>
+<summary>Full Layout Object Example</summary>
+
+```json
+        {
+          "label": "DevStack Default",
+          "path": "",
+          "type": "layout",
+          "icon": "editor-layout",
+          "args": [
+            {
+              "commandPalette": [
+                {"label": "Unfold All" , "cmd": "editor.unfoldAll"},
+                {"label": "ocrmnavigator.format.json.pkg" , "cmd": "ocrmnavigator.format.json.pkg"},
+                {"label": "Compile, Custom .vsix Archiver & Install" , "cmd": "ocrmnavigator.vsix.archive"},
+                {"label": "ocrmnavigator.vscode.RWINDOW" , "cmd": "ocrmnavigator.vscode.RWINDOW"},
+                {"label": "Toggle ZEN Mode" , "cmd": "ocrmnavigator.brokkr.zenMode.toggle"}
+              ],
+              "editorGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "editorFocus": "last",
+                "groups": [
+                  {
+                    "size": 0.5
+                  },
+                  {
+                    "size": 0.5
+                  }
+                ],
+                "files": [
+                  {
+                    "group": 1,
+                    "pinned": true,
+                    "foldLevel": [
+                      1,
+                      2
+                    ],
+                    "path": [
+                      "src/helpers/atlas.ts",
+                      "src\\helpers\\odin-explorer.ts",
+                      "src\\helpers\\devstack.ts",
+                      "src\\helpers\\HeimdallrProvider.ts",
+                      "src\\helpers\\bifrost.ts",
+                      "src\\helpers\\search.ts",
+                      "src\\helpers\\catalyst.ts",
+                      "src\\helpers\\onboarding.ts",
+                      "src\\helpers\\freyr.ts",
+                      "docs\\BIFRÖST.md",
+                      "src\\helpers\\md-renderer.ts",
+                      "src\\helpers\\vanilla-tailwind.ts"
+                    ]
+                  },
+                  {
+                    "group": 2,
+                    "pinned": true,
+                    "foldLevel": [
+                      1,
+                      2
+                    ],
+                    "path": [
+                      "README.md",
+                      "package.dev.jsonc",
+                      "src/extension.ts",
+                      "src/helpers/master.ts",
+                      "src\\context.ts"
+                    ]
+                  }
+                ]
+              },
+              "extensions": {
+                "skyler.ocrmnav": "enabled",
+                "yzhang.markdown-all-in-one": "enabled",
+                "mblode.pretty-formatter": "enabled",
+                "esbenp.prettier-vscode": "enabled",
+                "Prisma.prisma": "disabled",
+                "GitHub.copilot-chat": "disabled",
+                "keyshout.sqlite-db-viewer": "disabled",
+                "yy0931.vscode-sqlite3-editor": "disabled",
+                "AMiner.codegeex": "disabled",
+                "NoThlnG.vscode-open-wsl": "disabled",
+                "ban.spellright": "disabled",
+                "tomoki1207.pdf": "enabled",
+                "ms-vscode-remote.remote-wsl": "enabled"
+              },
+              "default": true,
+              "fileIconTheme": "baldr-icons",
+              "productIconTheme": "baldr-icons",
+              "theme": "Deep-Void-Base",
+              "terminalGrid": {},
+              "keybindings": {
+                "workbench.action.files.saveAll": "ctrl+s",
+                "ocrmnavigator.devstack.commandPalette": "alt+p",
+                "ocrmnavigator.menu.devstack": "alt+d",
+                "ocrmnavigator.odin.open": "alt+s",
+                "ocrmnavigator.menu.icons": "alt+i",
+                "ocrmnavigator.menu.catalystUi": "alt+u",
+                "ocrmnavigator.menu.snippets": "alt+f",
+                "ocrmnavigator.region.insert": "alt+r",
+                "ocrmnavigator.endregion.insert": "alt+e",
+                "ocrmnavigator.region.wrap": "alt+w",
+                "ocrmnavigator.devstack.site.colorWheel": "alt+q",
+                "ocrmnavigator.clipboardMgr.history.show": "alt+h",
+                "ocrmnavigator.bookmarks.show": "alt+b",
+                "ocrmnavigator.menu.github": "alt+g",
+                "ocrmnavigator.project.pkg.open": "alt+j",
+                "ocrmnavigator.project.readme.open": "alt+m"
+              },
+              "customizeLayout": {
+                "workbench.startupEditor": "none",
+                "workbench.notifications.position": "top-right",
+                "explorer.decorations.colors": false,
+                "problems.decorations.enabled": false,
+                "window.menuBarVisibility": "toggle",
+                "window.commandCenter": false,
+                "menubar.layoutControls": false,
                 "editor.renderControlCharacters": false,
                 "editor.renderWhitespace": "none",
                 "editor.minimap.enabled": true,
                 "breadcrumbs.enabled": false,
                 "workbench.sideBar.location": "left",
-                "workbench.statusBar.visible": true,
-                "workbench.layoutControl.enabled": true,
+                "workbench.statusBar.visible": false,
+                "workbench.layoutControl.enabled": false,
                 "workbench.secondarySideBar.showLabels": false,
-                "workbench.navigationControl.enabled": true,
+                "workbench.navigationControl.enabled": false,
                 "workbench.editor.showTabs": "multiple",
-                "menubar.navigationControls": true,
-                "menubar.share": true,
+                "menubar.navigationControls": false,
+                "menubar.share": false,
                 "primarySidebar.display": true,
                 "secondarySidebar.display": true,
                 "panel.display": false,
@@ -164,12 +434,12 @@ While the new ngin is being created you can still use this feature while its und
                 "modes.centeredLayout": false,
                 "modes.fullScreen": false,
                 "modes.zenMode": false,
-                "window.zoomLevel": -2,
+                "window.zoomLevel": -1,
                 "editor.glyphMargin": true,
                 "editor.folding": true,
                 "editor.lineNumbers": "relative",
                 "editor.showFoldingControls": "always",
-                "editor.minimap.maxColumn": 50,
+                "editor.minimap.maxColumn": 30,
                 "editor.minimap.showRegionSectionHeaders": true,
                 "editor.minimap.showMarkSectionHeaders": false,
                 "editor.minimap.autohide": "mouseover",
@@ -178,13 +448,14 @@ While the new ngin is being created you can still use this feature while its und
                 "editor.minimap.size": "fill",
                 "editor.minimap.renderCharacters": false,
                 "editor.wordWrap": "on",
+                "editor.fontFamily": "Geist Mono",
                 "editor.fontLigatures": true,
                 "editor.fontVariations": true,
                 "workbench.editor.pinnedTabsOnSeparateRow": true,
                 "workbench.editor.alwaysShowEditorActions": true,
                 "workbench.editor.enablePreviewFromQuickOpen": false,
                 "workbench.editor.wrapTabs": true,
-                "workbench.externalBrowser": "Opera",
+                "workbench.externalBrowser": "Chrome",
                 "workbench.remoteIndicator.showExtensionRecommendations": false,
                 "workbench.commandPalette.history": 30,
                 "window.restoreWindows": "one",
@@ -193,7 +464,6 @@ While the new ngin is being created you can still use this feature while its und
                 "editor.foldingImportsByDefault": false,
                 "git.diffEditor.renderGutterMenu": false,
                 "git.decorations.enabled": false,
-                "editor.fontFamily": "JetBrains Mono",
                 "editor.scrollBeyondLastLine": false,
                 "terminal.integrated.fontSize": 12,
                 "editor.fontSize": 12,
@@ -207,7 +477,6 @@ While the new ngin is being created you can still use this feature while its und
                 "markdown.preview.scrollPreviewWithEditor": false,
                 "markdown.preview.scrollEditorWithPreview": false
               },
-              // settings values pertaining to this extension, more or less a means of organization since there are so many, you may place anything in here other than what is found within the custmizeLayout object
               "devstack": {
                 "ocrmnavigator.devstack.icons": true,
                 "ocrmnavigator.devstack.snapshotNgin": true,
@@ -321,8 +590,18 @@ While the new ngin is being created you can still use this feature while its und
                 "ocrmnavigator.devstack.site.tailwindConverter": true,
                 "ocrmnavigator.remix.project2agnostic.convert": true
               },
-              // same as the devstack object, more of a means of organizing settings values you may place anything in here other than what is found within the custmizeLayout object
               "performance": {
+                "editor.undoStackSize": 200,
+                "eslint.run": "onSave", 
+                "eslint.format.enable": false,
+                "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+                "typescript.tsserver.log": "off",
+                "update.showReleaseNotes": false,
+                "update.enableWindowsBackgroundUpdates": false,
+                "git.autoRepositoryDetection": false,
+                "git.detectSubmodules": false,
+                "git.autofetch": false,
+                "git.autorefresh": false,
                 "css.validate": false,
                 "diffEditor.codeLens": false,
                 "debug.openDebug": "neverOpen",
@@ -359,9 +638,31 @@ While the new ngin is being created you can still use this feature while its und
                   "markdown": false,
                   "scminput": false
                 },
-                "files.watcherExclude": {},
+                "files.watcherExclude": {
+                    ".vscode/ocrmnavigator/odin/version/**": true,
+                    "**/.git/objects/**": true,
+                    "**/.git/subtree-cache/**": true,
+                    "**/node_modules/**": true,
+                    "**/dist/**": true,
+                    "**/public/**": true,
+                    "**/build/**": true,
+                    "**/.vscode/**": true,
+                    "**/coverage/**": true,
+                    "**/.cache/**": true
+                },
                 "files.exclude": {},
-                "search.exclude": {},
+                "search.exclude": {
+                    ".vscode/ocrmnavigator/odin/version/**": true,
+                    "**/.git/objects/**": true,
+                    "**/.git/subtree-cache/**": true,
+                    "**/node_modules/**": true,
+                    "**/public/**": true,
+                    "**/dist/**": true,
+                    "**/build/**": true,
+                    "**/.vscode/**": true,
+                    "**/coverage/**": true,
+                    "**/.cache/**": true
+                },
                 "typescript.updateImportsOnFileMove.enabled": "always",
                 "typescript.validate.enable": true,
                 "markdown.server.log": "off",
@@ -410,194 +711,161 @@ While the new ngin is being created you can still use this feature while its und
                 },
                 "[typescript]": {
                   "editor.defaultFormatter": "skyler.ocrmnav"
+                },
+                "explorer.fileNesting.enabled": true,
+                "explorer.fileNesting.expand": false,
+                "explorer.fileNesting.patterns": {
+                  ".agent": ".agent, .claude, .cline, .codebuddy, .codex, .commandcode, .continue, .crush, .cursor, .factory, .gemini, .goose, .junie, .kilocode, .kiro, .kode, .mcpjam, .mux, .neovate, .opencode, .openhands, .pi, .pochi, .qoder, .qwen, .roo, .trae, .windsurf, .zencoder",
+                  ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
+                  "config.asgard": "config.bifrost, vsix.asgard, ",
+                  ".env": "*.env, .env.*, .envrc, env.d.ts, .gitignore, .pro7, .fantasticonrc.js  ",
+                  "vulknut.svg": "clipboardcheck.svg, code.png, code.svg, snippets.jsonc, global-navigator-config.json, project-config.json, project-1744496862041-y866zpqtd9.jsonc, navigator-workspace.json, ghost.svg, pixel-2-alarm.svg, pixel-2-arrest.svg, pixel-2-bookmark2.svg, pixel-2-prank.svg, pixel-product-management.svg,pixel-robot.svg, pixel-search.svg, pixel-themes.svg, pixel-window-close-solid.svg, pixel-writing.svg, valhalla-baldr.svg, valhalla-baldr.svg, file-baldr.svg, snippets.svg, odin8.png, odin.png, pixel-2-code2.svg",
+                  ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
+                  ".project": ".classpath",
+                  "+layout.svelte": "+layout.ts,+layout.js,+layout.server.ts,+layout.server.js,+layout.gql",
+                  "+page.svelte": "+page.server.ts,+page.server.js,+page.ts,+page.js,+page.gql",
+                  "AGENTS.md": ".clinerules, .cursorrules, .replit.md, .windsurfrules, AGENT.md, CLAUDE.local.md, CLAUDE.md, GEMINI.md",
+                  "ansible.cfg": "ansible.cfg, .ansible-lint, requirements.yml",
+                  "app.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "application.properties": "*.properties",
+                  "artisan": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, server.php, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, webpack.mix.js, windi.config.*",
+                  "astro.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "build-wrapper.log": "build-wrapper*.log, build-wrapper-dump*.json, build-wrapper-win*.exe, build-wrapper-linux*, build-wrapper-macosx*",
+                  "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, .bazelversion, MODULE.bazel.lock, WORKSPACE",
+                  "Cargo.toml": ".clippy.toml, .rustfmt.toml, Cargo.Bazel.lock, Cargo.lock, clippy.toml, cross.toml, insta.yaml, rust-toolchain.toml, rustfmt.toml",
+                  "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json, CMakeCache.txt",
+                  "composer.json": ".php*.cache, composer.lock, phpunit.xml*, psalm*.xml",
+                  "default.nix": "shell.nix",
+                  "deno.json*": "*.env, .env.*, .envrc, api-extractor.json, deno.lock, env.d.ts, import-map.json, import_map.json, jsconfig.*, tsconfig.*, tsdoc.*",
+                  "Dockerfile": "*.dockerfile, .devcontainer.*, .dockerignore, captain-definition, compose.*, docker-compose.*, dockerfile*",
+                  "flake.nix": "default.nix, shell.nix, flake.lock",
+                  "gatsby-config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, gatsby-browser.*, gatsby-node.*, gatsby-ssr.*, gatsby-transformer.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "gemfile": ".ruby-version, gemfile.lock",
+                  "go.mod": ".air*, go.sum",
+                  "go.work": "go.work.sum",
+                  "hatch.toml": ".editorconfig, .flake8, .isort.cfg, .python-version, hatch.toml, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+                  "I*.cs": "$(capture).cs",
+                  "Makefile": "*.mk",
+                  "mix.exs": ".credo.exs, .dialyzer_ignore.exs, .formatter.exs, .iex.exs, .tool-versions, mix.lock",
+                  "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, next-env.d.ts, next-i18next.config.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .nuxtignore, .nuxtrc, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "package.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cspell*, .cursor*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .oxfmtrc.json, .oxfmtrc.json.bak, .oxfmtrc.jsonc, .oxlintrc.json, .oxlintrc.json.bak, .oxlintrc.jsonc, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .shellcheckrc, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .windsurfrules, .xo-config*, .yamllint*, .yarnrc*, Procfile, alejandra.toml, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lock, bun.lockb, bunfig.toml, colada.options.ts, commitlint*, crowdin*, cspell*, cz.config.*, dangerfile*, dlint.json, dprint.json*, ec.config.*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lefthook.*, lerna*, lint-staged*, nest-cli.*, netlify*, nixpacks*, nodemon*, npm-shrinkwrap.json, nx.*, oxlint.config.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rolldown.config.*, rollup.config.*, rspack*, ruff.toml, sentry.*.config.ts, simple-git-hooks*, sonar-project.properties, stylelint*, taze.config.*, tsdown.config.*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.*, xo.config.*, yarn*, tsconfig.json, tasks.json, svgtofont.config.js",
+                  "Pipfile": ".editorconfig, .flake8, .isort.cfg, .python-version, Pipfile, Pipfile.lock, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+                  "pom.xml": "mvnw*",
+                  "pubspec.yaml": ".metadata, .packages, all_lint_rules.yaml, analysis_options.yaml, build.yaml, pubspec.lock, pubspec_overrides.yaml",
+                  "pyproject.toml": ".commitlint*, .cspell*, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .flake8, .flowconfig, .isort.cfg, .jslint*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .oxfmtrc.json, .oxfmtrc.json.bak, .oxfmtrc.jsonc, .oxlintrc.json, .oxlintrc.json.bak, .oxlintrc.jsonc, .pdm-python, .pdm.toml, .prettier*, .pylintrc, .python-version, .ruff.toml, .shellcheckrc, .stylelint*, .textlint*, .xo-config*, .yamllint*, MANIFEST.in, Pipfile, Pipfile.lock, alejandra.toml, biome.json*, commitlint*, cspell*, dangerfile*, dlint.json, dprint.json*, eslint*, hatch.toml, lint-staged*, oxlint.config.*, pdm.lock, phpcs.xml, poetry.lock, poetry.toml, prettier*, pyproject.toml, pyrightconfig.json, requirements*.in, requirements*.pip, requirements*.txt, ruff.toml, setup.cfg, setup.py, stylelint*, tox.ini, tslint*, uv.lock, uv.toml, xo.config.*",
+                  "quasar.conf*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, quasar.extensions.json, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "readme*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, CONTRIBUTORS.MD, CONTRIBUTORS.TXT, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Contributors.md, Contributors.txt, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE, LICENSE.MD, LICENSE.txt, License, License.md, License.txt, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, ROADMAP.MD, Readme-*, Readme_*, Release_Notes*, Roadmap.md, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, contributors.md, contributors.txt, copying*, credits, governance.md, history.md, license, license.md, license.txt, maintainers, readme-*, readme_*, release_notes*, roadmap.md, security.md, sponsors*",
+                  "Readme*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, CONTRIBUTORS.MD, CONTRIBUTORS.TXT, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Contributors.md, Contributors.txt, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE, LICENSE.MD, LICENSE.txt, License, License.md, License.txt, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, ROADMAP.MD, Readme-*, Readme_*, Release_Notes*, Roadmap.md, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, contributors.md, contributors.txt, copying*, credits, governance.md, history.md, license, license.md, license.txt, maintainers, readme-*, readme_*, release_notes*, roadmap.md, security.md, sponsors*",
+                  "README*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, CONTRIBUTORS.MD, CONTRIBUTORS.TXT, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Contributors.md, Contributors.txt, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE, LICENSE.MD, LICENSE.txt, License, License.md, License.txt, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, ROADMAP.MD, Readme-*, Readme_*, Release_Notes*, Roadmap.md, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, contributors.md, contributors.txt, copying*, credits, governance.md, history.md, license, license.md, license.txt, maintainers, readme-*, readme_*, release_notes*, roadmap.md, security.md, sponsors*",
+                  "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, remix.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "requirements.txt": ".editorconfig, .flake8, .isort.cfg, .python-version, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+                  "rush.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cspell*, .cursor*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .oxfmtrc.json, .oxfmtrc.json.bak, .oxfmtrc.jsonc, .oxlintrc.json, .oxlintrc.json.bak, .oxlintrc.jsonc, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .shellcheckrc, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .windsurfrules, .xo-config*, .yamllint*, .yarnrc*, Procfile, alejandra.toml, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lock, bun.lockb, bunfig.toml, colada.options.ts, commitlint*, crowdin*, cspell*, cz.config.*, dangerfile*, dlint.json, dprint.json*, ec.config.*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lefthook.*, lerna*, lint-staged*, nest-cli.*, netlify*, nixpacks*, nodemon*, npm-shrinkwrap.json, nx.*, oxlint.config.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rolldown.config.*, rollup.config.*, rspack*, ruff.toml, sentry.*.config.ts, simple-git-hooks*, sonar-project.properties, stylelint*, taze.config.*, tsdown.config.*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.*, xo.config.*, yarn*",
+                  "sanity.config.*": "sanity.cli.*, sanity.types.ts, schema.json",
+                  "setup.cfg": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, tox.ini",
+                  "setup.py": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, setup.py, tox.ini",
+                  "shims.d.ts": "*.d.ts",
+                  "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, houdini.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, mdsvex.config.js, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vite.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "tauri.conf.json": "tauri.*.conf.json",
+                  "tauri.conf.json5": "tauri.*.conf.json5",
+                  "Tauri.toml": "Tauri.*.toml",
+                  "tsconfig.json": "tsconfig*.tsbuildinfo, tsconfig.*.json",
+                  "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "*.asax": "$(capture).*.cs, $(capture).*.vb",
+                  "*.ascx": "$(capture).*.cs, $(capture).*.vb",
+                  "*.ashx": "$(capture).*.cs, $(capture).*.vb",
+                  "*.aspx": "$(capture).*.cs, $(capture).*.vb",
+                  "*.axaml": "$(capture).axaml.cs",
+                  "*.bloc.dart": "$(capture).event.dart, $(capture).state.dart",
+                  "*.c": "$(capture).h",
+                  "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
+                  "*.cjs": "$(capture).cjs.map, $(capture).*.cjs, $(capture)_*.cjs",
+                  "*.component.ts": "$(capture).component.html, $(capture).component.spec.ts, $(capture).component.css, $(capture).component.scss, $(capture).component.sass, $(capture).component.less",
+                  "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
+                  "*.cs": "$(capture).*.cs, $(capture).cs.uid",
+                  "*.cshtml": "$(capture).cshtml.cs, $(capture).cshtml.css",
+                  "*.csproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
+                  "*.css": "$(capture).css.map, $(capture).*.css",
+                  "*.cxx": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
+                  "*.dart": "$(capture).freezed.dart, $(capture).g.dart, $(capture).mapper.dart",
+                  "*.db": "*.db-shm, *.db-wal",
+                  "*.ex": "$(capture).html.eex, $(capture).html.heex, $(capture).html.leex",
+                  "*.fs": "$(capture).fs.js, $(capture).fs.js.map, $(capture).fs.jsx, $(capture).fs.ts, $(capture).fs.tsx, $(capture).fs.rs, $(capture).fs.php, $(capture).fs.dart",
+                  "*.gd": "$(capture).gd.uid",
+                  "*.gdshader": "$(capture).gdshader.uid",
+                  "*.gdshaderinc": "$(capture).gdshaderinc.uid",
+                  "*.go": "$(capture)_test.go",
+                  "*.java": "$(capture).class",
+                  "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js, $(capture).d.ts, $(capture).d.ts.map, $(capture).js.flow",
+                  "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx, $(capture).css, $(capture).module.css, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts, $(capture).scss, $(capture).module.scss, $(capture).module.scss.d.ts",
+                  "*.master": "$(capture).*.cs, $(capture).*.vb",
+                  "*.md": "$(capture).*",
+                  "*.mjs": "$(capture).mjs.map, $(capture).*.mjs, $(capture)_*.mjs",
+                  "*.module.ts": "$(capture).resolver.ts, $(capture).controller.ts, $(capture).service.ts",
+                  "*.mts": "$(capture).mts.map, $(capture).*.mts, $(capture)_*.mts",
+                  "*.proto": "$(capture).pb.go, $(capture).pb.micro.go",
+                  "*.pubxml": "$(capture).pubxml.user",
+                  "*.py": "$(capture).pyi",
+                  "*.razor": "$(capture).razor.cs, $(capture).razor.css, $(capture).razor.scss",
+                  "*.resx": "$(capture).*.resx, $(capture).designer.cs, $(capture).designer.vb",
+                  "*.tex": "$(capture).acn, $(capture).acr, $(capture).alg, $(capture).aux, $(capture).bbl, $(capture).bbl-SAVE-ERROR, $(capture).bcf, $(capture).bib, $(capture).blg, $(capture).fdb_latexmk, $(capture).fls, $(capture).glg, $(capture).glo, $(capture).gls, $(capture).idx, $(capture).ind, $(capture).ist, $(capture).lof, $(capture).log, $(capture).lot, $(capture).nav, $(capture).out, $(capture).run.xml, $(capture).snm, $(capture).synctex.gz, $(capture).toc, $(capture).xdv",
+                  "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+                  "*.tsx": "$(capture).ts, $(capture).*.ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx, $(capture).css, $(capture).module.css, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts, $(capture).scss, $(capture).module.scss, $(capture).module.scss.d.ts, $(capture).css.ts",
+                  "*.vbproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
+                  "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
+                  "*.w": "$(capture).*.w, I$(capture).w",
+                  "*.wat": "$(capture).wasm",
+                  "*.xaml": "$(capture).xaml.cs"
                 }
-              },
-              // if no theme is provided via the theme value, you may provide your desired theme through this object
-              "workbench.colorCustomizations": {
-                "background": "#020817",
-                "menubar.background": "#020817",
-                "menubar.menu": "#020817",
-                "activityBar.background": "#020817",
-                "terminal.background": "#020817",
-                "titleBar.inactiveBackground": "#020817",
-                "titleBar.activeBackground": "#020817",
-                "panel.background": "#020817",
-                "terminalCommandDecoration.defaultBackground": "#020817",
-                "sideBar.background": "#020817",
-                "sideBarSectionHeader.background": "#1E293B",
-                "editor.background": "#020817",
-                "editorGroup.emptyBackground": "#020817",
-                "statusBar.background": "#020817",
-                "editorGroupHeader.tabsBackground": "#020817",
-                "activityBar.border": "#020817",
-                "menu.border": "#1E293B",
-                "menu.separatorBackground": "#1E293B",
-                "sideBar.border": "#1E293B",
-                "tree.tableColumnsBorder": "#1E293B",
-                "tab.border": "#1E293B",
-                "statusBar.border": "#1E293B",
-                "panel.border": "#1E293B",
-                "menu.foreground": "#94A3B8",
-                "foreground": "#94A3B8",
-                "menubar.foreground": "#94A3B8",
-                "activityBar.foreground": "#F8FAFC",
-                "sideBarSectionHeader.foreground": "#F8FAFC",
-                "explorer.folderItem.foreground": "#1E293B",
-                "panelTitle.activeForeground": "#F8FAFC",
-                "list.focusForeground": "#F8FAFC",
-                "sideBar.foreground": "#94A3B8",
-                "statusBar.foreground": "#94A3B8",
-                "editor.foreground": "#F8FAFC",
-                "activityBar.inactiveForeground": "#94A3B8",
-                "explorer.fileItem.foreground": "#94A3B8",
-                "input.background": "#1E293B",
-                "dropdown.background": "#1E293B",
-                "button.background": "#3B82F6",
-                "button.hoverBackground": "#3B82F6",
-                "input.foreground": "#F8FAFC",
-                "button.foreground": "#0F172A",
-                "menubar.selectionBackground": "#1E293B",
-                "menu.selectionBackground": "#1E293B",
-                "menubar.selectionForeground": "#F8FAFC",
-                "menu.selectionForeground": "#F8FAFC",
-                "list.activeSelectionBackground": "#1E293B",
-                "list.activeSelectionForeground": "#F8FAFC",
-                "input.border": "#1E293B",
-                "inputOption.activeBorder": "#1D4ED8",
-                "focusBorder": "#1D4ED8",
-                "errorForeground": "#7F1D1D",
-                "editor.lineHighlightBackground": "#1E293B",
-                "editor.selectionBackground": "#1E293B",
-                "editorCursor.foreground": "#F8FAFC",
-                "editorIndentGuide.background1": "#1E293B",
-                "editorWhitespace.foreground": "#1E293B",
-                "list.focusBackground": "#1E293B",
-                "list.hoverBackground": "#1E293B",
-                "list.highlightForeground": "#3B82F6",
-                "explorer.fileItem.hoverForeground": "#F8FAFC",
-                "explorer.folderItem.hoverForeground": "#F8FAFC",
-                "tree.indentGuidesStroke": "#1E293B",
-                "tab.activeBackground": "#020817",
-                "tab.activeForeground": "#F8FAFC",
-                "tab.inactiveBackground": "#020817",
-                "tab.inactiveForeground": "#94A3B8",
-                "tab.activeBorder": "#020817",
-                "gitDecoration.deletedResourceForeground": "#7F1D1D",
-                "gitDecoration.conflictingResourceForeground": "#3B82F6",
-                "terminal.ansiBlack": "#020817",
-                "terminal.ansiBlue": "#3B82F6",
-                "terminal.ansiCyan": "#29c3a0",
-                "terminal.ansiGreen": "#29c3a0",
-                "terminal.ansiMagenta": "#3B82F6",
-                "terminal.ansiRed": "#7F1D1D",
-                "terminal.ansiWhite": "#F8FAFC",
-                "terminal.ansiYellow": "#d29922",
-                "scrollbarSlider.hoverBackground": "#3B82F6",
-                "scrollbarSlider.activeBackground": "#3B82F6",
-                "scrollbarSlider.background": "#3B82F620",
-                "activityBarBadge.background": "#3B82F6",
-                "activityBarBadge.foreground": "#F8FAFC",
-                "explorer.folderItem.selectedIconForeground": "#3B82F6",
-                "explorer.fileItem.conflictForeground": "#7F1D1D",
-                "explorer.fileItem.errorForeground": "#7F1D1D",
-                "explorer.fileItem.warningForeground": "#d29922",
-                "explorer.folderItem.iconForeground": "#F8FAFC",
-                "explorer.fileItem.selectedIconForeground": "#F8FAFC",
-                "explorer.fileItem.modifiedForeground": "#29c3a0",
-                "list.dropBackground": "#02081740",
-                "list.filterMatchBackground": "#02081720",
-                "list.inactiveSelectionBackground": "#1E293B40",
-                "list.hoverForeground": "#F8FAFC",
-                "statusBarItem.hoverBackground": "#1E293B",
-                "gitDecoration.submoduleResourceForeground": "#F8FAFC"
-              },
-              "editorGrid": {
-                "orientation": 0,
-                "version": "classic",
-                "editorFocus": "last",
-                "groups": [
-                  {
-                    "size": 0.5
-                  },
-                  {
-                    "size": 0.5
-                  }
-                ],
-                "files": [
-                  {
-                    "group": 1,
-                    "pinned": true,
-                    "foldLevel": [
-                      1,
-                      2
-                    ],
-                    "path": [
-                      "src/context.ts",
-                      "src/helpers/search.ts",
-                      "src/helpers/atlas.ts"
-                    ]
-                  },
-                  {
-                    "group": 2,
-                    "pinned": true,
-                    "foldLevel": [
-                      1,
-                      2
-                    ],
-                    "path": [
-                      "README.md",
-                      "package.dev.jsonc",
-                      "src/helpers/menus.ts",
-                      "src/extension.ts",
-                      "src/helpers/itemsActionsMenu.ts",
-                      "src/helpers/master.ts",
-                      "src/extension/navigatorView.ts",
-                      "F:/DevStack/docs/BROKKR.md",
-                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/project-configs/project-1744496862041-y866zpqtd9.json",
-                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/global-navigator-config.json"
-                    ]
-                  }
-                ],
-                "floatingWindow": []
-              },
-              // setting terminals will execute the command once the layout has been initialized
-              "terminalGrid": {
-                "orientation": 0,
-                "version": "classic",
-                "terminals": [
-                  {
-                    "name": "Dev Server",
-                    "group": 0,
-                    "cmd": "pnpm run dev",
-                    "pinned": true,
-                    "location": "editor",
-                    "priority": 1
-                  }
-                ]
-              },
-              // allows you to set keybindings on a config by config basis
-              "keybindings": {
-                "ocrmnavigator.menu.devstack": "alt+d",
-                "ocrmnavigator.odin.open": "alt+s",
-                "ocrmnavigator.icons.menu": "alt+i",
-                "ocrmnavigator.menu.catalystUi": "alt+u",
-                "ocrmnavigator.menu.snippets": "alt+f",
-                "ocrmnavigator.region.insert": "alt+r",
-                "ocrmnavigator.endregion.insert": "alt+e",
-                "ocrmnavigator.region.wrap": "alt+w",
-                "ocrmnavigator.devstack.site.colorWheel": "alt+q",
-                "ocrmnavigator.clipboardMgr.history.show": "alt+h",
-                "ocrmnavigator.bookmarks.show": "alt+b",
-                "ocrmnavigator.menu.github": "alt+g",
-                "ocrmnavigator.project.pkg.open": "alt+p",
-                "ocrmnavigator.project.readme.open": "alt+m"
               },
               "autorun": [],
               "onClose": [],
-              "git": {}
+              "git": {
+                "branch": "",
+                "onLoad": [],
+                "onClose": []
+              }
             }
           ]
         }
+```
+
+</details>
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Command Palette
+
+Just when I thought... there possibly cannot be another thing to change about vscode in order to make it better...
+
+I was wrong... lol
+
+In passing while using the comand palette, I cursed it for not being able to pin most used commands to the top of the options list... Immediatly, well obviously you should already know what happened next, I started coding a new version of it. Making it better though, not only does it save your pinned options to your layout config. You can also configure them within the object as well, making them too workspace context configurable.
+
+It will ofcourse feature the same commands list that you find in the command palette. 
+
+The top # of menu options will feature your pinned preferences. 
+
+Each menu option will feature a button that can save it as a pinned command, while pinned commands button will allow you to unsave.
+
+Clicking any commmand will ofcourse, execute that command.
+
+Last but not least, I don't know about you but personally I hate the three button shortcut they have programmed for the command pallete. Like...why couldn't you just do two buttons? I understand ctrl p is tycally print... what the fuck are you printing off... from vscode? Someone on the dev team must be using it to print something, otherwise why didn't you just assign ctrl p? Or why didn't you just assign it to alt p? No way, my guy that does UI design at vscode, at the end of every day is hitting ctrl p to print off a hardcopy of what he did for the day LOL... that aint fucking happening! Anyways... its ctrl p now... If you are printing items out of vscode... thats ludacris, but just override the extensions shortcut I guess, lol. I just thought of checking... and YA they don't even have a print menu option under the titlebars dropdown menu... so why couldn't you just assign it to ctrl p... Anyways, if you don't want to use the shortcut it will be present as a menu option, probably at the top of the devstack menu sidebar view.
+
+```json
+{// if you wanted to edit the labels nicely like they are listed below you will have to manually edit the config, as they save like the second command pallete object
+  "default": true,
+  "fileIconTheme": "baldr-icons",
+  "productIconTheme": "baldr-icons",
+  "theme": "Deep-Void-Base",
+  "commandPalette": [
+    {"label": "Unfold All" , "cmd": "editor.unfoldAll"},
+    {"label": "ocrmnavigator.format.json.pkg" , "cmd": "ocrmnavigator.format.json.pkg"},
+    {"label": "Compile, Custom .vsix Archiver & Install" , "cmd": "ocrmnavigator.vsix.archive"},
+    {"label": "ocrmnavigator.vscode.RWINDOW" , "cmd": "ocrmnavigator.vscode.RWINDOW"},
+    {"label": "Toggle ZEN Mode" , "cmd": "ocrmnavigator.brokkr.zenMode.toggle"}
+  ],
+  
+}
 ```
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Notes for future features

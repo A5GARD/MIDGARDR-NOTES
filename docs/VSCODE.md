@@ -2,9 +2,8 @@
 
 ## Table of Contents
 
-- [ Configuration Testing Suite](#vscode-extension-configuration-testing-suite)
+- [Configuration Testing Suite](#vscode-extension-configuration-testing-suite)
 - [Performance Switch](#performance-switch)
-- [Custom VSIX Packager](#custom-vsix-packager)
 - [Region Folding](#region-folding)
 - [JSON File Formatting and Validation](#json-file-formatting-and-validation)
 - [Encoder/Decoder](#encoderdecoder)
@@ -68,19 +67,6 @@ Toggle performance modes for working with large files or resource-intensive oper
 ![Performance Switch](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/performance.jpg)
 ![Performance Options](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/performance2.jpg)
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Custom VSIX Packager
-
-Alternative VSIX packaging solution as an alternative to vsce.
-
-**Access:** DevStack Quick Pick → Custom VSIX Packager
-
-**Features:**
-- Smaller file sizes compared to vsce
-- Custom ignore patterns
-- Structure visualization
-- More resilient build process
-
-![VSIX Packager](https://raw.githubusercontent.com/8an3/midgardr-notes/main/vfs/performance2.jpg)
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Region Folding
 
@@ -108,26 +94,6 @@ Fold by region level (1-7) instead of actual nesting level.
 
 **Usage:** Create DevStack item with type `command` using these command IDs, or access via DevStack Quick Pick
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  JSON File Formatting and Validation
-
-I haven't had much luck with formatters in the past tbh, but I have been using this foramtter for a while now without issue. I will revisit the formatter configurator at some point to re create the underlying functionality of it as it is not in the best condition currently. At that time, I will make the json/jsonc formatter configurable as it is not in its current state. As I'm assuming not many people will enjoy the current settings that it was coded with as it turns multi line objects into single line. For some reason I seem to be one of a few who opt for this configuration. IF you are one of those few, enjoy! 
-
-This is now available to be configured as a default formatter for the json and jsonc file type with vscode.
-
-Format JSON/JSONC files and toggle error checking.
-
-**Available Commands:**
-
-**Formatting:**
-- `ocrmnavigator.formatCurrentJsonFile` - Format Current JSON File (converts multiline to inline)
-- `ocrmnavigator.formatPackgeDevJson` - Format package.dev.json
-- `ocrmnavigator.formatGlobalNavigatorConfigJson` - Format Global Navigator Config JSON
-
-**Validation Toggle:**
-- `ocrmnavigator.performanceSwitch.json.validate.toggle` - Toggle JSON error checking
-- `ocrmnavigator.performanceSwitch.jsonc.validate.toggle` - Toggle JSONC error checking
-
-**Usage:** Create DevStack item with type `command` using these command IDs, or access via DevStack Quick Pick
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Encoder/Decoder
 
@@ -143,141 +109,10 @@ Convert between multiple file formats with support for 13+ format types.
 - Quality settings configuration
 - Multiple format support
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  File Formatting Configurator
-
-Configure custom formatters per file type with live preview.
-
-**Access:** Web GUI
-
-**Features:**
-- Per-file-type formatter configuration
-- Live preview of formatting changes
-- Custom formatting rules
-- Save and apply configurations
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Formatter
-
-Multi-format file formatter supporting 33+ file types.
-
-**Access:** Right-click → Formatters → Select option
-
-**Features:**
-- Format 33+ file types
-- Set as default formatter per file type
-- Configure via "Format Document with..." → Configure → Select desired formatter
-
-![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Inline Imports
-
-Convert multi-line imports to single-line format.
-
-**Access:** Right-click → Format document with → Select option
-
-**Features:**
-- Transforms multi-line imports into single-line format
-- Automatically converts `@` to `~` in import paths
-- Clean, consistent import statements
-
-[Video Demo](https://youtu.be/YV9dIXP1ob4)
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Batch Rename
-
-Usage:
-- in your file tree highlight all the files you want to rename
-- right click on any file that is currently highlight and select `Rename Batch`
-- this opens a text file with all the names of the selected files
-- each line is associated with that file it is referencing and whatever value is on that line when saved, overwrites the file name 
-
-
-> [!IMPORTANT]
-> Due to the size of this extension, this is a feature that fell through the cracks. 
-> I remember when first creating this feature, I had issues creating it in terms of making it function exactly the way I wanted it to. As I was converting each function to the new naming convention, and when I got to renaming this one, I noticed that it was completely empty. 
-> My bad, ever since I decided to create the functionality I needed rather then trying to hunt down a new extension for it, I haven't opened that tab in a very long time or else I would have noticed that the extension I thought I used to use for it is infact still active. 
->
-> With saying, this time around it has been created and functions exactly the way I want it to. Again I apologize but I hope you can understand where I'm coming from with making that mistake. 
-> 
-> Since this extension is well over the 100 mark in terms of extensions worth of functionality, even though the readme only states 100+. If I had to guess... I know its currently sitting at atleast 125 as that was the number I counted the last time but that was a while ago, 135+ maybe even 145+, I know that number is just rediculous, but I know for a fact that even at 145 its a conservatinumber and lower then the actual number. Due to a lot of features I have coded in, typically get features found from 2, 3 sometimes even 4 extensions and consolidating it down into one feature. 
-> Because of that I will never know the true number of where it's currently at. 
-> This is due to, whenever I feel that a feature is lacking in something or just needs something I wish it had but can't put my finger on it. I will go through the marketplace, search for extensions relevant to what I want, and research each one, and making notes of anything I want to include into this extension. 
-> That alone contributes the most when it comes to feature parity when comparing a feature found here to another extension in its entirety. Snippets being an area for a good example, while there are 15+ extensions devoted to snippets, with the majority of them being terrible, all of them atleast have one good idea that they implemented.
 
 
 
 
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  File Nesting
-
-**🚧 COMING SOON**
-
-Configure file nesting rules to organize related files in explorer view.
-
-**Access:** Configure via settings
-
-**Planned Features:**
-- Custom nesting patterns
-- Group related files automatically
-- Clean explorer view
-- Configurable rules
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Remove Trailing Commas
-
-Remove trailing commas from JSON and JavaScript objects.
-
-**Access:** Right-click → Formatters → Select option
-
-**Features:**
-- Cleans JSON files
-- Cleans JavaScript objects
-- Ensures code compatibility
-- One-click cleanup
-
-![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Remove All Comments
-
-Strip all comments from the current file.
-
-**Access:** Right-click → Formatters → Select option or Command Palette
-
-**Features:**
-- Removes all comment types
-- Works with multiple languages
-- Clean code output
-- Preserves code functionality
-
-![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Remove console.log
-
-Remove console.log statements from files, folders, or entire workspace.
-
-**From File:**
-- **Access:** Right-click → Formatters → Select option or Command Palette
-- Removes all console.log statements from current file
-
-**From Folder:**
-- **Access:** Right-click folder → Formatters → Select option
-- Removes all console.log statements from all files in selected folder
-
-**From Workspace:**
-- **Access:** Command Palette → Select remove console.log from workspace
-- Removes all console.log statements from entire workspace
-
-![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Remove Unused Imports
-
-Detect and remove import statements that are not used in the file.
-
-**Access:** Right-click → Formatters → Select option or Command Palette
-
-**Features:**
-- Automatic detection of unused imports
-- Clean up import statements
-- Improved code readability
-- Reduces bundle size
-
-![Formatters](https://raw.githubusercontent.com/8an3/midgardr-notes/main/config/formatters.jpg)
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Zombie Process Killer (portReaper)
 
@@ -319,26 +154,6 @@ Automatically detect and kill processes blocking your dev server port.
 - No manual port entry needed
 - Cross-platform compatibility
 - Instant port clearing
-
-## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  Snapshot Engine
-
-Save and restore your VS Code workspace layout states.
-
-**Access:** Dedicated quick pick menu in status bar
-
-**Features:**
-- Capture current workspace state
-- Save granular layout configurations
-- Restore to previous workspace states
-- Create named snapshots
-- Quick switching between layouts
-- Same configuration type as `layout` item type
-
-**Use Cases:**
-- Save ideal working layouts
-- Switch between different project configurations
-- Restore after workspace disruption
-- Share layouts with team members
 
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;">  The ".env" Context Swapper (envProfile)
 

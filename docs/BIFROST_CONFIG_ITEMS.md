@@ -140,11 +140,11 @@ This one wont be as unique, but will demonstrate... just how far and how much ca
 
 Anyways... you get the point of taking chores that are required of us that take in some cases quite a while, but instead it runs itself with a click at which time I play a round of aram in lol as this command does effect a lot of projects. For you though, if you didn't want to create a nuke sized command like mine, but would still love to benefit from the same automation for any individual project you may have, executing one of the orders 1 through 11 will net the end result you are looking for. <a href="https://github.com/8an3/midgardr-notes/blob/main/docs/CUSTOM_FUNCTIONS.md">Custom functions</a> does a break down on them that will work in a great many variety of project structures and architectures, OR you can also build it out yourself with devstack since each function is built in a modular fashion and each of them are exposed to you to use.
 
-####  "argChain"
+#### `argChain`
 
 Works virtually the same as chain aside from the fact it does not need items to be contained in the config in order to run as it takes chain value in args, allowing you to pass all the command objects through instead have to save them as config items
 
-#### "argConcurrent"
+#### `argConcurrent`
 
 The same as above but using concurrent in place of chain used in args
 
@@ -811,16 +811,244 @@ All the items referenced in `executeChain` must exist somewhere in your VFS conf
 
 
 #### `conditional`
-currently planned to be created 
 
-conditions:
-always | firstOpen | dailyFirst | custom
-if succesful
-if unsuccesful
-Run command at specific time
-Recurring executions (every hour, daily)
-Cron-like syntax
-Background execution option
+> [!NOTE]
+> I know I should have built this a while back, but have been putting this off do to other things needing to get done, and I wasn't going to do this just yet but I just had another use case for it so... lets just get it done.
+> 
+> Also, the terminal ngins original architecture came in such beautiful ways to use with this new item type, since I was able to create it with UNLIMITED nesting capabilties... with zero tax in the form of coding it. If you wanted to, you can go 100 deep with no issue. Coupled with the two new item types pertaining to chain and concurrent... those three things turned this from requireing... 100's and 100's of lines of code, down to less than 50 I think it was.
+
+I will leave conditionChain in the ngin as it is already coded, and to be fair if you want a quick and dirty way atleast you still have it. 
+
+This one on the other hand, is quite a bit different since this item type can be housed within itself 100%, meaning you do NOT need to reference anything from your config if you don't wish to include those items. As this item type can include everything needed for it to run, as when it comes to command sequences like this it can get weird with edge cases, and include items that will never see use outside this one object.
+
+conditionChain, if I'm remembering correctly, can only go one condition deep. Where as this item type, it is trully unlimited in terms of depth or in other words unlimited nesting capabilties.
+
+## Condition Types Reference
+
+| type | `path` | `args[0].value` |
+|---|---|---|
+| `fileExists` | absolute or workspace-relative file path | — |
+| `fileNotExists` | absolute or workspace-relative file path | — |
+| `folderExists` | absolute or workspace-relative folder path | — |
+| `folderNotExists` | absolute or workspace-relative folder path | — |
+| `configValue` | VS Code config key e.g. `editor.fontSize` | optional — value to match against, truthy check if omitted |
+| `envVariable` | env var name e.g. `NODE_ENV` | optional — value to match against, truthy check if omitted |
+| `commandOutput` | shell command to run | optional — stdout string to match against, truthy (any output) if omitted |
+| `portInUse` | port number as string e.g. `"3000"` | — |
+| `portNotInUse` | port number as string e.g. `"3000"` | — |
+| `custom` | JS expression string evaluated in `vm.runInNewContext` with `workspaceRoot` in scope | — |
+
+
+The `conditional` type executes an initial block (or evaluates a static condition) and then branches into `onSuccess`, `onFailure`, `always`, or other condition checks based on the result.
+
+## Execution Flow
+
+```
+conditional item
+│
+├── [Root] — one of:
+│     a) item.path → executed as powershellCommand
+│     b) args[0].type = "argChain" → chains items in args[0].args sequentially
+│     c) args[0].type = "argConcurrent" → runs items in args[0].args concurrently
+│     d) args[0].type = "fileExists" / "fileNotExists" / "folderExists" /
+│        "folderNotExists" / "configValue" / "envVariable" /
+│        "commandOutput" / "portInUse" / "portNotInUse" / "custom"
+│        → no execution, condition evaluated directly, result = true/false
+│
+└── [Branches] — remaining args[] evaluated in order:
+      onSuccess   → exe[] runs if root succeeded / condition was true
+      onFailure   → exe[] runs if root failed / condition was false
+      always      → exe[] always runs regardless
+      fileExists / fileNotExists / folderExists / folderNotExists /
+      configValue / envVariable / commandOutput /
+      portInUse / portNotInUse / custom
+                  → exe[] runs if that condition evaluates to true
+```
+
+Every item inside any `exe[]` array — and inside `args[0].args` — is a full `NavigatorItem` shaped object passed through `createNavigatorItem` before `executeMaster`, meaning any supported type can be nested inside including another `conditional`.
+
+ 
+
+---
+
+## Full Nested Example
+
+```json
+{
+  "label": "Deploy Pipeline",
+  "type": "conditional",
+  "icon": "rocket",
+  "path": "npm run build",
+  "args": [
+    {
+      "type": "onSuccess",
+      "exe": [
+        {
+          "label": "Run Tests",
+          "type": "conditional",
+          "path": "npm run test",
+          "args": [
+            {
+              "type": "onSuccess",
+              "exe": [
+                {
+                  "label": "Check Port 3000 Free Before Deploy",
+                  "type": "conditional",
+                  "path": "",
+                  "args": [
+                    {
+                      "type": "portNotInUse",
+                      "path": "3000"
+                    },
+                    {
+                      "type": "onSuccess",
+                      "exe": [
+                        {
+                          "label": "Commit And Push",
+                          "path": "saveall, commitpush",
+                          "type": "chain",
+                          "icon": "gitlab"
+                        },
+                        {
+                          "label": "Check NODE_ENV Is Production",
+                          "type": "conditional",
+                          "path": "",
+                          "args": [
+                            {
+                              "type": "envVariable",
+                              "path": "NODE_ENV",
+                              "args": [{ "value": "production" }]
+                            },
+                            {
+                              "type": "onSuccess",
+                              "exe": [
+                                {
+                                  "label": "Bump Patch Version",
+                                  "path": "saveall, PatchVersion",
+                                  "type": "chain",
+                                  "icon": "gitlab"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "onFailure",
+                              "exe": [
+                                {
+                                  "label": "Notify Wrong Env",
+                                  "path": "echo NODE_ENV is not production, skipping version bump",
+                                  "type": "powershellCommand"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "onFailure",
+                      "exe": [
+                        {
+                          "label": "Kill Port 3000",
+                          "path": "npx kill-port 3000",
+                          "type": "powershellCommand"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "onFailure",
+              "exe": [
+                {
+                  "label": "Check If Test Report Exists",
+                  "type": "conditional",
+                  "path": "",
+                  "args": [
+                    {
+                      "type": "fileExists",
+                      "path": "coverage/lcov-report/index.html"
+                    },
+                    {
+                      "type": "onSuccess",
+                      "exe": [
+                        {
+                          "label": "Open Test Report",
+                          "path": "coverage/lcov-report/index.html",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "onFailure",
+                      "exe": [
+                        {
+                          "label": "Notify No Report",
+                          "path": "echo No test report found",
+                          "type": "powershellCommand"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "always",
+              "exe": [
+                {
+                  "label": "Cleanup Temp",
+                  "path": "rimraf .tmp",
+                  "type": "powershellCommand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "onFailure",
+      "exe": [
+        {
+          "label": "Notify Build Failed",
+          "path": "echo Build failed, aborting pipeline",
+          "type": "powershellCommand"
+        }
+      ]
+    },
+    {
+      "type": "always",
+      "exe": [
+        {
+          "label": "Write Build Log",
+          "path": "echo Pipeline finished >> build.log",
+          "type": "powershellCommand"
+        }
+      ]
+    }
+  ]
+}
+```
+
+---
+
+## What This Example Does Step By Step
+
+1. **Root** — runs `npm run build` as a `powershellCommand`
+2. **onFailure (root)** — if build fails, echoes a failure message and stops that branch
+3. **always (root)** — regardless of build result, appends a line to `build.log`
+4. **onSuccess (root)** — if build passes, enters a nested `conditional` that runs `npm run test`
+5. **onSuccess (tests)** — if tests pass, enters another nested `conditional` that checks if port `3000` is free
+6. **portNotInUse (3000) → onSuccess** — if port is free, chains `saveall, commitpush`, then enters another nested `conditional` checking `NODE_ENV === "production"`
+7. **envVariable NODE_ENV → onSuccess** — bumps patch version
+8. **envVariable NODE_ENV → onFailure** — echoes a warning that the env is wrong
+9. **portNotInUse (3000) → onFailure** — if port is occupied, kills it via `npx kill-port 3000`
+10. **onFailure (tests)** — if tests fail, checks if the coverage report file exists, opens it if it does, echoes a message if it does not
+11. **always (tests)** — regardless of test result, cleans up `.tmp`
+
+
 
 ### Terminal Commands
 

@@ -1,6 +1,30 @@
- 
-<!-- #region Overview -->
+
 ## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Overview
+
+
+
+
+> [!NOTE] 
+> The VSCode You Wish Microsoft Built
+> 
+> VSCode is good enough that you don't want to learn a new IDE, but frustrating enough that you constantly wish it worked better. DevStack is what happens when a developer gets so fed up with those limitations that they rebuild the entire experience—while keeping it technically "just an extension."
+> 
+> Here's what that means:
+> - Still VSCode, so you can use it at work without approval
+> - Doesn't feel like VSCode, because nearly every core feature has been replaced or rebuilt
+> - 150+ extensions worth of power in a single install—without the performance death spiral
+> - Zero "which extension conflicts with which" debugging sessions
+> - Actually context-aware: your workspace dictates your environment, not the other way around
+>
+> You're not installing an extension. You're escaping VSCode's limitations while still running VSCode. It's the loophole you didn't know existed.
+>
+> If you've ever thought "I wish VSCode worked like [JetBrains/Cursor/literally anything else]" but couldn't actually switch—this is your answer.
+>
+> If your new to coding, and are unsure as to what this means exactly. It's as if, I took a BMW M3 motor ( vscode application ), and then built an entire car around that engine. It's built on a great platform that BMW is known for but your not actually driving a BMW.
+>
+> If you're just installing DevStack for the first time, skip ahead to [Top 7 Features to Try First](#top-7-features-to-try-first)
+
+
 
 
 I stopped looking for VSCode alternatives. Not because VSCode is perfect. Because DevStack made it perfect. 45 projects. 20,000+ lines of configuration. One seamless environment. This is what VSCode should have been.
@@ -410,9 +434,6 @@ That's DevStack.
 
 ---
 
-<!-- #endregion -->
-
-<!-- #region COMPARISON TABLE -->
 
 # DevStack vs Market Leaders - Feature Comparison
 
