@@ -1,6 +1,11 @@
 # Asgard Software
 
-- [x] ★ ━━━━ ☆ ━━━━     TO-DO     ━━━━ ☆ ━━━━ ★
+- [ ] ★ ━━━━ ☆ ━━━━     TO-DO     ━━━━ ☆ ━━━━ ★
+- [ ] overlay-x wrapper
+- [ ] command-x variant where at first its just an input and then it drops down whenever focuised 
+- [ ] add dragging capabilties to the overlay-x
+- [ ] with command-x do one each ion each overlay as well include sidebar
+- [ ] a command combo boxwhere in addition to the commands inpout there is a combobox just below that, for my use case it was a means to offer a filtering system ontop of the search capabilties but in a rally compact form
 - [ ] need to change landing pages components list to use the same layout as we did in markdown cheat sheet, and this is to be placed under the transistion statement we posted in asgard.md over in devestack
   - [ ] on load display all categories and items
   - [ ] left side bar contains the 3 root level cateogies meanwhile the right sidebar contains all the catgories in that root level cateogiry
