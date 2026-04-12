@@ -1,11 +1,29 @@
-# Catalyst Software
+# Asgard Software
 
 - [ ] ★ ━━━━ ☆ ━━━━     TO-DO     ━━━━ ☆ ━━━━ ★
+- [ ] overlay-x wrapper
+- [ ] command-x variant where at first its just an input and then it drops down whenever focuised 
+- [ ] add dragging capabilties to the overlay-x
+- [ ] with command-x do one each ion each overlay as well include sidebar
+- [ ] a command combo boxwhere in addition to the commands inpout there is a combobox just below that, for my use case it was a means to offer a filtering system ontop of the search capabilties but in a rally compact form
+- [ ] need to change landing pages components list to use the same layout as we did in markdown cheat sheet, and this is to be placed under the transistion statement we posted in asgard.md over in devestack
+  - [ ] on load display all categories and items
+  - [ ] left side bar contains the 3 root level cateogies meanwhile the right sidebar contains all the catgories in that root level cateogiry
+  - [ ] centered at the top will be a search bar
+  - [ ] this still conveys how large the library but doesnt force the user to subject them to searching through that horse shit list
+  - [ ] with the same list foundation use this as the new list components that works similar to showcase
+- [ ] for docs create docs layout with outlet so as to create a docs sidebar that points to all the doumentation
+  - [ ] need to add performance 
+  - [ ] app layer data store need a better name for this
+- [ ] need to change x viewer to instead dispaly a sidebar and navigate between components there
+- [ ] need to change midgardr index
+- [ ] need to change asgard index
+- [ ] need to change code/list/all is getting a new comopnents listing dispaly, where using visualizer and a rows users can filter and search for components, this same viewer will be used on the index page
+- [ ] need to change code $name, or integrate it with list all 
+
 - [ ] change auth in catalystsoftware/ui from pssword to, grabbing the current user email instaed pinging the server to see if they subscribe and if they do offer the prem menu
-- [ ] each component needs the same comment section as animated text, or anything within the x category
-- [ ] offer cdn? see bottom
-- [x] premium only catalyst-ui focused extension
-- [ ] need to add best in class `search` to readme
+- [ ] each component needs the same comment section as animated text, or anything within the x category 
+- [x] premium only midgardr focused extension 
 - [ ] pnpm dlx ui-thing@latest add flip-clock
 
 - [ ] need to add best in class `settings.json resource`
@@ -13,17 +31,182 @@
 - [ ] need to create blog like we did changelog
 - [ ] test new motions category
 - [ ] need to go through coss origin and compare x to his variants
-  - [ ] ★ ━━━━ X ━━━━ ★
-    - [ ] need to compare against coss i think ists called
-  - [ ] ★ ━━━━ UTILS ━━━━ ★
-    - [ ] auth.ts
-    - [ ] auth_session.ts
-    - [ ] auth_github.ts
-    - [ ] auth.github.callback.tsx
-    - [ ] auth.github.tsx
-    - [ ] honeypot-react
-    - [ ] tailwind-config.ts ngin
-    - [ ] check all files
+  - [x] ★ ━━━━ X ━━━━ ★
+    - [x] slider-x
+    - [ ] ALLL FILES
+  - [ ] ★ ━━━━ tailwind ━━━━ ★
+    - [ ] ALLL FILES
+  - [ ] ★ ━━━━ form ━━━━ ★
+  - [ ] ★ ━━━━ navigation ━━━━ ★
+    - [ ] link-component
+    - [ ] links-component
+    - [ ] nav-link-component
+    - [ ] form-component
+  - [ ] ★ ━━━━ feedback ━━━━ ★
+    - [ ] await-component
+    - [ ] error boundary
+  - [ ] ★ ━━━━ elements ━━━━ ★
+    - [ ] meta-component
+    - [ ] swr-config-component
+  - [ ] ★ ━━━━ client-server ━━━━ ★
+    - [ ] swr-prefetch
+    - [ ] swr-mutable
+    - [ ] sse-client
+    - [ ] api-route
+  - [ ] ★ ━━━━ API ━━━━ ★
+    - [ ] api-routes
+  - [ ] ★ ━━━━ HOOKS ━━━━ ★
+    - [ ] demo.tsx
+    - [ ] index.ts
+    - [ ] react-hook-docs.tsx
+    - [ ] use-api-key.tsx
+    - [ ] use-character-limit.tsx
+    - [ ] use-current-time-indicator.tsx
+    - [ ] use-event-visibility.tsx
+    - [ ] use-export-markdown-usage.tsx
+    - [ ] use-export-markdown.tsx
+    - [ ] use-export-tsx.tsx
+    - [ ] use-external-scripts.tsx
+    - [ ] use-file-icon.tsx
+    - [ ] use-google-font.tsx
+    - [ ] use-locales.tsx
+    - [ ] use-markdown-batches.tsx
+    - [ ] use-markdown-to-html.tsx
+    - [ ] use-mutation-observer-useage.tsx
+    - [ ] use-mutation-observer.tsx
+    - [ ] use-script.tsx
+    - [ ] use-sec-fetch-parser.tsx
+    - [ ] use-tailwind-converter.tsx
+    - [ ] useDevList.tsx
+    - [ ] useOnWindowResize.tsx
+  - [ ] hooks-async
+    - [ ] index.ts
+    - [ ] use-async.tsx
+    - [ ] use-debounce-fetcher.tsx
+    - [ ] use-debounce-submit.tsx
+    - [ ] use-debounce.tsx
+    - [ ] use-event-source.tsx
+    - [ ] use-fetch.tsx
+    - [ ] use-interval.tsx
+    - [ ] use-stream.tsx
+    - [ ] use-throttle.tsx
+    - [ ] use-timeout.tsx
+    - [ ] use-timer.tsx
+  - [ ] hooks-data
+    - [ ] index.ts
+    - [ ] use-cache.tsx
+    - [ ] use-swr-config.tsx
+    - [ ] use-swr-immutable.tsx
+    - [ ] use-swr-infinite.tsx
+    - [ ] use-swr-mutation.tsx
+    - [ ] use-swr-subscription.tsx
+    - [ ] use-swr.tsx
+  - [ ] hooks-dom
+    - [ ] index.ts
+    - [ ] use-breakpoint.tsx
+    - [ ] use-click-outside.tsx
+    - [ ] use-event-listener.tsx
+    - [ ] use-focus-within.tsx
+    - [ ] use-focus.tsx
+    - [ ] use-hover.tsx
+    - [ ] use-intersection-observer.tsx
+    - [ ] use-key-press.tsx
+    - [ ] use-keyboard-shortcut.tsx
+    - [ ] use-keyboard.tsx
+    - [ ] use-long-press.tsx
+    - [ ] use-media-query.tsx
+    - [ ] use-mobile.tsx
+    - [ ] use-mouse-enter.tsx
+    - [ ] use-move.tsx
+    - [ ] use-on-click-outside.tsx
+    - [ ] use-outside-click.tsx
+    - [ ] use-press.tsx
+    - [ ] use-resize-listener.tsx
+    - [ ] use-resize-observer.tsx
+    - [ ] use-screen.tsx
+    - [ ] use-scroll-lock.tsx
+    - [ ] use-scroll-position.tsx
+    - [ ] use-smooth-scroll.tsx
+    - [ ] use-window-size.tsx
+  - [ ] hooks-form
+    - [ ] index.ts
+    - [ ] use-copy-to-clipboard.tsx
+    - [ ] use-debounced-fuse-search.tsx
+    - [ ] use-file-upload.tsx
+    - [ ] use-form.tsx
+    - [ ] use-fuse-search.tsx
+    - [ ] use-fuzzy-search.tsx
+    - [ ] use-validate-credit-card.tsx
+  - [ ] hooks-lifecycle
+    - [ ] index.ts
+    - [ ] use-client.tsx
+    - [ ] use-event-callback.tsx
+    - [ ] use-hydrated.tsx
+    - [ ] use-is-client.tsx
+    - [ ] use-isomorphic-layout-effect.tsx
+    - [ ] use-mount-effect.tsx
+    - [ ] use-mounted.tsx
+    - [ ] use-previous.tsx
+    - [ ] use-reducer.tsx
+    - [ ] use-should-hydrate.tsx
+    - [ ] use-unmount-effect.tsx
+    - [ ] use-update-effect.tsx
+  - [ ] hooks-navigation
+    - [ ] index.ts
+    - [ ] use-delegated-anchors.tsx
+    - [ ] use-document-title.tsx
+    - [ ] use-favicon.tsx
+    - [ ] use-global-loading-state.tsx
+    - [ ] use-global-navigation-state.tsx
+    - [ ] use-global-pending-state.tsx
+    - [ ] use-global-submitting-state.tsx
+    - [ ] use-online-status.tsx
+  - [ ] hooks-router
+    - [ ] index.ts
+    - [ ] use-action-data.tsx
+    - [ ] use-async-value.tsx
+    - [ ] use-before-unload.tsx
+    - [ ] use-blocker.tsx
+    - [ ] use-fetcher.tsx
+    - [ ] use-fetchers.tsx
+    - [ ] use-form-action.tsx
+    - [ ] use-href.tsx
+    - [ ] use-loader-data.tsx
+    - [ ] use-location.tsx
+    - [ ] use-matches.tsx
+    - [ ] use-navigate.tsx
+    - [ ] use-navigation.tsx
+    - [ ] use-params.tsx
+    - [ ] use-pathname.tsx
+    - [ ] use-resolved-path.tsx
+    - [ ] use-revalidator.tsx
+    - [ ] use-route-error.tsx
+    - [ ] use-search-params.tsx
+    - [ ] use-should-revalidate.tsx
+    - [ ] use-submit.tsx
+    - [ ] use-view-transition-state.tsx
+  - [ ] hooks-storage
+    - [ ] index.ts
+    - [ ] use-local-storage-auto-save.tsx
+    - [ ] use-local-storage.tsx
+    - [ ] use-read-local-storage.tsx
+    - [ ] use-session-storage.tsx
+  - [ ] hooks-ui
+    - [ ] index.ts
+    - [ ] use-auto-scroll.tsx
+    - [ ] use-color-theme.tsx
+    - [ ] use-color-wheel.tsx
+    - [ ] use-counter.tsx
+    - [ ] use-expandable.tsx
+    - [ ] use-lucide-drawer-animation.tsx
+    - [ ] use-overlay-listener.tsx
+    - [ ] use-overlay-scroll-listener.tsx
+    - [ ] use-pagination.tsx
+    - [ ] use-slide-in-1.tsx
+    - [ ] use-slide-in.tsx
+    - [ ] use-slider-with-input.tsx
+    - [ ] use-toggle.tsx
+    - [ ] use-transition.tsx
   - [ ] ★ ━━━━ PROMPT ━━━━ ★
     - [ ] providers.tsx
     - [ ] snippets.tsx
@@ -33,67 +216,10 @@
     - [ ] code-block-examples.tsx
     - [ ] prompt-feedback-bar.tsx
   - [ ] ★ ━━━━ PRIMITIVE ━━━━ ★
-    - [ ] button-group
-    - [ ] alert
-    - [ ] tracker
-    - [ ] multi-select
-    - [ ] list-box
-  - [ ] ★ ━━━━ BG ━━━━ ★
-    - [ ] gistorted glasses 
-    - [ ] texture overlay
-    - [ ] stripe-bg-guides
+    - [ ] input-group
   - [ ] ★ ━━━━ MOTION ━━━━ ★
-    - [ ] motion-logo-carosel.tsx
     - [ ] need to update MotionButton MotionPopover1
-    - [ ] Motionsgroup
-    - [ ] MotionAvatar
-    - [ ] MotionRadioCard
-    - [ ] ColorPicker
-    - [ ] Roladex1
-    - [ ] Roladex
-    - [ ] border-beam
-    - [ ] smooth draweer
     - [ ] profile dropdwn
-    - [ ] morphic navabr
-    - [ ] morph-surface
-    - [ ] motion-separator
-    - [ ] morph-navbar
-  - [ ] ★ ━━━━ MEDIA ━━━━ ★
-    - [ ] color pallete card
-    - [ ] InfiniteSlider
-    - [ ] MotionMap
-  - [ ] ★ ━━━━ HOOKS ━━━━ ★
-    - [ ] useSlideInV1
-    - [ ] useTailwindConverter
-    - [ ] use-validate-credit-card
-    - [ ] use-keyboard-shortcut
-    - [ ] use-lucide-drawer-animation
-  - [ ] ★ ━━━━ FORMS ━━━━ ★
-    - [ ] fancy-area
-  - [ ] ★ ━━━━ CORE ━━━━ ★
-    - [ ] loadingBoundary 
-    - [ ] bento-system
-    - [ ] HeroBadge
-    - [ ] current timeline is now timeline2, add new timeline
-    - [ ] list -> coreLists
-    - [ ] list1 -> coreLists
-    - [ ] tree -> coreLists
-    - [ ] AppShell -> shells
-    - [ ] Min Pricing Section -> Minamilist
-    - [ ] Min Pricing Cards -> Minamilist
-    - [ ] Min Hero Section -> Minamilist
-    - [ ] Animated Hero -> Minamilist
-    - [ ] Min Feature -> Minamilist
-    - [ ] Faq Section -> Minamilist
-    - [ ] docs layout
-    - [ ] content-shell
-  - [ ] ★ ━━━━ COMBOBOX ━━━━ ★
-    - [ ] emojiPicker
-  - [ ] ★ ━━━━ TYPOGRAPHY ━━━━ ★
-    - [ ] text-scramble
-    - [ ] paragraph-scramble
-  - [ ] ★ ━━━━ BUTTONS ━━━━ ★
-    - [ ] copty-text update item sice it can now also take children
   - [ ] ★ ━━━━ TEMPLATES ━━━━ ★
     - [ ] [text](https://www.shadcn.io/blocks/account-data-export)
     - [ ] https://flowbite.com/blocks/application/crud-create-drawers/
@@ -198,8 +324,8 @@
     - [ ] https://github.com/mxkaske/mxkaske.dev/tree/main/components/craft/google-places-autocomplete
     - [ ] https://github.com/mxkaske/mxkaske.dev/tree/main/components/craft/wheel-picker
     - [ ] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-box.tsx
-    - [ ] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
-    - [ ] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
+    - [x] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
+    - [x] https://github.com/mxkaske/mxkaske.dev/blob/main/components/craft/fancy-multi-select.tsx
     - [ ] https://github.com/m4nute/pricing-page-shadcn
     - [ ] https://github.com/udecode/plate
     - [ ] https://github.com/jakobhoeg/shadcn-chat
@@ -218,7 +344,7 @@
     - [x] https://pro.cult-ui.com/sections
     - [x] https://www.aisdkagents.com/patterns/basics-tool-scrape-cheerio
     - [x] https://kokonutui.com/docs/components/ai-prompt
-    - [x] https://coss.com/origin/alert
+    - [ ] https://coss.com/origin/alert
     - [x] https://www.cult-ui.com/
     - [x] https://www.tremor.so/
     - [x] https://www.heroui.com/
@@ -230,7 +356,7 @@
     - [x] https://www.hyperui.dev/
     - [ ] https://flowbite.com/blocks/application/crud-create-drawers/
     - [ ] https://blocks.tremor.so/blocks/account-and-user-management#account-and-user-manage
-    - [ ] https://github.com/tremorlabs/tremor-blocks/blob/main/src/content/components/status-monitoring/tracker-10.tsx
+    - [x] https://github.com/tremorlabs/tremor-blocks/blob/main/src/content/components/status-monitoring/tracker-10.tsx
     - [ ] https://ui.lukacho.com/
     - [ ] https://sailboatui.com/
     - [ ] https://tw-elements.com/
@@ -272,7 +398,7 @@
       - [ ] Catalyst Scheduler
   
 
-    - [ ] CATALYST EDITOR
+    - [x] CATALYST EDITOR
       - [ ] the editor that is for use will be built as a useable component
       - [ ] Since the last post this has seen a great number of updates, and is just about to receive more
       - [ ] I haven't converted it yet to become a reusable component yet but will be done in the near future
@@ -286,7 +412,7 @@
       - [ ] will feature several size types along with custom height and dynamic height
    
 
-    - [ ] THEME BUILDER
+    - [x] THEME BUILDER
       - [ ] an actual theme builder will not be made available as everyone enjoys building these from scratch but there arehooks within the library to make it alot easier for you to code one such as
   
 

@@ -1,5 +1,7 @@
 # CRM
-
+- [ ] DEALING WITH PROFILE / PART / WORK ORDER LOCKS
+    - [ ] like... let give this example my github cli wrapper... no one that i have seen ahs ever come close to the amount of errors that mines has....0, i can have the same thing opened in 5 different projects, i can be editing it in all of them at the same time... no a single one gets rejected meanwhile githubs own in vscode implementation errors out more than tit should... 
+    - [ ] its done by for every action it gets the current data from the repo to start the sync processs so it never errors, then mergeds it with the local and then pushes th elocal to the repo.... what if we were to do something like that? obivlosuly have a off and on switch to toggle it saomewehe on the page, and it would work kinda like how pre-fetching does with links but iiinstead of fetching an entire webpage.... ur just fethc a single value, hopefully  getting it fast enouhg that once the user focuses... fetch the value and update it in the broswer before they have a chance to edit it... then once they edit it obviously with debounce the value gets updated
 
 - [x] DASHBOARDS - whenever you have time test with 2500, 5000 data objects to see if we need to paginate server side
 - [ ] ping users cell phones when email or text comes through in the crm ensures they get notified even when they are away from desk

@@ -1,8 +1,267 @@
 # THOR
 
-## TAILWIND_NGIN
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Vanilla Tailwind
 
-## Tailwind CSS
+```
+/* 
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                              Vanilla Tailwind Ngin                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  A fully configured Tailwind engine providing access to 46,060+ design combinations. By adjusting just three        │ 
+│  values, you can transform the entire visual identity of your application.                                          │ 
+│                                                                                                                     │ 
+│  1. THEME:  Sets the core color palette with 47 to choose from (Brand, Semantic, and Accent colors).                │ 
+│  2. PRESET: Defines the "feel"—adjusting spacing, margins, and border-radius across 15 distinct systems.            │ 
+│  3. FONT:   Select from 70+ curated typefaces optimized for readability and style.                                  │ 
+│                                                                                                                     │  
+│  Only selected assets are bundled into your build, ensuring maximum performance with zero runtime bloat.            │ 
+│  Other values that can be, but are not required to configure:                                                       │  
+│  4. USE_CUSTOM_TYPOGRAPHY & TYPOGRAPHY                                                                              │
+│  4. USE_FONT_WEIGHTS & FONT_WEIGHTS                                                                                 │
+│  5. ENVIROMENT                                                                                                      │  
+│  6. COLORS & CUSTOM_THEME                                                                                           │  
+│                                                                                                                     │  
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                     │ 
+│  Please select each of the following:                                                                               │ 
+│  1. Theme                                                                                                           │ 
+│  2. Preset                                                                                                          │ 
+│  3. Font ( Not required, if left blank will default to the themes default )                                         │ 
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                    PRESET                                                           │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 1. MODERN                       - Refined & Professional, tight, clean, high-performance feel.                      │ 
+│                                 - 15% smaller spacing, tight layouts - Geist, Inter, Plus Jakarta Sans              │ 
+│                                                                                                                     │ 
+│ 2. CREATIVE                     - Lots of breathing room and very round shapes.                                     │ 
+│                                 - Soft & Elegant - Outfit, Playfair Display, Montserrat                             │ 
+│                                                                                                                     │ 
+│ 3. TECHNICAL                    - Square corners, consistent spacing, "IDE" feel.                                   │ 
+│                                 - Precision & Focus - JetBrains Mono, Fira Code, Geist Mono                         │ 
+│                                                                                                                     │ 
+│ 4. FINTECH                      - Maximum information density for dashboards.                                       │ 
+│                                 - Data Heavy - IBM Plex Mono (numbers), Roboto, Source Code Pro                     │ 
+│                                                                                                                     │ 
+│ 5. LUXURY                       - Characterized by extreme letter spacing, thin borders, and huge breathing room.   │ 
+│                                 - High-end & Sophisticated - Playfair Display, Lora, Montserrat (for subheaders)    │ 
+│                                                                                                                     │ 
+│ 6. BRUTALIST                    - Thick borders, no rounding, and high-contrast sizing.                             │ 
+│                                 - Bold, Raw, & Experimental - Space Grotesk, IBM Plex Mono, Roboto Mono             │ 
+│                                                                                                                     │ 
+│ 7. EDITORIAL                    - Focuses on vertical rhythm and classic typesetting.                               │ 
+│                                 - The New Yorker / Magazine Style - Source Serif 4, Merriweather, Libre Baskerville │ 
+│                                                                                                                     │ 
+│ 8. PLAYFUL                      - Thick "bouncy" borders and very round shapes.                                     │ 
+│                                 - Mobile-First / Duolingo Style - Nunito, Delius Swash Caps, Poppins                │ 
+│                                                                                                                     │ 
+│ 9. MINIMALIST                   - Ultra-clean with subtle refinements, maximum clarity.                             │ 
+│                                 - Calm & Spacious - SF Pro Display, Helvetica Neue, Inter                           │ 
+│                                                                                                                     │ 
+│ 10. GAMING                      - Aggressive sizing with heavy weights, cinematic impact.                           │ 
+│                                 - Bold & Energetic - Rajdhani, Orbitron, Teko                                       │ 
+│                                                                                                                     │ 
+│ 11. MEDICAL                     - Clean, trustworthy, optimized for clinical readability.                           │ 
+│                                 - Professional & Reliable - Source Sans Pro, Open Sans, Lato                        │ 
+│                                                                                                                     │ 
+│ 12. ECOMMERCE                   - Product-focused with strong visual hierarchy for pricing and CTAs.                │ 
+│                                 - Conversion Optimized - Proxima Nova, Avenir, Work Sans                            │ 
+│                                                                                                                     │ 
+│ 13. CORPORATE                   - Conservative spacing with traditional letter-spacing for enterprise trust.        │ 
+│                                 - Authoritative & Traditional - Calibri, Arial, Segoe UI                            │ 
+│                                                                                                                     │ 
+│ 14. RETRO                       - Squared-off with chunky weights, arcade and 80s computing aesthetics.             │ 
+│                                 - Nostalgic & Pixel-Perfect - Press Start 2P, VT323, Courier Prime                  │
+│                                                                                                                     │ 
+│*/                                             PRESET = 'MODERN'                                                   /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                       FONT                                                          │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ SANS-SERIF     - Inter, Roboto, Geist, Poppins, Montserrat, Outfit, Plus Jakarta Sans, DM Sans, Urbanist,           │ 
+│                  Nunito, Lato, Barlow, Gabriela, Delius Swash Caps, Public Sans, Work Sans, Manrope, Figtree,       │ 
+│                  Archivo                                                                                            │ 
+│                                                                                                                     │ 
+│ SERIF          - Merriweather, Playfair Display, Lora, Source Serif 4, Libre Baskerville, Space Grotesk,            │ 
+│                  PT Serif, Fraunces, Cormorant Garamond, Crimson Pro, EB Garamond, Newsreader, DM Serif Display,    │ 
+│                  Prata, Bodoni Moda, Young Serif                                                                    │ 
+│                                                                                                                     │ 
+│ MONO           - JetBrains Mono, Fira Code, Geist Mono, IBM Plex Mono, Roboto Mono, Space Mono,                     │ 
+│                  Source Code Pro, Ubuntu Mono, Red Hat Mono, Cutive Mono, Nanum Gothic Coding                       │ 
+│                                                                                                                     │ 
+│ DISPLAY        - Sora, Bricolage Grotesque, Clash Display, Syne, Unbounded, Cabinet Grotesk, Righteous,             │ 
+│                  Lexend, Kanit                                                                                      │ 
+│                                                                                                                     │ 
+│*/                                                FONT = 'Geist'                                                   /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                        THEME                                                        │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                     │ 
+│                     Cirrus-Float                  Synthwave-Neon                        Geek-Blue                   │
+│                  Metropolis-Sky-Scape                Solar-Flare                       Desert-Night                 │
+│                   Mainframe-Terminal                Amazon-Jungle                    Cyber-Industrial               │
+│                      Sonic-Pulse                     Cobalt-Ice                        Forest-Tech                  │
+│                     Solstice-Heat                   Midas-Touch                       Oceanic-Sunset                │
+│                      Polymer-Flow                  Amethyst-Stone                      Deep-Emerald                 │
+│                    Vanguard-Strike                 Smoldering-Ember                  Deep-Sea-Navigator             │
+│                     Tactical-Ops                     Acid-Trip                         Glacier-Blue                 │
+│                     Meadow-Whisper                      Loki                        High-Alert-Crimson              │
+│                    Studio-Apartment                   Silk-Petal                        Cyber-Pop                   │ 
+│                      Terra-Verde                    Aqua-Glacier                       Forest-Tech-2                │
+│                   Black-Velvet-Luxe                Nightshade-Venom                    Frozen-Deep                  │
+│                     Blueprint-Grid                Another-Acid-Trip                    Pastel-Sorbet                │
+│                     Sorbet-Swirl                      Deep-Abyss                       Modern-Retro                 │
+│                     Office-Paper                  Fifth-Element-Aether                 Obsidian-Wine                │
+│                    Twilight-Bloom                    True-Veridian                     Mineral-Forest               │
+│                    Afterglow-Fade                     Deep-Teal                          Deep-Ocean                 │
+│                  Monet-Impressionism              Interstellar-Nebula                   Retro-Arcade                │
+│                     Espresso-High                    Granite-Top                       Vintage-Heritage             │
+│                    Executive-Level                  Ti-Titanium-22                     Oceanic-Gradient             │
+│                   Workplace-Chatter             Graphite-Neutron-Moderator              Crystal-Quartz              │
+│                     Oracle-Vision                   Concrete-slab                         Deep-Void                 │
+│                   Middle-Field-Canvas                 C-Carbon-6                         Dark-Crimson               │
+│                                                                                                                     │ 
+│                                                                                                                     │ 
+│*/                                               THEME = 'Deep-Void'                                               /*│  
+│*/                                                  MODE = 'dark'                                                  /*│ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                     TYPOGRAPHY                                                      │ 
+│                                                                                                                     │ 
+│ If you would like to use other values instead of the provide options that are available through the ngin, you may   │
+│ configure the following objects and values.                                                                         │ 
+│                                                                                                                     │ 
+│*/ USE_CUSTOM_TYPOGRAPHY = false                                                                                   /*│
+│*/ TYPOGRAPHY = {                                                                                                  /*│ 
+│*/    h1: {                                                                                                        /*│ 
+│*/      fontSize: "1.875rem",                                                                                      /*│ 
+│*/      fontWeight: "700",                                                                                         /*│ 
+│*/      lineHeight: "1.25",                                                                                        /*│ 
+│*/      letterSpacing: "-0.025em",                                                                                 /*│ 
+│*/      textAlign: "center",                                                                                       /*│ 
+│*/      "@media (min-width: 1024px)": {                                                                            /*│ 
+│*/        lineHeight: "1.1",                                                                                       /*│ 
+│*/      },                                                                                                         /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h2: {                                                                                                        /*│ 
+│*/      marginTop: "0.75rem",                                                                                      /*│ 
+│*/      color: "hsl(var(--muted-foreground))",                                                                     /*│ 
+│*/      fontWeight: "300",                                                                                         /*│ 
+│*/      textAlign: "center",                                                                                       /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h3: {                                                                                                        /*│ 
+│*/      fontWeight: "600",                                                                                         /*│ 
+│*/      marginBottom: "1rem",                                                                                      /*│ 
+│*/      marginTop: "1rem",                                                                                         /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h4: {                                                                                                        /*│ 
+│*/      fontSize: "1.25rem",                                                                                       /*│ 
+│*/      fontWeight: "600",                                                                                         /*│ 
+│*/      marginBottom: "0.75rem",                                                                                   /*│ 
+│*/      marginTop: "0.75rem",                                                                                      /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    h5: {                                                                                                        /*│ 
+│*/      fontSize: "1.125rem",                                                                                      /*│ 
+│*/      fontWeight: "500",                                                                                         /*│ 
+│*/      marginBottom: "0.5rem",                                                                                    /*│ 
+│*/      marginTop: "0.5rem",                                                                                       /*│ 
+│*/    },                                                                                                           /*│ 
+│*/    p: {                                                                                                         /*│ 
+│*/      textWrap: "balance",                                                                                       /*│ 
+│*/      fontWeight: "300",                                                                                         /*│ 
+│*/      color: "hsl(var(--foreground))",                                                                           /*│ 
+│*/      fontSize: "0.875rem",                                                                                      /*│ 
+│*/    },                                                                                                           /*│ 
+│*/  }                                                                                                              /*│  
+│                                                                                                                     │ 
+│*/ USE_FONT_WEIGHTS = false                                                                                        /*│
+│*/ FONT_WEIGHTS = {                                                                                                /*│
+│*/    thin: "100",                                                                                                 /*│
+│*/    light: "300",                                                                                                /*│
+│*/    normal: "400",                                                                                               /*│
+│*/    medium: "500",                                                                                               /*│
+│*/    semibold: "600",                                                                                             /*│
+│*/    bold: "700",                                                                                                 /*│
+│*/    black: "900",                                                                                                /*│
+│*/  }                                                                                                              /*│  
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                     ENVIROMENT                                                      │ 
+│                                                                                                                     │ 
+│ Depending on what your building, the css will need to be built differently. For example if building a vscode        │
+│ extension, it is a much wiser choice to use the already configured color theme that the user has chosen in place    │
+│ of your own custom theme. Setting this value to VSCODE, will do just that.                                          │
+│ "VSCODE" and "OTHER"                                                                                                │ 
+│                                                                                                                     │ 
+│*/ ENVIROMENT = "VSCODE"                                                                                           /*│ 
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                    CUSTOM COLORS                                                    │ 
+│                                                                                                                     │ 
+│ If you would like to use your own theme in place of the available options, set colors to "CUSTOM" and you will      │
+│ be free to set the values as you wish. The ngin expects the colors to be bare hsl strings without the use of 'hsl()'│ 
+│ "CUSTOM" | "NGIN"                                                                                                   │ 
+│                                                                                                                     │ 
+│*/ COLORS = "NGIN"                                                                                                 /*│ 
+│*/ CUSTOM_THEME = {                                                                                                /*│
+│*/    "--background": '222.2 84% 4.9%',                                                                            /*│
+│*/    "--foreground": '210 40% 98%',                                                                               /*│
+│*/    "--card": '222.2 84% 4.9%',                                                                                  /*│
+│*/    "--card-foreground": '210 40% 98%',                                                                          /*│
+│*/    "--popover": '222.2 84% 4.9%',                                                                               /*│
+│*/    "--popover-foreground": '210 40% 98%',                                                                       /*│
+│*/    "--primary": '217.2 91.2% 59.8%',                                                                            /*│
+│*/    "--primary-foreground": '222.2 47.4% 11.2%',                                                                 /*│
+│*/    "--secondary": '217.2 32.6% 17.5%',                                                                          /*│
+│*/    "--secondary-foreground": '210 40% 98%',                                                                     /*│
+│*/    "--muted": '217.2 32.6% 17.5%',                                                                              /*│
+│*/    "--muted-foreground": '215 20.2% 65.1%',                                                                     /*│
+│*/    "--accent": '217.2 32.6% 17.5%',                                                                             /*│
+│*/    "--accent-foreground": '210 40% 98%',                                                                        /*│
+│*/    "--destructive": '0 62.8% 30.6%',                                                                            /*│
+│*/    "--border": '217.2 32.6% 17.5%',                                                                             /*│
+│*/    "--input": '217.2 32.6% 17.5%',                                                                              /*│
+│*/    "--ring": '224.3 76.3% 48%',                                                                                 /*│
+│*/    "--sidebar": "",                                                                                             /*│
+│*/    "--sidebar-foreground": "",                                                                                  /*│
+│*/    "--sidebar-primary": "",                                                                                     /*│
+│*/    "--sidebar-primary-foreground": "",                                                                          /*│
+│*/    "--sidebar-accent": "",                                                                                      /*│
+│*/    "--sidebar-accent-foreground": "",                                                                           /*│
+│*/    "--sidebar-border": "",                                                                                      /*│
+│*/    "--sidebar-ring": "",                                                                                        /*│
+│*/                                                                                                                 /*│
+│*/    "--chart-1": '220 70% 50%',                                                                                  /*│
+│*/    "--chart-2": '160 60% 45%',                                                                                  /*│
+│*/    "--chart-3": '30 80% 55%',                                                                                   /*│
+│*/    "--chart-4": '280 65% 60%',                                                                                  /*│
+│*/    "--chart-5": '340 75% 55%',                                                                                  /*│
+│*/                                                                                                                 /*│
+│*/    "--font-sans": "",                                                                                           /*│
+│*/    "--font-serif": "",                                                                                          /*│
+│*/    "--font-mono": "",                                                                                           /*│
+│*/                                                                                                                 /*│
+│*/    "--radius": '0.5rem',                                                                                        /*│
+│*/                                                                                                                 /*│
+│*/    "--shadow-color": "",                                                                                        /*│
+│*/    "--shadow-opacity": "",                                                                                      /*│
+│*/    "--shadow-blur": "",                                                                                         /*│
+│*/    "--shadow-spread": "",                                                                                       /*│
+│*/    "--shadow-offset-x": "",                                                                                     /*│
+│*/    "--shadow-offset-y": "",                                                                                     /*│
+│*/  }                                                                                                              /*│ 
+│                                                                                                                     │ 
+│                                                                                                                     │ 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ The following configurable values are for the 1% use cases and are more here due to the preset ngin already coded   │
+│ to have these included but instead of removing them I have decided to include them just incase they are needed in   │
+│ the future. In other words, if you are not editing the code, do not change these values.                            │ 
+│*/ THEME_SWITCHER = false                                                                                          /*│ 
+│*/ VERSION = 'v3'                                                                                                  /*│ 
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+*/
+```
+
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Tailwind CSS
 **Command:** `ocrmnavigator.tailwind.file.css.create`
 
 Creates a complete `tailwind.css` file at `app/routes/styles/tailwind.css` with:
@@ -52,7 +311,7 @@ The generated `tailwind.css` includes:
 
 ---
 
-## Tailwind Config 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Tailwind Config
 **Command:** `ocrmnavigator.tailwind.file.config.base.create`
 
 Generates a minimal `tailwind.config.js` with essential configurations:
@@ -67,7 +326,7 @@ Generates a minimal `tailwind.config.js` with essential configurations:
 
 ---
 
-## Tailwind Config Preset Ngin
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Tailwind Config Preset Ngin
 **Command:** `ocrmnavigator.tailwind.file.config.create`
 
 Creates the **ultimate Tailwind configuration** with 525+ pre-configured settings and **zero additional implementation work**. Simply set 3 variables at the top:
@@ -256,7 +515,7 @@ Add powerful utility classes through custom plugins. All plugins can be added as
 
 #### Available Plugins:
 
-## Tailwind V4 Plug-in
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Tailwind V4 Plug-in
 It's just plug and play, and drop a v4 configured component into your project.
 
 > [!IMPORTANT]
@@ -348,7 +607,7 @@ element.addEventListener('mousemove', (e) => {
 
 ---
 
-## Tailwind Plugin Library (Ngin) - Documentation
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Tailwind Plugin Library (Ngin) - Documentation
 
 #### Overview
 
@@ -954,4 +1213,486 @@ project/
 - **3D/Advanced**: 4+ plugins
 
 **Total: 60+ production-ready plugins**
+
+
+
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> CSS
+
+> [!WARNING]
+> Currently in testing
+> Despite currently still in the testing phase, you are more than welcome to try it out.
+> Initial and secondary tests were successful in remix-run and react-router platforms
+> As this isn't platform dependant, any platform you currently use tailwind in should be able to use this without issue
+
+### Features
+
+✨ **JIT Compilation** - Only generates CSS for classes you actually use  
+🎨 **Arbitrary Values** - Use any value with bracket notation: `w-[123px]`, `bg-[#ff0000]`, `text-[hsl(120_100%_50%)]`, `border-[rgb(0_0_255)]`  
+⚡ **Lightning Fast** - Compiles in milliseconds  
+👀 **Auto Watch Mode** - Automatically watches files in development  
+🎯 **Config-Based** - Customize everything via `css.config.js`  **Not required**
+🔥 **Zero Dependencies** - Minimal footprint  
+
+### Installation
+
+```bash
+npm install @catalystsoftware/css-plus-plus --save-dev
+pnpm install @catalystsoftware/css-plus-plus --save-dev
+```
+
+### app/styles/styles.css
+```text
+@css++;
+```
+
+#### postcss.config.js 
+
+The one and only config I couldn't get rid of, since its due to a postcss requirement
+
+```javascript
+export default {
+  plugins: {
+    '@catalystsoftware/css-plus-plus/postcss': {},
+  },
+};
+
+```
+
+>Initial testing successful, did not have autoprefixer, postcss, or anything else style related installed. Just the single line css file and postcss-config.js with the above export, and ran perfectly. Will be conducting more thorough testing shortly.
+
+### styles.css
+To apply your own theme:
+```css
+@css++;
+
+@layer css++ {
+  :root {
+    --background: #020817;
+    --background-secondary: #111827;
+    --foreground: #e2e8f0;
+    --card: #020817;
+    --card-foreground: #e2e8f0;
+    --popover: #020817;
+    --popover-foreground: #e2e8f0;
+    --primary: #3b82f6;
+    --primary-foreground: #111827;
+    --secondary: #1e293b;
+    --secondary-foreground: #e2e8f0;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #e2e8f0;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #e2e8f0;
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #2563eb;
+    --chart-1: #3b82f6;
+    --chart-2: #10b981;
+    --chart-3: #f59e0b;
+    --chart-4: #a855f7;
+    --chart-5: #ec4899;
+    --radius: 0.0rem;
+    --sidebar: 221 39% 11%;
+    --sidebar-foreground: 220 20% 95%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 220 20% 98%;
+    --sidebar-accent: 220 30% 20%;
+    --sidebar-accent-foreground: 220 20% 95%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 217 91% 60%;
+    --special: 227 21% 8%;
+    --special-muted-background: 240 10% 4%;
+    --special-border: 240 4% 16%;
+    --special-foreground: 240 5% 84%;
+    --special-muted-foreground: 240 4% 46%;
+  }
+
+  .dark {
+    /* Optional: Dark mode overrides */
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* User's custom styles below */
+.my-custom-class {
+  background: var(--primary);
+  color: var(--foreground);
+}
+```
+
+### Config Paths ( Not required )
+- css.config.js
+- css.config.mjs
+- css.config.cjs
+- csspp.config.js
+- csspp.config.mjs
+- csspp.config.cjs
+
+### Quick Start - < 60 Seconds
+
+#### For Remix Projects
+
+```bash
+# 1. Import CSS (app/root.tsx)
+import styles from "~/styles/generated.css?url";
+
+export const links = () => [
+  { rel: "stylesheet", href: styles },
+];
+
+# 2. Done! Run dev server
+npm run dev
+```
+
+**That's it!** CSS++ automatically:
+- ✅ Creates `dist/generated.css`
+- ✅ Watches for changes
+- ✅ Hot-reloads instantly
+
+---
+
+#### For Next.js Projects
+
+```bash
+# 1. Import in layout (app/layout.tsx)
+import './styles/generated.css';
+
+# 2. Done! Run dev server
+npm run dev
+```
+
+---
+
+#### For Vite Projects
+
+```bash
+# 1. Import in main (src/main.js)
+import './generated.css';
+
+# 2. Done!
+npm run dev
+```
+
+---
+
+#### For Any Project (Manual)
+
+```bash
+# 1. Add script (package.json)
+{
+  "scripts": {
+    "dev": "css++ & your-dev-command"
+  }
+}
+
+# 2. Create config (css.config.js) - OPTIONAL!
+export default {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  output: "./dist/output.css",
+};
+
+# 3. Import CSS in HTML
+<link rel="stylesheet" href="/dist/output.css">
+
+# 4. Done!
+npm run dev
+```
+
+---
+
+#### Zero Config Mode
+
+**No config file needed!** CSS++ uses smart defaults:
+
+```javascript
+// Automatic defaults
+const defaultConfig = {
+    darkMode: ["class"],
+    content: [
+        "./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}", // Remix
+        "./src/**/*.{html,js,jsx,ts,tsx}", // Vite/CRA
+        "./components/**/*.{js,jsx,ts,tsx}",
+        "./pages/**/*.{js,jsx,ts,tsx}", // Next.js
+    ],
+    output: "./dist/generated.css",
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: [
+                    'Inter',
+                    'ui-sans-serif',
+                    'system-ui',
+                    'sans-serif',
+                    'Apple Color Emoji',
+                    'Segoe UI Emoji',
+                    'Segoe UI Symbol',
+                    'Noto Color Emoji'
+                ]
+            },
+            borderRadius: {
+                lg: 'var(--radius)',
+                md: 'calc(var(--radius) - 2px)',
+                sm: 'calc(var(--radius) - 4px)'
+            },
+            colors: {
+                border: "var(--border)",
+                input: "var(--input)",
+                ring: "var(--ring)",
+                background: "var(--background)",
+                foreground: "var(--foreground)",
+                primary: {
+                    DEFAULT: "var(--primary)",
+                    foreground: "var(--primary-foreground)",
+                },
+                secondary: {
+                    DEFAULT: "var(--secondary)",
+                    foreground: "var(--secondary-foreground)",
+                },
+                destructive: {
+                    DEFAULT: "var(--destructive)",
+                    foreground: "var(--destructive-foreground)",
+                },
+                muted: {
+                    DEFAULT: "var(--muted)",
+                    foreground: "var(--muted-foreground)",
+                },
+                accent: {
+                    DEFAULT: "var(--accent)",
+                    foreground: "var(--accent-foreground)",
+                },
+                popover: {
+                    DEFAULT: "var(--popover)",
+                    foreground: "var(--popover-foreground)",
+                },
+                card: {
+                    DEFAULT: "var(--card)",
+                    foreground: "var(--card-foreground)",
+                },
+                sidebar: {
+                    DEFAULT: "var(--sidebar)",
+                    foreground: "var(--sidebar-foreground)",
+                    primary: "var(--sidebar-primary)",
+                    "primary-foreground": "var(--sidebar-primary-foreground)",
+                    accent: "var(--sidebar-accent)",
+                    "accent-foreground": "var(--sidebar-accent-foreground)",
+                    border: "var(--sidebar-border)",
+                    ring: "var(--sidebar-ring)",
+                },
+                chart: {
+                    "1": "var(--chart-1)",
+                    "2": "var(--chart-2)",
+                    "3": "var(--chart-3)",
+                    "4": "var(--chart-4)",
+                    "5": "var(--chart-5)",
+                },
+                special: {
+                    DEFAULT: "var(--special)",
+                    "muted-background": "var(--special-muted-background)",
+                    border: "var(--special-border)",
+                    foreground: "var(--special-foreground)",
+                    "muted-foreground": "var(--special-muted-foreground)",
+                },
+            },
+            backgroundColor: {
+                background: "var(--background)",
+            },
+            keyframes: {
+                "accordion-down": {
+                    from: { height: "0" },
+                    to: { height: "var(--radix-accordion-content-height)" },
+                },
+                "accordion-up": {
+                    from: { height: "var(--radix-accordion-content-height)" },
+                    to: { height: "0" },
+                },
+                "caret-blink": {
+                    "0%,70%,100%": { opacity: "1" },
+                    "20%,50%": { opacity: "0" },
+                },
+                float: {
+                    '0%, 100%': { transform: 'translateY(0px) scale(1)' },
+                    '50%': { transform: 'translateY(-20px) scale(1.05)' },
+                },
+                "pulse-glow": {
+                    '0%, 100%': { opacity: "0.3", transform: 'scale(1)' },
+                    '50%': { opacity: "0.6", transform: 'scale(1.1)' },
+                },
+                shimmer: {
+                    '0%': { backgroundPosition: '-200% 0' },
+                    '100%': { backgroundPosition: '200% 0' },
+                },
+                "spin-slow": {
+                    "0%": { transform: "rotate(0deg)" },
+                    "100%": { transform: "rotate(360deg)" },
+                },
+                "spin-slower": {
+                    "0%": { transform: "rotate(0deg)" },
+                    "100%": { transform: "rotate(-360deg)" },
+                },
+                "matrix-fade": {
+                    "0%, 100%": { opacity: "0" },
+                    "50%": { opacity: "1" },
+                },
+                click: {
+                    "0%, 100%": { transform: "scale(1)" },
+                    "50%": { transform: "scale(0.95)" },
+                },
+            },
+            animation: {
+                "accordion-down": "accordion-down 0.2s ease-out",
+                "accordion-up": "accordion-up 0.2s ease-out",
+                "caret-blink": "caret-blink 1.25s ease-out infinite",
+                "float": "float 6s ease-in-out infinite",
+                "pulse-glow": "pulse-glow 4s ease-in-out infinite",
+                "shimmer": "shimmer 2s infinite",
+                "spin-slow": "spin-slow 3s linear infinite",
+                "spin-slower": "spin-slower 6s linear infinite",
+                matrix: "matrix-fade 0.5s ease-in-out infinite",
+                click: "click 0.3s ease-in-out",
+            },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        h1: {
+                            fontSize: "1.875rem",
+                            fontWeight: "700",
+                            lineHeight: "1.25",
+                            letterSpacing: "-0.025em",
+                            textAlign: "center",
+                            "@media (min-width: 1024px)": { lineHeight: "1.1" },
+                        },
+                        h2: {
+                            marginTop: "0.75rem",
+                            color: "var(--muted-foreground)",
+                            fontWeight: "300",
+                            textAlign: "center",
+                        },
+                        h3: {
+                            fontWeight: "600",
+                            marginBottom: "1rem",
+                            marginTop: "1rem",
+                        },
+                        h4: {
+                            fontSize: "1.25rem",
+                            fontWeight: "600",
+                            marginBottom: "0.75rem",
+                            marginTop: "0.75rem",
+                        },
+                        h5: {
+                            fontSize: "1.125rem",
+                            fontWeight: "500",
+                            marginBottom: "0.5rem",
+                            marginTop: "0.5rem",
+                        },
+                        p: {
+                            textWrap: "balance",
+                            fontWeight: "300",
+                            color: "var(--foreground)",
+                            fontSize: "0.875rem",
+                        },
+                    },
+                },
+            }
+        },
+    },
+};
+```
+
+---
+
+#### Usage Examples
+
+```jsx
+// Sizes
+<div className="w-[300px] h-[200px]" />
+
+// Colors
+<div className="bg-[#ff0000] text-[rgb(255,255,255)] border-[hsl(120_100%_50%)]" />
+
+// Spacing
+<div className="p-[2rem] m-[10px] gap-[1.5rem]" />
+
+// Borders
+<div className="rounded-[16px] border-[2px]" />
+
+// Everything!
+<div className="
+  w-[350px] 
+  h-[75vh] 
+  bg-[linear-gradient(to_right,#ff0000,#00ff00)]
+  shadow-[0_4px_20px_rgba(0,0,0,0.1)]
+  rotate-[45deg]
+" />
+```
+
+---
+
+#### With CSS Variables
+
+```css
+/* global.css */
+:root {
+  --primary: #3b82f6;
+  --radius: 0.5rem;
+}
+```
+
+```jsx
+<div className="bg-[var(--primary)] rounded-[var(--radius)]" />
+```
+
+---
+
+#### Custom Animations
+
+**css.config.js**:
+```javascript
+export default {
+  theme: {
+    extend: {
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "fade-in": "fadeIn 0.3s ease-in",
+      },
+    },
+  },
+};
+```
+
+**Usage**:
+```jsx
+<div className="animate-fade-in" />
+```
+
+---
+
+#### FAQ
+
+**Q: Do I need a config file?**  
+A: No! Works out of the box.
+
+**Q: Does it auto-watch?**  
+A: Yes! In development mode.
+
+**Q: Works with TypeScript?**  
+A: Yes! Scans `.ts` and `.tsx` files.
+
+**Q: Works with CSS-in-JS?**  
+A: Yes! Detects classes in `className={}`.
+
+**Q: Production builds?**  
+A: Set `NODE_ENV=production` for minified output.
+
+**Q: File size?**  
+A: Only generates CSS you use (~5KB typical).
+
+---
+
 

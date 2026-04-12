@@ -1,6 +1,4 @@
-# HUGINN
-
-## Remix Run 
+# HUGINN - Remix Run 
 
 ## Table of Contents
 
@@ -27,7 +25,7 @@
 - [Create Action Object](#create-action-object)
 
 
-### npx create-remixv2
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> npx create-remixv2
 
 Create Remix v2 projects with 30+ popular stacks and custom stack references
 
@@ -48,7 +46,7 @@ npx create-remixv2
 
 ---
 
-### Automatic Remix Action
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Automatic Remix Action
 
 Automatically generate Remix actions by scanning for Form components
 
@@ -65,7 +63,7 @@ Automatically generate Remix actions by scanning for Form components
 
 ---
 
-### Context Components/Functions
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Context Components/Functions
 
 Insert Remix-specific components and functions directly from the context menu
 
@@ -82,7 +80,7 @@ Insert Remix-specific components and functions directly from the context menu
 
 ---
 
-### V1 → V2 Routing Conversion
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> V1 → V2 Routing Conversion
 
 Convert Remix v2 routing convention to v1 automatically
 
@@ -99,7 +97,7 @@ Convert Remix v2 routing convention to v1 automatically
 
 ---
 
-### Convert Single App To Mono Repo
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Convert Single App To Mono Repo
 
 Convert a single Remix application into a monorepo structure
 
@@ -118,7 +116,7 @@ Convert a single Remix application into a monorepo structure
 
 ---
 
-### Open Route File in Browser
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Open Route File in Browser
 
 Open route files directly in your browser for instant preview
 
@@ -135,7 +133,7 @@ Open route files directly in your browser for instant preview
 
 ---
 
-### Create Route Files
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Create Route Files
 
 Quickly create route files with pre-configured templates
 
@@ -152,7 +150,7 @@ Quickly create route files with pre-configured templates
 
 ---
 
-### Install Auth in Remix
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Install Auth in Remix
 
 One-click authentication setup for Remix applications
 
@@ -169,7 +167,7 @@ One-click authentication setup for Remix applications
 
 ---
 
-### Install OTP in Remix
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Install OTP in Remix
 
 Implement One-Time Password authentication in Remix with complete auth routes
 
@@ -186,7 +184,7 @@ Implement One-Time Password authentication in Remix with complete auth routes
 
 ---
 
-### Create Tests for Routes and Actions
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Create Tests for Routes and Actions
 
 Auto-generate comprehensive test files for routes and actions
 
@@ -203,7 +201,7 @@ Auto-generate comprehensive test files for routes and actions
 
 ---
 
-### Remix Run Insert Code
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Remix Run Insert Code
 
 Comprehensive collection of Remix framework code snippets and utilities
 
@@ -222,7 +220,7 @@ Comprehensive collection of Remix framework code snippets and utilities
 
 ---
 
-### Create Single App - React Router
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Create Single App - React Router
 
 Create a pre-configured React Router application reminiscent of a Remix stack
 
@@ -239,7 +237,7 @@ Create a pre-configured React Router application reminiscent of a Remix stack
 
 ---
 
-### Convert Remix-Run to Platform X
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Convert Remix-Run to Platform X
 
 Convert your Remix application to other platforms and frameworks
 
@@ -256,7 +254,7 @@ Convert your Remix application to other platforms and frameworks
 
 ---
 
-### Error Boundary
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Error Boundary
 
 Insert error boundary components at cursor position
 
@@ -273,7 +271,7 @@ Insert error boundary components at cursor position
 
 ---
 
-### Meta Function
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Meta Function
 
 Insert meta function with proper configuration at cursor
 
@@ -291,7 +289,7 @@ Insert meta function with proper configuration at cursor
 
 ---
 
-### Links Function
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Links Function
 
 Insert links function for resource management at cursor
 
@@ -309,7 +307,7 @@ Insert links function for resource management at cursor
 
 ---
 
-### Create Monorepo
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Create Monorepo
 
 Create a fully configured monorepo "stack" with automatic setup and first build
 
@@ -328,7 +326,7 @@ Create a fully configured monorepo "stack" with automatic setup and first build
 
 ---
 
-### Build & Deploy Project
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Build & Deploy Project
 
 Customize the build process of your monorepo project with Turborepo-like functionality
 
@@ -345,7 +343,7 @@ Customize the build process of your monorepo project with Turborepo-like functio
 
 ---
 
-### RR Folder Routing
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> RR Folder Routing
 
 Configure React Router to use folder-based routing convention
 
@@ -361,7 +359,7 @@ Configure React Router to use folder-based routing convention
 
 ---
 
-### Preview Route URL
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Preview Route URL
 
 Preview the current file's URL without opening the browser
 
@@ -378,7 +376,7 @@ Preview the current file's URL without opening the browser
 
 ---
 
-### Create Action Object
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Create Action Object
 
 Generate Prisma action objects for database operations
 

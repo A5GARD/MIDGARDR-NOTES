@@ -10,8 +10,7 @@
         ├── 📄 Markdown Cheat Sheet ........... Markdown reference
         └── 📄 Markdown Pre-Processor ......... Markdown preprocessing
 ```
-
-### MD Viewer/Renderer
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD Viewer/Renderer
 
 Render markdown files directly in your browser with proper formatting and styling
 
@@ -26,8 +25,7 @@ Render markdown files directly in your browser with proper formatting and stylin
 
 ![MD Viewer](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-render-vscode.jpg?raw=true)
 
-
-### MD Viewer/Renderer In VS Code
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD Viewer In VS Code
 
 Side-by-side markdown preview within VS Code for seamless editing workflow
 
@@ -43,99 +41,7 @@ Side-by-side markdown preview within VS Code for seamless editing workflow
 ![MD Viewer VS Code](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-render-vscode.jpg?raw=true)
 
 
-### Catalyst Editor
-
-A powerful multi-language editor built on Microsoft's Monaco Editor, originally designed for markdown but evolved to support comprehensive development workflows
-
-
-
-**Supported Languages:**
-- Markdown
-- JavaScript & TypeScript
-- HTML, CSS & SCSS
-- JSON & YAML
-- Python
-- SQL
-- XML
-- Java, C#, C++
-- PHP
-- Rust & Go
-- Shell scripts
-
-**Core Features:**
-
-**Editor Capabilities:**
-- Multi-tab interface with auto-save
-- Persistent settings stored locally
-- Toggle minimap, line numbers, and line folding
-- Custom folding rules with `#region` / `#endregion` support
-- Markdown preview (full screen or split view)
-- Full screen mode
-- Format document
-- Toggle line wrapping
-- Find & replace
-- Command palette
-
-**Workspace Integration:**
-- Access all markdown files in active workspace
-- Open, edit, and delete files directly
-- Place entire tab content into clipboard
-
-**Keyboard Shortcuts:**
-- `Alt + S` - Manual save
-- `Alt + R` - Rename tab
-- `Alt + P` - Toggle preview
-- `Alt + N` - Create new tab
-- `Alt + W` - Close current tab
-- `Alt + F` - Search/find
-- `Ctrl + +/-` - Zoom in/out
-- `Alt + T` - Create new TypeScript tab
-- `Alt + M` - Create new Markdown tab
-
-**Sidebar Tools:**
-
-**Outline**
-- Dynamic table of contents with clickable navigation
-- Auto-generated from document structure
-
-**Markdown Reference Sheet**
-- Click any item to copy its markdown format to clipboard
-- 100% GitHub-flavored Markdown compatibility
-- Comprehensive formatting examples
-- Tables, code blocks, badges, and more
-
-**File Explorer**
-- Browse and select files from your file system
-- Open and edit files directly in the editor
-
-**README Generator**
-- Pre-built sections for quick copying
-- Table of contents generation
-- Badge collections
-- Speed up README creation workflow
-
-**README Builder**
-- Collection of professional templates
-- Real-world README examples
-- Customizable starting points
-- Best practice methodologies
-
-**Resources:**
-- [Video Demo](https://youtu.be/nU5OB_oCrL0)
-- [MD Reference](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-reference.jpg?raw=true)
-- [MD Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/mdGuide.JPG?raw=true)
-- [Outline Example](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-outline.jpg?raw=true)
-- [Sidebar Overview](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/md-sidebar.jpg?raw=true)
-- [Full README Guide](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/mdGuide.jpg?raw=true)
-
-**README Templates:**
-- [Awesome Template](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/awesome-readme-template.md?raw=true)
-- [Fresh Template](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/fresh-template.md?raw=true)
-- [Markdownify Template](https://raw.githubusercontent.com/8an3/midgardr-notes/main/md/markdownify.md?raw=true)
-
-</details>
-
-### Convert MD File To Safe Inline String
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Convert MD File To Safe Inline String
 
 
 Convert markdown file content into JSON-safe inline strings by escaping special characters and replacing line breaks with `\n`.
@@ -156,8 +62,7 @@ Convert markdown file content into JSON-safe inline strings by escaping special 
 **BE Quick Pick Access:** Select `Convert MD File To Safe Inline String` from the BE Quick Pick menu
 
 
-
-### Markdown Cheat Sheet
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> Markdown Cheat Sheet
 
 Complete GitHub-flavored Markdown reference guide with examples.
 
@@ -175,10 +80,8 @@ Complete GitHub-flavored Markdown reference guide with examples.
 
 ---
 
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD PRE-PROCESSOR
 
-### MD PRE-PROCESSOR
+## <img src="https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/vulknut.png" width="32"  style="vertical-align: middle; margin-bottom: 4px;"> MD Renderer
 
 
----
-
-[🡄 Return](https://github.com/8an3/DevStack)
