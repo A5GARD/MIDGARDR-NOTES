@@ -1,7 +1,7 @@
 # Asgard Software
 
 - [ ] ★ ━━━━ ☆ ━━━━     TO-DO     ━━━━ ☆ ━━━━ ★
-- [ ] overlay-x wrapper
+- [x] overlay-x wrapper
 - [ ] command-x variant where at first its just an input and then it drops down whenever focuised 
 - [ ] add dragging capabilties to the overlay-x
 - [ ] with command-x do one each ion each overlay as well include sidebar

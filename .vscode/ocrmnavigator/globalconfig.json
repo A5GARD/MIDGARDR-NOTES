@@ -7,74 +7,158 @@
       "global": true,
       "items": [
         {
-          "label": "ASGARD",
-          "path": "code-insiders -n f:/asgard",
-          "type": "powershellCommand",
-          "icon": "powershell-command-baldr"
-        },
-        {
-          "label": "YGGDRASIL",
-          "path": "code-insiders -n f:/yggdrasil",
-          "type": "powershellCommand",
-          "icon": "powershell-command-baldr"
-        },
-        {
-          "label": "SLEIPNIR",
-          "path": "code-insiders -n f:/sleipnir",
-          "type": "powershellCommand",
-          "icon": "powershell-command-baldr"
-        },
-        {
-          "label": "TYR",
-          "path": "code-insiders -n f:/tyr",
-          "type": "powershellCommand",
-          "icon": "pixel-2-strike"
-        },
-        {
           "label": "DevStack",
           "path": "code-insiders -n f:/DevStack",
           "type": "powershellCommand",
           "icon": "valhalla-baldr"
         },
         {
-          "label": "BALDR",
-          "path": "code-insiders -n f:/baldr",
-          "type": "powershellCommand",
-          "icon": "symbol-event"
-        },
-        {
-          "label": "THOR",
-          "path": "code-insiders -n f:/css",
-          "type": "powershellCommand",
-          "icon": "symbol-event"
-        },
-        {
-          "label": "create-remixv2",
-          "path": "code-insiders -n f:/create-remixv2",
-          "type": "powershellCommand",
-          "icon": "symbol-event"
-        },
-        {
-          "label": "MIÐGARÐR",
-          "path": "code-insiders -n f:/midgardr",
+          "label": "[ASGARD]",
+          "path": "code-insiders -n f:/asgard",
           "type": "powershellCommand",
           "icon": "vulknut",
           "items": [
             {
-              "label": "MIÐGARÐR",
-              "path": "code-insiders -n f:/midgardr",
-              "type": "powershellCommand",
-              "icon": "vulknut"
-            },
-            {
-              "label": "COMPS AND BLOCKS TO REVIEW AND ADD",
-              "path": "code-insiders -n f:/demo2",
+              "label": "[APPS][DEV]",
+              "path": "code-insiders -n f:/asgard/apps/dev",
               "type": "powershellCommand",
               "icon": "powershell-command-baldr"
             },
             {
-              "label": "MIÐGARÐR: NOTES",
-              "path": "code-insiders -n f:/midgardr-notes",
+              "label": "[APPS][NTRSYNC-MOBILE]",
+              "path": "code-insiders -n f:/asgard/apps/NTRSync-Mobile",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[APPS][SLEIPNIR]",
+              "path": "code-insiders -n f:/asgard/apps/sleipnir",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[APPS][WEBSITE]",
+              "path": "code-insiders -n f:/asgard/apps/website",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[APPS][YGGDRASIL]",
+              "path": "code-insiders -n f:/asgard/apps/yggdrasil",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[APPS][SLEIPNIR]",
+              "path": "code-insiders -n f:/asgard/apps/sleipnir",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[APPS][TYR]",
+              "path": "code-insiders -n f:/asgard/apps/tyr",
+              "type": "powershellCommand",
+              "icon": "pixel-2-strike"
+            },
+            {
+              "label": "[DOCS][MIDGARDR-SDK]",
+              "path": "code-insiders -n f:/asgard/docs/midgardr-sdk",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][A5GARD]",
+              "path": "code-insiders -n f:/asgard/packages/A5GARD",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][BALDR]",
+              "path": "code-insiders -n f:/a5gard/packages/baldr",
+              "type": "powershellCommand",
+              "icon": "symbol-event"
+            },
+            {
+              "label": "[PACKAGES][CREATE-REMIXV2]",
+              "path": "code-insiders -n f:/asgard/packages/create-remixv2",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][DEMO2]",
+              "path": "code-insiders -n f:/asgard/packages/demo2",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][LOKI]",
+              "path": "code-insiders -n f:/asgard/packages/loki",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][MIÐGARÐR]",
+              "path": "code-insiders -n f:/asgard/packages/midgardr",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][MIÐGARÐR-CLI]",
+              "path": "code-insiders -n f:/asgard/packages/midgardr-cli",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][MIÐGARÐR-NOTES]",
+              "path": "code-insiders -n f:/asgard/packages/midgardr-notes",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][README-EXAMPLES]",
+              "path": "code-insiders -n f:/asgard/packages/readme-examples",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][SAURON]",
+              "path": "code-insiders -n f:/asgard/packages/sauron",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][SAURON-BALDR]",
+              "path": "code-insiders -n f:/asgard/packages/sauron-baldr",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PACKAGES][SAURON-CLI]",
+              "path": "code-insiders -n f:/asgard/packages/sauron-cli",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PLATFORMS][ORDER_66]",
+              "path": "code-insiders -n f:/asgard/packages/ORDER_66",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PLATFORMS][ORDER_67]",
+              "path": "code-insiders -n f:/asgard/packages/ORDER_67",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PLATFORMS][PROJECT-PLATFORM-KILLER]",
+              "path": "code-insiders -n f:/asgard/packages/PROJECT-PLATFORM-KILLER",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "[PLATFORMS][PROJECT-WEBVIEW-KILLER]",
+              "path": "code-insiders -n f:/asgard/packages/PROJECT-WEBVIEW-KILLER",
               "type": "powershellCommand",
               "icon": "powershell-command-baldr"
             }
@@ -2107,57 +2191,6 @@
           "path": "prisma/seed.ts:425",
           "type": "fileAtLine",
           "icon": "prisma-baldr"
-        }
-      ]
-    },
-    {
-      "label": "PROMPT",
-      "expanded": false,
-      "type": "folder",
-      "global": true,
-      "icon": "md-baldr",
-      "items": [
-        {
-          "label": "Prompt - Reusable Comps",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Templates",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - UI Lib Objs",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Blocks",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - VSCode Extension",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Remix-Run",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Default",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
         }
       ]
     },
